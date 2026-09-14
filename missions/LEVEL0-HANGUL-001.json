@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "LEVEL0-HANGUL-001",
+  "goal": "common",
+  "level": 0,
+  "category": "daily",
+  "industry": null,
+  "tags": ["level-0", "hangul", "vowels", "foundation", "beginner"],
+  "title": {"my":"ကိုရီးယား အက္ခရာ — အခြေခံ သရ ၆ လုံး","ko":"한글 기본 모음 6개","en":"Hangul Basic 6 Vowels"},
+  "objective": {"my":"ကိုရီးယား အခြေခံ သရ ၆ လုံး (ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ) ကို — Romanization (a, eo, o, u, eu, i) ကို အဓိက အသံထွက် အကိုးအကားအဖြစ်ထားပြီး မှတ်မိ/အသံထွက်နိုင်မယ်။","ko":"한글 기본 모음 6개(ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ)를 로마자 표기(a, eo, o, u, eu, i)를 기준으로 익히고 발음할 수 있다.","en":"Learn and pronounce the 6 basic Hangul vowels (ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ) using Romanization (a, eo, o, u, eu, i) as the primary pronunciation reference."},
+  "prerequisites": [],
+  "skills": ["listening","speaking","reading","pronunciation"],
+  "estimated_minutes": 6,
+  "difficulty": "intro",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "dialogue": {
+    "setting": {"my":"ကိုရီးယားဘာသာ စာသင်ခန်း","ko":"한국어 교실","en":"Korean language classroom"},
+    "speakers": [
+      {"id":"teacher","role":"teacher","gender":"female","voice_id":"ko_f_01"},
+      {"id":"learner","role":"learner","gender":"any","voice_id":null}
+    ],
+    "lines": [
+      {"line_id":"L1","speaker":"teacher","ko":"오늘은 한글 기본 모음 6개를 배워 봅시다.","rom":"oneureun hangul gibon moeum yeotgaereul baewo bopsida.","my":"ဒီနေ့တော့ ကိုရီးယား အခြေခံ သရ ၆ လုံး လေ့လာကြရအောင်။","en":"Today, let's learn the 6 basic Hangul vowels.","audio":"","note":""},
+      {"line_id":"L2","speaker":"learner","ko":"네, 선생님. 잘 부탁드립니다.","rom":"ne, seonsaengnim. jal butakdeurimnida.","my":"ဟုတ်ကဲ့ ဆရာမ။ ကူညီပေးပါ။","en":"Yes, teacher. Please guide me.","audio":"","note":""},
+      {"line_id":"L3","speaker":"teacher","ko":"'ㅏ'는 'a', 'ㅓ'는 'eo' 소리예요. 로마자 표기를 기준으로 익히세요.","rom":"a-neun a, eo-neun eo soriyeyo. romaja pyogireul gijuneuro ikhisyeo.","my":"'ㅏ' က 'a'၊ 'ㅓ' က 'eo' အသံ။ Romanization ကို အဓိက အကိုးအကားအဖြစ် မှတ်ပါ။","en":"'ㅏ' is 'a', 'ㅓ' is 'eo'. Use Romanization as your primary reference.","audio":"","note":""},
+      {"line_id":"L4","speaker":"learner","ko":"아! 알겠습니다.","rom":"a! algesseumnida.","my":"အာ! နားလည်ပါပြီ။","en":"Ah! I understand.","audio":"","note":""}
+    ]
+  },
+  "activities": [
+    {
+      "activity_id": "A1",
+      "type": "listen_choose",
+      "prompt": {"my":"'a' အသံထွက်တဲ့ သရက ဘယ်ဟာလဲ?","ko":"'a' 소리가 나는 모음은?","en":"Which vowel makes the 'a' sound?"},
+      "audio_ref": "",
+      "options": [
+        {"id":"O1","ko":"ㅏ","my":"ㅏ — Roman: a (မြန်မာ ခန့်မှန်း: အာ)","correct": true},
+        {"id":"O2","ko":"ㅓ","my":"ㅓ — Roman: eo (မြန်မာ ခန့်မှန်း: အော်)","correct": false},
+        {"id":"O3","ko":"ㅗ","my":"ㅗ — Roman: o (မြန်မာ ခန့်မှန်း: အို)","correct": false},
+        {"id":"O4","ko":"ㅜ","my":"ㅜ — Roman: u (မြန်မာ ခန့်မှန်း: အူ)","correct": false}
+      ],
+      "explanation_ref": "F1"
+    },
+    {
+      "activity_id": "A2",
+      "type": "listen_choose",
+      "prompt": {"my":"'i' အသံထွက်တဲ့ သရက ဘယ်ဟာလဲ?","ko":"'i' 소리가 나는 모음은?","en":"Which vowel makes the 'i' sound?"},
+      "audio_ref": "",
+      "options": [
+        {"id":"O1","ko":"ㅣ","my":"ㅣ — Roman: i (မြန်မာ ခန့်မှန်း: အီ)","correct": true},
+        {"id":"O2","ko":"ㅡ","my":"ㅡ — Roman: eu (မြန်မာ ခန့်မှန်း: အိ)","correct": false},
+        {"id":"O3","ko":"ㅗ","my":"ㅗ — Roman: o (မြန်မာ ခန့်မှန်း: အို)","correct": false},
+        {"id":"O4","ko":"ㅏ","my":"ㅏ — Roman: a (မြန်မာ ခန့်မှန်း: အာ)","correct": false}
+      ],
+      "explanation_ref": "F2"
+    },
+    {
+      "activity_id": "A3",
+      "type": "type_answer",
+      "prompt": {"my":"'o' အသံထွက်တဲ့ သရကို ရိုက်ထည့်ပါ။","ko":"'o' 소리가 나는 모음을 입력하세요.","en":"Type the vowel that makes the 'o' sound."},
+      "answer": "ㅗ",
+      "accept_alt": ["오", "o", "O", "ㅗ "],
+      "explanation_ref": "F3"
+    },
+    {
+      "activity_id": "A4",
+      "type": "speak",
+      "prompt": {"my":"'ㅏ' သရကို ကျယ်ကျယ်ပြောပါ။ (Roman: a)","ko":"모음 'ㅏ'를 소리 내어 말하세요. (로마자: a)","en":"Say the vowel 'ㅏ' out loud. (Roman: a)"},
+      "target_ko": "아",
+      "min_score": 60,
+      "audio_ref": "AUD_L0H001_A4",
+      "explanation_ref": "F4"
+    }
+  ],
+  "feedback": {
+    "F1": {
+      "why_wrong": {"my":"'ㅏ' က Roman 'a'၊ 'ㅓ' က Roman 'eo'၊ 'ㅗ' က Roman 'o'၊ 'ㅜ' က Roman 'u'။ Burmese မြန်မာ အသံ ခန့်မှန်းချက်များကို အကိုးအကား အဖြစ် တိုက်ရိုက် မသုံးပါနဲ့ — Romanization ကို အဓိက ထားပါ။","ko":"'ㅏ'는 Roman 'a', 'ㅓ'는 'eo', 'ㅗ'는 'o', 'ㅜ'는 'u'입니다. 미얀마어 근사치는 참고용이며 로마자 표기가 기준입니다.","en":"'ㅏ' is Roman 'a', 'ㅓ' is 'eo', 'ㅗ' is 'o', 'ㅜ' is 'u'. Burmese approximations are for reference only — Romanization is the primary guide."},
+      "grammar": {"point":"한글 모음 ㅏ","explain_my":"'ㅏ' က ဒေါင်လိုက် သရ — Roman 'a'။"},
+      "culture": "한글 모음은 ㅏ ㅑ ㅓ ㅕ ㅗ ㅛ ㅜ ㅠ ㅡ ㅣ 10개입니다. 이 중 6개(ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ)가 가장 기본입니다.",
+      "retry_phrase": "ㅏ"
+    },
+    "F2": {
+      "why_wrong": {"my":"'ㅣ' က Roman 'i'၊ 'ㅡ' က Roman 'eu'။","ko":"'ㅣ'는 Roman 'i', 'ㅡ'는 Roman 'eu'입니다.","en":"'ㅣ' is Roman 'i', 'ㅡ' is Roman 'eu'."},
+      "grammar": {"point":"한글 모음 ㅣ ㅡ","explain_my":"'ㅣ' က ဒေါင်လိုက် သရ၊ 'ㅡ' က အလျားလိုက် သရ။ Roman ကို အဓိက ထားပါ။"},
+      "culture": "ㅣ와 ㅡ는 한국어에서 가장 자주 쓰이는 기본 모음 중 두 개입니다.",
+      "retry_phrase": "ㅣ"
+    },
+    "F3": {
+      "why_wrong": {"my":"Roman 'o' အသံအတွက် 'ㅗ' ဖြစ်တယ်။","ko":"Roman 'o' 소리는 'ㅗ'입니다.","en":"The Roman 'o' sound is 'ㅗ'."},
+      "retry_phrase": "ㅗ"
+    },
+    "F4": {
+      "why_wrong": {"my":"'ㅏ' ကို Roman 'a' အတိုင်း ကျယ်ကျယ် ပြောပါ။","ko":"'ㅏ'를 Roman 'a'처럼 크게 발음하세요.","en":"Say 'ㅏ' as Roman 'a', clearly."},
+      "retry_phrase": "아"
+    }
+  },
+  "cultural_note": {
+    "title": {"my":"ဟန်ဂုလ် (한글) ၏ သမိုင်း","ko":"한글의 역사","en":"History of Hangul"},
+    "body": {"my":"ဟန်ဂုလ်ကို ၁၄၄၃ ခုနှစ်တွင် ဆဲဂျုံဘုရင် (세종대왕) က ဖန်တီးခဲ့တယ်။ သရ ၁၀ လုံး၊ ဗျည်း ၁၄ လုံး ရှိတယ်။ ဒီသင်ခန်းစာမှာတော့ — အသုံးအများဆုံး အခြေခံ သရ ၆ လုံး (ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ) ကို အရင် လေ့လာမယ်။ မှတ်သားရာတွင် Romanization (a, eo, o, u, eu, i) ကို အဓိက ထားပါ။","ko":"한글은 1443년 세종대왕이 창제했습니다. 모음 10개, 자음 14개로 이루어져 있습니다. 이번 수업에서는 가장 기본적인 모음 6개(ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ)를 먼저 배웁니다. 학습 시 로마자 표기(a, eo, o, u, eu, i)를 기준으로 익히세요.","en":"Hangul was created by King Sejong in 1443. It has 10 vowels and 14 consonants. In this lesson we start with the 6 most basic vowels (ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ). Use Romanization (a, eo, o, u, eu, i) as the primary reference."},
+    "sensitive": false
+  },
+  "audio": {
+    "base_path": "audio/LEVEL0-HANGUL-001/",
+    "files": [{"id":"AUD_L0H001_A4","normal":"a4-normal.mp3","slow":"a4-slow.mp3","duration":1.5}],
+    "spec": {"sample_rate":44100,"channels":1,"format":"mp3","bitrate":128}
+  },
+  "srs": {
+    "enabled": true,
+    "cards": [
+      {"card_id":"C1","front":{"my":"Roman: a","ko":"Roman: a","en":"Roman: a"},"back":{"my":"ㅏ","ko":"ㅏ","en":"ㅏ"},"audio_ref":"AUD_L0H001_A4","ease":2.5,"interval":0},
+      {"card_id":"C2","front":{"my":"Roman: eo","ko":"Roman: eo","en":"Roman: eo"},"back":{"my":"ㅓ","ko":"ㅓ","en":"ㅓ"},"audio_ref":"","ease":2.5,"interval":0},
+      {"card_id":"C3","front":{"my":"Roman: o","ko":"Roman: o","en":"Roman: o"},"back":{"my":"ㅗ","ko":"ㅗ","en":"ㅗ"},"audio_ref":"","ease":2.5,"interval":0},
+      {"card_id":"C4","front":{"my":"Roman: u","ko":"Roman: u","en":"Roman: u"},"back":{"my":"ㅜ","ko":"ㅜ","en":"ㅜ"},"audio_ref":"","ease":2.5,"interval":0},
+      {"card_id":"C5","front":{"my":"Roman: eu","ko":"Roman: eu","en":"Roman: eu"},"back":{"my":"ㅡ","ko":"ㅡ","en":"ㅡ"},"audio_ref":"","ease":2.5,"interval":0},
+      {"card_id":"C6","front":{"my":"Roman: i","ko":"Roman: i","en":"Roman: i"},"back":{"my":"ㅣ","ko":"ㅣ","en":"ㅣ"},"audio_ref":"","ease":2.5,"interval":0}
+    ]
+  },
+  "assessment": {
+    "type": "mission",
+    "pass_threshold": 70,
+    "weights": {"accuracy":40,"completion":30,"speaking":30},
+    "exam_mapping": {"topik":null,"eps_topik":null}
+  }
+}

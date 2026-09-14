@@ -1,0 +1,414 @@
+{
+  "__meta": {
+    "generator": "Korea Ready Mission Generator v1.0",
+    "generated_at": "2026-09-13T13:32:01Z",
+    "batch_id": "BATCH-20260913-010",
+    "request": "Generate COMMON-HOUSING-001"
+  },
+  "__self_check": {
+    "rules_passed": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7",
+      "R8",
+      "R9",
+      "R10",
+      "R11",
+      "R12",
+      "R13",
+      "R14",
+      "R15",
+      "R16",
+      "R17",
+      "R18",
+      "R19",
+      "R20",
+      "R21",
+      "R22",
+      "R23",
+      "R24",
+      "R25",
+      "R26"
+    ],
+    "warnings": [],
+    "uncertainties": [],
+    "external_prereqs": [
+      "COMMON-SURV-001"
+    ]
+  },
+  "missions": [
+    {
+      "schema_version": "1.0",
+      "mission_id": "COMMON-HOUSING-001",
+      "goal": "common",
+      "level": 2,
+      "category": "daily",
+      "industry": null,
+      "tags": [
+        "one-room",
+        "housing-rent",
+        "deposit-and-rent",
+        "daily-life"
+      ],
+      "title": {
+        "my": "တခန်းတွဲ တိုက်ခန်း (One-room) ငှားရမ်းခြင်း မေးမြန်းခြင်း",
+        "ko": "원룸 임대 문의하기",
+        "en": "Inquiring About Renting a One-Room Studio Apartment"
+      },
+      "objective": {
+        "my": "ကိုရီးယား အိမ်ခြံမြေ အကျိုးဆောင်ဆိုင်တွင် တခန်းတွဲ တိုက်ခန်း (One-room) ငှားရမ်းရန် စပျစ်ငွေ၊ လစဉ် အိမ်ငှားခ၊ စီမံခန့်ခွဲစရိတ်နှင့် စာချုပ်ကာလ စသည်တို့ကို ယဉ်ကျေးစွာ မေးမြန်းသည့် စကားပြောများကို လေ့ကျင့်မည်။",
+        "ko": "한국 부동산에서 원룸을 구할 때 보증금, 월세, 관리비, 계약 기간 등을 정중하게 문의하는 표현을 연습합니다.",
+        "en": "Practice politely inquiring about deposits, monthly rent, maintenance fees, and contract terms when looking for a studio apartment at a Korean real estate agency."
+      },
+      "prerequisites": [
+        "COMMON-SURV-001"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "politeness"
+      ],
+      "estimated_minutes": 12,
+      "difficulty": "intermediate",
+      "regulated": false,
+      "status": "draft",
+      "version": 1,
+      "dialogue": {
+        "setting": {
+          "my": "တခန်းတွဲ တိုက်ခန်း ငှားရမ်းရန် အိမ်ခြံမြေ အကျိုးဆောင်ဆိုင်သို့ သွားရောက် ဆွေးနွေးခြင်း",
+          "ko": "원룸을 구하기 위해 부동산 중개업소를 방문하여 상담함",
+          "en": "Visiting a real estate agency to inquire about renting a studio apartment"
+        },
+        "speakers": [
+          {
+            "id": "clerk",
+            "role": "clerk",
+            "gender": "male",
+            "voice_id": "ko_m_01"
+          },
+          {
+            "id": "learner",
+            "role": "learner",
+            "gender": "any",
+            "voice_id": null
+          }
+        ],
+        "lines": [
+          {
+            "line_id": "L1",
+            "speaker": "clerk",
+            "ko": "어서 오세요. 어떤 집을 찾으시나요?",
+            "rom": "Eoseo oseyo. Eotteon jibeul chajusinayo?",
+            "my": "မင်္ဂလာပါ၊ ဘယ်လို အိမ်မျိုး ရှာနေတာပါလဲ။",
+            "en": "Welcome. What kind of home are you looking for?",
+            "audio": "AUD_HOUS001_L1",
+            "audio_slow": "AUD_HOUS001_L1_S",
+            "note": "Standard greeting from real estate agent"
+          },
+          {
+            "line_id": "L2",
+            "speaker": "learner",
+            "ko": "학교 근처에 있는 원룸을 찾고 있어요. 보증금이 얼마예요?",
+            "rom": "Hakgyo geuncheoe inneun wonrumeul chatgo isseoyo. Bojeunggeumi eolmayeyo?",
+            "my": "ကျောင်းအနီးမှာရှိတဲ့ တခန်းတွဲ တိုက်ခန်း ရှာနေတာပါ။ အာမခံ စပျစ်ငွေ ဘယ်လောက်လဲရှင့်/ဗျာ။",
+            "en": "I'm looking for a one-room studio near the university. How much is the deposit?",
+            "audio": "AUD_HOUS001_L2",
+            "audio_slow": "AUD_HOUS001_L2_S",
+            "note": "Asking about one-room studio and deposit amount"
+          },
+          {
+            "line_id": "L3",
+            "speaker": "clerk",
+            "ko": "보증금 500만 원에 월세 45만 원짜리가 있어요. 관리비는 별도예요.",
+            "rom": "Bojeunggeum obaekman wone wolse sasiboman wonjjariga isseoyo. Gwanribineun byeoldoyeyo.",
+            "my": "စပျစ်ငွေ ဝမ် ၅ သန်းနဲ့ လစဉ် အိမ်ငှားခ ဝမ် ၄ သိန်းခွဲတန် ရှိပါတယ်။ စီမံခန့်ခွဲစရိတ်ကတော့ သီးသန့်ဖြစ်ပါတယ်။",
+            "en": "We have one with a 5 million won deposit and 450,000 won monthly rent. Maintenance fees are separate.",
+            "audio": "AUD_HOUS001_L3",
+            "audio_slow": "AUD_HOUS001_L3_S",
+            "note": "Explaining deposit, rent, and maintenance fees"
+          }
+        ]
+      },
+      "activities": [
+        {
+          "activity_id": "A1",
+          "type": "branch_dialogue",
+          "prompt": {
+            "my": "အိမ်ခြံမြေ ဝန်ထမ်း၏ မေးခွန်းနှင့် ရှင်းလင်းချက်ကို နားထောင်ပြီး သင့်တော်သော ဖြေဆိုမှုကို ရွေးချယ်ပါ။",
+            "ko": "부동산 직원의 질문과 설명에 따라 적절한 대답을 선택하세요.",
+            "en": "Listen to the real estate agent's explanation and select the appropriate response."
+          },
+          "entry_node": "N1",
+          "nodes": [
+            {
+              "node_id": "N1",
+              "speaker": "clerk",
+              "ko": "보통 계약 기간은 1년이나 2년이에요. 얼마동안 살 예정이신가요?",
+              "rom": "Botong gyaeyak giganeun ilnyeonina inyeonigeyo. Eolmadongan sal yejeongisingayo?",
+              "my": "ပုံမှန်အားဖြင့် စာချုပ်ကာလက ၁ နှစ် သို့မဟုတ် ၂ နှစ် ဖြစ်ပါတယ်။ ဘယ်လောက်ကြာကြာ နေထိုင်ဖို့ အစီအစဉ် ရှိပါသလဲ။",
+              "en": "Usually the contract period is 1 or 2 years. How long do you plan to stay?",
+              "choices": [
+                {
+                  "id": "C1_N1",
+                  "ko": "1년 계약으로 구하고 싶어요.",
+                  "my": "၁ နှစ် စာချုပ်နဲ့ ရှာချင်ပါတယ်။",
+                  "en": "I want a 1-year contract.",
+                  "next": "N2"
+                },
+                {
+                  "id": "C2_N1",
+                  "ko": "6개월만 살 수 있는 방은 없나요?",
+                  "my": "၆ လပဲ နေလို့ရတဲ့ အခန်းမျိုး မရှိဘူးလား။",
+                  "en": "Is there no room where I can stay for just 6 months?",
+                  "next": "N3"
+                }
+              ]
+            },
+            {
+              "node_id": "N2",
+              "speaker": "clerk",
+              "ko": "네, 1년 계약 가능합니다. 관리비에는 수도와 인터넷이 포함되어 있어요.",
+              "rom": "Ne, ilnyeon gyaeyak ganeunghamnida. Gwanribieneun sudo-wa inteonesi pohamdeo isseoyo.",
+              "my": "ဟုတ်ကဲ့၊ ၁ နှစ် စာချုပ် ရနိုင်ပါတယ်။ စီမံခန့်ခွဲစရိတ်ထဲမှာ ရေဖိုးနဲ့ အင်တာနက် ပါဝင်ပါတယ်။",
+              "en": "Yes, a 1-year contract is possible. Water and internet are included in the maintenance fee.",
+              "choices": [
+                {
+                  "id": "C1_N2",
+                  "ko": "전기세와 가스비는 따로 내야 하나요?",
+                  "my": "လျှပ်စစ်မီတာခနဲ့ ဓာတ်ငွေ့ခက သီးသန့် ပေးရတာပါလား။",
+                  "en": "Do I need to pay electricity and gas bills separately?",
+                  "next": "N4"
+                },
+                {
+                  "id": "C2_N2",
+                  "ko": "생각보다 비싸네요. 다음에 다시 올게요.",
+                  "my": "ထင်ထားတာထက် ဈေးကြီးနေလို့ နောက်မှ ပြန်လာခဲ့ပါမယ်။",
+                  "en": "It's more expensive than I thought. I will come back next time.",
+                  "next": "END"
+                }
+              ]
+            },
+            {
+              "node_id": "N3",
+              "speaker": "clerk",
+              "ko": "단기 계약은 보증금이나 월세가 조금 더 비쌀 수 있습니다. 그래도 괜찮으신가요?",
+              "rom": "Dangi gyaeyageun bojeunggeumina wolsega jogeum deo bissal su isseumnida. Geuraedo gwaenchanheusingayo?",
+              "my": "ကာလတို စာချုပ်က စပျစ်ငွေ သို့မဟုတ် လစဉ် အိမ်ငှားခ နည်းနည်း ပိုဈေးကြီးနိုင်ပါတယ်။ ဒါပေမဲ့ အဆင်ပြေပါသလား။",
+              "en": "Short-term contracts might have slightly higher deposit or monthly rent. Is that okay with you?",
+              "choices": [
+                {
+                  "id": "C1_N3",
+                  "ko": "네, 상관없습니다. 방을 먼저 볼 수 있을까요?",
+                  "my": "ဟုတ်ကဲ့၊ ရပါတယ်။ အခန်းကို အရင် ကြည့်လို့ ရမလား။",
+                  "en": "Yes, that's fine. Can I see the room first?",
+                  "next": "N4"
+                }
+              ]
+            },
+            {
+              "node_id": "N4",
+              "speaker": "clerk",
+              "ko": "네, 지금 바로 방을 보여드릴게요. 계약할 때는 외국인등록증이 필요합니다.",
+              "rom": "Ne, jigeum baro bangeul boyeodeureilgeyo. Gyaeyakhal ttaeneun oegugindeongnokjeung-i piryohamnida.",
+              "my": "ဟုတ်ကဲ့၊ အခုချက်ချင်း အခန်း လိုက်ပြပေးပါမယ်။ စာချုပ်ချုပ်တဲ့အခါ နိုင်ငံခြားသား မှတ်ပုံတင် လိုအပ်ပါတယ်။",
+              "en": "Yes, I will show you the room right now. You will need your ARC when signing the contract.",
+              "choices": [
+                {
+                  "id": "C1_N4",
+                  "ko": "알겠습니다. 방을 보여주세요.",
+                  "my": "ဟုတ်ကဲ့ နားလည်ပါပြီ။ အခန်း ပြပေးပါ။",
+                  "en": "Understood. Please show me the room.",
+                  "next": "END"
+                }
+              ]
+            }
+          ],
+          "audio_ref": "AUD_HOUS001_A1",
+          "explanation_ref": "FB_HOUS001_A1"
+        },
+        {
+          "activity_id": "A2",
+          "type": "speak",
+          "prompt": {
+            "my": "အိမ်ခြံမြေ ဝန်ထမ်းအား စပျစ်ငွေနှင့် လစဉ် အိမ်ငှားခ ဘယ်လောက်လဲဟု ယဉ်ကျေးစွာ မေးမြန်းကြည့်ပါ။",
+            "ko": "부동산 직원에게 보증금과 월세가 얼마인지 정중하게 물어보세요.",
+            "en": "Politely ask the real estate agent how much the deposit and monthly rent are."
+          },
+          "target_ko": "보증금하고 월세가 얼마예요?",
+          "min_score": 70,
+          "audio_ref": "AUD_HOUS001_A2",
+          "explanation_ref": "FB_HOUS001_A2"
+        }
+      ],
+      "feedback": {
+        "FB_HOUS001_A1": {
+          "why_wrong": {
+            "my": "အိမ်ငှားရာတွင် စာချုပ်ကာလ၊ စီမံခန့်ခွဲစရိတ်တွင် ပါဝင်သည့် အရာများနှင့် အခြား ကုန်ကျစရိတ်များကို သေချာ မေးမြန်း နားထောင်ပြီး ရွေးချယ်ရပါမည်။",
+            "ko": "원룸 계약 시 계약 기간, 관리비 포함 내역, 공과금 별도 여부를 잘 파악하여 대답해야 합니다.",
+            "en": "When negotiating a one-room contract, carefully listen to contract period details, maintenance inclusions, and utility bills."
+          },
+          "grammar": {
+            "point": "-이나 / -(이)나 (선택)",
+            "explain_my": "1년이나 2년 (၁ နှစ် သို့မဟုတ် ၂ နှစ်) ကဲ့သို့ နာမ်နှစ်ခုကြားတွင် 'သို့မဟုတ်' ဟု ရွေးချယ်မှုကို ဖော်ပြသော ဝိဘတ် ဖြစ်ပါသည်။"
+          },
+          "culture": "ကိုရီးယားတွင် အိမ်ငှားရမ်းသည့်အခါ စီမံခန့်ခွဲစရိတ် (관리비) ထဲ၌ ရေဖိုးနှင့် အင်တာနက် ပါမပါ သေချာ စစ်ဆေးရန် လိုအပ်ပါသည်။",
+          "retry_phrase": "1년 계약으로 구하고 싶어요."
+        },
+        "FB_HOUS001_A2": {
+          "why_wrong": {
+            "my": "'보증금' (စပျစ်ငွေ) နှင့် '월세' (လစဉ် အိမ်ငှားခ) အသံထွက်ကို တိကျစွာ လေ့ကျင့်ပါ၊",
+            "ko": "'보증금'과 '월세'의 정확한 발음을 연습하세요.",
+            "en": "Practice accurate pronunciation of '보증금' (deposit) and '월세' (monthly rent)."
+          },
+          "grammar": {
+            "point": "-하고 (접속조사)",
+            "explain_my": "နာမ်နှစ်ခုကို 'နှင့်/နဲ့' ဟု ဆက်သွယ်ပေးသော စကားဆက် ဝိဘတ် ဖြစ်ပါသည်။ (보증금 + 하고 + 월세)"
+          },
+          "culture": "အိမ်စာချုပ်ချုပ်ဆိုပြီးပါက ၁၄ ရက်အတွင်း ရပ်ကွက်ရုံး (주민센터) ၌ 전입신고 (ပြောင်းရွှေ့နေထိုင်ကြောင်း တိုင်ကြားခြင်း) ကို ပြုလုပ်မှသာ မိမိ၏ စပျစ်ငွေ (보증금) ကို ဥပဒေအရ အပြည့်အဝ အကာအကွယ် ရရှိမည်ဖြစ်ပါသည်။",
+          "retry_phrase": "보증금하고 월세가 얼마예요?"
+        }
+      },
+      "cultural_note": {
+        "title": {
+          "my": "ကိုရီးယားနိုင်ငံ၏ တခန်းတွဲ တိုက်ခန်း (원룸) စာချုပ်နှင့် စီမံခန့်ခွဲစရိတ်",
+          "ko": "한국의 원룸 계약과 관리비",
+          "en": "One-Room Contracts and Maintenance Fees in Korea"
+        },
+        "body": {
+          "my": "ကိုရီးယားတွင် အိမ်ငှားရမ်းသည့်အခါ စပျစ်ငွေ (보증금) နှင့် လစဉ် အိမ်ငှားခ (월세) အပြင် သန့်ရှင်းရေး၊ ဓာတ်လှေကား၊ အင်တာနက် စသည်တို့ ပါဝင်သည့် စီမံခန့်ခွဲစရိတ် (관리비) ကို သေချာ စစ်ဆေးရပါမည်။ စာချုပ်ချုပ်ပြီးပါက စပျစ်ငွေကို ဥပဒေအရ အကာအကွယ်ရရှိရန် ၁၄ ရက်အတွင်း ရပ်ကွက်ရုံး (주민센터) ၌ နေရပ်လိပ်စာ ပြောင်းရွှေ့ကြောင်း တိုင်ကြားခြင်း (전입신고) ကို ပြုလုပ်ရပါမည်။",
+          "ko": "한국에서 집을 구할 때는 보증금(Deposit)과 월세(Monthly Rent) 외에도 건물 청소, 엘리베이터, 인터넷 등이 포함된 관리비(Maintenance Fee)를 확인해야 합니다. 계약 후에는 14일 이내에 주민센터에서 전입신고를 해야 보증금을 법적으로 보호받을 수 있습니다.",
+          "en": "When renting a room in Korea, besides the deposit (보증금) and monthly rent (월세), you must check the maintenance fee (관리비) which often includes cleaning, elevator, and internet. After signing the contract, you should submit a moving-in report (전입신고) at the local community center within 14 days to legally protect your deposit."
+        },
+        "sensitive": false
+      },
+      "audio": {
+        "base_path": "audio/COMMON-HOUSING-001/",
+        "files": [
+          {
+            "id": "AUD_HOUS001_L1",
+            "normal": "L1-normal.mp3",
+            "slow": "L1-slow.mp3",
+            "duration": 2.6
+          },
+          {
+            "id": "AUD_HOUS001_L2",
+            "normal": "L2-normal.mp3",
+            "slow": "L2-slow.mp3",
+            "duration": 4.2
+          },
+          {
+            "id": "AUD_HOUS001_L3",
+            "normal": "L3-normal.mp3",
+            "slow": "L3-slow.mp3",
+            "duration": 4.8
+          },
+          {
+            "id": "AUD_HOUS001_A1",
+            "normal": "A1-normal.mp3",
+            "slow": "A1-slow.mp3",
+            "duration": 4.0
+          },
+          {
+            "id": "AUD_HOUS001_A2",
+            "normal": "A2-normal.mp3",
+            "slow": "A2-slow.mp3",
+            "duration": 3.2
+          }
+        ],
+        "spec": {
+          "sample_rate": 44100,
+          "channels": 1,
+          "format": "mp3",
+          "bitrate": 128
+        }
+      },
+      "srs": {
+        "enabled": true,
+        "cards": [
+          {
+            "card_id": "C1",
+            "front": {
+              "my": "တခန်းတွဲ တိုက်ခန်း",
+              "ko": "원룸",
+              "en": "Studio apartment (one-room)"
+            },
+            "back": {
+              "my": "တခန်းတွဲ တိုက်ခန်း",
+              "ko": "원룸",
+              "en": "Studio apartment (one-room)"
+            },
+            "audio_ref": "AUD_HOUS001_L2",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C2",
+            "front": {
+              "my": "စပျစ်ငွေ (အာမခံကြေး)",
+              "ko": "보증금",
+              "en": "Deposit"
+            },
+            "back": {
+              "my": "စပျစ်ငွေ (အာမခံကြေး)",
+              "ko": "보증금",
+              "en": "Deposit"
+            },
+            "audio_ref": "AUD_HOUS001_L2",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C3",
+            "front": {
+              "my": "လစဉ် အိမ်ငှားခ",
+              "ko": "월세",
+              "en": "Monthly rent"
+            },
+            "back": {
+              "my": "လစဉ် အိမ်ငှားခ",
+              "ko": "월세",
+              "en": "Monthly rent"
+            },
+            "audio_ref": "AUD_HOUS001_L3",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C4",
+            "front": {
+              "my": "စီမံခန့်ခွဲစရိတ်",
+              "ko": "관리비",
+              "en": "Maintenance fee"
+            },
+            "back": {
+              "my": "စီမံခန့်ခွဲစရိတ်",
+              "ko": "관리비",
+              "en": "Maintenance fee"
+            },
+            "audio_ref": "AUD_HOUS001_L3",
+            "ease": 2.5,
+            "interval": 0
+          }
+        ]
+      },
+      "assessment": {
+        "type": "mission",
+        "pass_threshold": 70,
+        "weights": {
+          "accuracy": 40,
+          "completion": 30,
+          "speaking": 30
+        },
+        "exam_mapping": {
+          "topik": null,
+          "eps_topik": null
+        }
+      }
+    }
+  ]
+}
+

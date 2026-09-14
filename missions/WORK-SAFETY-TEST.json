@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "WORK-SAFETY-TEST",
+  "title": {"my":"ဘေးအန္တရာယ်ကင်းရှင်းရေး","ko":"안전교육","en":"Safety Training"},
+  "objective": {"my":"ဘေးကင်းရေးကို လေ့လာပါ","ko":"안전 규칙을 배우세요","en":"Learn safety rules"},
+  "activities": [
+    {
+      "activity_id": "A1",
+      "type": "listen_choose",
+      "prompt": {"my":"ဘေးကင်းရေးအတွက် ဘာလိုအပ်လဲ","ko":"안전을 위해 필요한 것은?","en":"What is needed for safety?"},
+      "audio_ref": "",
+      "options": [
+        {"id":"O1","ko":"안전모 착용","my":"ဦးထုပ်ဆောင်း","correct":true},
+        {"id":"O2","ko":"뛰어다니기","my":"ပြေးလွှား","correct":false}
+      ],
+      "explanation_ref": "F1"
+    }
+  ],
+  "feedback": {
+    "F1": {
+      "why_wrong": {"my":"ဦးထုပ် ဆောင်းရမယ်","ko":"안전모를 착용하세요","en":"Wear safety helmet"},
+      "retry_phrase": "안전모"
+    }
+  }
+}

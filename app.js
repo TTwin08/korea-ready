@@ -12,6 +12,7 @@ function showGoals() {
 }
 
 function showHome() {
+  renderDashboard();
   showScreen('screen-home');
 }
 
@@ -35,6 +36,75 @@ function renderMissionList(goal) {
       var list = data.missions || [];
       var shown = 0;
 
+      for (var i = 0; i < list.length; i++) {
+        var m = list[i];
+        if (goal !== 'both' && m.goal !== goal) continue;
+        shown++;
+
+        var complete = isMissionComplete(m.mission_id);
+        var btn = document.createElement('button');
+        btn.className = 'goal-btn';
+        btn.textContent = (complete ? '✅ ' : '📄 ') +
+          m.mission_id + '\n' +
+          m.title.en + ' · ' + m.estimated_minutes + ' min';
+        btn.onclick = (function(mid) {
+          return function() { openMission(mid); };
+        })(m.mission_id);
+        container.appendChild(btn);
+      }
+
+      if (shown === 0) {
+        var empty = document.createElement('p');
+        empty.className = 'description';
+        empty.textContent = 'No missions in this goal yet.';
+        container.appendChild(empty);
+      }
+    })
+    .catch(function(err) {
+      var errEl = document.createElement('p');
+      errEl.className = 'description';
+      errEl.textContent = '⚠ Could not load mission list.';
+      container.appendChild(errEl);
+    });
+}
+
+function openMission(missionId) {
+  loadMission(missionId)
+    .then(function(data) { startMission(data); })
+    .catch(function(err) { alert('Error: ' + err.message); });
+}
+
+function exitMission() {
+  pendingRetry = null;
+  currentMission = null;
+  showMissions(currentGoal);
+}
+
+function renderDashboard() {
+  fetch('missions/index.json')
+    .then(function(res) { return res.json(); })
+    .then(function(data) {
+      var list = data.missions || [];
+      var total = list.length;
+      var completed = 0;
+
+      for (var i = 0; i < list.length; i++) {
+        if (isMissionComplete(list[i].mission_id)) completed++;
+      }
+
+      var score = total === 0 ? 0 : Math.round((completed / total) * 100);
+
+      var completedEl = document.getElementById('dash-completed');
+      var scoreEl = document.getElementById('dash-score');
+      if (completedEl) completedEl.textContent = completed + '/' + total;
+      if (scoreEl) scoreEl.textContent = score + '%';
+    })
+    .catch(function() {});
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  renderDashboard();
+});
       for (var i = 0; i < list.length; i++) {
         var m = list[i];
         if (goal !== 'both' && m.goal !== goal) continue;

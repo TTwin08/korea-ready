@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Korea Ready</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="screen-home" class="screen-section active">
+    <div class="screen">
+      <header class="app-header">
+        <h1>🇰🇷 Korea Ready</h1>
+        <p class="subtitle">Korea Readiness Training</p>
+      </header>
+      <main class="content">
+        <h2 class="welcome">Welcome!</h2>
+        <p class="description">Ready to learn Korean for your life in Korea?</p>
+        <button class="btn-primary" onclick="showGoals()">Start Learning</button>
+      </main>
+    </div>
+  </div>
+
+  <div id="screen-goals" class="screen-section">
+    <div class="screen">
+      <header class="app-header">
+        <h1>Choose your goal</h1>
+        <p class="subtitle">What brings you to Korea?</p>
+      </header>
+      <main class="content">
+        <button class="goal-btn" onclick="showMissions('common')">⭐ Common (Start Here)</button>
+        <button class="goal-btn" onclick="showMissions('study')">🎓 Study</button>
+        <button class="goal-btn" onclick="showMissions('work')">👷 Work</button>
+        <button class="goal-btn" onclick="showMissions('both')">🔄 Both</button>
+        <button class="btn-secondary" onclick="showHome()">← Back</button>
+      </main>
+    </div>
+  </div>
+
+  <div id="screen-missions" class="screen-section">
+    <div class="screen">
+      <header class="app-header">
+        <h1 id="mission-list-goal">Common Missions</h1>
+        <p class="subtitle">Tap to start</p>
+      </header>
+      <main class="content">
+        <div id="mission-list-container" class="mission-list"></div>
+        <button class="btn-secondary" onclick="showGoals()">← Back</button>
+      </main>
+    </div>
+  </div>
+
+  <div id="screen-activity" class="screen-section">
+    <div class="screen">
+      <header class="app-header">
+        <button class="exit-btn" onclick="exitMission()">✕ Exit</button>
+        <p id="activity-counter" class="subtitle">Activity 1 of 1</p>
+      </header>
+      <main class="content">
+        <div id="activity-text" class="activity-text"></div>
+        <div id="activity-choices" class="activity-choices"></div>
+      </main>
+    </div>
+  </div>
+
+  <div id="screen-feedback" class="screen-section">
+    <div class="screen">
+      <header class="app-header">
+        <h1>❌ Not quite</h1>
+        <p class="subtitle">Let's learn from this</p>
+      </header>
+      <main class="content">
+        <h2 class="welcome">Why wrong</h2>
+        <div id="feedback-why" class="activity-text"></div>
+        <h2 class="welcome">Try this instead</h2>
+        <div id="feedback-retry" class="activity-text"></div>
+        <button class="btn-primary" onclick="retryFromFeedback()">Try Again</button>
+        <button class="btn-secondary" onclick="exitMission()">Exit to Missions</button>
+      </main>
+    </div>
+  </div>
+
+  <div id="screen-end" class="screen-section">
+    <div class="screen">
+      <header class="app-header">
+        <h1>✅ Mission Complete</h1>
+        <p class="subtitle">Great work!</p>
+      </header>
+      <main class="content">
+        <h2 class="welcome">Your Score</h2>
+        <div id="end-score" class="score-big">0%</div>
+        <p class="description">Activities: <span id="end-activities">0/0</span></p>
+        <button class="btn-primary" onclick="showMissions('common')">Back to Missions</button>
+      </main>
+    </div>
+  </div>
+
+  <script src="progress.js"></script>
+  <script src="validator.js"></script>
+  <script src="loader.js"></script>
+  <script src="audio.js"></script>
+  <script src="engine.js"></script>
+  <script src="renderer.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

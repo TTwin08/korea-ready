@@ -1,0 +1,414 @@
+{
+  "__meta": {
+    "generator": "Korea Ready Mission Generator v1.0",
+    "generated_at": "2026-09-13T13:34:36Z",
+    "batch_id": "BATCH-20260913-011",
+    "request": "Generate COMMON-TRANSPORT-001"
+  },
+  "__self_check": {
+    "rules_passed": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7",
+      "R8",
+      "R9",
+      "R10",
+      "R11",
+      "R12",
+      "R13",
+      "R14",
+      "R15",
+      "R16",
+      "R17",
+      "R18",
+      "R19",
+      "R20",
+      "R21",
+      "R22",
+      "R23",
+      "R24",
+      "R25",
+      "R26"
+    ],
+    "warnings": [],
+    "uncertainties": [],
+    "external_prereqs": [
+      "COMMON-SURV-001"
+    ]
+  },
+  "missions": [
+    {
+      "schema_version": "1.0",
+      "mission_id": "COMMON-TRANSPORT-001",
+      "goal": "common",
+      "level": 2,
+      "category": "daily",
+      "industry": null,
+      "tags": [
+        "taking-taxi",
+        "daily-life",
+        "transportation",
+        "fare-payment"
+      ],
+      "title": {
+        "my": "တက္ကစီစီး၍ သွားလိုသည့်နေရာသို့ သွားခြင်း",
+        "ko": "택시 타고 목적지까지 가기",
+        "en": "Taking a Taxi to Your Destination"
+      },
+      "objective": {
+        "my": "ကိုရီးယားနိုင်ငံတွင် တက္ကစီ စီးနင်းရာ၌ သွားလိုသည့် လိပ်စာ ပြောဆိုခြင်း၊ ခရီးစဉ် သွားရောက်ပုံ၊ ယာဉ်စီးခ မေးမြန်းခြင်းနှင့် ကတ် သို့မဟုတ် ငွေသားဖြင့် ကျသင့်ငွေ ပေးချေခြင်းဆိုင်ရာ စကားပြောများကို ယဉ်ကျေးစွာ လေ့ကျင့်မည်။",
+        "ko": "한국에서 택시를 탔을 때 목적지를 말하고, 요금 문의 및 카드나 현금으로 결제하는 표현을 정중하게 연습합니다.",
+        "en": "Practice politely telling the driver your destination, asking about the fare, and paying by card or cash when taking a taxi in Korea."
+      },
+      "prerequisites": [
+        "COMMON-SURV-001"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "politeness"
+      ],
+      "estimated_minutes": 10,
+      "difficulty": "intermediate",
+      "regulated": false,
+      "status": "draft",
+      "version": 1,
+      "dialogue": {
+        "setting": {
+          "my": "တက္ကစီ ပေါ်တွင် ယာဉ်မောင်းနှင့် ခရီးသည်တို့၏ စကားပြောဆိုမှု",
+          "ko": "택시에 탑승하여 기사님과 대화함",
+          "en": "Talking with the driver after getting into a taxi"
+        },
+        "speakers": [
+          {
+            "id": "driver",
+            "role": "other",
+            "gender": "male",
+            "voice_id": "ko_m_02"
+          },
+          {
+            "id": "learner",
+            "role": "learner",
+            "gender": "any",
+            "voice_id": null
+          }
+        ],
+        "lines": [
+          {
+            "line_id": "L1",
+            "speaker": "driver",
+            "ko": "어서 오세요. 어디로 가시나요?",
+            "rom": "Eoseo oseyo. Eodeiro gasinayo?",
+            "my": "မင်္ဂလာပါ၊ ဘယ်ကို သွားမှာပါလဲ။",
+            "en": "Welcome. Where are you heading?",
+            "audio": "AUD_TRN001_L1",
+            "audio_slow": "AUD_TRN001_L1_S",
+            "note": "Standard polite greeting by taxi driver"
+          },
+          {
+            "line_id": "L2",
+            "speaker": "learner",
+            "ko": "홍대입구역으로 가주세요. 얼마나 걸려요?",
+            "rom": "Hongdaeipguyeogeuro gajuseyo. Eolmana geollyeoyo?",
+            "my": "ဟုန်းဒေး ဘူတာကို သွားပေးပါ။ ဘယ်လောက် ကြာမလဲ။",
+            "en": "Please take me to Hongdae Station. How long will it take?",
+            "audio": "AUD_TRN001_L2",
+            "audio_slow": "AUD_TRN001_L2_S",
+            "note": "Stating destination using -(으)로 가주세요 and asking duration"
+          },
+          {
+            "line_id": "L3",
+            "speaker": "driver",
+            "ko": "20분 정도 걸려요. 카카오택시로 호출하셨나요?",
+            "rom": "Isibbun jeongdo geollyeoyo. Kakaotaeksiro hochulhasennayo?",
+            "my": "မိနစ် ၂၀ လောက် ကြာပါမယ်။ Kakao Taxi အက်ပ်နဲ့ ခေါ်ထားတာပါလား။",
+            "en": "It takes about 20 minutes. Did you call via Kakao Taxi?",
+            "audio": "AUD_TRN001_L3",
+            "audio_slow": "AUD_TRN001_L3_S",
+            "note": "Driver confirming time estimate and app booking"
+          }
+        ]
+      },
+      "activities": [
+        {
+          "activity_id": "A1",
+          "type": "branch_dialogue",
+          "prompt": {
+            "my": "တက္ကစီ ယာဉ်မောင်း၏ မေးခွန်းကို နားထောင်ပြီး သင့်တော်သော ဖြေဆိုမှုကို ရွေးချယ်ပါ။",
+            "ko": "택시 기사님의 질문을 듣고 적절한 대답을 선택하세요.",
+            "en": "Listen to the taxi driver's questions and select the appropriate response."
+          },
+          "entry_node": "N1",
+          "nodes": [
+            {
+              "node_id": "N1",
+              "speaker": "driver",
+              "ko": "네, 20분 정도 걸립니다. 목적지 근처에서 내려드릴까요?",
+              "rom": "Ne, isibbun jeongdo geollimnida. Mokjeokji geuncheoeseo naeryeodeureilkgayo?",
+              "my": "ဟုတ်ကဲ့၊ မိနစ် ၂၀ လောက် ကြာပါမယ်။ သွားလိုတဲ့ နေရာ အနီးမှာ ဆင်းပေးရမလား။",
+              "en": "Yes, it takes about 20 minutes. Should I drop you off near your destination?",
+              "choices": [
+                {
+                  "id": "C1_N1",
+                  "ko": "네, 지하철역 2번 출구 앞에서 내려주세요.",
+                  "my": "ဟုတ်ကဲ့၊ ဓာတ်ရထားဘူတာ ထွက်ပေါက် ၂ အရှေ့မှာ ဆင်းပေးပါ။",
+                  "en": "Yes, please drop me off in front of subway Exit 2.",
+                  "next": "N2"
+                },
+                {
+                  "id": "C2_N1",
+                  "ko": "조금 더 가서 정문 앞에서 내려주세요.",
+                  "my": "နည်းနည်း ပိုသွားပြီး ပင်မဝင်ပေါက် အရှေ့မှာ ဆင်းပေးပါ။",
+                  "en": "Please go a bit further and drop me off in front of the main gate.",
+                  "next": "N3"
+                }
+              ]
+            },
+            {
+              "node_id": "N2",
+              "speaker": "driver",
+              "ko": "알겠습니다. 요금은 12,000원입니다. 어떻게 결제하시겠어요?",
+              "rom": "Algetseumnida. Yogumeun manichonwonimnida. Eotteokhe gyeoljehasigesseoyo?",
+              "my": "ဟုတ်ကဲ့ နားလည်ပါပြီ။ ကျသင့်ငွေ ၁၂,၀၀၀ ဝမ် ဖြစ်ပါတယ်။ ဘယ်လို ငွေပေးချေမလဲ။",
+              "en": "Understood. The fare is 12,000 won. How would you like to pay?",
+              "choices": [
+                {
+                  "id": "C1_N2",
+                  "ko": "카드로 결제할게요. 신용카드 돼요?",
+                  "my": "ကတ်နဲ့ ပေးချေပါမယ်။ ခရက်ဒစ်ကတ် ရပါသလား။",
+                  "en": "I will pay by card. Do you accept credit cards?",
+                  "next": "N4"
+                },
+                {
+                  "id": "C2_N2",
+                  "ko": "현금으로 낼게요. 여기 있어요.",
+                  "my": "ငွေသားနဲ့ ပေးပါမယ်။ ဒီမှာပါခင်ဗျာ/ရှင့်။",
+                  "en": "I will pay in cash. Here you go.",
+                  "next": "N4"
+                }
+              ]
+            },
+            {
+              "node_id": "N3",
+              "speaker": "driver",
+              "ko": "네, 알겠습니다. 다 왔습니다. 요금은 13,000원입니다.",
+              "rom": "Ne, algetseumnida. Da watseumnida. Yogumeun mansamchonwonimnida.",
+              "my": "ဟုတ်ကဲ့ နားလည်ပါပြီ။ ရောက်ပါပြီ။ ကျသင့်ငွေ ၁၃,၀၀၀ ဝမ် ဖြစ်ပါတယ်။",
+              "en": "Yes, understood. We have arrived. The fare is 13,000 won.",
+              "choices": [
+                {
+                  "id": "C1_N3",
+                  "ko": "교통카드로 결제해도 되나요?",
+                  "my": "သယ်ယူပို့ဆောင်ရေး ကတ် (T-money) နဲ့ ပေးချေလို့ ရပါသလား။",
+                  "en": "Can I pay with a transportation card?",
+                  "next": "N4"
+                }
+              ]
+            },
+            {
+              "node_id": "N4",
+              "speaker": "driver",
+              "ko": "네, 결제 되었습니다. 안녕히 가세요.",
+              "rom": "Ne, gyeolje doeotseumnida. Annyeonghi gaseyo.",
+              "my": "ဟုတ်ကဲ့၊ ငွေပေးချေမှု ပြီးပါပြီ။ ကောင်းကောင်း သွားပါ။",
+              "en": "Yes, payment is complete. Goodbye.",
+              "choices": [
+                {
+                  "id": "C1_N4",
+                  "ko": "감사합니다. 안녕히 계세요.",
+                  "my": "ကျေးဇူးတင်ပါတယ်။ သွားပါပြီ ခင်ဗျာ/ရှင့်။",
+                  "en": "Thank you. Goodbye.",
+                  "next": "END"
+                }
+              ]
+            }
+          ],
+          "audio_ref": "AUD_TRN001_A1",
+          "explanation_ref": "FB_TRN001_A1"
+        },
+        {
+          "activity_id": "A2",
+          "type": "speak",
+          "prompt": {
+            "my": "တက္ကစီ ယာဉ်မောင်းအား 'ဟုန်းဒေး ဘူတာသို့ သွားပေးပါ' ဟု ယဉ်ကျေးစွာ ပြောဆိုပါ။",
+            "ko": "택시 기사님에게 '홍대입구역으로 가주세요'라고 정중하게 말해 보세요.",
+            "en": "Politely ask the taxi driver to take you to Hongdae Station."
+          },
+          "target_ko": "홍대입구역으로 가주세요.",
+          "min_score": 70,
+          "audio_ref": "AUD_TRN001_A2",
+          "explanation_ref": "FB_TRN001_A2"
+        }
+      ],
+      "feedback": {
+        "FB_TRN001_A1": {
+          "why_wrong": {
+            "my": "တက္ကစီ စီးနင်းစဉ် ဆင်းလိုသည့် နေရာ တိကျစွာ ပြောဆိုခြင်းနှင့် ကတ်/ငွေသား ငွေပေးချေမှု ပုံစံများကို နားထောင်၍ မှန်ကန်စွာ ရွေးချယ်ရပါမည်။",
+            "ko": "택시 탑승 시 목적지 하차 위치 표현과 카드/현금 결제 방식을 잘 확인하여 대답해야 합니다.",
+            "en": "Carefully select answers regarding drop-off points and card or cash payment methods when taking a taxi."
+          },
+          "grammar": {
+            "point": "-(으)로 가주세요 / -아/어 주세요",
+            "explain_my": "'-(으)로' (ဦးတည်ရာ ဝိဘတ်) နှင့် '-아/어 주세요' (ပြုလုပ်ပေးပါ) ကို တွဲသုံး၍ သွားလိုသည့် နေရာသို့ သွားပေးရန် တောင်းဆိုသော ပုံစံ ဖြစ်ပါသည်။"
+          },
+          "culture": "ကိုရီးယား တက္ကစီ အများစုတွင် ခရက်ဒစ်ကတ်၊ ဒက်ဘစ်ကတ် သာမက T-money သယ်ယူပို့ဆောင်ရေး ကတ် (교통카드) ဖြင့်ပါ လွယ်ကူစွာ ငွေပေးချေနိုင်ပါသည်။",
+          "retry_phrase": "네, 지하철역 2번 출구 앞에서 내려주세요."
+        },
+        "FB_TRN001_A2": {
+          "why_wrong": {
+            "my": "'홍대입구역으로' (ဟုန်းဒေး ဘူတာသို့) နှင့် '가주세요' (သွားပေးပါ) ကို တိကျစွာ အသံထွက်၍ ပြောဆိုရပါမည်။",
+            "ko": "'홍대입구역으로'와 '가주세요'의 accurate한 발음을 연습하세요.",
+            "en": "Practice accurate pronunciation of '홍대입구역으로' (to Hongdae Station) and '가주세요' (please go to)."
+          },
+          "grammar": {
+            "point": "-(으)로 (방향)",
+            "explain_my": "ဦးတည်ရာ သို့မဟုတ် သွားလိုသည့် နေရာကို ညွှန်ပြသော ဝိဘတ် ဖြစ်ပါသည်။ (홍대입구역 + 으로)"
+          },
+          "culture": "ကိုရီးယားတွင် Kakao T (카카오 T) အက်ပ်ကို အသုံးပြု၍ တက္ကစီ လွယ်ကူစွာ ခေါ်ယူနိုင်ပြီး အက်ပ်ထဲတွင် ကတ် ချိတ်ဆက်ထားပါက စီးနင်းပြီးသည်နှင့် အလိုအလျောက် ငွေပေးချေမှု ပြီးစီးပါသည်။",
+          "retry_phrase": "홍대입구역으로 가주세요."
+        }
+      },
+      "cultural_note": {
+        "title": {
+          "my": "ကိုရီးယားနိုင်ငံ၏ တက္ကစီ စီးနင်းမှုနှင့် Kakao T အက်ပ်",
+          "ko": "한국의 택시 이용 및 카카오 T 앱",
+          "en": "Taking Taxis and Kakao T App in Korea"
+        },
+        "body": {
+          "my": "ကိုရီးယားတွင် လမ်းဘေး၌ တက္ကစီ (일반택시) တားစီးနိုင်သကဲ့သို့ Kakao T (카카오 T) အက်ပ်မှတစ်ဆင့်လည်း လွယ်ကူစွာ ခေါ်ယူနိုင်ပါသည်။ တက္ကစီ ယာဉ်စီးခကို ခရက်ဒစ်ကတ်၊ ဒက်ဘစ်ကတ် သို့မဟုတ် T-money သယ်ယူပို့ဆောင်ရေး ကတ် (교통카드) ဖြင့် ပေးချေနိုင်သဖြင့် အလွန် အဆင်ပြေပါသည်။",
+          "ko": "한국에서는 길거리에서 일반 택시를 잡을 수도 있고, 카카오 T 앱을 통해 호출할 수도 있습니다. 택시 요금은 신용카드, 체크카드, 교통카드(T-money)로 모두 결제 가능하여 매우 편리합니다.",
+          "en": "In Korea, you can hail a regular taxi on the street or easily call one using the Kakao T app. Taxi fares can be paid using credit cards, debit cards, or T-money transit cards, making it very convenient."
+        },
+        "sensitive": false
+      },
+      "audio": {
+        "base_path": "audio/COMMON-TRANSPORT-001/",
+        "files": [
+          {
+            "id": "AUD_TRN001_L1",
+            "normal": "L1-normal.mp3",
+            "slow": "L1-slow.mp3",
+            "duration": 2.5
+          },
+          {
+            "id": "AUD_TRN001_L2",
+            "normal": "L2-normal.mp3",
+            "slow": "L2-slow.mp3",
+            "duration": 3.8
+          },
+          {
+            "id": "AUD_TRN001_L3",
+            "normal": "L3-normal.mp3",
+            "slow": "L3-slow.mp3",
+            "duration": 4.1
+          },
+          {
+            "id": "AUD_TRN001_A1",
+            "normal": "A1-normal.mp3",
+            "slow": "A1-slow.mp3",
+            "duration": 3.9
+          },
+          {
+            "id": "AUD_TRN001_A2",
+            "normal": "A2-normal.mp3",
+            "slow": "A2-slow.mp3",
+            "duration": 3.0
+          }
+        ],
+        "spec": {
+          "sample_rate": 44100,
+          "channels": 1,
+          "format": "mp3",
+          "bitrate": 128
+        }
+      },
+      "srs": {
+        "enabled": true,
+        "cards": [
+          {
+            "card_id": "C1",
+            "front": {
+              "my": "တက္ကစီ",
+              "ko": "택시",
+              "en": "Taxi"
+            },
+            "back": {
+              "my": "တက္ကစီ",
+              "ko": "택시",
+              "en": "Taxi"
+            },
+            "audio_ref": "AUD_TRN001_L1",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C2",
+            "front": {
+              "my": "သွားလိုသည့်နေရာ (ခရီးဆုံး)",
+              "ko": "목적지",
+              "en": "Destination"
+            },
+            "back": {
+              "my": "သွားလိုသည့်နေရာ (ခရီးဆုံး)",
+              "ko": "목적지",
+              "en": "Destination"
+            },
+            "audio_ref": "AUD_TRN001_A1",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C3",
+            "front": {
+              "my": "ယာဉ်စီးခ / ကျသင့်ငွေ",
+              "ko": "요금",
+              "en": "Fare"
+            },
+            "back": {
+              "my": "ယာဉ်စီးခ / ကျသင့်ငွေ",
+              "ko": "요금",
+              "en": "Fare"
+            },
+            "audio_ref": "AUD_TRN001_L3",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C4",
+            "front": {
+              "my": "ငွေပေးချေခြင်း",
+              "ko": "결제",
+              "en": "Payment"
+            },
+            "back": {
+              "my": "ငွေပေးချေခြင်း",
+              "ko": "결제",
+              "en": "Payment"
+            },
+            "audio_ref": "AUD_TRN001_A1",
+            "ease": 2.5,
+            "interval": 0
+          }
+        ]
+      },
+      "assessment": {
+        "type": "mission",
+        "pass_threshold": 70,
+        "weights": {
+          "accuracy": 40,
+          "completion": 30,
+          "speaking": 30
+        },
+        "exam_mapping": {
+          "topik": null,
+          "eps_topik": null
+        }
+      }
+    }
+  ]
+}
+

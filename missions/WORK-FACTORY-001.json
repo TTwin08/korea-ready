@@ -1,0 +1,350 @@
+{
+  "__meta": {
+    "generator": "Korea Ready Mission Generator v1.0",
+    "generated_at": "2026-09-12T13:14:07Z",
+    "batch_id": "BATCH-20260912-014",
+    "request": "Generate WORK-FACTORY-001: goal: work, level: 2, category: industry, industry: factory, theme: First day orientation at a factory (공장 첫날 오리엔테이션), skills: listening, speaking, politeness, estimated_minutes: 10, difficulty: intermediate"
+  },
+  "__self_check": {
+    "rules_passed": [
+      "R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9", "R10",
+      "R11", "R12", "R13", "R14", "R15", "R16", "R17", "R18", "R19",
+      "R20", "R21", "R22", "R23", "R24", "R25", "R26"
+    ],
+    "warnings": [],
+    "uncertainties": [],
+    "external_prereqs": []
+  },
+  "missions": [
+    {
+      "schema_version": "1.0",
+      "mission_id": "WORK-FACTORY-001",
+      "goal": "work",
+      "level": 2,
+      "category": "industry",
+      "industry": "factory",
+      "tags": [
+        "factory",
+        "orientation",
+        "first-day",
+        "workplace",
+        "safety"
+      ],
+      "title": {
+        "ko": "공장 첫날 오리엔테이션",
+        "my": "စက်ရုံ ပထမဆုံးနေ့ မိတ်ဆက်ရှင်းလင်းပွဲ",
+        "en": "First Day Orientation at the Factory"
+      },
+      "objective": {
+        "ko": "공장 첫날 작업반장님의 안내를 듣고, 안전 수칙과 기본 규칙에 대해 정중하게 질문할 수 있다.",
+        "my": "စက်ရုံပထမဆုံးနေ့တွင် အလုပ်ရုံမှူး၏ ရှင်းလင်းပြောကြားချက်ကို နားထောင်ပြီး ဘေးကင်းရေး စည်းမျဉ်းများနှင့် အခြေခံ စည်းကမ်းများကို ယဉ်ကျေးစွာ မေးမြန်းနိုင်မည်။",
+        "en": "Listen to the supervisor's guidance on the first day at the factory and politely ask questions about safety rules and basic guidelines."
+      },
+      "cultural_note": {
+        "title": {
+          "ko": "한국 공장의 첫날 인사와 안전모 착용",
+          "my": "ကိုရီးယား စက်ရုံ၏ ပထမဆုံးနေ့ နှုတ်ဆက်ခြင်းနှင့် ဘေးကင်းရေး ဦးထုပ် ဆောင်းခြင်း",
+          "en": "First Day Greetings and Wearing Safety Helmets in Korean Factories"
+        },
+        "body": {
+          "ko": "한국의 제조 공장에서는 첫날 작업반장님과 동료들에게 '잘 부탁드립니다'라고 인사합니다. 작업장에 들어갈 때는 반드시 안전모와 안전화를 착용해야 하며, 안내 사항을 주의 깊게 들어야 합니다.",
+          "my": "ကိုရီးယား ကုန်ထုတ်စက်ရုံများတွင် ပထမဆုံးနေ့၌ အလုပ်ရုံမှူးနှင့် လုပ်ဖော်ကိုင်ဖက်များအား '잘 부탁드립니다' (ကူညီစောင့်ရှောက်ပေးပါရန် မေတ္တာရပ်ခံပါသည်) ဟု နှုတ်ဆက်ရပါမည်။ အလုပ်ခွင်ထဲသို့ ဝင်ရောက်သည့်အခါ ဘေးကင်းရေး ဦးထုပ်နှင့် ဘေးကင်းရေး ဖိနပ်များကို မဖြစ်မနေ ဝတ်ဆင်ရမည်ဖြစ်ပြီး ညွှန်ကြားချက်များကို သေချာစွာ နားထောင်ရပါမည်။",
+          "en": "In Korean manufacturing factories, on your first day, you greet your supervisor and colleagues with 'Jal 부탁드립니다' (Please look after me). When entering the workplace, you must wear a safety helmet and safety shoes, and carefully listen to instructions."
+        }
+      },
+      "skills": [
+        "listening",
+        "speaking",
+        "politeness"
+      ],
+      "estimated_minutes": 10,
+      "difficulty": "intermediate",
+      "status": "draft",
+      "version": 1,
+      "regulated": false,
+      "prerequisites": [],
+      "dialogue": {
+        "setting": {
+          "ko": "공장 첫날 작업반장님에게 작업장 안전 수칙을 안내받는 상황",
+          "my": "စက်ရုံ ပထမဆုံးနေ့တွင် အလုပ်ရုံမှူးထံမှ အလုပ်ခွင် ဘေးကင်းရေး စည်းမျဉ်းများကို လမ်းညွှန်ချက် ခံယူနေသည့် အခြေအနေ",
+          "en": "Receiving guidance on workplace safety rules from the factory supervisor on the first day."
+        },
+        "speakers": [
+          {
+            "id": "supervisor",
+            "role": "other",
+            "gender": "male",
+            "voice_id": "ko_m_01"
+          },
+          {
+            "id": "learner",
+            "role": "learner",
+            "gender": "any",
+            "voice_id": null
+          }
+        ],
+        "lines": [
+          {
+            "line_id": "L1",
+            "speaker": "supervisor",
+            "ko": "오늘부터 같이 일하게 된 신입 사원입니다. 먼저 작업장 안전 수칙부터 설명해 줄게요.",
+            "rom": "oneulbuteo gachi ilhage doen sinip sawon-imnida. meonje jak-eopjang anjeon suchikbuteo seolmyeonghae julgeyo.",
+            "my": "ဒီနေ့ကစပြီး အတူတူ အလုပ်လုပ်ရမယ့် ဝန်ထမ်းသစ် ဖြစ်ပါတယ်။ ပထမဆုံး အလုပ်ခွင် ဘေးကင်းရေး စည်းမျဉ်းများမှ စပြီး ရှင်းပြပေးပါမယ်။",
+            "en": "This is our new employee joining us today. First, I'll explain the workplace safety rules.",
+            "audio": "AUD_WORK001_L1",
+            "audio_slow": "AUD_WORK001_L1_S",
+            "note": "Introducing new employee and orientation focus"
+          },
+          {
+            "line_id": "L2",
+            "speaker": "learner",
+            "ko": "네, 반장님! 잘 부탁드립니다. 열심히 배우겠습니다.",
+            "rom": "ne, banjangnim! jal boutakdeurimnida. yeolsimhi baeugesseumnida.",
+            "my": "ဟုတ်ကဲ့၊ အလုပ်ရုံမှူး။ ကူညီစောင့်ရှောက်ပေးပါ။ ကြိုးစားပြီး သင်ယူပါ့မယ်။",
+            "en": "Yes, Supervisor! Nice to meet you. I will learn diligently.",
+            "audio": "AUD_WORK001_L2",
+            "audio_slow": "AUD_WORK001_L2_S",
+            "note": "Polite greeting using title '반장님'"
+          },
+          {
+            "line_id": "L3",
+            "speaker": "supervisor",
+            "ko": "작업장 안에서는 항상 안전모와 안전화를 착용해야 합니다. 아시겠어요?",
+            "rom": "jak-eopjang an-eseoneun hangsang anjeonmo-wa anjeonhwa-reul chakyonghaeya hamnida. asigesseoyo?",
+            "my": "အလုပ်ခွင်ထဲမှာ အမြဲတမ်း ဘေးကင်းရေး ဦးထုပ်နဲ့ ဘေးကင်းရေး ဖိနပ်ကို ဝတ်ဆင်ရပါမယ်။ နားလည်ပါသလား။",
+            "en": "Inside the workplace, you must always wear a safety helmet and safety shoes. Do you understand?",
+            "audio": "AUD_WORK001_L3",
+            "audio_slow": "AUD_WORK001_L3_S",
+            "note": "Emphasizing mandatory safety equipment"
+          },
+          {
+            "line_id": "L4",
+            "speaker": "learner",
+            "ko": "네, 알겠습니다. 작업 중에 궁금한 것이 있으면 바로 여쭤보겠습니다.",
+            "rom": "ne, algesseumnida. jak-eop jung-e gunggeumhan geos-i isseumyeon baro yeojjwo-bogesseumnida.",
+            "my": "ဟုတ်ကဲ့၊ နားလည်ပါပြီ။ အလုပ်လုပ်နေစဉ် နားမလည်တာရှိရင် ချက်ချင်း မေးမြန်းပါ့မယ်။",
+            "en": "Yes, I understand. If I have any questions while working, I will ask right away.",
+            "audio": "AUD_WORK001_L4",
+            "audio_slow": "AUD_WORK001_L4_S",
+            "note": "Acknowledging safety instructions politely"
+          }
+        ]
+      },
+      "activities": [
+        {
+          "activity_id": "A1",
+          "type": "branch_dialogue",
+          "prompt": {
+            "ko": "작업반장님과 대화하여 첫날 오리엔테이션에 적극적으로 참여해 보세요.",
+            "my": "အလုပ်ရုံမှူးနှင့် စကားပြောပြီး ပထမဆုံးနေ့ မိတ်ဆက်ရှင်းလင်းပွဲတွင် တက်ကြွစွာ ပါဝင်ကြည့်ပါ။",
+            "en": "Talk to the supervisor and actively participate in the first-day orientation."
+          },
+          "entry_node": "N1",
+          "nodes": [
+            {
+              "node_id": "N1",
+              "speaker": "supervisor",
+              "ko": "오늘부터 우리 공장에서 일하게 되었는데, 작업장 안내를 시작하겠습니다.",
+              "rom": "oneulbuteo uri gongjang-eseo ilhage doeoenneunde, jak-eopjang annae-reul sijak-hagesseumnida.",
+              "my": "ဒီနေ့ကစပြီး ငါတို့စက်ရုံမှာ အလုပ်လုပ်ရတော့မှာဖြစ်လို့ အလုပ်ခွင် မိတ်ဆက်လမ်းညွှန်မှုကို စတင်ပါ့မယ်။",
+              "en": "You are starting work at our factory today, so I will begin the workplace orientation.",
+              "choices": [
+                {
+                  "id": "C1_N1",
+                  "ko": "네, 반장님! 잘 부탁드립니다.",
+                  "my": "ဟုတ်ကဲ့၊ အလုပ်ရုံမှူး။ ကူညီစောင့်ရှောက်ပေးပါ။",
+                  "en": "Yes, Supervisor! Please look after me.",
+                  "next": "N2"
+                },
+                {
+                  "id": "C2_N1",
+                  "ko": "네, 열심히 배우겠습니다!",
+                  "my": "ဟုတ်ကဲ့၊ ကြိုးစားပြီး သင်ယူပါ့မယ်။",
+                  "en": "Yes, I will learn diligently!",
+                  "next": "N2"
+                }
+              ]
+            },
+            {
+              "node_id": "N2",
+              "speaker": "supervisor",
+              "ko": "작업할 때 가장 중요한 것은 안전입니다. 안전모를 착용하는 방법을 아시나요?",
+              "rom": "jak-eophal ttae gajang jung-yohan geos-eun anjeon-imnida. anjeonmo-reul chakyonghaneun bangbeob-eul asinayo?",
+              "my": "အလုပ်လုပ်တဲ့အခါ အရေးကြီးဆုံးက ဘေးကင်းရေးဖြစ်ပါတယ်။ ဘေးကင်းရေး ဦးထုပ် ဆောင်းနည်းကို သိပါသလား။",
+              "en": "The most important thing when working is safety. Do you know how to wear a safety helmet?",
+              "choices": [
+                {
+                  "id": "C1_N2",
+                  "ko": "네, 교육을 받았지만 다시 설명해 주시면 감사하겠습니다.",
+                  "my": "ဟုတ်ကဲ့၊ သင်တန်းတက်ခဲ့ဖူးပေမယ့် နောက်တစ်ကြိမ် ပြန်လည်ရှင်းပြပေးရင် ကျေးဇူးတင်ပါမယ်။",
+                  "en": "Yes, I received training, but I would appreciate it if you could explain it again.",
+                  "next": "N3"
+                },
+                {
+                  "id": "C2_N2",
+                  "ko": "잘 모르겠습니다. 정확한 착용 방법을 알려주세요.",
+                  "my": "သေချာ မသိပါဘူး။ တိကျတဲ့ ဆောင်းနည်းကို ပြောပြပေးပါ။",
+                  "en": "I don't know well. Please show me the exact way to wear it.",
+                  "next": "N3"
+                }
+              ]
+            },
+            {
+              "node_id": "N3",
+              "speaker": "supervisor",
+              "ko": "좋습니다. 머리에 맞게 끈을 조이고 턱 끈도 꼭 매세요. 질문이 더 있나요?",
+              "rom": "joseumnida. meori-e matge kkeun-eul jo-igo teok kkeun-do kkok maeseyo. jilmun-i deo innayo?",
+              "my": "ကောင်းပါပြီ။ ခေါင်းနဲ့ တော်အောင် ကြိုးကို စည်းပြီး မေးစေ့ကြိုးကိုလည်း မဖြစ်မနေ ချည်ပါ။ မေးစရာ ကျန်ပါသေးသလား။",
+              "en": "Good. Adjust the strap to fit your head and make sure to fasten the chin strap. Do you have any more questions?",
+              "choices": [
+                {
+                  "id": "C1_N3",
+                  "ko": "아닙니다, 다 이해했습니다. 감사합니다!",
+                  "my": "မဟုတ်ပါဘူး၊ အားလုံး နားလည်ပါပြီ။ ကျေးဇူးတင်ပါတယ်!",
+                  "en": "No, I understood everything. Thank you!",
+                  "next": "END"
+                },
+                {
+                  "id": "C2_N3",
+                  "ko": "작업장 위치를 확인했습니다. 열심히 하겠습니다!",
+                  "my": "အလုပ်ခွင် နေရာကို စစ်ဆေးပြီးပါပြီ။ ကြိုးစားပါ့မယ်!",
+                  "en": "I confirmed the workplace location. I will work hard!",
+                  "next": "END"
+                }
+              ]
+            }
+          ],
+          "audio_ref": "AUD_WORK001_N1",
+          "explanation_ref": "FB_WORK001_A1"
+        },
+        {
+          "activity_id": "A2",
+          "type": "speak",
+          "prompt": {
+            "ko": "반장님에게 자신을 소개하며 정중하게 인사해 보세요.",
+            "my": "အလုပ်ရုံမှူးအား မိမိကိုယ်ကို မိတ်ဆက်ပြီး ယဉ်ကျေးစွာ နှုတ်ဆက်ကြည့်ပါ။",
+            "en": "Introduce yourself to the supervisor and greet him politely."
+          },
+          "target_ko": "네, 반장님! 잘 부탁드립니다.",
+          "min_score": 60,
+          "audio_ref": "AUD_WORK001_L2",
+          "explanation_ref": "FB_WORK001_A2"
+        }
+      ],
+      "audio": {
+        "spec": {
+          "sample_rate": 44100,
+          "channels": 1,
+          "format": "mp3",
+          "bitrate": 128
+        },
+        "files": [
+          {
+            "id": "AUD_WORK001_L1",
+            "normal": "work_factory_001_l1_norm.mp3",
+            "slow": "work_factory_001_l1_slow.mp3",
+            "duration": 4.1
+          },
+          {
+            "id": "AUD_WORK001_L2",
+            "normal": "work_factory_001_l2_norm.mp3",
+            "slow": "work_factory_001_l2_slow.mp3",
+            "duration": 3.5
+          },
+          {
+            "id": "AUD_WORK001_L3",
+            "normal": "work_factory_001_l3_norm.mp3",
+            "slow": "work_factory_001_l3_slow.mp3",
+            "duration": 4.3
+          },
+          {
+            "id": "AUD_WORK001_L4",
+            "normal": "work_factory_001_l4_norm.mp3",
+            "slow": "work_factory_001_l4_slow.mp3",
+            "duration": 4.0
+          },
+          {
+            "id": "AUD_WORK001_N1",
+            "normal": "work_factory_001_n1_norm.mp3",
+            "slow": "work_factory_001_n1_slow.mp3",
+            "duration": 3.9
+          }
+        ]
+      },
+      "feedback": {
+        "FB_WORK001_A1": {
+          "why_wrong": {
+            "ko": "작업반장님의 안내를 경청하고 공장 규율에 맞는 정중한 대답을 선택하세요.",
+            "my": "အလုပ်ရုံမှူး၏ လမ်းညွှန်ချက်ကို သေချာနားထောင်ပြီး စက်ရုံ စည်းကမ်းနှင့် ကိုက်ညီသော ယဉ်ကျေးသည့် အဖြေကို ရွေးချယ်ပါ။",
+            "en": "Listen carefully to the supervisor and select polite responses suitable for factory discipline."
+          },
+          "grammar": {
+            "point": "잘 부탁드립니다 / -겠습니다",
+            "explain_my": "အလုပ်ခွင်တွင် ပထမဆုံးနေ့ နှုတ်ဆက်သည့်အခါ '잘 부탁드립니다' (ကူညီစောင့်ရှောက်ပေးပါ) နှင့် '열심히 하겠습니다' (ကြိုးစားပါ့မည်) ဟူသော အသုံးအနှုန်းကို အဓိက အသုံးပြုပါသည်။"
+          },
+          "culture": "한국 공장에서는 직급 뒤에 '님'을 붙여 '반장님', '팀장님'으로 부르는 것이 예의입니다.",
+          "retry_phrase": "다시 선택해 보세요."
+        },
+        "FB_WORK001_A2": {
+          "why_wrong": {
+            "ko": "'네, 반장님! 잘 부탁드립니다.' 문장을 정중하게 발음해 보세요.",
+            "my": "'네, 반장님! 잘 부탁드립니다.' စာကြောင်းကို ယဉ်ကျေးတိကျစွာ အသံထွက် ပြောဆိုကြည့်ပါ။",
+            "en": "Pronounce 'Yes, Supervisor! Nice to meet you.' politely and clearly."
+          },
+          "retry_phrase": "네, 반장님! 잘 부탁드립니다."
+        }
+      },
+      "srs": {
+        "enabled": true,
+        "cards": [
+          {
+            "card_id": "C1",
+            "front": {
+              "ko": "작업반장님",
+              "my": "အလုပ်ရုံမှူး",
+              "en": "Factory Supervisor"
+            },
+            "back": {
+              "ko": "네, 반장님! 잘 부탁드립니다.",
+              "my": "ဟုတ်ကဲ့၊ အလုပ်ရုံမှူး။ ကူညီစောင့်ရှောက်ပေးပါ။",
+              "en": "Yes, Supervisor! Please look after me."
+            },
+            "audio_ref": "AUD_WORK001_L2",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C2",
+            "front": {
+              "ko": "안전모",
+              "my": "ဘေးကင်းရေး ဦးထုပ်",
+              "en": "Safety Helmet"
+            },
+            "back": {
+              "ko": "작업장에서는 항상 안전모를 착용해야 합니다.",
+              "my": "အလုပ်ခွင်ထဲမှာ အမြဲတမ်း ဘေးကင်းရေး ဦးထုပ်ကို ဝတ်ဆင်ရပါမယ်။",
+              "en": "You must always wear a safety helmet in the workplace."
+            },
+            "audio_ref": "AUD_WORK001_L3",
+            "ease": 2.5,
+            "interval": 0
+          }
+        ]
+      },
+      "assessment": {
+        "type": "mission",
+        "pass_threshold": 70,
+        "weights": {
+          "accuracy": 40,
+          "completion": 30,
+          "speaking": 30
+        },
+        "exam_mapping": {
+          "topik": null,
+          "eps_topik": "EPS_TOPIK_INDUSTRY_FACTORY"
+        }
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,398 @@
+{
+  "__meta": {
+    "generator": "Korea Ready Mission Generator v1.0",
+    "generated_at": "2026-09-13T13:10:25Z",
+    "batch_id": "BATCH-20260913-007",
+    "request": "Generate COMMON-HEALTH-001"
+  },
+  "__self_check": {
+    "rules_passed": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7",
+      "R8",
+      "R9",
+      "R10",
+      "R11",
+      "R12",
+      "R13",
+      "R14",
+      "R15",
+      "R16",
+      "R17",
+      "R18",
+      "R19",
+      "R20",
+      "R21",
+      "R22",
+      "R23",
+      "R24",
+      "R25",
+      "R26"
+    ],
+    "warnings": [],
+    "uncertainties": [],
+    "external_prereqs": [
+      "COMMON-SURV-001"
+    ]
+  },
+  "missions": [
+    {
+      "schema_version": "1.0",
+      "mission_id": "COMMON-HEALTH-001",
+      "goal": "common",
+      "level": 2,
+      "category": "daily",
+      "industry": null,
+      "tags": [
+        "visiting-clinic",
+        "fever-symptoms",
+        "daily-life",
+        "health"
+      ],
+      "title": {
+        "my": "ဖျားပြီး ဆေးခန်းသွားပြခြင်း",
+        "ko": "열이 나서 병원 방문하기",
+        "en": "Visiting a Clinic with a Fever"
+      },
+      "objective": {
+        "my": "ကိုရီးယားနိုင်ငံ ဆေးခန်းတွင် ဖျားနာခြင်းနှင့် အေးမိခြင်း လက္ခဏာများကို ဆရာဝန်အား ယဉ်ကျေးစွာ ပြောပြပြီး ဆေးညွှန်း ရယူနိုင်ရန် လေ့ကျင့်မည်။",
+        "ko": "한국 의원에서 열과 감기 증상을 의사에게 정중하게 설명하고 처방전을 받는 방법을 연습합니다.",
+        "en": "Practice politely explaining fever and cold symptoms to a doctor at a clinic in Korea and receiving a prescription."
+      },
+      "prerequisites": [
+        "COMMON-SURV-001"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "politeness"
+      ],
+      "estimated_minutes": 10,
+      "difficulty": "intermediate",
+      "regulated": false,
+      "status": "draft",
+      "version": 1,
+      "dialogue": {
+        "setting": {
+          "my": "ဖျားပြီး ချောင်းဆိုး၍ အတွင်းဆေးခန်းသို့ သွားရောက်ပြသခြင်း",
+          "ko": "열과 기침 증상으로 내과 의원을 방문함",
+          "en": "Visiting an internal medicine clinic with a fever and cough"
+        },
+        "speakers": [
+          {
+            "id": "doctor",
+            "role": "doctor",
+            "gender": "male",
+            "voice_id": "ko_m_01"
+          },
+          {
+            "id": "learner",
+            "role": "learner",
+            "gender": "female",
+            "voice_id": "ko_f_01"
+          }
+        ],
+        "lines": [
+          {
+            "line_id": "L1",
+            "speaker": "doctor",
+            "ko": "어디가 아파서 오셨어요?",
+            "rom": "Eodiga apaseo osyeosseoyo?",
+            "my": "ဘယ်နား နာလို့ လာပါသလဲ။",
+            "en": "Where does it hurt? What brings you in today?",
+            "audio": "AUD_HLT001_L1",
+            "audio_slow": "AUD_HLT001_L1_S",
+            "note": "Standard polite question by doctor"
+          },
+          {
+            "line_id": "L2",
+            "speaker": "learner",
+            "ko": "어제부터 열이 나고 기침도 많이 해요.",
+            "rom": "Eojebuteo yeori nago gichimdo mani haeyo.",
+            "my": "မနေ့ကတည်းက ဖျားပြီး ချောင်းလည်း အများကြီး ဆိုးပါတယ်။",
+            "en": "I have had a fever and been coughing a lot since yesterday.",
+            "audio": "AUD_HLT001_L2",
+            "audio_slow": "AUD_HLT001_L2_S",
+            "note": "Describing symptoms with timeline (-부터) and conjunction (-고)"
+          },
+          {
+            "line_id": "L3",
+            "speaker": "doctor",
+            "ko": "체온을 재고 목도 확인해 볼게요. 약 처방전을 드릴 테니 식후 30분에 드세요.",
+            "rom": "Cheon-eul jaego mokdo hwaginhae beolgeyo. Yak cheobangjeon-eul deuril teni sikhu 30bune deuseyo.",
+            "my": "ကိုယ်အပူချိန် တိုင်းပြီး လည်ပင်းကိုလည်း စစ်ဆေးကြည့်ပါမယ်။ ဆေးညွှန်း ပေးလိုက်မည်ဖြစ်၍ ထမင်းစားပြီး မိနစ် ၃၀ အကြာတွင် သောက်ပါ။",
+            "en": "Let me take your temperature and check your throat. I will give you a prescription, so take the medicine 30 minutes after meals.",
+            "audio": "AUD_HLT001_L3",
+            "audio_slow": "AUD_HLT001_L3_S",
+            "note": "Doctor giving instructions and medication advice"
+          }
+        ]
+      },
+      "activities": [
+        {
+          "activity_id": "A1",
+          "type": "branch_dialogue",
+          "prompt": {
+            "my": "ဆရာဝန်နှင့် သင့်တော်သော အမေးအဖြေ စကားပြောကို ရွေးချယ်၍ ဆက်လက် ပြောဆိုပါ။",
+            "ko": "의사의 질문에 올바른 대답을 선택하여 대화를 진행하세요.",
+            "en": "Select appropriate responses to continue the conversation with the doctor."
+          },
+          "entry_node": "N1",
+          "nodes": [
+            {
+              "node_id": "N1",
+              "speaker": "doctor",
+              "ko": "어디가 불편해서 오셨습니까?",
+              "rom": "Eodiga bulpyeonhaeseo osyeosseumnikka?",
+              "my": "ဘယ်နား မအီမသာ ဖြစ်လို့ လာပါသလဲ။",
+              "en": "What seems to be the problem today?",
+              "choices": [
+                {
+                  "id": "C1_N1",
+                  "ko": "어제부터 열이 나고 목이 많이 아파요.",
+                  "my": "မနေ့ကတည်းက ဖျားပြီး လည်ပင်းလည်း အလွန် နာနေပါတယ်။",
+                  "en": "I have had a fever and a sore throat since yesterday.",
+                  "next": "N2"
+                },
+                {
+                  "id": "C2_N1",
+                  "ko": "이 약을 어디서 사야 합니까?",
+                  "my": "ဒီဆေးကို ဘယ်မှာ ဝယ်ရမလဲ။",
+                  "en": "Where should I buy this medicine?",
+                  "next": "N3"
+                }
+              ]
+            },
+            {
+              "node_id": "N2",
+              "speaker": "doctor",
+              "ko": "언제부터 증상이 시작되었나요? 기침도 나오나요?",
+              "rom": "Eonjebuteo jeungsang-i sijakdoeon nayo? Gichimdo naonayo?",
+              "my": "လက္ခဏာက ဘယ်အချိန်ကတည်းက စတာလဲ။ ချောင်းရော ဆိုးပါသလား။",
+              "en": "When did the symptoms start? Are you also coughing?",
+              "choices": [
+                {
+                  "id": "C1_N2",
+                  "ko": "네, 어젯밤부터 열이 나고 기침도 심하게 합니다.",
+                  "my": "ဟုတ်ကဲ့၊ မနေ့ညကတည်းက ဖျားပြီး ချောင်းလည်း ပြင်းပြင်းထန်ထန် ဆိုးနေပါတယ်။",
+                  "en": "Yes, I have had a fever since last night and I am coughing badly.",
+                  "next": "N4"
+                },
+                {
+                  "id": "C2_N2",
+                  "ko": "아니요, 내일 의원에 다시 오겠습니다.",
+                  "my": "မဟုတ်ပါဘူး၊ မနက်ဖြန် ဆေးခန်းကို ပြန်လာပါမယ်။",
+                  "en": "No, I will come back to the clinic tomorrow.",
+                  "next": "END"
+                }
+              ]
+            },
+            {
+              "node_id": "N3",
+              "speaker": "doctor",
+              "ko": "진찰을 먼저 하셔야 합니다. 어디가 아프신가요?",
+              "rom": "Jinchal-eul meonjeohasyeoya hamnida. Eodiga apeusingayo?",
+              "my": "ဆေးစစ်ဆေးမှုကို အရင် ပြုလုပ်ရပါမယ်။ ဘယ်နား နာပါသလဲ။",
+              "en": "You need to get examined first. Where does it hurt?",
+              "choices": [
+                {
+                  "id": "C1_N3",
+                  "ko": "열이 나고 몸살 기운이 있습니다.",
+                  "my": "ဖျားပြီး ကိုယ်လက် ကိုက်ခဲနေပါတယ်။",
+                  "en": "I have a fever and body aches.",
+                  "next": "N4"
+                }
+              ]
+            },
+            {
+              "node_id": "N4",
+              "speaker": "doctor",
+              "ko": "진찰해 보니 감기 몸살입니다. 처방전을 드릴 테니 약국에서 약을 받으세요.",
+              "rom": "Jinchalhae boni gamgi momsal-imnida. Cheobangjeon-eul deuril teni yakguk-eseo yageul badeuseyo.",
+              "my": "စစ်ဆေးကြည့်တော့ အအေးမိ ကိုယ်လက်ကိုက်ခဲတာ ဖြစ်ပါတယ်။ ဆေးညွှန်းပေးလိုက်မည်ဖြစ်၍ ဆေးဆိုင်မှာ ဆေးထုတ်ယူပါ။",
+              "en": "It looks like a cold with body aches. I will give you a prescription, so get your medicine at the pharmacy.",
+              "choices": [
+                {
+                  "id": "C1_N4",
+                  "ko": "감사합니다. 약은 어떻게 먹어야 하나요?",
+                  "my": "ကျေးဇူးတင်ပါတယ်။ ဆေးကို ဘယ်လို သောက်ရမလဲ။",
+                  "en": "Thank you. How should I take the medicine?",
+                  "next": "END"
+                }
+              ]
+            }
+          ],
+          "audio_ref": "AUD_HLT001_A1",
+          "explanation_ref": "FB_HLT001_A1"
+        },
+        {
+          "activity_id": "A2",
+          "type": "speak",
+          "prompt": {
+            "my": "ဆရာဝန်အား မနေ့ကတည်းက ဖျားပြီး ချောင်းဆိုးနေကြောင်း ယဉ်ကျေးစွာ ပြောဆိုပါ။",
+            "ko": "의사에게 어제부터 열이 나고 기침을 한다고 정중하게 말해 보세요.",
+            "en": "Politely tell the doctor that you have had a fever and a cough since yesterday."
+          },
+          "target_ko": "어제부터 열이 나고 기침을 해요.",
+          "min_score": 70,
+          "audio_ref": "AUD_HLT001_A2",
+          "explanation_ref": "FB_HLT001_A2"
+        }
+      ],
+      "feedback": {
+        "FB_HLT001_A1": {
+          "why_wrong": {
+            "my": "ဆရာဝန်၏ မေးခွန်းကို နားထောင်ပြီး မိမိဖြစ်ပွားနေသော ရောဂါလက္ခဏာ (ဖျားခြင်း၊ ချောင်းဆိုးခြင်း) ကို သဘာဝကျကျ ဖြေကြားရပါမည်။",
+            "ko": "의사의 질문을 듣고 증상(열, 기침 등)을 자연스럽게 설명해야 대화가 이어집니다.",
+            "en": "Listen carefully to the doctor's questions and state your symptoms naturally to maintain the conversation."
+          },
+          "grammar": {
+            "point": "-아/어서",
+            "explain_my": "အကြောင်းပြချက် သို့မဟုတ် ရှေ့နောက် အကြောင်းအရာ ဆက်စပ်မှုကို ဖော်ပြရာတွင် အသုံးပြုပါသည်။ (ဥပမာ- 열이 나서 = ဖျားလို့)"
+          },
+          "culture": "ကိုရီးယား ဆေးခန်းများတွင် ဆရာဝန်နှင့် စကားပြောရာ၌ ယဉ်ကျေးသော သုံးနှုန်းမှု (존댓말) ကို အသုံးပြုရပါမည်။",
+          "retry_phrase": "어제부터 열이 나고 목이 많이 아파요."
+        },
+        "FB_HLT001_A2": {
+          "why_wrong": {
+            "my": "'어제부터' (မနေ့ကတည်းက) နှင့် '열이 나고' (ဖျားပြီး) အသုံးအနှုန်းများကို မှန်ကန်စွာ အသံထွက်၍ ပြောဆိုရပါမည်။",
+            "ko": "'어제부터'와 '열이 나고'의 정확한 발음과 문법 연결을 연습하세요.",
+            "en": "Practice accurate pronunciation and conjunction of '어제부터' and '열이 나고'."
+          },
+          "grammar": {
+            "point": "-부터 / -고",
+            "explain_my": "-부터 (စတင်ချိန်) နှင့် -고 (ကြိယာနှစ်ခု ဆက်စပ်ခြင်း) ကို သုံး၍ လက္ခဏာများကို စနစ်တကျ ပြောဆိုနိုင်သည်။"
+          },
+          "culture": "ဆေးခန်း သို့မဟုတ် ဆေးရုံသို့ သွားရောက်သောအခါ နိုင်ငံခြားသား မှတ်ပုံတင်ကတ် သို့မဟုတ် ကျန်းမာရေး အာမခံ ကတ်ကို ယူဆောင်သွားရန် လိုအပ်ပါသည်။",
+          "retry_phrase": "어제부터 열이 나고 기침을 해요."
+        }
+      },
+      "cultural_note": {
+        "title": {
+          "my": "ကိုရီးယား ဆေးခန်း (내과) သွားရောက်ပြသခြင်းနှင့် ဆေးညွှန်း စနစ်",
+          "ko": "한국 내과 방문과 의약분업 안내",
+          "en": "Visiting an Internal Medicine Clinic & Prescription System in Korea"
+        },
+        "body": {
+          "my": "ကိုရီးယားနိုင်ငံတွင် အေးမိခြင်း သို့မဟုတ် ဖျားနာခြင်း ဖြစ်ပွားပါက '내과' (အတွင်းဆေးခန်း) သို့ သွားရောက်ပြသလေ့ ရှိပါသည်။ ကိုရီးယားတွင် ဆေးခန်းမှ ဆေးကို တိုက်ရိုက် မပေးဘဲ ဆရာဝန် ပေးသော '처방전' (ဆေးညွှန်း) ကို ယူဆောင်၍ အနီးအနားရှိ '약국' (ဆေးဆိုင်) တွင် ဆေးဝယ်ယူရသည့် စနစ် (의약분업) ကို ကျင့်သုံးပါသည်။",
+          "ko": "한국에서 감기나 열이 날 때는 보통 '내과'를 방문합니다. 한국은 의약분업 제도로 인해 의원에서 진찰을 받은 후 '처방전'을 받아 인근 약국에서 약을 구매해야 합니다.",
+          "en": "In Korea, people usually visit an internal medicine clinic (내과) for colds or fevers. Korea uses a prescription separation system, meaning after your consultation, you receive a prescription (처방전) to buy medicine at a nearby pharmacy."
+        },
+        "sensitive": false
+      },
+      "audio": {
+        "base_path": "audio/COMMON-HEALTH-001/",
+        "files": [
+          {
+            "id": "AUD_HLT001_L1",
+            "normal": "L1-normal.mp3",
+            "slow": "L1-slow.mp3",
+            "duration": 2.5
+          },
+          {
+            "id": "AUD_HLT001_L2",
+            "normal": "L2-normal.mp3",
+            "slow": "L2-slow.mp3",
+            "duration": 3.1
+          },
+          {
+            "id": "AUD_HLT001_L3",
+            "normal": "L3-normal.mp3",
+            "slow": "L3-slow.mp3",
+            "duration": 5.2
+          },
+          {
+            "id": "AUD_HLT001_A1",
+            "normal": "A1-normal.mp3",
+            "slow": "A1-slow.mp3",
+            "duration": 4.0
+          },
+          {
+            "id": "AUD_HLT001_A2",
+            "normal": "A2-normal.mp3",
+            "slow": "A2-slow.mp3",
+            "duration": 3.2
+          }
+        ],
+        "spec": {
+          "sample_rate": 44100,
+          "channels": 1,
+          "format": "mp3",
+          "bitrate": 128
+        }
+      },
+      "srs": {
+        "enabled": true,
+        "cards": [
+          {
+            "card_id": "C1",
+            "front": {
+              "my": "ဖျားသည် / ကိုယ်ပူသည်",
+              "ko": "열이 나다",
+              "en": "Have a fever"
+            },
+            "back": {
+              "my": "ဖျားသည် / ကိုယ်ပူသည်",
+              "ko": "열이 나다",
+              "en": "Have a fever"
+            },
+            "audio_ref": "AUD_HLT001_L2",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C2",
+            "front": {
+              "my": "ဆေးညွှန်း",
+              "ko": "처방전",
+              "en": "Prescription"
+            },
+            "back": {
+              "my": "ဆေးညွှန်း",
+              "ko": "처방전",
+              "en": "Prescription"
+            },
+            "audio_ref": "AUD_HLT001_L3",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C3",
+            "front": {
+              "my": "ဆေးစစ်ဆေးမှု",
+              "ko": "진찰",
+              "en": "Medical examination"
+            },
+            "back": {
+              "my": "ဆေးစစ်ဆေးမှု",
+              "ko": "진찰",
+              "en": "Medical examination"
+            },
+            "audio_ref": "AUD_HLT001_A1",
+            "ease": 2.5,
+            "interval": 0
+          }
+        ]
+      },
+      "assessment": {
+        "type": "mission",
+        "pass_threshold": 70,
+        "weights": {
+          "accuracy": 40,
+          "completion": 30,
+          "speaking": 30
+        },
+        "exam_mapping": {
+          "topik": null,
+          "eps_topik": null
+        }
+      }
+    }
+  ]
+}
+

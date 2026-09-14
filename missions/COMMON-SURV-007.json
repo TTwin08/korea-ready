@@ -1,0 +1,373 @@
+{
+  "__meta": {
+    "generator": "Korea Ready Mission Generator v1.0",
+    "generated_at": "2026-09-12T12:35:00Z",
+    "batch_id": "BATCH-20260912-008",
+    "request": "Generate COMMON-SURV-007: goal: common, level: 1, category: survival, theme: Ordering food at a restaurant (식당에서 음식 주문하기), skills: listening, speaking, estimated_minutes: 8, difficulty: basic"
+  },
+  "__self_check": {
+    "rules_passed": [
+      "R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9", "R10",
+      "R11", "R12", "R13", "R14", "R15", "R16", "R17", "R18", "R19",
+      "R20", "R21", "R22", "R23", "R24", "R25", "R26"
+    ],
+    "warnings": [],
+    "uncertainties": [],
+    "external_prereqs": []
+  },
+  "missions": [
+    {
+      "schema_version": "1.0",
+      "mission_id": "COMMON-SURV-007",
+      "goal": "common",
+      "level": 1,
+      "category": "survival",
+      "industry": null,
+      "tags": [
+        "restaurant",
+        "food",
+        "ordering",
+        "survival",
+        "dining"
+      ],
+      "title": {
+        "ko": "식당에서 음식 주문하기",
+        "my": "စားသောက်ဆိုင်တွင် အစားအစာ မှာယူခြင်း",
+        "en": "Ordering Food at a Restaurant"
+      },
+      "objective": {
+        "ko": "식당에서 메뉴를 확인하고 원하는 음식을 주문할 수 있다.",
+        "my": "စားသောက်ဆိုင်တွင် မီနူးကို စစ်ဆေးပြီး လိုချင်သော အစားအစာကို မှာယူနိုင်မည်။",
+        "en": "Check the menu and order desired food at a restaurant."
+      },
+      "cultural_note": {
+        "title": {
+          "ko": "한국 식당의 벨과 셀프 서비스",
+          "my": "ကိုရီးယား စားသောက်ဆိုင်များ၏ ခေါ်ဆိုမှုဘဲလ်နှင့် ကိုယ်တိုင်ယူစနစ်",
+          "en": "Call Buttons and Self-Service in Korean Restaurants"
+        },
+        "body": {
+          "ko": "한국 식당 테이블에는 호출 벨이 있는 경우가 많습니다. 벨을 누르면 종업원이 올 때까지 '여기요'라고 크게 부르지 않아도 됩니다. 또 물이나 반찬이 셀프인 경우 직접 가져다 먹어야 합니다.",
+          "my": "ကိုရီးယား စားသောက်ဆိုင်များရှိ စားပွဲများတွင် ခေါ်ဆိုမှုဘဲလ် ပါရှိလေ့ရှိပါသည်။ ဘဲလ်ကို နှိပ်ပါက ဝန်ထမ်း လာရောက်မည်ဖြစ်၍ '여기요' ဟု အသံကျယ်ကျယ် ခေါ်ရန် မလိုပါ။ ထို့ပြင် ရေ သို့မဟုတ် ဘေးတွဲဟင်းလျာများ Self-service (ကိုယ်တိုင်ယူ) ဖြစ်ပါက ကိုယ်တိုင် သွားရောက်ယူဆောင်ရပါမည်။",
+          "en": "Many Korean restaurant tables have call buttons. Pressing the button summons the server without shouting 'Yeogiyo'. Also, if water or side dishes are labeled self-service, you need to get them yourself."
+        }
+      },
+      "skills": [
+        "listening",
+        "speaking"
+      ],
+      "estimated_minutes": 8,
+      "difficulty": "basic",
+      "status": "draft",
+      "version": 1,
+      "regulated": false,
+      "prerequisites": [],
+      "dialogue": {
+        "setting": {
+          "ko": "식당에서 종업원에게 김치찌개를 주문하는 상황",
+          "my": "စားသောက်ဆိုင်တွင် ဝန်ထမ်းအား ကင်မ်ချီဆူပူ မှာယူနေသည့် အခြေအနေ",
+          "en": "Ordering Kimchi-jjigae from a server at a restaurant."
+        },
+        "speakers": [
+          {
+            "id": "staff",
+            "role": "other",
+            "gender": "female",
+            "voice_id": "ko_f_01"
+          },
+          {
+            "id": "learner",
+            "role": "learner",
+            "gender": "any",
+            "voice_id": null
+          }
+        ],
+        "lines": [
+          {
+            "line_id": "L1",
+            "speaker": "staff",
+            "ko": "어서 오세요. 몇 분이세요?",
+            "rom": "eoseo oseyeo. meot bun-iseyo?",
+            "my": "ကြိုဆိုပါတယ်။ ဘယ်နှစ်ယောက်ပါလဲ။",
+            "en": "Welcome. How many people?",
+            "audio": "AUD_SURV007_L1",
+            "audio_slow": "AUD_SURV007_L1_S",
+            "note": "Greeting and asking headcount with 몇 분이세요?"
+          },
+          {
+            "line_id": "L2",
+            "speaker": "learner",
+            "ko": "한 명이에요. 김치찌개 하나 주세요.",
+            "rom": "han myeong-ieyo. gimchijjigae hana juseyo.",
+            "my": "တစ်ယောက်ထဲပါ။ ကင်မ်ချီဆူပူ တစ်ပွဲ ပေးပါ။",
+            "en": "Just one person. One Kimchi-jjigae, please.",
+            "audio": "AUD_SURV007_L2",
+            "audio_slow": "AUD_SURV007_L2_S",
+            "note": "Ordering food using [item] + [counter] + 주세요"
+          },
+          {
+            "line_id": "L3",
+            "speaker": "staff",
+            "ko": "네, 조금만 기다려 주세요. 물은 셀프입니다.",
+            "rom": "ne, jogeumman gidaryeo juseyo. mureun selpeuimnida.",
+            "my": "ဟုတ်ကဲ့၊ ခဏလောက် စောင့်ပေးပါ။ ရေကတော့ ကိုယ်တိုင်ယူရပါမယ်။",
+            "en": "Yes, please wait a moment. Water is self-service.",
+            "audio": "AUD_SURV007_L3",
+            "audio_slow": "AUD_SURV007_L3_S",
+            "note": "Informing about self-service water"
+          },
+          {
+            "line_id": "L4",
+            "speaker": "learner",
+            "ko": "네, 알겠습니다. 감사합니다.",
+            "rom": "ne, algetseumnida. gamsahamnida.",
+            "my": "ဟုတ်ကဲ့၊ နားလည်ပါပြီ။ ကျေးဇူးတင်ပါတယ်။",
+            "en": "Yes, understood. Thank you.",
+            "audio": "AUD_SURV007_L4",
+            "audio_slow": "AUD_SURV007_L4_S",
+            "note": "Polite acknowledgment"
+          }
+        ]
+      },
+      "activities": [
+        {
+          "activity_id": "A1",
+          "type": "branch_dialogue",
+          "prompt": {
+            "ko": "식당에서 종업원과 대화하여 음식을 주문해 보세요.",
+            "my": "စားသောက်ဆိုင်တွင် ဝန်ထမ်းနှင့် စကားပြောပြီး အစားအစာ မှာယူကြည့်ပါ။",
+            "en": "Talk to the server at the restaurant and order food."
+          },
+          "entry_node": "N1",
+          "nodes": [
+            {
+              "node_id": "N1",
+              "speaker": "staff",
+              "ko": "어서 오세요! 몇 분이세요?",
+              "rom": "eoseo oseyeo! meot bun-iseyo?",
+              "my": "ကြိုဆိုပါတယ်။ ဘယ်နှစ်ယောက်ပါလဲ။",
+              "en": "Welcome! How many people?",
+              "choices": [
+                {
+                  "id": "C1_N1",
+                  "ko": "한 명이에요.",
+                  "my": "တစ်ယောက်ထဲပါ။",
+                  "en": "Just one person.",
+                  "next": "N2"
+                },
+                {
+                  "id": "C2_N1",
+                  "ko": "두 명이에요. 창가 자리가 있어요?",
+                  "my": "နှစ်ယောက်ပါ။ ပြတင်းပေါက်ဘက် နေရာ ရှိပါသလား။",
+                  "en": "Two people. Is there a window seat?",
+                  "next": "N2"
+                }
+              ]
+            },
+            {
+              "node_id": "N2",
+              "speaker": "staff",
+              "ko": "이쪽으로 앉으세요. 무엇을 주문하시겠어요?",
+              "rom": "ijjogeuro anjeuseyo. mueoseul jumunhasigesseoyo?",
+              "my": "ဒီဘက်မှာ ထိုင်ပါ။ ဘာမှာယူမလဲ။",
+              "en": "Please sit over here. What would you like to order?",
+              "choices": [
+                {
+                  "id": "C1_N2",
+                  "ko": "김치찌개 하나 주세요.",
+                  "my": "ကင်မ်ချီဆူပူ တစ်ပွဲ ပေးပါ။",
+                  "en": "One Kimchi-jjigae, please.",
+                  "next": "N3"
+                },
+                {
+                  "id": "C2_N2",
+                  "ko": "여기 뭐가 맛있어요?",
+                  "my": "ဒီမှာ ဘာကောင်းလဲ။",
+                  "en": "What is delicious here?",
+                  "next": "N4"
+                }
+              ]
+            },
+            {
+              "node_id": "N3",
+              "speaker": "staff",
+              "ko": "네, 김치찌개 하나요. 공깃밥 포함이에요.",
+              "rom": "ne, gimchijjigae hanayo. gonggitbap poham-ieyo.",
+              "my": "ဟုတ်ကဲ့၊ ကင်မ်ချီဆူပူ တစ်ပွဲပါ။ ထမင်းဖြူ ပါပြီးသားဖြစ်ပါတယ်။",
+              "en": "Yes, one Kimchi-jjigae. Rice is included.",
+              "choices": [
+                {
+                  "id": "C1_N3",
+                  "ko": "네, 감사합니다.",
+                  "my": "ဟုတ်ကဲ့၊ ကျေးဇူးတင်ပါတယ်။",
+                  "en": "Yes, thank you.",
+                  "next": "END"
+                },
+                {
+                  "id": "C2_N3",
+                  "ko": "매운가요? 조금 덜 매운맛으로 주세요.",
+                  "my": "စပ်ပါသလား။ နည်းနည်း လျှော့စပ်ပေးပါ။",
+                  "en": "Is it spicy? Please make it a bit less spicy.",
+                  "next": "END"
+                }
+              ]
+            },
+            {
+              "node_id": "N4",
+              "speaker": "staff",
+              "ko": "불고기와 비빔밥이 인기 많아요.",
+              "rom": "bulgogiwa bibimbabi ingi manayo.",
+              "my": "ဘူဂိုဂီ နဲ့ ဘီဘင်းဘပ် က လူကြိုက်များပါတယ်။",
+              "en": "Bulgogi and Bibimbap are very popular.",
+              "choices": [
+                {
+                  "id": "C1_N4",
+                  "ko": "그럼 불고기 하나 주세요.",
+                  "my": "ဒါဆိုရင် ဘူဂိုဂီ တစ်ပွဲ ပေးပါ။",
+                  "en": "Then please give me one Bulgogi.",
+                  "next": "END"
+                },
+                {
+                  "id": "C2_N4",
+                  "ko": "비빔밥 하나 주세요.",
+                  "my": "ဘီဘင်းဘပ် တစ်ပွဲ ပေးပါ။",
+                  "en": "Please give me one Bibimbap.",
+                  "next": "END"
+                }
+              ]
+            }
+          ],
+          "audio_ref": "AUD_SURV007_N1",
+          "explanation_ref": "FB_SURV007_A1"
+        },
+        {
+          "activity_id": "A2",
+          "type": "speak",
+          "prompt": {
+            "ko": "식당에서 김치찌개 하나를 주문하는 말을 해 보세요.",
+            "my": "စားသောက်ဆိုင်တွင် ကင်မ်ချီဆူပူ တစ်ပွဲ မှာယူသည့် စကားကို ပြောကြည့်ပါ။",
+            "en": "Try saying that you want to order one Kimchi-jjigae at a restaurant."
+          },
+          "target_ko": "김치찌개 하나 주세요.",
+          "min_score": 60,
+          "audio_ref": "AUD_SURV007_L2",
+          "explanation_ref": "FB_SURV007_A2"
+        }
+      ],
+      "audio": {
+        "spec": {
+          "sample_rate": 44100,
+          "channels": 1,
+          "format": "mp3",
+          "bitrate": 128
+        },
+        "files": [
+          {
+            "id": "AUD_SURV007_L1",
+            "normal": "common_surv_007_l1_norm.mp3",
+            "slow": "common_surv_007_l1_slow.mp3",
+            "duration": 2.8
+          },
+          {
+            "id": "AUD_SURV007_L2",
+            "normal": "common_surv_007_l2_norm.mp3",
+            "slow": "common_surv_007_l2_slow.mp3",
+            "duration": 3.2
+          },
+          {
+            "id": "AUD_SURV007_L3",
+            "normal": "common_surv_007_l3_norm.mp3",
+            "slow": "common_surv_007_l3_slow.mp3",
+            "duration": 3.6
+          },
+          {
+            "id": "AUD_SURV007_L4",
+            "normal": "common_surv_007_l4_norm.mp3",
+            "slow": "common_surv_007_l4_slow.mp3",
+            "duration": 2.5
+          },
+          {
+            "id": "AUD_SURV007_N1",
+            "normal": "common_surv_007_n1_norm.mp3",
+            "slow": "common_surv_007_n1_slow.mp3",
+            "duration": 2.9
+          }
+        ]
+      },
+      "feedback": {
+        "FB_SURV007_A1": {
+          "why_wrong": {
+            "ko": "종업원의 질문을 듣고 적절한 답변을 선택하세요.",
+            "my": "ဝန်ထမ်း၏ မေးခွန်းကို နားထောင်ပြီး သင့်တော်သော အဖြေကို ရွေးချယ်ပါ။",
+            "en": "Listen to the server's question and select an appropriate response."
+          },
+          "grammar": {
+            "point": "하나 주세요",
+            "explain_my": "ပစ္စည်း သို့မဟုတ် အစားအစာ ၁ ခု/ပွဲ တောင်းဆိုရာတွင် အသုံးပြုသည့် ပုံစံဖြစ်ပါသည်။"
+          },
+          "culture": "한국 식당에서는 물이 셀프인 경우가 많으니 확인이 필요합니다.",
+          "retry_phrase": "다시 선택해 보세요."
+        },
+        "FB_SURV007_A2": {
+          "why_wrong": {
+            "ko": "'김치찌개 하나 주세요.' 문장을 정확히 발음해 보세요.",
+            "my": "'김치찌개 하나 주세요.' စာကြောင်းကို တိကျစွာ အသံထွက် ပြောဆိုရပါမည်။",
+            "en": "Pronounce 'One Kimchi-jjigae, please.' clearly."
+          },
+          "retry_phrase": "김치찌개 하나 주세요."
+        }
+      },
+      "srs": {
+        "enabled": true,
+        "cards": [
+          {
+            "card_id": "C1",
+            "front": {
+              "ko": "김치찌개",
+              "my": "ကင်မ်ချီဆူပူ",
+              "en": "Kimchi stew"
+            },
+            "back": {
+              "ko": "김치찌개 하나 주세요",
+              "my": "ကင်မ်ချီဆူပူ တစ်ပွဲ ပေးပါ",
+              "en": "One Kimchi stew, please"
+            },
+            "audio_ref": "AUD_SURV007_L2",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C2",
+            "front": {
+              "ko": "하나 주세요",
+              "my": "တစ်ပွဲ ပေးပါ",
+              "en": "Please give me one"
+            },
+            "back": {
+              "ko": "물 하나 주세요",
+              "my": "ရေ တစ်ဗူး ပေးပါ",
+              "en": "Please give me one water"
+            },
+            "audio_ref": "AUD_SURV007_L2",
+            "ease": 2.5,
+            "interval": 0
+          }
+        ]
+      },
+      "assessment": {
+        "type": "mission",
+        "pass_threshold": 70,
+        "weights": {
+          "accuracy": 40,
+          "completion": 30,
+          "speaking": 30
+        },
+        "exam_mapping": {
+          "topik": "TOPIK_I_1",
+          "eps_topik": null
+        }
+      }
+    }
+  ]
+}
+

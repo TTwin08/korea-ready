@@ -1,0 +1,355 @@
+{
+  "__meta": {
+    "generator": "Korea Ready Mission Generator v1.0",
+    "generated_at": "2026-09-12T12:54:19Z",
+    "batch_id": "BATCH-20260912-010",
+    "request": "Generate COMMON-SAFETY-001: goal: common, level: 2, category: safety, theme: Factory machine emergency — calling for help (기계 사고 시 도움 요청), skills: listening, speaking, estimated_minutes: 8, difficulty: intermediate"
+  },
+  "__self_check": {
+    "rules_passed": [
+      "R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9", "R10",
+      "R11", "R12", "R13", "R14", "R15", "R16", "R17", "R18", "R19",
+      "R20", "R21", "R22", "R23", "R24", "R25", "R26"
+    ],
+    "warnings": [],
+    "uncertainties": [],
+    "external_prereqs": []
+  },
+  "missions": [
+    {
+      "schema_version": "1.0",
+      "mission_id": "COMMON-SAFETY-001",
+      "goal": "common",
+      "level": 2,
+      "category": "safety",
+      "industry": null,
+      "tags": [
+        "safety",
+        "emergency",
+        "factory",
+        "machine",
+        "help"
+      ],
+      "title": {
+        "ko": "기계 사고 시 도움 요청",
+        "my": "စက်ရုံ စက်ပစ္စည်း မတော်တဆမှု ဖြစ်ပွားစဉ် အကူအညီ တောင်းခံခြင်း",
+        "en": "Requesting Help During a Factory Machine Emergency"
+      },
+      "objective": {
+        "ko": "공장에서 기계 사고가 발생했을 때 비상 정지 버튼을 누르고 동료에게 즉시 도움을 요청할 수 있다.",
+        "my": "စက်ရုံတွင် စက်ပစ္စည်း မတော်တဆမှု ဖြစ်ပွားပါက အရေးပေါ် ရပ်တန့်ခလုတ်ကို နှိပ်ပြီး လုပ်ဖော်ကိုင်ဖက်ထံ ချက်ချင်း အကူအညီ တောင်းခံနိုင်မည်။",
+        "en": "Press the emergency stop button and immediately request help from a coworker during a machine accident in a factory."
+      },
+      "cultural_note": {
+        "title": {
+          "ko": "한국 공장의 비상 정지 버튼과 안전 수칙",
+          "my": "ကိုရီးယား စက်ရုံများ၏ အရေးပေါ် ရပ်တန့်ခလုတ်နှင့် ဘေးအန္တရာယ် ကင်းရှင်းရေး စည်းမျဉ်းများ",
+          "en": "Emergency Stop Buttons and Safety Rules in Korean Factories"
+        },
+        "body": {
+          "ko": "공장에서 사고가 발생하면 즉시 빨간색 비상 정지 버튼(Emergency Stop Button)을 눌러 기계를 멈춰야 합니다. 그리고 큰 소리로 '사람 살려요!' 또는 '도와주세요!'라고 외쳐 주변 사람들에게 사고 상황을 알려야 합니다.",
+          "my": "စက်ရုံတွင် မတော်တဆမှု ဖြစ်ပွားပါက အနီရောင် အရေးပေါ် ရပ်တန့်ခလုတ် (Emergency Stop Button) ကို ချက်ချင်း နှိပ်၍ စက်ကို ရပ်တန့်ရပါမည်။ ထို့နောက် '사람 살려요!' (ကယ်ကြပါဦး!) သို့မဟုတ် '도와주세요!' (ကူညီပေးပါဦး!) ဟု အသံကျယ်ကျယ် အော်ဟစ်၍ အနီးနားရှိ လူများထံ မတော်တဆမှုကို အကြောင်းကြားရပါမည်။",
+          "en": "If an accident occurs in a factory, immediately press the red Emergency Stop Button to stop the machine. Then yell loudly 'Help!' to alert nearby workers."
+        }
+      },
+      "skills": [
+        "listening",
+        "speaking"
+      ],
+      "estimated_minutes": 8,
+      "difficulty": "intermediate",
+      "status": "draft",
+      "version": 1,
+      "regulated": false,
+      "prerequisites": [],
+      "dialogue": {
+        "setting": {
+          "ko": "공장에서 기계에 문제가 생겨 동료에게 도움을 요청하는 상황",
+          "my": "စက်ရုံတွင် စက်၌ ပြဿနာဖြစ်ပွား၍ လုပ်ဖော်ကိုင်ဖက်ထံ အကူအညီ တောင်းခံနေသည့် အခြေအနေ",
+          "en": "Requesting help from a coworker when a machine problem occurs in a factory."
+        },
+        "speakers": [
+          {
+            "id": "coworker",
+            "role": "other",
+            "gender": "male",
+            "voice_id": "ko_m_02"
+          },
+          {
+            "id": "learner",
+            "role": "learner",
+            "gender": "any",
+            "voice_id": null
+          }
+        ],
+        "lines": [
+          {
+            "line_id": "L1",
+            "speaker": "learner",
+            "ko": "반장님, 큰일 났어요! 기계에 장갑이 끼었어요!",
+            "rom": "banjangnim, keun-il nasseoyo! gigyee jang-gabi kkieosseoyo!",
+            "my": "ခေါင်းဆောင်၊ ဒုက္ခပါပဲ။ စက်ထဲမှာ လက်အိတ် ညှပ်သွားပါပြီ။",
+            "en": "Supervisor, emergency! A glove got caught in the machine!",
+            "audio": "AUD_SAFETY001_L1",
+            "audio_slow": "AUD_SAFETY001_L1_S",
+            "note": "Calling for urgent assistance"
+          },
+          {
+            "line_id": "L2",
+            "speaker": "coworker",
+            "ko": "빨리 비상 정지 버튼을 누르세요! 기계 멈췄어요?",
+            "rom": "ppalli bisang jeongji beoteuneul nureuseyo! gigye meomchweosseoyo?",
+            "my": "အရေးပေါ် ရပ်တန့်ခလုတ်ကို အမြန် နှိပ်ပါ။ စက် ရပ်သွားပြီလား။",
+            "en": "Press the emergency stop button quickly! Has the machine stopped?",
+            "audio": "AUD_SAFETY001_L2",
+            "audio_slow": "AUD_SAFETY001_L2_S",
+            "note": "Instructing to hit the emergency stop button"
+          },
+          {
+            "line_id": "L3",
+            "speaker": "learner",
+            "ko": "네, 누르고 멈췄어요! 어서 와서 도와주세요!",
+            "rom": "ne, nureugo meomchweosseoyo! eoseo waseo dowajuseyo!",
+            "my": "ဟုတ်ကဲ့၊ နှိပ်ပြီး ရပ်သွားပါပြီ။ မြန်မြန်လာပြီး ကူညီပေးပါဦး။",
+            "en": "Yes, I pressed it and it stopped! Please come and help right away!",
+            "audio": "AUD_SAFETY001_L3",
+            "audio_slow": "AUD_SAFETY001_L3_S",
+            "note": "Confirming stop and urging immediate help"
+          },
+          {
+            "line_id": "L4",
+            "speaker": "coworker",
+            "ko": "알겠습니다! 다친 곳은 없어요? 조심해서 처리할게요.",
+            "rom": "algetseumnida! dachin goseun eopseoyo? josimhaeseo cheorihalgeyo.",
+            "my": "ဟုတ်ပါပြီ။ ထိခိုက်ဒဏ်ရာရတာ မရှိဘူးမလား။ သတိထားပြီး ရှင်းလင်းပေးပါ့မယ်။",
+            "en": "Understood! Are you hurt anywhere? I'll handle it carefully.",
+            "audio": "AUD_SAFETY001_L4",
+            "audio_slow": "AUD_SAFETY001_L4_S",
+            "note": "Checking for injury and offering assistance"
+          }
+        ]
+      },
+      "activities": [
+        {
+          "activity_id": "A1",
+          "type": "branch_dialogue",
+          "prompt": {
+            "ko": "비상 상황에서 동료에게 도움을 요청하고 적절히 응답하세요.",
+            "my": "အရေးပေါ် အခြေအနေတွင် လုပ်ဖော်ကိုင်ဖက်ထံ အကူအညီ တောင်းခံပြီး သင့်တော်သလို အကြောင်းပြန်ပါ။",
+            "en": "Request help from a coworker in an emergency and respond appropriately."
+          },
+          "entry_node": "N1",
+          "nodes": [
+            {
+              "node_id": "N1",
+              "speaker": "coworker",
+              "ko": "무슨 일이에요? 무슨 문제 있어요?",
+              "rom": "museun il-ieyo? museun munje isseoyo?",
+              "my": "ဘာဖြစ်လို့လဲ။ ပြဿနာ တစ်ခုခု ရှိလို့လား။",
+              "en": "What's wrong? Is there a problem?",
+              "choices": [
+                {
+                  "id": "C1_N1",
+                  "ko": "큰일 났어요! 기계가 고장 났어요.",
+                  "my": "ဒုက္ခပါပဲ။ စက် ပျက်သွားပါပြီ။",
+                  "en": "Emergency! The machine broke down.",
+                  "next": "N2"
+                },
+                {
+                  "id": "C2_N1",
+                  "ko": "여기 좀 도와주세요! 기계에 옷이 끼었어요.",
+                  "my": "ဒီမှာ နည်းနည်း ကူညီပေးပါဦး။ စက်ထဲမှာ အကျီ ညှပ်သွားလို့ပါ။",
+                  "en": "Please help me here! Clothes got caught in the machine.",
+                  "next": "N2"
+                }
+              ]
+            },
+            {
+              "node_id": "N2",
+              "speaker": "coworker",
+              "ko": "위험해요! 비상 정지 버튼부터 누르셨어요?",
+              "rom": "wiheomhaeyo! bisang jeongji beoteunbuteo nureusyeosseoyo?",
+              "my": "အန္တရာယ်များတယ်။ အရေးပေါ် ရပ်တန့်ခလုတ်အရင် နှိပ်ခဲ့ရဲ့လား။",
+              "en": "That's dangerous! Did you press the emergency stop button first?",
+              "choices": [
+                {
+                  "id": "C1_N2",
+                  "ko": "네, 눌러서 기계를 멈췄어요.",
+                  "my": "ဟုတ်ကဲ့၊ နှိပ်ပြီး စက်ကို ရပ်ထားပါတယ်။",
+                  "en": "Yes, I pressed it and stopped the machine.",
+                  "next": "N3"
+                },
+                {
+                  "id": "C2_N2",
+                  "ko": "아직 안 눌렀어요. 어디 있어요?",
+                  "my": "မနှိပ်ရသေးပါဘူး။ ဘယ်မှာရှိတာလဲ။",
+                  "en": "I haven't pressed it yet. Where is it?",
+                  "next": "N3"
+                }
+              ]
+            },
+            {
+              "node_id": "N3",
+              "speaker": "coworker",
+              "ko": "빨간색 버튼이에요! 제가 가서 관리자에게도 연락할게요.",
+              "rom": "ppalgansaek beoteun-ieyo! jega gaseo gwallijaaegedo yeonrakhalgeyo.",
+              "my": "အနီရောင် ခလုတ်ပါ။ ကျွန်တော် သွားပြီး မန်နေဂျာကိုလည်း ဆက်သွယ်ပေးပါ့မယ်။",
+              "en": "It's the red button! I will go and contact the manager as well.",
+              "choices": [
+                {
+                  "id": "C1_N3",
+                  "ko": "네, 빨리 도와주세요. 감사합니다!",
+                  "my": "ဟုတ်ကဲ့၊ မြန်မြန် ကူညီပေးပါ။ ကျေးဇူးတင်ပါတယ်။",
+                  "en": "Yes, please help quickly. Thank you!",
+                  "next": "END"
+                },
+                {
+                  "id": "C2_N3",
+                  "ko": "네, 감사해요. 조심해서 처리할게요.",
+                  "my": "ဟုတ်ကဲ့၊ ကျေးဇူးပါ။ သတိထားပြီး ရှင်းလင်းပါ့မယ်။",
+                  "en": "Yes, thank you. I will handle it carefully.",
+                  "next": "END"
+                }
+              ]
+            }
+          ],
+          "audio_ref": "AUD_SAFETY001_N1",
+          "explanation_ref": "FB_SAFETY001_A1"
+        },
+        {
+          "activity_id": "A2",
+          "type": "speak",
+          "prompt": {
+            "ko": "위급한 상황에서 도움을 요청하는 말을 큰 소리로 해 보세요.",
+            "my": "အရေးပေါ် အခြေအနေတွင် အကူအညီ တောင်းခံသည့် စကားကို အသံကျယ်ကျယ် ပြောကြည့်ပါ။",
+            "en": "Practice loudly calling for help in an emergency situation."
+          },
+          "target_ko": "큰일 났어요! 도와주세요!",
+          "min_score": 60,
+          "audio_ref": "AUD_SAFETY001_A2",
+          "explanation_ref": "FB_SAFETY001_A2"
+        }
+      ],
+      "audio": {
+        "spec": {
+          "sample_rate": 44100,
+          "channels": 1,
+          "format": "mp3",
+          "bitrate": 128
+        },
+        "files": [
+          {
+            "id": "AUD_SAFETY001_L1",
+            "normal": "common_safety_001_l1_norm.mp3",
+            "slow": "common_safety_001_l1_slow.mp3",
+            "duration": 3.4
+          },
+          {
+            "id": "AUD_SAFETY001_L2",
+            "normal": "common_safety_001_l2_norm.mp3",
+            "slow": "common_safety_001_l2_slow.mp3",
+            "duration": 3.6
+          },
+          {
+            "id": "AUD_SAFETY001_L3",
+            "normal": "common_safety_001_l3_norm.mp3",
+            "slow": "common_safety_001_l3_slow.mp3",
+            "duration": 3.2
+          },
+          {
+            "id": "AUD_SAFETY001_L4",
+            "normal": "common_safety_001_l4_norm.mp3",
+            "slow": "common_safety_001_l4_slow.mp3",
+            "duration": 3.8
+          },
+          {
+            "id": "AUD_SAFETY001_N1",
+            "normal": "common_safety_001_n1_norm.mp3",
+            "slow": "common_safety_001_n1_slow.mp3",
+            "duration": 2.9
+          },
+          {
+            "id": "AUD_SAFETY001_A2",
+            "normal": "common_safety_001_a2_norm.mp3",
+            "slow": "common_safety_001_a2_slow.mp3",
+            "duration": 2.5
+          }
+        ]
+      },
+      "feedback": {
+        "FB_SAFETY001_A1": {
+          "why_wrong": {
+            "ko": "비상 상황에서는 먼저 안전을 확보하고 정확하게 도움을 요청해야 합니다.",
+            "my": "အရေးပေါ် အခြေအနေတွင် ပထမဦးစွာ ဘေးကင်းရေးကို ဆောင်ရွက်ပြီး တိကျစွာ အကူအညီ တောင်းခံရပါမည်။",
+            "en": "In an emergency, ensure safety first and request help clearly."
+          },
+          "grammar": {
+            "point": "큰일 났어요 / 도와주세요",
+            "explain_my": "အရေးပေါ် သို့မဟုတ် ဒုက္ခရောက်သည့် အခြေအနေတွင် အကူအညီ တောင်းခံရာ၌ အသုံးပြုသည့် အရေးကြီးသော အသုံးအနှုန်း ဖြစ်ပါသည်။"
+          },
+          "culture": "기계 사고 발생 시 반드시 빨간색 비상 정지 버튼을 가장 먼저 눌러야 합니다.",
+          "retry_phrase": "다시 선택해 보세요."
+        },
+        "FB_SAFETY001_A2": {
+          "why_wrong": {
+            "ko": "'큰일 났어요! 도와주세요!' 문장을 명확하고 긴박하게 발음해 보세요.",
+            "my": "'큰일 났어요! 도와주세요!' စာကြောင်းကို ရှင်းလင်းပြတ်သားစွာ အသံထွက် ပြောဆိုကြည့်ပါ။",
+            "en": "Pronounce 'Emergency! Please help me!' clearly and urgently."
+          },
+          "retry_phrase": "큰일 났어요! 도와주세요!"
+        }
+      },
+      "srs": {
+        "enabled": true,
+        "cards": [
+          {
+            "card_id": "C1",
+            "front": {
+              "ko": "비상 정지 버튼",
+              "my": "အရေးပေါ် ရပ်တန့်ခလုတ်",
+              "en": "Emergency stop button"
+            },
+            "back": {
+              "ko": "비상 정지 버튼을 누르세요",
+              "my": "အရေးပေါ် ရပ်တန့်ခလုတ်ကို နှိပ်ပါ",
+              "en": "Press the emergency stop button"
+            },
+            "audio_ref": "AUD_SAFETY001_L2",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C2",
+            "front": {
+              "ko": "큰일 났어요",
+              "my": "ဒုက္ခပါပဲ / အရေးကြီး လာပါပြီ",
+              "en": "Emergency / Trouble"
+            },
+            "back": {
+              "ko": "큰일 났어요! 도와주세요!",
+              "my": "ဒုက္ခပါပဲ။ ကူညီပေးကြပါဦး။",
+              "en": "Emergency! Please help!"
+            },
+            "audio_ref": "AUD_SAFETY001_A2",
+            "ease": 2.5,
+            "interval": 0
+          }
+        ]
+      },
+      "assessment": {
+        "type": "mission",
+        "pass_threshold": 70,
+        "weights": {
+          "accuracy": 40,
+          "completion": 30,
+          "speaking": 30
+        },
+        "exam_mapping": {
+          "topik": "TOPIK_I_2",
+          "eps_topik": "EPS_TOPIK_SAFETY"
+        }
+      }
+    }
+  ]
+}
+

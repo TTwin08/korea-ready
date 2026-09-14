@@ -1,6 +1,17 @@
 {
   "missions": [
     {
+      "mission_id": "COMMON-SURV-007",
+      "goal": "common",
+      "level": 1,
+      "title": {
+        "my": "စားသောက်ဆိုင်တွင် အစားအစာ မှာယူခြင်း",
+        "ko": "식당에서 음식 주문하기",
+        "en": "Ordering Food at a Restaurant"
+      },
+      "estimated_minutes": 8
+    },
+    {
       "mission_id": "EXAM-INTERVIEW-001",
       "goal": "common",
       "level": 2,

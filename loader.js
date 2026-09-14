@@ -8,16 +8,30 @@ function loadMission(id) {
         }
         return response.json();
       })
-      .then(function(data) {
-        var check = validateMission(data);
+      .then(function(raw) {
+        var mission = unwrapMission(raw);
+        if (!mission) {
+          reject(new Error('Mission data not found'));
+          return;
+        }
+        var check = validateMission(mission);
         if (!check.ok) {
           reject(new Error('Missing field: ' + check.field));
           return;
         }
-        resolve(data);
+        resolve(mission);
       })
       .catch(function(err) {
         reject(err);
       });
   });
+}
+
+function unwrapMission(raw) {
+  if (!raw) return null;
+  if (raw.mission_id) return raw;
+  if (Array.isArray(raw.missions) && raw.missions.length > 0) {
+    return raw.missions[0];
+  }
+  return null;
 }

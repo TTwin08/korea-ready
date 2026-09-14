@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "LEVEL0-NUMBER-001",
+  "goal": "common",
+  "level": 0,
+  "category": "daily",
+  "industry": null,
+  "tags": ["level-0", "numbers", "native-korean", "foundation", "beginner"],
+  "title": {"my":"ကိုရီးယား နံပါတ် — မူရင်းကိုရီးယား (၁–၅)","ko":"고유어 숫자 (1–5)","en":"Native Korean Numbers (1–5)"},
+  "objective": {"my":"မူရင်းကိုရီးယား နံပါတ် ၁–၅ (하나, 둘, 셋, 넷, 다섯) ကို Romanization (hana, dul, set, net, daseot) ကို အဓိက အကိုးအကားအဖြစ်ထားပြီး မှတ်မိ/အသံထွက်နိုင်မယ်။ Burmese မြန်မာ အသံ ခန့်မှန်းချက်များကို အကိုးအကား အဖြစ်သာ ထားပါ။","ko":"고유어 숫자 1–5(하나, 둘, 셋, 넷, 다섯)를 로마자 표기를 기준으로 익히고 발음할 수 있다.","en":"Learn and pronounce native Korean numbers 1–5 (하나, 둘, 셋, 넷, 다섯) using Romanization as the primary guide."},
+  "prerequisites": [],
+  "skills": ["listening","speaking","reading"],
+  "estimated_minutes": 6,
+  "difficulty": "intro",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "dialogue": {
+    "setting": {"my":"ကိုရီးယားဘာသာ စာသင်ခန်း","ko":"한국어 교실","en":"Korean language classroom"},
+    "speakers": [
+      {"id":"teacher","role":"teacher","gender":"female","voice_id":"ko_f_01"},
+      {"id":"learner","role":"learner","gender":"any","voice_id":null}
+    ],
+    "lines": [
+      {"line_id":"L1","speaker":"teacher","ko":"오늘은 고유어 숫자 1부터 5까지 배워 봅시다.","rom":"oneureun goyueo sutja ilbuteo daseotkkaji baewo bopsida.","my":"ဒီနေ့တော့ မူရင်းကိုရီးယား နံပါတ် ၁ ကနေ ၅ အထိ လေ့လာကြရအောင်။","en":"Today, let's learn native Korean numbers from 1 to 5.","audio":"","note":""},
+      {"line_id":"L2","speaker":"learner","ko":"네, 선생님.","rom":"ne, seonsaengnim.","my":"ဟုတ်ကဲ့ ဆရာမ။","en":"Yes, teacher.","audio":"","note":""},
+      {"line_id":"L3","speaker":"teacher","ko":"하나(1), 둘(2), 셋(3), 넷(4), 다섯(5)입니다.","rom":"hana(1), dul(2), set(3), net(4), daseot(5)imnida.","my":"하나 (၁)၊ 둘 (၂)၊ 셋 (၃)၊ 넷 (၄)၊ 다섯 (၅)။ Romanization (hana, dul, set, net, daseot) ကို အဓိက အကိုးအကား ထားပါ။","en":"하나 (1), 둘 (2), 셋 (3), 넷 (4), 다섯 (5) — Roman: hana, dul, set, net, daseot.","audio":"","note":""},
+      {"line_id":"L4","speaker":"learner","ko":"하나, 둘, 셋! 알겠습니다.","rom":"hana, dul, set! algesseumnida.","my":"ဟာနာ၊ ဒူလ်၊ ဆက်! နားလည်ပါပြီ။","en":"Hana, dul, set! Understood.","audio":"","note":""}
+    ]
+  },
+  "activities": [
+    {
+      "activity_id": "A1",
+      "type": "listen_choose",
+      "prompt": {"my":"Roman 'hana' က ဘယ်နံပါတ်လဲ?","ko":"로마자 'hana'는 어떤 숫자인가요?","en":"What number is Roman 'hana'?"},
+      "audio_ref": "",
+      "options": [
+        {"id":"O1","ko":"하나","my":"하나 — Roman: hana (၁)","correct": true},
+        {"id":"O2","ko":"둘","my":"둘 — Roman: dul (၂)","correct": false},
+        {"id":"O3","ko":"셋","my":"셋 — Roman: set (၃)","correct": false},
+        {"id":"O4","ko":"넷","my":"넷 — Roman: net (၄)","correct": false}
+      ],
+      "explanation_ref": "F1"
+    },
+    {
+      "activity_id": "A2",
+      "type": "listen_choose",
+      "prompt": {"my":"Roman 'set' က ဘယ်နံပါတ်လဲ?","ko":"로마자 'set'는 어떤 숫자인가요?","en":"What number is Roman 'set'?"},
+      "audio_ref": "",
+      "options": [
+        {"id":"O1","ko":"셋","my":"셋 — Roman: set (၃)","correct": true},
+        {"id":"O2","ko":"하나","my":"하나 — Roman: hana (၁)","correct": false},
+        {"id":"O3","ko":"다섯","my":"다섯 — Roman: daseot (၅)","correct": false},
+        {"id":"O4","ko":"넷","my":"넷 — Roman: net (၄)","correct": false}
+      ],
+      "explanation_ref": "F2"
+    },
+    {
+      "activity_id": "A3",
+      "type": "type_answer",
+      "prompt": {"my":"Roman 'daseot' ကို ကိုရီးယားလို ရိုက်ထည့်ပါ။ (၅)","ko":"로마자 'daseot'을 한글로 입력하세요. (5)","en":"Type the Korean word for Roman 'daseot' (5)."},
+      "answer": "다섯",
+      "accept_alt": ["다섯 ", "daseot", "DASEOT"],
+      "explanation_ref": "F3"
+    },
+    {
+      "activity_id": "A4",
+      "type": "speak",
+      "prompt": {"my":"'하나, 둘, 셋' ကို ဆက်တိုက် ကျယ်ကျယ်ပြောပါ။ (Roman: hana, dul, set)","ko":"'하나, 둘, 셋'을 연속으로 크게 말하세요. (로마자: hana, dul, set)","en":"Say '하나, 둘, 셋' (1, 2, 3) in sequence. (Roman: hana, dul, set)"},
+      "target_ko": "하나 둘 셋",
+      "min_score": 60,
+      "audio_ref": "AUD_L0N001_A4",
+      "explanation_ref": "F4"
+    }
+  ],
+  "feedback": {
+    "F1": {
+      "why_wrong": {"my":"Roman 'hana' က '하나' (၁)။ 'dul' (၂)၊ 'set' (၃)၊ 'net' (၄)၊ 'daseot' (၅)။","ko":"Roman 'hana'는 '하나'(1)입니다. 'dul'(2), 'set'(3), 'net'(4), 'daseot'(5)입니다.","en":"Roman 'hana' is '하나' (1). 'dul' (2), 'set' (3), 'net' (4), 'daseot' (5)."},
+      "grammar": {"point":"고유어 숫자 1","explain_my":"မူရင်းကိုရီးယား နံပါတ်စနစ် — အရာဝတ္တု ရေတွက်ရာတွင် သုံး။"},
+      "culture": "한국어는 두 가지 숫자 체계가 있습니다: 고유어 숫자와 한자어 숫자.",
+      "retry_phrase": "하나"
+    },
+    "F2": {
+      "why_wrong": {"my":"Roman 'set' က '셋' (၃)။","ko":"Roman 'set'는 '셋'(3)입니다.","en":"Roman 'set' is '셋' (3)."},
+      "retry_phrase": "셋"
+    },
+    "F3": {
+      "why_wrong": {"my":"Roman 'daseot' က '다섯' (၅)။","ko":"Roman 'daseot'는 '다섯'(5)입니다.","en":"Roman 'daseot' is '다섯' (5)."},
+      "retry_phrase": "다섯"
+    },
+    "F4": {
+      "why_wrong": {"my":"'하나 둘 셋' — Roman: hana dul set။ ဆက်တိုက် ကျယ်ကျယ်ပြောပါ။","ko":"'하나 둘 셋' — 로마자: hana dul set. 연속으로 크게 말하세요.","en":"'하나 둘 셋' — Roman: hana dul set. Say them in sequence, clearly."},
+      "retry_phrase": "하나 둘 셋"
+    }
+  },
+  "cultural_note": {
+    "title": {"my":"ကိုရီးယား နံပါတ် စနစ် ၂ မျိုး","ko":"한국어 숫자 체계 두 가지","en":"Two Korean Number Systems"},
+    "body": {"my":"ကိုရီးယားမှာ နံပါတ် စနစ် ၂ မျိုး ရှိတယ် — မူရင်းကိုရီးယား (하나, 둘, 셋) နဲ့ တရုတ်ဆင်းသက် ကိုရီးယား (일, 이, 삼)။ မူရင်းစနစ်ကို အရာဝတ္တု၊ လူ၊ အချိန် (နာရီ) ရေတွက်ရာတွင် သုံး။","ko":"한국어에는 두 가지 숫자 체계가 있습니다: 고유어 숫자(하나, 둘, 셋)와 한자어 숫자(일, 이, 삼). 고유어는 물건, 사람, 시간(시)을 셀 때 사용합니다.","en":"Korean has two number systems: native Korean (하나, 둘, 셋) and Sino-Korean (일, 이, 삼). Native Korean is used for counting things, people, and hours."},
+    "sensitive": false
+  },
+  "audio": {
+    "base_path": "audio/LEVEL0-NUMBER-001/",
+    "files": [{"id":"AUD_L0N001_A4","normal":"a4-normal.mp3","slow":"a4-slow.mp3","duration":2.0}],
+    "spec": {"sample_rate":44100,"channels":1,"format":"mp3","bitrate":128}
+  },
+  "srs": {
+    "enabled": true,
+    "cards": [
+      {"card_id":"C1","front":{"my":"Roman: hana (၁)","ko":"Roman: hana (1)","en":"Roman: hana (1)"},"back":{"my":"하나","ko":"하나","en":"하나"},"audio_ref":"AUD_L0N001_A4","ease":2.5,"interval":0},
+      {"card_id":"C2","front":{"my":"Roman: dul (၂)","ko":"Roman: dul (2)","en":"Roman: dul (2)"},"back":{"my":"둘","ko":"둘","en":"둘"},"audio_ref":"","ease":2.5,"interval":0},
+      {"card_id":"C3","front":{"my":"Roman: set (၃)","ko":"Roman: set (3)","en":"Roman: set (3)"},"back":{"my":"셋","ko":"셋","en":"셋"},"audio_ref":"","ease":2.5,"interval":0},
+      {"card_id":"C4","front":{"my":"Roman: net (၄)","ko":"Roman: net (4)","en":"Roman: net (4)"},"back":{"my":"넷","ko":"넷","en":"넷"},"audio_ref":"","ease":2.5,"interval":0},
+      {"card_id":"C5","front":{"my":"Roman: daseot (၅)","ko":"Roman: daseot (5)","en":"Roman: daseot (5)"},"back":{"my":"다섯","ko":"다섯","en":"다섯"},"audio_ref":"","ease":2.5,"interval":0}
+    ]
+  },
+  "assessment": {
+    "type": "mission",
+    "pass_threshold": 70,
+    "weights": {"accuracy":40,"completion":30,"speaking":30},
+    "exam_mapping": {"topik":null,"eps_topik":null}
+  }
+}

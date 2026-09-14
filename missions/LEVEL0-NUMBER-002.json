@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "LEVEL0-NUMBER-002",
+  "goal": "common",
+  "level": 0,
+  "category": "daily",
+  "industry": null,
+  "tags": ["level-0", "numbers", "sino-korean", "foundation", "beginner"],
+  "title": {"my":"ကိုရီးယား နံပါတ် — တရုတ်ဆင်းသက် (၁–၅)","ko":"한자어 숫자 (1–5)","en":"Sino-Korean Numbers (1–5)"},
+  "objective": {"my":"တရုတ်ဆင်းသက် ကိုရီးယား နံပါတ် ၁–၅ (일, 이, 삼, 사, 오) ကို Romanization (il, i, sam, sa, o) ကို အဓိက အကိုးအကားအဖြစ်ထားပြီး မှတ်မိ/အသံထွက်နိုင်မယ်။ Burmese မြန်မာ အသံ ခန့်မှန်းချက်များကို အကိုးအကား အဖြစ်သာ ထားပါ။","ko":"한자어 숫자 1–5(일, 이, 삼, 사, 오)를 로마자 표기를 기준으로 익히고 발음할 수 있다.","en":"Learn and pronounce Sino-Korean numbers 1–5 (일, 이, 삼, 사, 오) using Romanization as the primary guide."},
+  "prerequisites": [],
+  "skills": ["listening","speaking","reading"],
+  "estimated_minutes": 6,
+  "difficulty": "intro",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "dialogue": {
+    "setting": {"my":"ကိုရီးယားဘာသာ စာသင်ခန်း","ko":"한국어 교실","en":"Korean language classroom"},
+    "speakers": [
+      {"id":"teacher","role":"teacher","gender":"female","voice_id":"ko_f_01"},
+      {"id":"learner","role":"learner","gender":"any","voice_id":null}
+    ],
+    "lines": [
+      {"line_id":"L1","speaker":"teacher","ko":"이번에는 한자어 숫자 1부터 5까지 배워 봅시다.","rom":"ibeoneneun hanjaeo sutja ilbuteo daseotkkaji baewo bopsida.","my":"ဒီတစ်ခါတော့ တရုတ်ဆင်းသက် ကိုရီးယား နံပါတ် ၁ ကနေ ၅ အထိ လေ့လာကြရအောင်။","en":"This time, let's learn Sino-Korean numbers 1 to 5.","audio":"","note":""},
+      {"line_id":"L2","speaker":"learner","ko":"고유어랑 어떻게 달라요?","rom":"goyueorang eotteoke dallayo?","my":"မူရင်းကိုရီးယားနဲ့ ဘယ်လို ကွာလဲ?","en":"How are they different from native Korean numbers?","audio":"","note":""},
+      {"line_id":"L3","speaker":"teacher","ko":"일(1), 이(2), 삼(3), 사(4), 오(5)입니다.","rom":"il(1), i(2), sam(3), sa(4), o(5)imnida.","my":"일 (၁)၊ 이 (၂)၊ 삼 (၃)၊ 사 (၄)၊ 오 (၅)။ Romanization — il, i, sam, sa, o။","en":"일 (1), 이 (2), 삼 (3), 사 (4), 오 (5) — Roman: il, i, sam, sa, o.","audio":"","note":""},
+      {"line_id":"L4","speaker":"learner","ko":"아, 용도가 다르군요!","rom":"a, yongdoga dareugunyo!","my":"အာ၊ အသုံးချင်း ကွာခြားတာပဲ!","en":"Ah, their uses are different!","audio":"","note":""}
+    ]
+  },
+  "activities": [
+    {
+      "activity_id": "A1",
+      "type": "listen_choose",
+      "prompt": {"my":"Roman 'sam' က ဘယ်နံပါတ်လဲ?","ko":"로마자 'sam'은 어떤 숫자인가요?","en":"What number is Roman 'sam'?"},
+      "audio_ref": "",
+      "options": [
+        {"id":"O1","ko":"삼","my":"삼 — Roman: sam (၃)","correct": true},
+        {"id":"O2","ko":"일","my":"일 — Roman: il (၁)","correct": false},
+        {"id":"O3","ko":"이","my":"이 — Roman: i (၂)","correct": false},
+        {"id":"O4","ko":"오","my":"오 — Roman: o (၅)","correct": false}
+      ],
+      "explanation_ref": "F1"
+    },
+    {
+      "activity_id": "A2",
+      "type": "listen_choose",
+      "prompt": {"my":"Roman 'o' က ဘယ်နံပါတ်လဲ?","ko":"로마자 'o'는 어떤 숫자인가요?","en":"What number is Roman 'o'?"},
+      "audio_ref": "",
+      "options": [
+        {"id":"O1","ko":"오","my":"오 — Roman: o (၅)","correct": true},
+        {"id":"O2","ko":"사","my":"사 — Roman: sa (၄)","correct": false},
+        {"id":"O3","ko":"삼","my":"삼 — Roman: sam (၃)","correct": false},
+        {"id":"O4","ko":"일","my":"일 — Roman: il (၁)","correct": false}
+      ],
+      "explanation_ref": "F2"
+    },
+    {
+      "activity_id": "A3",
+      "type": "type_answer",
+      "prompt": {"my":"Roman 'sa' ကို ကိုရီးယားလို ရိုက်ထည့်ပါ။ (၄)","ko":"로마자 'sa'를 한글로 입력하세요. (4)","en":"Type the Korean word for Roman 'sa' (4)."},
+      "answer": "사",
+      "accept_alt": ["사 ", "sa", "SA"],
+      "explanation_ref": "F3"
+    },
+    {
+      "activity_id": "A4",
+      "type": "speak",
+      "prompt": {"my":"'일, 이, 삼' ကို ဆက်တိုက် ကျယ်ကျယ်ပြောပါ။ (Roman: il, i, sam)","ko":"'일, 이, 삼'을 연속으로 크게 말하세요. (로마자: il, i, sam)","en":"Say '일, 이, 삼' (1, 2, 3) in sequence. (Roman: il, i, sam)"},
+      "target_ko": "일 이 삼",
+      "min_score": 60,
+      "audio_ref": "AUD_L0N002_A4",
+      "explanation_ref": "F4"
+    }
+  ],
+  "feedback": {
+    "F1": {
+      "why_wrong": {"my":"Roman 'sam' က '삼' (၃)။ 'il' (၁)၊ 'i' (၂)၊ 'sa' (၄)၊ 'o' (၅)။","ko":"Roman 'sam'은 '삼'(3)입니다. 'il'(1), 'i'(2), 'sa'(4), 'o'(5)입니다.","en":"Roman 'sam' is '삼' (3). 'il' (1), 'i' (2), 'sa' (4), 'o' (5)."},
+      "grammar": {"point":"한자어 숫자 3","explain_my":"တရုတ်ဆင်းသက် ကိုရီးယား နံပါတ် — '삼' က '၃'။"},
+      "culture": "한자어 숫자는 한국어 어휘의 약 60%를 차지하는 한자에서 왔습니다.",
+      "retry_phrase": "삼"
+    },
+    "F2": {
+      "why_wrong": {"my":"Roman 'o' က '오' (၅)။ 'sa' (၄)၊ 'sam' (၃)၊ 'i' (၂)၊ 'il' (၁)။","ko":"Roman 'o'는 '오'(5)입니다.","en":"Roman 'o' is '오' (5)."},
+      "retry_phrase": "오"
+    },
+    "F3": {
+      "why_wrong": {"my":"Roman 'sa' က '사' (၄)။","ko":"Roman 'sa'는 '사'(4)입니다.","en":"Roman 'sa' is '사' (4)."},
+      "retry_phrase": "사"
+    },
+    "F4": {
+      "why_wrong": {"my":"'일 이 삼' — Roman: il i sam။ ဆက်တိုက် ကျယ်ကျယ်ပြောပါ။","ko":"'일 이 삼' — 로마자: il i sam. 연속으로 크게 말하세요.","en":"'일 이 삼' — Roman: il i sam. Say them in sequence, clearly."},
+      "retry_phrase": "일 이 삼"
+    }
+  },
+  "cultural_note": {
+    "title": {"my":"တရုတ်ဆင်းသက် ကိုရီးယား နံပါတ်များ","ko":"한자어 숫자의 용도","en":"Uses of Sino-Korean Numbers"},
+    "body": {"my":"တရုတ်ဆင်းသက် ကိုရီးယား နံပါတ်တွေကို အသုံးများတဲ့ နေရာတွေမှာ — ပိုက်ဆံ (원)၊ ရက်စွဲ (년, 월, 일)၊ ဖုန်းနံပါတ်၊ မိနစ်/စက္ကန့်၊ လိပ်စာ၊ အတိုင်းအတာ (km, kg) စသည် — တို့တွင် သုံးတယ်။ ဒီသင်ခန်းစာမှာတော့ ၁–၅ အခြေခံ နံပါတ်များကို အရင် လေ့လာမယ်။ အသုံးပြုပုံ အပြည့်အစုံကို နောက်သင်ခန်းစာများတွင် ဆက်လက် လေ့လာမယ်။","ko":"한자어 숫자는 돈(원), 날짜(년, 월, 일), 전화번호, 분·초, 주소, 단위(km, kg) 등 일상에서 자주 쓰이는 곳에 사용됩니다. 이번 수업에서는 1–5 기본 숫자만 먼저 배우고, 전체 용도는 다음 수업에서 이어집니다.","en":"Sino-Korean numbers are commonly used for money (won), dates (year, month, day), phone numbers, minutes/seconds, addresses, and units (km, kg). This lesson covers the basic 1–5 only; full usage continues in later lessons."},
+    "sensitive": false
+  },
+  "audio": {
+    "base_path": "audio/LEVEL0-NUMBER-002/",
+    "files": [{"id":"AUD_L0N002_A4","normal":"a4-normal.mp3","slow":"a4-slow.mp3","duration":2.0}],
+    "spec": {"sample_rate":44100,"channels":1,"format":"mp3","bitrate":128}
+  },
+  "srs": {
+    "enabled": true,
+    "cards": [
+      {"card_id":"C1","front":{"my":"Roman: il (၁)","ko":"Roman: il (1)","en":"Roman: il (1)"},"back":{"my":"일","ko":"일","en":"일"},"audio_ref":"AUD_L0N002_A4","ease":2.5,"interval":0},
+      {"card_id":"C2","front":{"my":"Roman: i (၂)","ko":"Roman: i (2)","en":"Roman: i (2)"},"back":{"my":"이","ko":"이","en":"이"},"audio_ref":"","ease":2.5,"interval":0},
+      {"card_id":"C3","front":{"my":"Roman: sam (၃)","ko":"Roman: sam (3)","en":"Roman: sam (3)"},"back":{"my":"삼","ko":"삼","en":"삼"},"audio_ref":"","ease":2.5,"interval":0},
+      {"card_id":"C4","front":{"my":"Roman: sa (၄)","ko":"Roman: sa (4)","en":"Roman: sa (4)"},"back":{"my":"사","ko":"사","en":"사"},"audio_ref":"","ease":2.5,"interval":0},
+      {"card_id":"C5","front":{"my":"Roman: o (၅)","ko":"Roman: o (5)","en":"Roman: o (5)"},"back":{"my":"오","ko":"오","en":"오"},"audio_ref":"","ease":2.5,"interval":0}
+    ]
+  },
+  "assessment": {
+    "type": "mission",
+    "pass_threshold": 70,
+    "weights": {"accuracy":40,"completion":30,"speaking":30},
+    "exam_mapping": {"topik":null,"eps_topik":null}
+  }
+}

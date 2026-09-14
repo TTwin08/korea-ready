@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "LEVEL0-HANGUL-003",
+  "goal": "common",
+  "level": 0,
+  "category": "daily",
+  "industry": null,
+  "tags": ["level-0", "hangul", "syllables", "foundation", "beginner"],
+  "title": {"my":"ကိုရီးယား အက္ခရာ — ဗျည်းနှင့်သရ ပေါင်း၍ စာလုံးဖွဲ့စည်းခြင်း","ko":"한글 음절 만들기","en":"Building Syllable Blocks"},
+  "objective": {"my":"ဗျည်းနှင့် သရ ပေါင်းစပ်ပြီး စာလုံးတစ်ခု (음절) ဘယ်လိုဖွဲ့စည်းတယ်ဆိုတာ နားလည်မယ် — ဒေါင်လိုက်သရ (ㅏ ㅓ ㅣ) နဲ့ အလျားလိုက်သရ (ㅗ ㅜ ㅡ) နှစ်မျိုးလုံး အတွက်။","ko":"자음과 모음을 합쳐 하나의 음절을 만드는 방법을 이해한다 — 세로 모음(ㅏ ㅓ ㅣ)과 가로 모음(ㅗ ㅜ ㅡ) 모두.","en":"Understand how consonants and vowels combine to form one syllable block — covering both vertical vowels (ㅏ ㅓ ㅣ) and horizontal vowels (ㅗ ㅜ ㅡ)."},
+  "prerequisites": [],
+  "skills": ["listening","speaking","reading"],
+  "estimated_minutes": 6,
+  "difficulty": "intro",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "dialogue": {
+    "setting": {"my":"ကိုရီးယားဘာသာ စာသင်ခန်း","ko":"한국어 교실","en":"Korean language classroom"},
+    "speakers": [
+      {"id":"teacher","role":"teacher","gender":"female","voice_id":"ko_f_01"},
+      {"id":"learner","role":"learner","gender":"any","voice_id":null}
+    ],
+    "lines": [
+      {"line_id":"L1","speaker":"teacher","ko":"자음과 모음을 합치면 하나의 글자가 돼요.","rom":"jaeumgwa moeumeul matchimyeon hanaui geuljaga dwaeyo.","my":"ဗျည်းနဲ့ သရ ပေါင်းလိုက်ရင် စာလုံးတစ်ခု ဖြစ်သွားတယ်။","en":"When you combine a consonant and a vowel, they become one syllable block.","audio":"","note":""},
+      {"line_id":"L2","speaker":"learner","ko":"어떻게 합쳐요?","rom":"eotteoke matchyeoyo?","my":"ဘယ်လို ပေါင်းလဲ?","en":"How do you combine them?","audio":"","note":""},
+      {"line_id":"L3","speaker":"teacher","ko":"세로 모음은 자음 오른쪽에, 가로 모음은 자음 아래에 와요.","rom":"sero moeumeun jaeum oreunjjoge, garo moeumeun jaeum araee wayo.","my":"ဒေါင်လိုက်သရ (ㅏ ㅓ ㅣ) က ဗျည်းရဲ့ ညာဘက်မှာ၊ အလျားလိုက်သရ (ㅗ ㅜ ㅡ) က ဗျည်းရဲ့ အောက်မှာ လာတယ်။","en":"Vertical vowels go to the right of the consonant; horizontal vowels go below the consonant.","audio":"","note":""},
+      {"line_id":"L4","speaker":"learner","ko":"아, 재미있어요!","rom":"a, jaemiisseoyo!","my":"အာ၊ စိတ်ဝင်စားဖို့ကောင်းတယ်!","en":"Ah, that's fun!","audio":"","note":""}
+    ]
+  },
+  "activities": [
+    {
+      "activity_id": "A1",
+      "type": "listen_choose",
+      "prompt": {"my":"ဒေါင်လိုက်သရ 'ㅏ' နဲ့ ဗျည်း 'ㅎ' ပေါင်းရင် ဘယ်လို ရေးလဲ? (Vowel RIGHT)","ko":"세로 모음 'ㅏ'와 'ㅎ'의 조합은? (모음이 오른쪽)","en":"How do 'ㅎ' + 'ㅏ' (vertical vowel) combine? (Vowel on right)"},
+      "audio_ref": "",
+      "options": [
+        {"id":"O1","ko":"하","my":"하 (ha) — ဗျည်း ဘယ် + သရ ညာ","correct": true},
+        {"id":"O2","ko":"호","my":"호 (ho) — ဗျည်း အပေါ် + သရ အောက်","correct": false},
+        {"id":"O3","ko":"허","my":"허 (heo)","correct": false},
+        {"id":"O4","ko":"히","my":"히 (hi)","correct": false}
+      ],
+      "explanation_ref": "F1"
+    },
+    {
+      "activity_id": "A2",
+      "type": "listen_choose",
+      "prompt": {"my":"အလျားလိုက်သရ 'ㅗ' နဲ့ ဗျည်း 'ㅎ' ပေါင်းရင် ဘယ်လို ရေးလဲ? (Vowel BOTTOM)","ko":"가로 모음 'ㅗ'와 'ㅎ'의 조합은? (모음이 아래)","en":"How do 'ㅎ' + 'ㅗ' (horizontal vowel) combine? (Vowel below)"},
+      "audio_ref": "",
+      "options": [
+        {"id":"O1","ko":"호","my":"호 (ho) — ဗျည်း အပေါ် + သရ အောက်","correct": true},
+        {"id":"O2","ko":"하","my":"하 (ha) — ဗျည်း ဘယ် + သရ ညာ","correct": false},
+        {"id":"O3","ko":"허","my":"허 (heo)","correct": false},
+        {"id":"O4","ko":"후","my":"후 (hu)","correct": false}
+      ],
+      "explanation_ref": "F2"
+    },
+    {
+      "activity_id": "A3",
+      "type": "type_answer",
+      "prompt": {"my":"'ㄴ' + 'ㅏ' (ဒေါင်လိုက်သရ) ပေါင်းရင် ရလာတဲ့ စာလုံးကို ရိုက်ထည့်ပါ။","ko":"'ㄴ' + 'ㅏ' (세로 모음)의 결과를 입력하세요.","en":"Type the syllable from 'ㄴ' + 'ㅏ' (vertical vowel)."},
+      "answer": "나",
+      "accept_alt": ["나 ", "na", "NA"],
+      "explanation_ref": "F3"
+    },
+    {
+      "activity_id": "A4",
+      "type": "speak",
+      "prompt": {"my":"'나' ကို ကျယ်ကျယ်ပြောပါ။","ko":"'나'를 크게 말하세요.","en":"Say '나' out loud."},
+      "target_ko": "나",
+      "min_score": 60,
+      "audio_ref": "AUD_L0H003_A4",
+      "explanation_ref": "F4"
+    }
+  ],
+  "feedback": {
+    "F1": {
+      "why_wrong": {"my":"ဒေါင်လိုက်သရ (ㅏ ㅓ ㅣ) က — ဗျည်း ဘယ်ဘက်၊ သရ ညာဘက်။ ဒါကြောင့် 'ㅎ' + 'ㅏ' = '하'။","ko":"세로 모음(ㅏ ㅓ ㅣ)은 자음 오른쪽에 옵니다. 그래서 'ㅎ' + 'ㅏ' = '하'.","en":"Vertical vowels (ㅏ ㅓ ㅣ) go to the right of the consonant. So 'ㅎ' + 'ㅏ' = '하'."},
+      "grammar": {"point":"세로 모음 배치 (Vertical Vowel Layout)","explain_my":"ဒေါင်လိုက်သရ များအတွက် — ဗျည်းက ဘယ်ဘက်၊ သရက ညာဘက်။"},
+      "culture": "한글 음절 구조는 모음의 방향에 따라 두 가지로 나뉩니다.",
+      "retry_phrase": "하"
+    },
+    "F2": {
+      "why_wrong": {"my":"အလျားလိုက်သရ (ㅗ ㅜ ㅡ) က — ဗျည်း အပေါ်၊ သရ အောက်။ ဒါကြောင့် 'ㅎ' + 'ㅗ' = '호'။","ko":"가로 모음(ㅗ ㅜ ㅡ)은 자음 아래에 옵니다. 그래서 'ㅎ' + 'ㅗ' = '호'.","en":"Horizontal vowels (ㅗ ㅜ ㅡ) go below the consonant. So 'ㅎ' + 'ㅗ' = '호'."},
+      "grammar": {"point":"가로 모음 배치 (Horizontal Vowel Layout)","explain_my":"အလျားလိုက်သရ များအတွက် — ဗျည်းက အပေါ်၊ သရက အောက်။"},
+      "culture": "한글 음절에서 모음의 방향(세로/가로)에 따라 배치가 달라집니다.",
+      "retry_phrase": "호"
+    },
+    "F3": {
+      "why_wrong": {"my":"'ㄴ' + 'ㅏ' = '나'။ 'ㅏ' က ဒေါင်လိုက်သရမို့ ညာဘက်မှာ လာတယ်။","ko":"'ㄴ' + 'ㅏ' = '나'. 'ㅏ'는 세로 모음이므로 오른쪽에 옵니다.","en":"'ㄴ' + 'ㅏ' = '나'. 'ㅏ' is vertical so it goes on the right."},
+      "retry_phrase": "나"
+    },
+    "F4": {
+      "why_wrong": {"my":"'나' 를 크게 발음하세요.","ko":"'나'를 크게 발음하세요.","en":"Say '나' clearly."},
+      "retry_phrase": "나"
+    }
+  },
+  "cultural_note": {
+    "title": {"my":"ဟန်ဂုလ် စာလုံးဖွဲ့စည်းပုံ (음절 구조)","ko":"한글 음절 구조","en":"Hangul Syllable Structure"},
+    "body": {"my":"ဟန်ဂုလ် စာလုံးတစ်ခုမှာ — ဗျည်း + သရ (+ အဆုံးဗျည်း)။ ဒေါင်လိုက်သရ (ㅏ ㅓ ㅣ) ဆိုရင် ဗျည်း ဘယ်ဘက်၊ သရ ညာဘက် — '하'။ အလျားလိုက်သရ (ㅗ ㅜ ㅡ) ဆိုရင် ဗျည်း အပေါ်၊ သရ အောက် — '호'။","ko":"한글 음절은 자음 + 모음 (+ 받침)으로 구성됩니다. 세로 모음(ㅏ ㅓ ㅣ)은 자음 오른쪽에 — 예: '하'. 가로 모음(ㅗ ㅜ ㅡ)은 자음 아래에 — 예: '호'.","en":"A Hangul syllable = consonant + vowel (+ final consonant). Vertical vowels (ㅏ ㅓ ㅣ) go right — e.g. '하'. Horizontal vowels (ㅗ ㅜ ㅡ) go below — e.g. '호'."},
+    "sensitive": false
+  },
+  "audio": {
+    "base_path": "audio/LEVEL0-HANGUL-003/",
+    "files": [{"id":"AUD_L0H003_A4","normal":"a4-normal.mp3","slow":"a4-slow.mp3","duration":1.5}],
+    "spec": {"sample_rate":44100,"channels":1,"format":"mp3","bitrate":128}
+  },
+  "srs": {
+    "enabled": true,
+    "cards": [
+      {"card_id":"C1","front":{"my":"'ㅎ' + 'ㅏ' (ဒေါင်လိုက်သရ)","ko":"'ㅎ' + 'ㅏ' (세로 모음)","en":"'ㅎ' + 'ㅏ' (vertical vowel)"},"back":{"my":"하","ko":"하","en":"하 (ha)"},"audio_ref":"AUD_L0H003_A4","ease":2.5,"interval":0},
+      {"card_id":"C2","front":{"my":"'ㅎ' + 'ㅗ' (အလျားလိုက်သရ)","ko":"'ㅎ' + 'ㅗ' (가로 모음)","en":"'ㅎ' + 'ㅗ' (horizontal vowel)"},"back":{"my":"호","ko":"호","en":"호 (ho)"},"audio_ref":"","ease":2.5,"interval":0},
+      {"card_id":"C3","front":{"my":"'ㄴ' + 'ㅏ'","ko":"'ㄴ' + 'ㅏ'","en":"'ㄴ' + 'ㅏ'"},"back":{"my":"나","ko":"나","en":"나 (na)"},"audio_ref":"","ease":2.5,"interval":0}
+    ]
+  },
+  "assessment": {
+    "type": "mission",
+    "pass_threshold": 70,
+    "weights": {"accuracy":40,"completion":30,"speaking":30},
+    "exam_mapping": {"topik":null,"eps_topik":null}
+  }
+}

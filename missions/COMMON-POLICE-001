@@ -1,0 +1,424 @@
+{
+  "__meta": {
+    "generator": "Korea Ready Mission Generator v1.0",
+    "generated_at": "2026-09-13T15:38:54Z",
+    "batch_id": "BATCH-20260913-003",
+    "request": "Generate COMMON-POLICE-001"
+  },
+  "__self_check": {
+    "rules_passed": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7",
+      "R8",
+      "R9",
+      "R10",
+      "R11",
+      "R12",
+      "R13",
+      "R14",
+      "R15",
+      "R16",
+      "R17",
+      "R18",
+      "R19",
+      "R20",
+      "R21",
+      "R22",
+      "R23",
+      "R24",
+      "R25",
+      "R26"
+    ],
+    "warnings": [],
+    "uncertainties": [],
+    "external_prereqs": []
+  },
+  "missions": [
+    {
+      "schema_version": "1.0",
+      "mission_id": "COMMON-POLICE-001",
+      "goal": "common",
+      "level": 2,
+      "category": "safety",
+      "industry": null,
+      "tags": [
+        "police-report",
+        "lost-wallet",
+        "safety",
+        "crime-reporting"
+      ],
+      "title": {
+        "my": "ရဲစခန်းတွင် ပိုက်ဆံအိတ် ပျောက်ဆုံးကြောင်း တိုင်ကြားခြင်း",
+        "ko": "경찰서에서 지갑 분실 신고하기",
+        "en": "Reporting a Lost Wallet at the Police Station"
+      },
+      "objective": {
+        "my": "ရဲစခန်းသို့ သွားရောက်၍ ပိုက်ဆံအိတ် ပျောက်ဆုံးကြောင်း တိုင်ကြားပြီး လိုအပ်သော လုပ်ငန်းစဉ်များကို ဆောင်ရွက်နိုင်သည်။",
+        "ko": "경찰서에 방문하여 지갑 분실 신고를 하고 필요한 절차를 진행할 수 있다.",
+        "en": "Visit a police station to report a lost wallet and complete the necessary procedures."
+      },
+      "prerequisites": [],
+      "skills": [
+        "listening",
+        "speaking",
+        "politeness"
+      ],
+      "estimated_minutes": 10,
+      "difficulty": "intermediate",
+      "regulated": false,
+      "status": "draft",
+      "version": 1,
+      "dialogue": {
+        "setting": {
+          "my": "ရဲစခန်း (지구대) အတွင်း ပိုက်ဆံအိတ် ပျောက်ဆုံးကြောင်း တိုင်ကြားရန် ရဲအရာရှိနှင့် စကားပြောဆိုနေသည့် အခြေအနေ။",
+          "ko": "지구대(경찰서) 내부, 분실물 신고를 위해 경찰관과 대화하는 상황.",
+          "en": "Inside a local police station (Jigude), speaking with a police officer to report a lost item."
+        },
+        "speakers": [
+          {
+            "id": "officer",
+            "role": "police",
+            "gender": "male",
+            "voice_id": "ko_m_01"
+          },
+          {
+            "id": "learner",
+            "role": "learner",
+            "gender": "any",
+            "voice_id": null
+          }
+        ],
+        "lines": [
+          {
+            "line_id": "L1",
+            "speaker": "officer",
+            "ko": "어서 오세요. 무슨 일로 오셨습니까?",
+            "rom": "Eo-seo o-se-yo. Mu-seun ir-ro o-syeos-seum-ni-ka?",
+            "my": "ကြိုဆိုပါတယ်။ ဘာကိစ္စနဲ့ လာတာပါလဲခင်ဗျာ။",
+            "en": "Welcome. How can I help you today?",
+            "audio": "AUD_POLICE001_L1",
+            "audio_slow": "AUD_POLICE001_L1_S",
+            "note": ""
+          },
+          {
+            "line_id": "L2",
+            "speaker": "learner",
+            "ko": "지갑을 잃어버려서 분실 신고를 하러 왔어요.",
+            "rom": "Ji-gab-eul ir-eo-beo-ryeo-seo bun-sil sin-go-reul ha-reo wa-sseo-yo.",
+            "my": "ပိုက်ဆံအိတ် ပျောက်သွားလို့ ပျောက်ဆုံးကြောင်း တိုင်ကြားစာ တင်ဖို့ လာတာပါ။",
+            "en": "I came to report a lost wallet because I lost it.",
+            "audio": "AUD_POLICE001_L2",
+            "audio_slow": "AUD_POLICE001_L2_S",
+            "note": ""
+          },
+          {
+            "line_id": "L3",
+            "speaker": "officer",
+            "ko": "언제 어디서 잃어버리셨나요? 지갑 안에 무엇이 있었습니까?",
+            "rom": "Eon-je eo-di-seo ir-eo-beo-ri-syeos-na-yo? Ji-gap an-e mu-eos-i i-sseos-seum-ni-ka?",
+            "my": "ဘယ်တုန်းက ဘယ်မှာ ပျောက်ခဲ့တာလဲခင်ဗျာ။ ပိုက်ဆံအိတ်ထဲမှာ ဘာတွေပါသွားပါသလဲ။",
+            "en": "When and where did you lose it? What was inside the wallet?",
+            "audio": "AUD_POLICE001_L3",
+            "audio_slow": "AUD_POLICE001_L3_S",
+            "note": ""
+          },
+          {
+            "line_id": "L4",
+            "speaker": "learner",
+            "ko": "오늘 아침 지하철에서 잃어버렸어요. 신분증하고 카드가 들어 있어요.",
+            "rom": "O-neul a-chim ji-ha-cheol-e-seo ir-eo-beo-ryeos-seo-yo. Sin-bun-jeung-ha-go ka-deu-ga deu-reo i-sseo-yo.",
+            "my": "ဒီနေ့မနက် မြေအောက်ရထားပေါ်မှာ ပျောက်ခဲ့တာပါ။ မှတ်ပုံတင်နဲ့ ကတ်တွေ ပါသွားပါတယ်။",
+            "en": "I lost it on the subway this morning. It contains my ID and cards.",
+            "audio": "AUD_POLICE001_L4",
+            "audio_slow": "AUD_POLICE001_L4_S",
+            "note": ""
+          },
+          {
+            "line_id": "L5",
+            "speaker": "officer",
+            "ko": "알겠습니다. 분실 신고서를 작성해 주시면 접수해 드리겠습니다.",
+            "rom": "Al-ges-seum-ni-da. Bun-sil sin-go-seo-reul jak-seong-hae ju-si-myeon jeop-su-hae deu-ri-ges-seum-ni-da.",
+            "my": "ကောင်းပါပြီ။ ပျောက်ဆုံးကြောင်း တိုင်ကြားလွှာကို ဖြည့်စွက်ပေးပါက လက်ခံဆောင်ရွက်ပေးပါမည်။",
+            "en": "Understood. Please fill out the lost item report form and we will process it.",
+            "audio": "AUD_POLICE001_L5",
+            "audio_slow": "AUD_POLICE001_L5_S",
+            "note": ""
+          }
+        ]
+      },
+      "activities": [
+        {
+          "activity_id": "A1",
+          "type": "branch_dialogue",
+          "prompt": {
+            "my": "ရဲအရာရှိ၏ မေးခွန်းများကို သင့်တော်စွာ တုံ့ပြန်၍ ပိုက်ဆံအိတ် ပျောက်ဆုံးကြောင်း တိုင်ကြားပါ။",
+            "ko": "경찰관의 질문에 적절하게 응답하여 지갑 분실 신고를 하세요.",
+            "en": "Respond appropriately to the police officer's questions to report your lost wallet."
+          },
+          "entry_node": "N1",
+          "nodes": [
+            {
+              "node_id": "N1",
+              "speaker": "officer",
+              "ko": "어서 오세요. 무슨 일로 오셨습니까?",
+              "rom": "Eo-seo o-se-yo. Mu-seun ir-ro o-syeos-seum-ni-ka?",
+              "my": "ကြိုဆိုပါတယ်။ ဘာကိစ္စနဲ့ လာတာပါလဲခင်ဗျာ။",
+              "en": "Welcome. How can I help you today?",
+              "choices": [
+                {
+                  "id": "C1_N1",
+                  "ko": "지갑을 잃어버려서 분실 신고를 하러 왔어요.",
+                  "my": "ပိုက်ဆံအိတ် ပျောက်သွားလို့ ပျောက်ဆုံးကြောင်း တိုင်ကြားဖို့ လာတာပါ။",
+                  "en": "I came to report a lost wallet.",
+                  "next": "N2"
+                },
+                {
+                  "id": "C2_N1",
+                  "ko": "길을 물어보고 싶어서 왔어요.",
+                  "my": "လမ်းမေးချင်လို့ လာတာပါ။",
+                  "en": "I came to ask for directions.",
+                  "next": "N3"
+                }
+              ]
+            },
+            {
+              "node_id": "N2",
+              "speaker": "officer",
+              "ko": "언제 어디서 잃어버리셨는지 기억나시나요?",
+              "rom": "Eon-je eo-di-seo ir-eo-beo-ri-syeos-neun-ji gi-eok-na-si-na-yo?",
+              "my": "ဘယ်တုန်းက ဘယ်မှာ ပျောက်ခဲ့လဲ မှတ်မိပါသလား။",
+              "en": "Do you remember when and where you lost it?",
+              "choices": [
+                {
+                  "id": "C1_N2",
+                  "ko": "오늘 아침 지하철에서 잃어버렸어요.",
+                  "my": "ဒီနေ့မနက် မြေအောက်ရထားပေါ်မှာ ပျောက်ခဲ့တာပါ။",
+                  "en": "I lost it on the subway this morning.",
+                  "next": "N4"
+                },
+                {
+                  "id": "C2_N2",
+                  "ko": "잘 모르겠어요. 그냥 없어졌어요.",
+                  "my": "ကောင်းကောင်း မသိတော့ပါ။ ဒီအတိုင်း ပျောက်သွားတာပါ။",
+                  "en": "I'm not sure. It just disappeared.",
+                  "next": "N3"
+                }
+              ]
+            },
+            {
+              "node_id": "N3",
+              "speaker": "officer",
+              "ko": "정확한 분실 장소와 상황을 알려주셔야 신고 접수가 가능합니다. 다시 생각해 보시겠어요?",
+              "rom": "Jeong-hwag-han bun-sil jang-so-wa sang-hwang-eul al-ryeo-ju-syeo-ya sin-go jeop-su-ga ga-neung-ham-ni-da. Da-si saeng-gak-hae bo-si-ges-eo-yo?",
+              "my": "တိကျတဲ့ ပျောက်ဆုံးသည့်နေရာနဲ့ အခြေအနေကို ပြောပြမှ တိုင်ကြားစာ လက်ခံလို့ရပါမယ်။ ပြန်စဉ်းစားကြည့်ပေးပါဦး။",
+              "en": "We need the exact location and details to process the report. Could you think again?",
+              "choices": [
+                {
+                  "id": "C1_N3",
+                  "ko": "지하철을 탔을 때 지갑이 없어진 것 같아요.",
+                  "my": "မြေအောက်ရထား စီးတုန်းက ပိုက်ဆံအိတ် ပျောက်သွားတာ တူပါတယ်။",
+                  "en": "I think I lost it while riding the subway.",
+                  "next": "N4"
+                }
+              ]
+            },
+            {
+              "node_id": "N4",
+              "speaker": "officer",
+              "ko": "네, 알겠습니다. 분실 신고서를 작성해 주시면 접수해 드리겠습니다.",
+              "rom": "Ne, al-ges-seum-ni-da. Bun-sil sin-go-seo-reul jak-seong-hae ju-si-myeon jeop-su-hae deu-ri-ges-seum-ni-da.",
+              "my": "ကောင်းပါပြီ။ ပျောက်ဆုံးကြောင်း တိုင်ကြားလွှာကို ဖြည့်စွက်ပေးပါက လက်ခံဆောင်ရွက်ပေးပါမည်။",
+              "en": "Understood. Please fill out the lost item report form and we will process it.",
+              "choices": [
+                {
+                  "id": "C1_N4",
+                  "ko": "네, 작성하겠습니다. 감사합니다.",
+                  "my": "ဟုတ်ကဲ့၊ ဖြည့်ပါ့မယ်။ ကျေးဇူးတင်ပါတယ်။",
+                  "en": "Yes, I will fill it out. Thank you.",
+                  "next": "END"
+                }
+              ]
+            }
+          ],
+          "audio_ref": "AUD_POLICE001_A1",
+          "explanation_ref": "FB_POLICE001_A1"
+        },
+        {
+          "activity_id": "A2",
+          "type": "speak",
+          "prompt": {
+            "my": "ရဲစခန်းတွင် ပိုက်ဆံအိတ် ပျောက်ဆုံးကြောင်း ပြောဆိုသည့် စကားစုကို လေ့ကျင့်ပါ။",
+            "ko": "경찰서에서 지갑 분실 신고 목적을 말하는 연습을 하세요.",
+            "en": "Practice stating your goal of reporting a lost wallet at the police station."
+          },
+          "target_ko": "지갑을 잃어버려서 분실 신고를 하러 왔어요.",
+          "min_score": 70,
+          "audio_ref": "AUD_POLICE001_A2",
+          "explanation_ref": "FB_POLICE001_A2"
+        }
+      ],
+      "feedback": {
+        "FB_POLICE001_A1": {
+          "why_wrong": {
+            "my": "ရဲစခန်းတွင် ပစ္စည်းပျောက်ကြောင်း တိုင်ကြားရာ၌ ပစ္စည်းအမျိုးအစား (ပိုက်ဆံအိတ်) နှင့် ပျောက်ဆုံးသည့် ကိစ္စ (분실 신고) ကို ရှင်းလင်းစွာ ပြောပြရပါမည်။",
+            "ko": "경찰서에서 분실 신고를 할 때는 분실한 물품(지갑)과 방문 목적(분실 신고)을 정확하게 밝혀야 합니다.",
+            "en": "When reporting a lost item at a police station, you must clearly state what you lost (wallet) and your purpose (reporting a lost item)."
+          },
+          "grammar": {
+            "point": "-(으)러 가다/오다",
+            "explain_my": "ရည်ရွယ်ချက်ကို ဖော်ပြရာတွင် '-(으)러 오다' (ပြုလုပ်ရန် လာသည်) ဟူသော သဒ္ဒါပုံစံကို အသုံးပြုပါသည်။"
+          },
+          "culture": "ကိုရီးယားတွင် ပစ္စည်းများ ပျောက်ဆုံးပါက အနီးအနားရှိ 지구대 (သို့) 파출소 သို့ သွားရောက်၍ တိုင်ကြားနိုင်ပြီး LOST112 (경찰청 유실물 종합포털) ဝက်ဘ်ဆိုက်တွင်လည်း ရှာဖွေနိုင်ပါသည်။",
+          "retry_phrase": "지갑을 잃어버려서 분실 신고를 하러 왔어요."
+        },
+        "FB_POLICE001_A2": {
+          "why_wrong": {
+            "my": "ပိုက်ဆံအိတ် ပျောက်ဆုံးကြောင်း ပြောဆိုရာတွင် '지갑을 잃어버려서' (ပိုက်ဆံအိတ် ပျောက်သွားလို့) ဟူသော အသုံးအနှုန်းကို မှန်ကန်စွာ အသံထွက်ရန် လိုအပ်ပါသည်။",
+            "ko": "'지갑을 잃어버려서'라는 표현과 분실 신고 목적을 명확하게 발음해야 합니다.",
+            "en": "It is important to clearly pronounce the phrase '지갑을 잃어버려서' and state your purpose of reporting the lost item."
+          },
+          "grammar": {
+            "point": "-아/어서",
+            "explain_my": "အကြောင်းရင်းကို ဖော်ပြရာတွင် '-아/어서' (... သောကြောင့် / ... လို့) ကို အသုံးပြုပါသည်။"
+          },
+          "culture": "ရဲစခန်းတွင် တိုင်ကြားစာ လက်ခံရရှိကြောင်း အထောက်အထား (분실신고 접수증) ကို တောင်းခံနိုင်ပြီး၊ ယင်းသည် ကတ်များ သို့မဟုတ် မှတ်ပုံတင် ပြန်လည်လျှောက်ထားရာတွင် အသုံးဝင်ပါသည်။",
+          "retry_phrase": "지갑을 잃어버려서 분실 신고를 하러 왔어요."
+        }
+      },
+      "cultural_note": {
+        "title": {
+          "my": "ကိုရီးယား ရဲစခန်းနှင့် ပျောက်ဆုံးပစ္စည်း ရှာဖွေခြင်း (지구대 နှင့် LOST112)",
+          "ko": "한국의 경찰서 분실물 신고와 LOST112 시스템",
+          "en": "Reporting Lost Items in Korea and the LOST112 System"
+        },
+        "body": {
+          "my": "ကိုရီးယားတွင် အရေးပေါ် ရာဇဝတ်မှု သတင်းပို့ရန်အတွက် ၁၁၂ သို့ ဖုန်းခေါ်ဆိုရသော်လည်း၊ ပစ္စည်း ပျောက်ဆုံးပါက အနီးအနားရှိ 지구대 (သို့) 파출소 သို့ လူကိုယ်တိုင် သွားရောက်၍ တိုင်ကြားနိုင်ပါသည်။ ကိုရီးယား ရဲတပ်ဖွဲ့သည် LOST112 (경찰청 유실물 종합포털) စနစ်ကို လည်ပတ်ထားပြီး၊ ကောက်ရထားသော ပစ္စည်းများကို အွန်လိုင်းတွင် စစ်ဆေးနိုင်ပါသည်။ တိုင်ကြားပြီးပါက '분실신고 접수증' (တိုင်ကြားချက် လက်ခံရရှိကြောင်း အထောက်အထား) ကို ရယူထားပါက ကတ်များနှင့် မှတ်ပုံတင် ပြန်လည် လျှောက်ထားရာတွင် အဆင်ပြေစေပါသည်။",
+          "ko": "한국에서 긴급 범죄 신고는 112로 전화하지만, 물건을 잃어버린 경우 가까운 지구대나 파출소에 직접 방문하여 신고할 수 있습니다. 경찰청에서는 LOST112(유실물 종합포털) 시스템을 운영하고 있어 습득된 물품을 온라인으로 검색할 수도 있습니다. 신고 후 '분실신고 접수증'을 받으면 신분증이나 카드 재발급 시 유용하게 쓰입니다.",
+          "en": "In Korea, 112 is used for emergency crime reporting, but for lost items, you can visit a local police box (Jigude or Pacheolso) in person. The Korean Police operates the LOST112 portal where found items are registered online. Obtaining a 'Lost Item Report Certificate' (분실신고 접수증) can be helpful when reissuing cards or IDs."
+        },
+        "sensitive": false
+      },
+      "audio": {
+        "base_path": "audio/COMMON-POLICE-001/",
+        "files": [
+          {
+            "id": "AUD_POLICE001_L1",
+            "normal": "L1-normal.mp3",
+            "slow": "L1-slow.mp3",
+            "duration": 2.5
+          },
+          {
+            "id": "AUD_POLICE001_L2",
+            "normal": "L2-normal.mp3",
+            "slow": "L2-slow.mp3",
+            "duration": 3.2
+          },
+          {
+            "id": "AUD_POLICE001_L3",
+            "normal": "L3-normal.mp3",
+            "slow": "L3-slow.mp3",
+            "duration": 4.0
+          },
+          {
+            "id": "AUD_POLICE001_L4",
+            "normal": "L4-normal.mp3",
+            "slow": "L4-slow.mp3",
+            "duration": 4.2
+          },
+          {
+            "id": "AUD_POLICE001_L5",
+            "normal": "L5-normal.mp3",
+            "slow": "L5-slow.mp3",
+            "duration": 4.1
+          },
+          {
+            "id": "AUD_POLICE001_A1",
+            "normal": "A1-normal.mp3",
+            "slow": "A1-slow.mp3",
+            "duration": 3.8
+          },
+          {
+            "id": "AUD_POLICE001_A2",
+            "normal": "A2-normal.mp3",
+            "slow": "A2-slow.mp3",
+            "duration": 3.5
+          },
+          {
+            "id": "AUD_POLICE001_SRS1",
+            "normal": "srs1-normal.mp3",
+            "slow": "srs1-slow.mp3",
+            "duration": 2.6
+          },
+          {
+            "id": "AUD_POLICE001_SRS2",
+            "normal": "srs2-normal.mp3",
+            "slow": "srs2-slow.mp3",
+            "duration": 2.7
+          }
+        ],
+        "spec": {
+          "sample_rate": 44100,
+          "channels": 1,
+          "format": "mp3",
+          "bitrate": 128
+        }
+      },
+      "srs": {
+        "enabled": true,
+        "cards": [
+          {
+            "card_id": "C1",
+            "front": {
+              "my": "ပျောက်ဆုံးကြောင်း တိုင်ကြားခြင်း",
+              "ko": "분실 신고",
+              "en": "Reporting a lost item"
+            },
+            "back": {
+              "my": "ပစ္စည်း ပျောက်ဆုံးသွားပါက ရဲစခန်းသို့ သတင်းပို့ တိုင်ကြားခြင်း",
+              "ko": "물건을 잃어버렸을 때 경찰서에 알리는 것",
+              "en": "Reporting to the police when an item is lost"
+            },
+            "audio_ref": "AUD_POLICE001_SRS1",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C2",
+            "front": {
+              "my": "ပျောက်ဆုံးပစ္စည်း / ကောက်ရပစ္စည်း",
+              "ko": "분실물 / 유실물",
+              "en": "Lost item"
+            },
+            "back": {
+              "my": "ပျောက်ဆုံးသွားသော သို့မဟုတ် ကောက်ရထားသော ပစ္စည်း",
+              "ko": "잃어버린 물건 또는 습득한 물건",
+              "en": "An item that has been lost or found"
+            },
+            "audio_ref": "AUD_POLICE001_SRS2",
+            "ease": 2.5,
+            "interval": 0
+          }
+        ]
+      },
+      "assessment": {
+        "type": "mission",
+        "pass_threshold": 70,
+        "weights": {
+          "accuracy": 40,
+          "completion": 30,
+          "speaking": 30
+        },
+        "exam_mapping": {
+          "topik": null,
+          "eps_topik": null
+        }
+      }
+    }
+  ]
+}
+

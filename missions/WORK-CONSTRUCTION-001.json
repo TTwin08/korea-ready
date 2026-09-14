@@ -1,0 +1,349 @@
+{
+  "__meta": {
+    "generator": "Korea Ready Mission Generator v1.0",
+    "generated_at": "2026-09-12T13:21:03Z",
+    "batch_id": "BATCH-20260912-016",
+    "request": "Generate WORK-CONSTRUCTION-001: goal: work, level: 2, category: industry, industry: construction, theme: First day at a construction site — safety briefing (건설 현장 첫날 안전 교육), skills: listening, speaking, politeness, estimated_minutes: 10, difficulty: intermediate"
+  },
+  "__self_check": {
+    "rules_passed": [
+      "R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9", "R10",
+      "R11", "R12", "R13", "R14", "R15", "R16", "R17", "R18", "R19",
+      "R20", "R21", "R22", "R23", "R24", "R25", "R26"
+    ],
+    "warnings": [],
+    "uncertainties": [],
+    "external_prereqs": []
+  },
+  "missions": [
+    {
+      "schema_version": "1.0",
+      "mission_id": "WORK-CONSTRUCTION-001",
+      "goal": "work",
+      "level": 2,
+      "category": "industry",
+      "industry": "construction",
+      "tags": [
+        "construction-site",
+        "first-day",
+        "safety-briefing",
+        "workplace",
+        "work"
+      ],
+      "title": {
+        "ko": "건설 현장 첫날 안전 교육",
+        "my": "ဆောက်လုပ်ရေး လုပ်ငန်းခွင် ပထမဆုံးနေ့ ဘေးကင်းရေး သင်တန်း",
+        "en": "First Day Safety Briefing at a Construction Site"
+      },
+      "objective": {
+        "ko": "건설 현장 첫날 현장 소장님의 안전 교육을 듣고, 기본 안전 수칙에 대해 정중하게 묻고 답할 수 있다.",
+        "my": "ဆောက်လုပ်ရေး လုပ်ငန်းခွင် ပထမဆုံးနေ့တွင် လုပ်ငန်းခွင် မန်နေဂျာ၏ ဘေးကင်းရေး သင်တန်းကို နားထောင်ပြီး အခြေခံ ဘေးကင်းရေး စည်းမျဉ်းများနှင့် ပတ်သက်၍ ယဉ်ကျေးစွာ မေးမြန်း ဖြေကြားနိုင်မည်။",
+        "en": "Listen to the site manager's safety briefing on the first day at a construction site and politely ask and answer questions about basic safety rules."
+      },
+      "cultural_note": {
+        "title": {
+          "ko": "건설 현장의 안전보호구 착용과 안전 교육",
+          "my": "ဆောက်လုပ်ရေး လုပ်ငန်းခွင်၏ ဘေးကင်းရေး ဝတ်စုံ ဝတ်ဆင်ခြင်းနှင့် ဘေးကင်းရေး သင်တန်း",
+          "en": "Safety Gear and Briefings on Korean Construction Sites"
+        },
+        "body": {
+          "ko": "한국 건설 현장에서는 작업 시작 전 'TBM(Safety Task Instruction)' 시간을 통해 안전 교육을 진행합니다. 안전모, 안전화, 안전대 착용은 필수이며, 현장에서는 소장님이나 반장님의 지시를 철저히 따라야 합니다.",
+          "my": "ကိုရီးယား ဆောက်လုပ်ရေး လုပ်ငန်းခွင်များတွင် အလုပ်မစမီ 'TBM' (Safety Task Instruction) အချိန်မှတစ်ဆင့် ဘေးကင်းရေး သင်တန်းကို ပြုလုပ်ပါသည်။ ဘေးကင်းရေး ဦးထုပ်၊ ဘေးကင်းရေး ဖိနပ်နှင့် ဘေးကင်းရေး ခါးပတ် စွပ်ထားခြင်းသည် မဖြစ်မနေ လိုအပ်ပြီး လုပ်ငန်းခွင်တွင် မန်နေဂျာ သို့မဟုတ် အလုပ်ရုံမှူး၏ ညွှန်ကြားချက်များကို အတိအကျ လိုက်နာရပါမည်။",
+          "en": "In Korean construction sites, safety briefings are held before work begins through TBM (Toolbox Meeting) time. Wearing safety helmets, safety shoes, and safety harnesses is mandatory, and instructions from site managers or supervisors must be strictly followed."
+        }
+      },
+      "skills": [
+        "listening",
+        "speaking",
+        "politeness"
+      ],
+      "estimated_minutes": 10,
+      "difficulty": "intermediate",
+      "status": "draft",
+      "version": 1,
+      "regulated": false,
+      "prerequisites": [],
+      "dialogue": {
+        "setting": {
+          "ko": "건설 현장 첫날 현장 소장님에게 안전 장구 착용 및 현장 수칙을 안내받는 상황",
+          "my": "ဆောက်လုပ်ရေး လုပ်ငန်းခွင် ပထမဆုံးနေ့တွင် လုပ်ငန်းခွင် မန်နေဂျာထံမှ ဘေးကင်းရေး ကိရိယာများ ဝတ်ဆင်မှုနှင့် လုပ်ငန်းခွင် စည်းမျဉ်းများ လမ်းညွှန်ချက် ခံယူနေသည့် အခြေအနေ",
+          "en": "Receiving instructions on wearing safety gear and site rules from the site manager on the first day at a construction site."
+        },
+        "speakers": [
+          {
+            "id": "site_manager",
+            "role": "other",
+            "gender": "male",
+            "voice_id": "ko_m_01"
+          },
+          {
+            "id": "learner",
+            "role": "learner",
+            "gender": "any",
+            "voice_id": null
+          }
+        ],
+        "lines": [
+          {
+            "line_id": "L1",
+            "speaker": "site_manager",
+            "ko": "오늘부터 건설 현장에서 일하게 된 신입 작업자군요. 현장에서는 무엇보다 안전이 제일 중요합니다.",
+            "rom": "oneulbuteo geonseol hyeonjang-eseo ilhage doen sinip jak-eobjagunyo. hyeonjang-eseoneun mueosboda anjeon-i jeil jung-yohamnida.",
+            "my": "ဒီနေ့ကစပြီး ဆောက်လုပ်ရေး လုပ်ငန်းခွင်မှာ အလုပ်လုပ်ရမယ့် ဝန်ထမ်းသစ် ဖြစ်ပါပေတယ်။ လုပ်ငန်းခွင်မှာ ဘာထက်မဆို ဘေးကင်းရေးက အရေးကြီးဆုံး ဖြစ်ပါတယ်။",
+            "en": "You are the new worker starting today at the construction site. Above all, safety is the most important thing on site.",
+            "audio": "AUD_WORKCONST001_L1",
+            "audio_slow": "AUD_WORKCONST001_L1_S",
+            "note": "Welcoming new worker and emphasizing safety"
+          },
+          {
+            "line_id": "L2",
+            "speaker": "learner",
+            "ko": "네, 소장님! 잘 부탁드립니다. 안전 수칙을 철저히 지키겠습니다.",
+            "rom": "ne, sojangnim! jal boutakdeurimnida. anjeon suchik-eul cheoljeohi jikigesseumnida.",
+            "my": "ဟုတ်ကဲ့၊ မန်နေဂျာ။ ကူညီစောင့်ရှောက်ပေးပါ။ ဘေးကင်းရေး စည်းမျဉ်းများကို အတိအကျ လိုက်နာပါ့မယ်။",
+            "en": "Yes, Site Manager! Nice to meet you. I will strictly follow the safety rules.",
+            "audio": "AUD_WORKCONST001_L2",
+            "audio_slow": "AUD_WORKCONST001_L2_S",
+            "note": "Polite greeting using title '소장님'"
+          },
+          {
+            "line_id": "L3",
+            "speaker": "site_manager",
+            "ko": "좋습니다. 안전모와 안전화, 그리고 높은 곳에서 작업할 때는 반드시 안전대를 착용해야 합니다.",
+            "rom": "joseumnida. anjeonmo-wa anjeonhwa, geurigo nopeun gos-eseo jak-eobhal ttaeneun bandeusi anjeondae-reul chakyonghaeya hamnida.",
+            "my": "ကောင်းပါပြီ။ ဘေးကင်းရေး ဦးထုပ်၊ ဘေးကင်းရေး ဖိနပ်၊ ပြီးတော့ မြင့်တဲ့နေရာမှာ အလုပ်လုပ်တဲ့အခါ မဖြစ်မနေ ဘေးကင်းရေး ခါးပတ်ကို ဝတ်ဆင်ရပါမယ်။",
+            "en": "Good. You must wear a safety helmet and safety shoes, and always wear a safety harness when working in high places.",
+            "audio": "AUD_WORKCONST001_L3",
+            "audio_slow": "AUD_WORKCONST001_L3_S",
+            "note": "Explaining required protective equipment"
+          },
+          {
+            "line_id": "L4",
+            "speaker": "learner",
+            "ko": "네, 알겠습니다. 작업 전 항상 안전 장구를 확인하겠습니다.",
+            "rom": "ne, algesseumnida. jak-eob jeon hangsang anjeon janggu-reul hweaginhagesseumnida.",
+            "my": "ဟုတ်ကဲ့၊ နားလည်ပါပြီ။ အလုပ်မစမီ အမြဲတမ်း ဘေးကင်းရေး ကိရိယာများကို စစ်ဆေးပါ့မယ်။",
+            "en": "Yes, I understand. I will always check my safety gear before working.",
+            "audio": "AUD_WORKCONST001_L4",
+            "audio_slow": "AUD_WORKCONST001_L4_S",
+            "note": "Confirming understanding politely"
+          }
+        ]
+      },
+      "activities": [
+        {
+          "activity_id": "A1",
+          "type": "branch_dialogue",
+          "prompt": {
+            "ko": "현장 소장님과 대화하여 건설 현장의 안전 수칙을 확인해 보세요.",
+            "my": "လုပ်ငန်းခွင် မန်နေဂျာနှင့် စကားပြောပြီး ဆောက်လုပ်ရေး လုပ်ငန်းခွင်၏ ဘေးကင်းရေး စည်းမျဉ်းများကို စစ်ဆေးကြည့်ပါ။",
+            "en": "Talk to the site manager and review the construction site safety rules."
+          },
+          "entry_node": "N1",
+          "nodes": [
+            {
+              "node_id": "N1",
+              "speaker": "site_manager",
+              "ko": "오늘부터 현장에서 일하게 되었군요. 안전 교육부터 진행하겠습니다.",
+              "rom": "oneulbuteo hyeonjang-eseo ilhage doeoengunyo. anjeon gyo-yukbuteo jinhaenghagesseumnida.",
+              "my": "ဒီနေ့ကစပြီး လုပ်ငန်းခွင်မှာ အလုပ်လုပ်ရတော့မှာပါပဲ။ ဘေးကင်းရေး သင်တန်းကနေ စတင်ပါ့မယ်။",
+              "en": "You are starting work on site today. We will start with the safety training.",
+              "choices": [
+                {
+                  "id": "C1_N1",
+                  "ko": "네, 소장님! 잘 부탁드립니다.",
+                  "my": "ဟုတ်ကဲ့၊ မန်နေဂျာ။ ကူညီစောင့်ရှောက်ပေးပါ။",
+                  "en": "Yes, Site Manager! Please look after me.",
+                  "next": "N2"
+                },
+                {
+                  "id": "C2_N1",
+                  "ko": "네, 열심히 배우겠습니다!",
+                  "my": "ဟုတ်ကဲ့၊ ကြိုးစားပြီး သင်ယူပါ့မယ်။",
+                  "en": "Yes, I will learn diligently!",
+                  "next": "N2"
+                }
+              ]
+            },
+            {
+              "node_id": "N2",
+              "speaker": "site_manager",
+              "ko": "현장에서는 안전모와 안전화를 항상 착용해야 합니다. 준비되셨나요?",
+              "rom": "hyeonjang-eseoneun anjeonmo-wa anjeonhwa-reul hangsang chakyonghaeya hamnida. junbidoesyeonnayo?",
+              "my": "လုပ်ငန်းခွင်မှာ ဘေးကင်းရေး ဦးထုပ်နဲ့ ဘေးကင်းရေး ဖိနပ်ကို အမြဲတမ်း ဝတ်ဆင်ထားရပါမယ်။ ပြင်ဆင်ပြီးပြီလား။",
+              "en": "On site, you must always wear a safety helmet and safety shoes. Are you ready?",
+              "choices": [
+                {
+                  "id": "C1_N2",
+                  "ko": "네, 착용했습니다. 지시 사항을 잘 따르겠습니다.",
+                  "my": "ဟုတ်ကဲ့၊ ဝတ်ဆင်ထားပြီးပါပြီ။ ညွှန်ကြားချက်များကို သေချာ လိုက်နာပါ့မယ်။",
+                  "en": "Yes, I am wearing them. I will follow your instructions carefully.",
+                  "next": "N3"
+                },
+                {
+                  "id": "C2_N2",
+                  "ko": "안전대는 어디서 받을 수 있나요?",
+                  "my": "ဘေးကင်းရေး ခါးပတ်ကို ဘယ်မှာ ရယူနိုင်ပါသလဲ။",
+                  "en": "Where can I get a safety harness?",
+                  "next": "N3"
+                }
+              ]
+            },
+            {
+              "node_id": "N3",
+              "speaker": "site_manager",
+              "ko": "안전대는 안전 창고에서 지급합니다. 고소 작업 시 꼭 착용하세요. 궁금한 점이 있나요?",
+              "rom": "anjeondae-neun anjeon changgo-eseo jigeuphamnida. goso jak-eob si kkok chakyonghaseyo. gunggeumhan jeom-i innayo?",
+              "my": "ဘေးကင်းရေး ခါးပတ်ကို ဘေးကင်းရေး စတိုခန်းမှာ ထုတ်ပေးပါတယ်။ မြင့်တဲ့နေရာမှာ အလုပ်လုပ်ရင် မဖြစ်မနေ ဝတ်ဆင်ပါ။ မေးစရာရှိပါသလား။",
+              "en": "Safety harnesses are provided at the safety supply warehouse. Make sure to wear it during high-altitude work. Do you have any questions?",
+              "choices": [
+                {
+                  "id": "C1_N3",
+                  "ko": "아닙니다, 잘 알겠습니다. 안전하게 일하겠습니다!",
+                  "my": "မရှိပါဘူး၊ သေချာ နားလည်ပါပြီ။ ဘေးကင်းစွာ အလုပ်လုပ်ပါ့မယ်။",
+                  "en": "No, I understand well. I will work safely!",
+                  "next": "END"
+                },
+                {
+                  "id": "C2_N3",
+                  "ko": "네, 확인했습니다. 감사합니다, 소장님!",
+                  "my": "ဟုတ်ကဲ့၊ စစ်ဆေးပြီးပါပြီ။ ကျေးဇူးတင်ပါတယ်၊ မန်နေဂျာ။",
+                  "en": "Yes, I got it. Thank you, Site Manager!",
+                  "next": "END"
+                }
+              ]
+            }
+          ],
+          "audio_ref": "AUD_WORKCONST001_N1",
+          "explanation_ref": "FB_WORKCONST001_A1"
+        },
+        {
+          "activity_id": "A2",
+          "type": "speak",
+          "prompt": {
+            "ko": "소장님에게 인사하며 안전 수칙을 지키겠다고 정중하게 말해 보세요.",
+            "my": "မန်နေဂျာအား နှုတ်ဆက်ပြီး ဘေးကင်းရေး စည်းမျဉ်းများကို လိုက်နာပါမည်ဟု ယဉ်ကျေးစွာ ပြောကြည့်ပါ။",
+            "en": "Greet the site manager and politely say that you will follow safety rules."
+          },
+          "target_ko": "네, 소장님! 안전 수칙을 철저히 지키겠습니다.",
+          "min_score": 60,
+          "audio_ref": "AUD_WORKCONST001_L2",
+          "explanation_ref": "FB_WORKCONST001_A2"
+        }
+      ],
+      "audio": {
+        "spec": {
+          "sample_rate": 44100,
+          "channels": 1,
+          "format": "mp3",
+          "bitrate": 128
+        },
+        "files": [
+          {
+            "id": "AUD_WORKCONST001_L1",
+            "normal": "work_construction_001_l1_norm.mp3",
+            "slow": "work_construction_001_l1_slow.mp3",
+            "duration": 4.2
+          },
+          {
+            "id": "AUD_WORKCONST001_L2",
+            "normal": "work_construction_001_l2_norm.mp3",
+            "slow": "work_construction_001_l2_slow.mp3",
+            "duration": 3.7
+          },
+          {
+            "id": "AUD_WORKCONST001_L3",
+            "normal": "work_construction_001_l3_norm.mp3",
+            "slow": "work_construction_001_l3_slow.mp3",
+            "duration": 4.5
+          },
+          {
+            "id": "AUD_WORKCONST001_L4",
+            "normal": "work_construction_001_l4_norm.mp3",
+            "slow": "work_construction_001_l4_slow.mp3",
+            "duration": 3.9
+          },
+          {
+            "id": "AUD_WORKCONST001_N1",
+            "normal": "work_construction_001_n1_norm.mp3",
+            "slow": "work_construction_001_n1_slow.mp3",
+            "duration": 3.8
+          }
+        ]
+      },
+      "feedback": {
+        "FB_WORKCONST001_A1": {
+          "why_wrong": {
+            "ko": "현장 소장님의 지시를 잘 듣고 건설 현장에 맞는 정중한 답변을 선택하세요.",
+            "my": "လုပ်ငန်းခွင် မန်နေဂျာ၏ ညွှန်ကြားချက်ကို သေချာနားထောင်ပြီး ဆောက်လုပ်ရေး လုပ်ငန်းခွင်နှင့် ကိုက်ညီသော ယဉ်ကျေးသည့် အဖြေကို ရွေးချယ်ပါ။",
+            "en": "Listen carefully to the site manager and select polite responses suitable for a construction site."
+          },
+          "grammar": {
+            "point": "소장님 / -겠습니다",
+            "explain_my": "ဆောက်လုပ်ရေး လုပ်ငန်းခွင် မန်နေဂျာအား '소장님' ဟု ခေါ်ဆိုပြီး၊ ကတိပြုပြောဆိုသည့်အခါ '-하겠습니다' (ပါ့မည်) ဟူသော ယဉ်ကျေးသည့် အသုံးအနှုန်းကို အသုံးပြုပါသည်။"
+          },
+          "culture": "한국 건설 현장에서는 현장 책임자를 '소장님'이라 부르며, 안전 수칙 준수가 엄격히 요구됩니다.",
+          "retry_phrase": "다시 선택해 보세요."
+        },
+        "FB_WORKCONST001_A2": {
+          "why_wrong": {
+            "ko": "'네, 소장님! 안전 수칙을 철저히 지키겠습니다.' 문장을 정중하고 정확하게 발음해 보세요.",
+            "my": "'네, 소장님! 안전 수칙을 철저히 지키겠습니다.' စာကြောင်းကို ယဉ်ကျေးတိကျစွာ အသံထွက် ပြောဆိုကြည့်ပါ။",
+            "en": "Pronounce 'Yes, Site Manager! I will strictly follow safety rules.' politely and clearly."
+          },
+          "retry_phrase": "네, 소장님! 안전 수칙을 철저히 지키겠습니다."
+        }
+      },
+      "srs": {
+        "enabled": true,
+        "cards": [
+          {
+            "card_id": "C1",
+            "front": {
+              "ko": "현장 소장님",
+              "my": "လုပ်ငန်းခွင် မန်နေဂျာ",
+              "en": "Site Manager"
+            },
+            "back": {
+              "ko": "네, 소장님! 잘 부탁드립니다.",
+              "my": "ဟုတ်ကဲ့၊ မန်နေဂျာ။ ကူညီစောင့်ရှောက်ပေးပါ။",
+              "en": "Yes, Site Manager! Please look after me."
+            },
+            "audio_ref": "AUD_WORKCONST001_L2",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C2",
+            "front": {
+              "ko": "안전대",
+              "my": "ဘေးကင်းရေး ခါးပတ်",
+              "en": "Safety Harness"
+            },
+            "back": {
+              "ko": "높은 곳에서 작업할 때는 안전대를 착용해야 합니다.",
+              "my": "မြင့်တဲ့နေရာမှာ အလုပ်လုပ်တဲ့အခါ ဘေးကင်းရေး ခါးပတ်ကို ဝတ်ဆင်ရပါမယ်။",
+              "en": "You must wear a safety harness when working in high places."
+            },
+            "audio_ref": "AUD_WORKCONST001_L3",
+            "ease": 2.5,
+            "interval": 0
+          }
+        ]
+      },
+      "assessment": {
+        "type": "mission",
+        "pass_threshold": 70,
+        "weights": {
+          "accuracy": 40,
+          "completion": 30,
+          "speaking": 30
+        },
+        "exam_mapping": {
+          "topik": null,
+          "eps_topik": "EPS_TOPIK_INDUSTRY_CONSTRUCTION"
+        }
+      }
+    }
+  ]
+}

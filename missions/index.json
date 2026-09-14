@@ -1,0 +1,26 @@
+{
+  "missions": [
+    {
+      "mission_id": "EXAM-INTERVIEW-001",
+      "goal": "common",
+      "level": 2,
+      "title": {
+        "my": "EPS-TOPIK အင်တာဗျူး",
+        "ko": "EPS-TOPIK 면접",
+        "en": "EPS-TOPIK Interview"
+      },
+      "estimated_minutes": 12
+    },
+    {
+      "mission_id": "WORK-SAFETY-TEST",
+      "goal": "common",
+      "level": 2,
+      "title": {
+        "my": "ဘေးအန္တရာယ်ကင်းရှင်းရေး",
+        "ko": "안전교육",
+        "en": "Safety Training"
+      },
+      "estimated_minutes": 5
+    }
+  ]
+}

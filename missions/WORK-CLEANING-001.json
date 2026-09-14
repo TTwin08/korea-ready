@@ -1,0 +1,363 @@
+{
+  "__meta": {
+    "generator": "Korea Ready Mission Generator v1.0",
+    "generated_at": "2026-09-12T13:40:00Z",
+    "batch_id": "BATCH-20260912-004",
+    "request": "Generate WORK-CLEANING-001"
+  },
+  "__self_check": {
+    "rules_passed": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7",
+      "R8",
+      "R9",
+      "R10",
+      "R11",
+      "R12",
+      "R13",
+      "R14",
+      "R15",
+      "R16",
+      "R17",
+      "R18",
+      "R19",
+      "R20",
+      "R21",
+      "R22",
+      "R23",
+      "R24",
+      "R25",
+      "R26"
+    ],
+    "warnings": [],
+    "uncertainties": [],
+    "external_prereqs": [
+      "COMMON-SURV-001"
+    ]
+  },
+  "missions": [
+    {
+      "schema_version": "1.0",
+      "mission_id": "WORK-CLEANING-001",
+      "goal": "work",
+      "level": 2,
+      "category": "industry",
+      "industry": "cleaning",
+      "tags": [
+        "office-cleaning",
+        "cleaning-staff",
+        "first-day",
+        "workplace-korean"
+      ],
+      "title": {
+        "my": "ရုံးခန်းအဆောက်အအုံ သန့်ရှင်းရေး ဝန်ထမ်း ပထမဆုံးနေ့",
+        "ko": "사무실 청소 첫날",
+        "en": "First Day as a Cleaning Staff at an Office Building"
+      },
+      "objective": {
+        "my": "ရုံးခန်း သန့်ရှင်းရေး အလုပ်ခွင်တွင် ညွှန်ကြားချက်များကို စနစ်တကျ နားထောင်ပြီး ယဉ်ကျေးစွာ တုံ့ပြန်ရန် သင်ယူမည်။",
+        "ko": "사무실 청소 현장에서 업무 지시를 정확히 듣고 정중하게 응답하는 방법을 배웁니다.",
+        "en": "Learn how to accurately listen to work instructions and respond politely in an office cleaning environment."
+      },
+      "prerequisites": [
+        "COMMON-SURV-001"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "politeness"
+      ],
+      "estimated_minutes": 10,
+      "difficulty": "intermediate",
+      "regulated": false,
+      "status": "draft",
+      "version": 1,
+      "dialogue": {
+        "setting": {
+          "my": "ဆိုးလ်မြို့ရှိ ရုံးခန်းအဆောက်အအုံ သန့်ရှင်းရေး လုပ်ငန်းခွင်",
+          "ko": "서울의 한 사무실 건물 청소 현장",
+          "en": "Office building cleaning site in Seoul"
+        },
+        "speakers": [
+          {
+            "id": "team_leader",
+            "role": "manager",
+            "gender": "male",
+            "voice_id": "ko_m_01"
+          },
+          {
+            "id": "learner",
+            "role": "learner",
+            "gender": "any",
+            "voice_id": null
+          }
+        ],
+        "lines": [
+          {
+            "line_id": "L1",
+            "speaker": "team_leader",
+            "ko": "오늘부터 3층 사무실 청소를 담당해 주세요.",
+            "rom": "Oneul-buteo sam-cheong samusil cheongso-reul damdanghae juseyo.",
+            "my": "ဒီနေ့ကစပြီး ၃ လွှာ ရုံးခန်း သန့်ရှင်းရေးကို တာဝန်ယူပေးပါ။",
+            "en": "Starting today, please be in charge of cleaning the 3rd floor offices.",
+            "audio": "AUD_CLEAN001_L1",
+            "audio_slow": "AUD_CLEAN001_L1_S",
+            "note": "Workplace assignment instruction using polite imperative (-주세요)"
+          },
+          {
+            "line_id": "L2",
+            "speaker": "learner",
+            "ko": "네, 알겠습니다! 깔끔하게 청소하겠습니다.",
+            "rom": "Ne, algetseumnida! Kkalkkeumhage cheongsohagesseumnida.",
+            "my": "ဟုတ်ကဲ့၊ နားလည်ပါပြီ! သန့်သန့်ရှင်းရှင်း သန့်ရှင်းရေးလုပ်ပါ့မယ်။",
+            "en": "Yes, I understand! I will clean it neatly.",
+            "audio": "AUD_CLEAN001_L2",
+            "audio_slow": "AUD_CLEAN001_L2_S",
+            "note": "Polite workplace confirmation using formal polite ending (-겠습니다)"
+          },
+          {
+            "line_id": "L3",
+            "speaker": "team_leader",
+            "ko": "먼저 쓰레기통을 비우고 청소기를 돌려주세요.",
+            "rom": "Meonjeo sseuregitong-eul biugo cheongsogi-reul dollyeojuseyo.",
+            "my": "အရင်ဆုံး အမှိုက်ပုံးတွေကို သွန်ပြီး ဖုန်စုတ်စက် လှည်းပေးပါ။",
+            "en": "First, empty the trash cans and vacuum the floor.",
+            "audio": "AUD_CLEAN001_L3",
+            "audio_slow": "AUD_CLEAN001_L3_S",
+            "note": "Sequential task instruction in cleaning workflow"
+          }
+        ]
+      },
+      "activities": [
+        {
+          "activity_id": "A1",
+          "type": "branch_dialogue",
+          "prompt": {
+            "my": "အလုပ်ခွင် ခေါင်းဆောင်၏ ညွှန်ကြားချက်ကို သင့်တော်သော ယဉ်ကျေးစကားဖြင့် ရွေးချယ်ပါ။",
+            "ko": "팀장의 지시사항에 적절한 존댓말로 응답하세요.",
+            "en": "Select the appropriate polite response to the team leader's instruction."
+          },
+          "entry_node": "N1",
+          "nodes": [
+            {
+              "node_id": "N1",
+              "speaker": "team_leader",
+              "ko": "사무실 청소할 때 서류나 물건은 건드리지 마세요.",
+              "rom": "Samusil cheongsohal ttae seoryu-na mulgeon-eun geondireeji maseyo.",
+              "my": "ရုံးခန်း သန့်ရှင်းရေးလုပ်တဲ့အခါ စာရွက်စာတမ်းနဲ့ ပစ္စည်းတွေကို မထိပါနဲ့။",
+              "en": "When cleaning the office, do not touch papers or personal items.",
+              "choices": [
+                {
+                  "id": "C1_N1",
+                  "ko": "네, 알겠습니다! 주의하겠습니다.",
+                  "my": "ဟုတ်ကဲ့၊ နားလည်ပါပြီ! သတိထားပါ့မယ်။",
+                  "en": "Yes, I understand! I will be careful.",
+                  "next": "N2"
+                },
+                {
+                  "id": "C2_N1",
+                  "ko": "응, 괜찮아.",
+                  "my": "အေး၊ ရပါတယ်။",
+                  "en": "Yeah, it's fine.",
+                  "next": "N3"
+                }
+              ]
+            },
+            {
+              "node_id": "N2",
+              "speaker": "team_leader",
+              "ko": "좋아요. 분리수거도 철저히 해주셔야 합니다.",
+              "rom": "Joh-ayo. Bunrisugeo-do cheoljeohi hae-jusyeoya hamnida.",
+              "my": "ကောင်းပါပြီ။ အမှိုက်ခွဲခြားစွန့်ပစ်ခြင်းကိုလည်း စနစ်တကျ လုပ်ပေးရပါမယ်။",
+              "en": "Good. You must also strictly separate the recycling.",
+              "choices": [
+                {
+                  "id": "C1_N2",
+                  "ko": "네, 깨끗하게 정리하겠습니다!",
+                  "my": "ဟုတ်ကဲ့၊ သန့်သန့်ရှင်းရှင်း သပ်သပ်ရပ်ရပ် လုပ်ပါ့မယ်။",
+                  "en": "Yes, I will organize it cleanly!",
+                  "next": "END"
+                }
+              ]
+            },
+            {
+              "node_id": "N3",
+              "speaker": "team_leader",
+              "ko": "직장 상사에게는 반말을 쓰면 안 됩니다. 존댓말로 말씀해 주세요.",
+              "rom": "Jikjang sangsa-egeneun banmal-eul sseumeon an doemnida. Jondaetmal-lo malssamhae juseyo.",
+              "my": "အလုပ်ခွင်မှာ အထက်လူကြီးကို ရိုင်းစိုင်းသော စကား မသုံးရပါ။ ယဉ်ကျေးသော စကားဖြင့် ပြောပေးပါ။",
+              "en": "You must not use informal language with your workplace supervisor. Please speak in polite language.",
+              "choices": [
+                {
+                  "id": "C1_N3",
+                  "ko": "죄송합니다. 네, 알겠습니다!",
+                  "my": "တောင်းပန်ပါတယ်။ ဟုတ်ကဲ့၊ နားလည်ပါပြီ။",
+                  "en": "I am sorry. Yes, I understand!",
+                  "next": "END"
+                }
+              ]
+            }
+          ],
+          "audio_ref": "AUD_CLEAN001_N1",
+          "explanation_ref": "FB_CLEAN001_A1"
+        },
+        {
+          "activity_id": "A2",
+          "type": "speak",
+          "prompt": {
+            "my": "အောက်ပါ စကားစုကို အသံကျယ်ကျယ်နှင့် သဘာဝကျကျ အသံထွက်၍ ပြောပါ။",
+            "ko": "다음 문장을 크고 자연스럽게 말해보세요.",
+            "en": "Speak the following sentence clearly and naturally."
+          },
+          "target_ko": "네, 알겠습니다! 깔끔하게 청소하겠습니다.",
+          "min_score": 60,
+          "audio_ref": "AUD_CLEAN001_L2",
+          "explanation_ref": "FB_CLEAN001_A2"
+        }
+      ],
+      "feedback": {
+        "FB_CLEAN001_A1": {
+          "why_wrong": {
+            "my": "အလုပ်ခွင်တွင် အထက်လူကြီးကို စကားပြောရာတွင် ယဉ်ကျေးသော စကား (존댓말) ကို အသုံးပြုရပါမည်။ ရိုင်းစိုင်းသော စကား (반말) ကို မသုံးရပါ။",
+            "ko": "직장에서 상사나 팀장에게 대화할 때는 반드시 존댓말을 사용해야 합니다. 반말은 사용하면 안 됩니다.",
+            "en": "In the workplace, you must always use formal polite language with supervisors or team leaders. Never use informal language."
+          },
+          "grammar": {
+            "point": "-겠습니다",
+            "explain_my": "မိမိ၏ တာဝန်ယူလိုစိတ်နှင့် ပြုလုပ်မည့် အစီအစဉ်ကို လွန်စွာ ယဉ်ကျေးပြတ်သားစွာ ဖော်ပြရာတွင် သုံးပါသည်။"
+          },
+          "culture": "한국의 사무실 청소 현장에서는 서류나 개인 물품을 함부로 옮기지 않는 것이 매우 중요한 기본 에티켓입니다.",
+          "retry_phrase": "네, 알겠습니다! 깔끔하게 청소하겠습니다."
+        },
+        "FB_CLEAN001_A2": {
+          "why_wrong": {
+            "my": "အသံထွက်ကို ပိုမို ရှင်းလင်းစွာနှင့် ယုံကြည်မှုရှိရှိ ပြောဆိုပေးပါ။",
+            "ko": "발음을 더 명확하고 확실하게 해주세요.",
+            "en": "Please pronounce the phrase more clearly and confidently."
+          },
+          "retry_phrase": "네, 알겠습니다! 깔끔하게 청소하겠습니다."
+        }
+      },
+      "cultural_note": {
+        "title": {
+          "my": "ကိုရီးယား ရုံးခန်း သန့်ရှင်းရေး စည်းကမ်းနှင့် အမှိုက်ခွဲခြားစွန့်ပစ်ခြင်း (분리수거)",
+          "ko": "사무실 청소 에티켓과 분리수거",
+          "en": "Office Cleaning Etiquette and Waste Recycling"
+        },
+        "body": {
+          "my": "ကိုရီးယား ရုံးခန်း သန့်ရှင်းရေးလုပ်သည့်အခါ စာရွက်စာတမ်းများနှင့် ကိုယ်ပိုင်ပစ္စည်းများကို လုံးဝ မထိရန် အရေးကြီးပါသည်။ ထို့ပြင် စာရွက်၊ ပလတ်စတစ်၊ ဘူးခွံ စသည့် အမှိုက်များကို စနစ်တကျ ခွဲခြားစွန့်ပစ်ခြင်း (분리수거) ကို တိကျစွာ လိုက်နာရပါမည်။",
+          "ko": "한국 사무실 청소 작업 시 책상 위 서류나 개인 물품은 절대 건드리지 않는 것이 원칙입니다. 또한 종이, 플라스틱, 캔 등의 분리수거 규정을 철저히 지켜야 합니다.",
+          "en": "When cleaning offices in Korea, it is a strict rule not to touch documents or personal items on desks. Additionally, you must strictly follow recycling rules for paper, plastic, cans, and other materials."
+        },
+        "sensitive": false
+      },
+      "audio": {
+        "base_path": "audio/WORK-CLEANING-001/",
+        "files": [
+          {
+            "id": "AUD_CLEAN001_L1",
+            "normal": "L1-normal.mp3",
+            "slow": "L1-slow.mp3",
+            "duration": 3.6
+          },
+          {
+            "id": "AUD_CLEAN001_L2",
+            "normal": "L2-normal.mp3",
+            "slow": "L2-slow.mp3",
+            "duration": 3.0
+          },
+          {
+            "id": "AUD_CLEAN001_L3",
+            "normal": "L3-normal.mp3",
+            "slow": "L3-slow.mp3",
+            "duration": 3.8
+          },
+          {
+            "id": "AUD_CLEAN001_N1",
+            "normal": "N1-normal.mp3",
+            "slow": "N1-slow.mp3",
+            "duration": 3.5
+          }
+        ],
+        "spec": {
+          "sample_rate": 44100,
+          "channels": 1,
+          "format": "mp3",
+          "bitrate": 128
+        }
+      },
+      "srs": {
+        "enabled": true,
+        "cards": [
+          {
+            "card_id": "C1",
+            "front": {
+              "my": "ဖုန်စုတ်စက်",
+              "ko": "청소기",
+              "en": "Vacuum cleaner"
+            },
+            "back": {
+              "my": "ဖုန်စုတ်စက်",
+              "ko": "청소기",
+              "en": "Vacuum cleaner"
+            },
+            "audio_ref": "AUD_CLEAN001_L3",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C2",
+            "front": {
+              "my": "အမှိုက်ပုံး",
+              "ko": "쓰레기통",
+              "en": "Trash can"
+            },
+            "back": {
+              "my": "အမှိုက်ပုံး",
+              "ko": "쓰레기통",
+              "en": "Trash can"
+            },
+            "audio_ref": "AUD_CLEAN001_L3",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C3",
+            "front": {
+              "my": "အမှိုက်ခွဲခြားစွန့်ပစ်ခြင်း",
+              "ko": "분리수거",
+              "en": "Recycling / Waste sorting"
+            },
+            "back": {
+              "my": "အမှိုက်ခွဲခြားစွန့်ပစ်ခြင်း",
+              "ko": "분리수거",
+              "en": "Recycling / Waste sorting"
+            },
+            "audio_ref": "AUD_CLEAN001_N1",
+            "ease": 2.5,
+            "interval": 0
+          }
+        ]
+      },
+      "assessment": {
+        "type": "mission",
+        "pass_threshold": 70,
+        "weights": {
+          "accuracy": 40,
+          "completion": 30,
+          "speaking": 30
+        },
+        "exam_mapping": {
+          "topik": null,
+          "eps_topik": "EPS_TOPIK_INDUSTRY_CLEANING"
+        }
+      }
+    }
+  ]
+}
+

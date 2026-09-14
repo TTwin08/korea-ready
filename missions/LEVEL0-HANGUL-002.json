@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "LEVEL0-HANGUL-002",
+  "goal": "common",
+  "level": 0,
+  "category": "daily",
+  "industry": null,
+  "tags": ["level-0", "hangul", "consonants", "foundation", "beginner"],
+  "title": {"my":"ကိုရီးယား အက္ခရာ — အခြေခံ ဗျည်း ၈ လုံး","ko":"한글 기본 자음 8개","en":"Hangul Basic 8 Consonants"},
+  "objective": {"my":"ကိုရီးယား အခြေခံ ဗျည်း ၈ လုံး (ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ) ကို မှတ်မိပြီး အသံထွက်နိုင်မယ်။","ko":"한글 기본 자음 8개(ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ)를 익히고 발음할 수 있다.","en":"Learn and pronounce the 8 basic Hangul consonants (ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ)."},
+  "prerequisites": [],
+  "skills": ["listening","speaking","reading","pronunciation"],
+  "estimated_minutes": 7,
+  "difficulty": "intro",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "dialogue": {
+    "setting": {"my":"ကိုရီးယားဘာသာ စာသင်ခန်း","ko":"한국어 교실","en":"Korean language classroom"},
+    "speakers": [
+      {"id":"teacher","role":"teacher","gender":"female","voice_id":"ko_f_01"},
+      {"id":"learner","role":"learner","gender":"any","voice_id":null}
+    ],
+    "lines": [
+      {"line_id":"L1","speaker":"teacher","ko":"이번에는 한글 기본 자음을 배워 봅시다.","rom":"ibeoneneun hangul gibon jaeumeul baewo bopsida.","my":"ဒီတစ်ခါတော့ ကိုရီးယား အခြေခံ ဗျည်းတွေ လေ့လာကြရအောင်။","en":"This time, let's learn basic Hangul consonants.","audio":"","note":""},
+      {"line_id":"L2","speaker":"learner","ko":"네, 선생님.","rom":"ne, seonsaengnim.","my":"ဟုတ်ကဲ့ ဆရာမ။","en":"Yes, teacher.","audio":"","note":""},
+      {"line_id":"L3","speaker":"teacher","ko":"'ㄱ'은 '기역'이라고 읽어요. 영어 'g'와 'k' 사이 소리예요.","rom":"giyeogeun giyeogirago ilgeoyo. yeongeo g-wa k sai soriyeyo.","my":"'ㄱ' ကို 'ဂီယောက်' လို့ ဖတ်တယ်။ အင်္ဂလိပ် 'g' နဲ့ 'k' အကြား အသံ။","en":"'ㄱ' is read as 'giyeok'. It's a sound between English 'g' and 'k'.","audio":"","note":""},
+      {"line_id":"L4","speaker":"learner","ko":"기역! 알겠습니다.","rom":"giyeok! algesseumnida.","my":"ဂီယောက်! နားလည်ပါပြီ။","en":"Giyeok! Understood.","audio":"","note":""}
+    ]
+  },
+  "activities": [
+    {
+      "activity_id": "A1",
+      "type": "listen_choose",
+      "prompt": {"my":"'g' နဲ့ 'k' အကြား အသံထွက်တဲ့ ဗျည်းက ဘယ်ဟာလဲ?","ko":"'g'와 'k' 사이 소리가 나는 자음은?","en":"Which consonant makes the sound between 'g' and 'k'?"},
+      "audio_ref": "",
+      "options": [
+        {"id":"O1","ko":"ㄱ","my":"ㄱ (giyeok — g/k)","correct": true},
+        {"id":"O2","ko":"ㄴ","my":"ㄴ (nieun — n)","correct": false},
+        {"id":"O3","ko":"ㄷ","my":"ㄷ (digeut — d/t)","correct": false},
+        {"id":"O4","ko":"ㅁ","my":"ㅁ (mieum — m)","correct": false}
+      ],
+      "explanation_ref": "F1"
+    },
+    {
+      "activity_id": "A2",
+      "type": "listen_choose",
+      "prompt": {"my":"'n' အသံထွက်တဲ့ ဗျည်းက ဘယ်ဟာလဲ?","ko":"'n' 소리가 나는 자음은?","en":"Which consonant makes the 'n' sound?"},
+      "audio_ref": "",
+      "options": [
+        {"id":"O1","ko":"ㄴ","my":"ㄴ (nieun — n)","correct": true},
+        {"id":"O2","ko":"ㄱ","my":"ㄱ (giyeok — g/k)","correct": false},
+        {"id":"O3","ko":"ㄹ","my":"ㄹ (rieul — r/l)","correct": false},
+        {"id":"O4","ko":"ㅂ","my":"ㅂ (bieup — b/p)","correct": false}
+      ],
+      "explanation_ref": "F2"
+    },
+    {
+      "activity_id": "A3",
+      "type": "type_answer",
+      "prompt": {"my":"'m' အသံထွက်တဲ့ ဗျည်းကို ရိုက်ထည့်ပါ။","ko":"'m' 소리가 나는 자음을 입력하세요.","en":"Type the consonant that makes the 'm' sound."},
+      "answer": "ㅁ",
+      "accept_alt": ["m", "M", "ㅁ ", "미음"],
+      "explanation_ref": "F3"
+    },
+    {
+      "activity_id": "A4",
+      "type": "speak",
+      "prompt": {"my":"'ㄱ' ဗျည်းနဲ့ 'ㅏ' သရ ပေါင်းထားတဲ့ '가' ကို ပြောပါ။","ko":"'ㄱ'과 'ㅏ'를 합친 '가'를 말하세요.","en":"Say '가' (ㄱ + ㅏ)."},
+      "target_ko": "가",
+      "min_score": 60,
+      "audio_ref": "AUD_L0H002_A4",
+      "explanation_ref": "F4"
+    }
+  ],
+  "feedback": {
+    "F1": {
+      "why_wrong": {"my":"'ㄱ' က 'g/k' အကြား အသံ။ 'ㄴ' က 'n'၊ 'ㄷ' က 'd/t'၊ 'ㅁ' က 'm'။","ko":"'ㄱ'은 g/k 사이 소리, 'ㄴ'은 n, 'ㄷ'은 d/t, 'ㅁ'은 m입니다.","en":"'ㄱ' is g/k, 'ㄴ' is n, 'ㄷ' is d/t, 'ㅁ' is m."},
+      "grammar": {"point":"한글 자음 ㄱ","explain_my":"'ㄱ' ရဲ့ အသံက — အင်္ဂလိပ် 'g' နဲ့ 'k' အကြား။ ကိုရီးယားမှာ 'ㄱ' က စကားလုံး အစမှာ 'k' နဲ့ နီး၊ အလယ်မှာ 'g' နဲ့ နီး။"},
+      "culture": "한글 자음의 모양은 발음할 때의 입과 혀 모양을 본떠 만들어졌습니다.",
+      "retry_phrase": "ㄱ"
+    },
+    "F2": {
+      "why_wrong": {"my":"'ㄴ' က 'n' အသံ။ 'ㄱ' က 'g/k'၊ 'ㄹ' က 'r/l'၊ 'ㅂ' က 'b/p'။","ko":"'ㄴ'은 n 소리입니다. 'ㄱ'은 g/k, 'ㄹ'은 r/l, 'ㅂ'은 b/p입니다.","en":"'ㄴ' is n. 'ㄱ' is g/k, 'ㄹ' is r/l, 'ㅂ' is b/p."},
+      "grammar": {"point":"한글 자음 ㄴ","explain_my":"'ㄴ' က 'န' အသံ — လျှာထိပ် သွားဖုံးကို ထိထားတဲ့ အသံ။"},
+      "culture": "ㄴ은 한국어에서 가장 자주 쓰이는 자음 중 하나입니다.",
+      "retry_phrase": "ㄴ"
+    },
+    "F3": {
+      "why_wrong": {"my":"'m' အသံအတွက် 'ㅁ' ဖြစ်တယ်။ 'ㅁ' ကို 'မိအုမ်' လို့ ဖတ်တယ်။","ko":"'m' 소리는 'ㅁ'입니다. 'ㅁ'은 '미음'이라고 읽습니다.","en":"The 'm' sound is 'ㅁ', read as 'mieum'."},
+      "retry_phrase": "ㅁ"
+    },
+    "F4": {
+      "why_wrong": {"my":"'ㄱ' + 'ㅏ' = '가'။ ကျယ်ကျယ်ပြောပါ။","ko":"'ㄱ' + 'ㅏ' = '가'. 크게 발음하세요.","en":"'ㄱ' + 'ㅏ' = '가'. Pronounce clearly."},
+      "retry_phrase": "가"
+    }
+  },
+  "cultural_note": {
+    "title": {"my":"ဟန်ဂုလ် ဗျည်းများ၏ ဒီဇိုင်း","ko":"한글 자음의 디자인","en":"Design of Hangul Consonants"},
+    "body": {"my":"ဟန်ဂုလ် ဗျည်းတွေရဲ့ ပုံသဏ္ဍာန်က — အသံထွက်တဲ့အခါ ပါးစပ်၊ လျှာ၊ လည်ချောင်း ပုံသဏ္ဍာန်ကို ကြည့်ပြီး ဖန်တီးထားတယ်။ ဗျည်း ၁၄ လုံး ရှိတယ်။ ဒီသင်ခန်းစာမှာ — အခြေခံ ၈ လုံး (ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ) ကို အရင် လေ့လာမယ်။","ko":"한글 자음의 모양은 발음 기관의 모양을 본떠 만들어졌습니다. 자음은 14개입니다. 이번 수업에서는 기본 8개(ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ)를 먼저 배웁니다.","en":"Hangul consonant shapes are modeled after the speech organs. There are 14 consonants total. In this lesson we start with 8 basics (ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ)."},
+    "sensitive": false
+  },
+  "audio": {
+    "base_path": "audio/LEVEL0-HANGUL-002/",
+    "files": [{"id":"AUD_L0H002_A4","normal":"a4-normal.mp3","slow":"a4-slow.mp3","duration":1.5}],
+    "spec": {"sample_rate":44100,"channels":1,"format":"mp3","bitrate":128}
+  },
+  "srs": {
+    "enabled": true,
+    "cards": [
+      {"card_id":"C1","front":{"my":"'g/k' အသံ","ko":"'ㄱ' 소리","en":"'g/k' sound"},"back":{"my":"ㄱ (기역)","ko":"ㄱ (기역)","en":"ㄱ (giyeok)"},"audio_ref":"AUD_L0H002_A4","ease":2.5,"interval":0},
+      {"card_id":"C2","front":{"my":"'n' အသံ","ko":"'ㄴ' 소리","en":"'n' sound"},"back":{"my":"ㄴ (니은)","ko":"ㄴ (니은)","en":"ㄴ (nieun)"},"audio_ref":"","ease":2.5,"interval":0},
+      {"card_id":"C3","front":{"my":"'m' အသံ","ko":"'ㅁ' 소리","en":"'m' sound"},"back":{"my":"ㅁ (미음)","ko":"ㅁ (미음)","en":"ㅁ (mieum)"},"audio_ref":"","ease":2.5,"interval":0}
+    ]
+  },
+  "assessment": {
+    "type": "mission",
+    "pass_threshold": 70,
+    "weights": {"accuracy":40,"completion":30,"speaking":30},
+    "exam_mapping": {"topik":null,"eps_topik":null}
+  }
+}

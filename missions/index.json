@@ -1,81 +1,20 @@
 {
   "missions": [
-    {
-      "mission_id": "COMMON-SURV-007",
-      "goal": "common",
-      "level": 1,
-      "title": {"my":"စားသောက်ဆိုင်တွင် အစားအစာ မှာယူခြင်း","ko":"식당에서 음식 주문하기","en":"Ordering Food at a Restaurant"},
-      "estimated_minutes": 8
-    },
-    {
-      "mission_id": "COMMON-SAFETY-001",
-      "goal": "common",
-      "level": 2,
-      "title": {"my":"စက်ရုံ ဘေးအန္တရာယ်","ko":"공장 안전","en":"Factory Safety"},
-      "estimated_minutes": 8
-    },
-    {
-      "mission_id": "COMMON-HEALTH-001",
-      "goal": "common",
-      "level": 2,
-      "title": {"my":"ဆေးခန်းသွားပြခြင်း","ko":"병원 방문","en":"Visiting a Clinic"},
-      "estimated_minutes": 10
-    },
-    {
-      "mission_id": "COMMON-BANK-001",
-      "goal": "common",
-      "level": 2,
-      "title": {"my":"ဘဏ်အကောင့်ဖွင့်ခြင်း","ko":"은행 계좌 개설","en":"Opening a Bank Account"},
-      "estimated_minutes": 10
-    },
-    {
-      "mission_id": "COMMON-PHONE-001",
-      "goal": "common",
-      "level": 2,
-      "title": {"my":"SIM ကတ်ဝယ်ခြင်း","ko":"유심 구매","en":"Buying a SIM Card"},
-      "estimated_minutes": 10
-    },
-    {
-      "mission_id": "COMMON-HOUSING-001",
-      "goal": "common",
-      "level": 2,
-      "title": {"my":"အခန်းငှားခြင်း","ko":"원룸 임대","en":"Renting a Room"},
-      "estimated_minutes": 12
-    },
-    {
-      "mission_id": "COMMON-TRANSPORT-001",
-      "goal": "common",
-      "level": 2,
-      "title": {"my":"တက္ကစီစီးခြင်း","ko":"택시 타기","en":"Taking a Taxi"},
-      "estimated_minutes": 10
-    },
-    {
-      "mission_id": "COMMON-EMERGENCY-001",
-      "goal": "common",
-      "level": 2,
-      "title": {"my":"119 အရေးပေါ်","ko":"119 응급","en":"119 Emergency"},
-      "estimated_minutes": 10
-    },
-    {
-      "mission_id": "COMMON-POLICE-001",
-      "goal": "common",
-      "level": 2,
-      "title": {"my":"ရဲစခန်းတွင် တိုင်ကြားခြင်း","ko":"경찰서 신고","en":"Police Report"},
-      "estimated_minutes": 10
-    },
-    {
-      "mission_id": "EXAM-INTERVIEW-001",
-      "goal": "common",
-      "level": 2,
-      "title": {"my":"EPS-TOPIK အင်တာဗျူး","ko":"EPS-TOPIK 면접","en":"EPS-TOPIK Interview"},
-      "estimated_minutes": 12
-    },
-    {
-      "mission_id": "WORK-SAFETY-TEST",
-      "goal": "common",
-      "level": 2,
-      "title": {"my":"ဘေးအန္တရာယ်ကင်းရှင်းရေး","ko":"안전교육","en":"Safety Training"},
-      "estimated_minutes": 5
-    }
+    {"mission_id":"COMMON-SURV-007","goal":"common","level":1,"title":{"my":"စားသောက်ဆိုင်တွင် အစားအစာ မှာယူခြင်း","ko":"식당에서 음식 주문하기","en":"Ordering Food at a Restaurant"},"estimated_minutes":8},
+    {"mission_id":"COMMON-SAFETY-001","goal":"common","level":2,"title":{"my":"စက်ရုံ ဘေးအန္တရာယ်","ko":"공장 안전","en":"Factory Safety"},"estimated_minutes":8},
+    {"mission_id":"COMMON-HEALTH-001","goal":"common","level":2,"title":{"my":"ဆေးခန်းသွားပြခြင်း","ko":"병원 방문","en":"Visiting a Clinic"},"estimated_minutes":10},
+    {"mission_id":"COMMON-BANK-001","goal":"common","level":2,"title":{"my":"ဘဏ်အကောင့်ဖွင့်ခြင်း","ko":"은행 계좌 개설","en":"Opening a Bank Account"},"estimated_minutes":10},
+    {"mission_id":"COMMON-PHONE-001","goal":"common","level":2,"title":{"my":"SIM ကတ်ဝယ်ခြင်း","ko":"유심 구매","en":"Buying a SIM Card"},"estimated_minutes":10},
+    {"mission_id":"COMMON-HOUSING-001","goal":"common","level":2,"title":{"my":"အခန်းငှားခြင်း","ko":"원룸 임대","en":"Renting a Room"},"estimated_minutes":12},
+    {"mission_id":"COMMON-TRANSPORT-001","goal":"common","level":2,"title":{"my":"တက္ကစီစီးခြင်း","ko":"택시 타기","en":"Taking a Taxi"},"estimated_minutes":10},
+    {"mission_id":"COMMON-EMERGENCY-001","goal":"common","level":2,"title":{"my":"119 အရေးပေါ်","ko":"119 응급","en":"119 Emergency"},"estimated_minutes":10},
+    {"mission_id":"COMMON-POLICE-001","goal":"common","level":2,"title":{"my":"ရဲစခန်းတွင် တိုင်ကြားခြင်း","ko":"경찰서 신고","en":"Police Report"},"estimated_minutes":10},
+    {"mission_id":"WORK-FACTORY-001","goal":"work","level":2,"title":{"my":"စက်ရုံ ပထမဆုံးနေ့","ko":"공장 첫날","en":"First Day at Factory"},"estimated_minutes":10},
+    {"mission_id":"WORK-AGRICULTURE-001","goal":"work","level":2,"title":{"my":"စိုက်ပျိုးရေးခြံ ပထမဆုံးနေ့","ko":"농장 첫날","en":"First Day at Farm"},"estimated_minutes":10},
+    {"mission_id":"WORK-CONSTRUCTION-001","goal":"work","level":2,"title":{"my":"ဆောက်လုပ်ရေး ပထမဆုံးနေ့","ko":"건설 현장 첫날","en":"First Day at Construction"},"estimated_minutes":10},
+    {"mission_id":"WORK-RESTAURANT-001","goal":"work","level":2,"title":{"my":"စားသောက်ဆိုင် မီးဖိုချောင်","ko":"식당 주방 첫날","en":"First Day at Restaurant"},"estimated_minutes":10},
+    {"mission_id":"WORK-FISHERY-001","goal":"work","level":2,"title":{"my":"ငါးဖမ်းလှေ ပထမဆုံးနေ့","ko":"어선 첫날","en":"First Day on Fishing Boat"},"estimated_minutes":10},
+    {"mission_id":"WORK-CLEANING-001","goal":"work","level":2,"title":{"my":"သန့်ရှင်းရေး ပထမဆုံးနေ့","ko":"청소 첫날","en":"First Day as Cleaning Staff"},"estimated_minutes":10},
+    {"mission_id":"EXAM-INTERVIEW-001","goal":"work","level":2,"title":{"my":"EPS-TOPIK အင်တာဗျူး","ko":"EPS-TOPIK 면접","en":"EPS-TOPIK Interview"},"estimated_minutes":12}
   ]
 }

@@ -1,0 +1,363 @@
+{
+  "__meta": {
+    "generator": "Korea Ready Mission Generator v1.0",
+    "generated_at": "2026-09-12T13:35:00Z",
+    "batch_id": "BATCH-20260912-002",
+    "request": "Generate WORK-RESTAURANT-001 with Schema v1.0.1"
+  },
+  "__self_check": {
+    "rules_passed": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7",
+      "R8",
+      "R9",
+      "R10",
+      "R11",
+      "R12",
+      "R13",
+      "R14",
+      "R15",
+      "R16",
+      "R17",
+      "R18",
+      "R19",
+      "R20",
+      "R21",
+      "R22",
+      "R23",
+      "R24",
+      "R25",
+      "R26"
+    ],
+    "warnings": [],
+    "uncertainties": [],
+    "external_prereqs": [
+      "COMMON-SURV-001"
+    ]
+  },
+  "missions": [
+    {
+      "schema_version": "1.0",
+      "mission_id": "WORK-RESTAURANT-001",
+      "goal": "work",
+      "level": 2,
+      "category": "industry",
+      "industry": "restaurant",
+      "tags": [
+        "restaurant-kitchen",
+        "first-day",
+        "kitchen-helper",
+        "workplace-korean"
+      ],
+      "title": {
+        "my": "ကိုရီးယား စားသောက်ဆိုင် မီးဖိုချောင် အကူ ပထမဆုံးနေ့",
+        "ko": "한국 식당 주방 보조 첫날",
+        "en": "First Day as a Kitchen Helper at a Korean Restaurant"
+      },
+      "objective": {
+        "my": "မီးဖိုချောင်တွင် အလုပ်တာဝန်များကို ယဉ်ကျေးစွာ နားထောင်ပြီး တုံ့ပြန်ရန် သင်ယူမည်။",
+        "ko": "주방에서 업무 지시를 정중하게 듣고 응답하는 방법을 배웁니다.",
+        "en": "Learn how to politely listen to and respond to work instructions in the kitchen."
+      },
+      "prerequisites": [
+        "COMMON-SURV-001"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "politeness"
+      ],
+      "estimated_minutes": 10,
+      "difficulty": "intermediate",
+      "regulated": false,
+      "status": "draft",
+      "version": 1,
+      "dialogue": {
+        "setting": {
+          "my": "ဆိုးလ်မြို့ရှိ ကိုရီးယား စားသောက်ဆိုင် မီးဖိုချောင်",
+          "ko": "서울의 한 한국 식당 주방",
+          "en": "Kitchen of a Korean restaurant in Seoul"
+        },
+        "speakers": [
+          {
+            "id": "chef",
+            "role": "manager",
+            "gender": "male",
+            "voice_id": "ko_m_01"
+          },
+          {
+            "id": "learner",
+            "role": "learner",
+            "gender": "any",
+            "voice_id": null
+          }
+        ],
+        "lines": [
+          {
+            "line_id": "L1",
+            "speaker": "chef",
+            "ko": "오늘 첫날이죠? 먼저 설거지부터 도와주세요.",
+            "rom": "Oneul cheotnal-ijyo? Meonjeo seolgeoji-buteo dowajuseyo.",
+            "my": "ဒီနေ့ ပထမဆုံးနေ့နော်? ပန်းကန်တွေကို အရင် ဆေးပေးပါ။",
+            "en": "Today is your first day, right? Please help with washing the dishes first.",
+            "audio": "AUD_REST001_L1",
+            "audio_slow": "AUD_REST001_L1_S",
+            "note": "Workplace instruction with polite imperative form"
+          },
+          {
+            "line_id": "L2",
+            "speaker": "learner",
+            "ko": "네, 알겠습니다! 바로 하겠습니다.",
+            "rom": "Ne, algetseumnida! Baro hagesseumnida.",
+            "my": "ဟုတ်ကဲ့၊ နားလည်ပါပြီ! ချက်ချင်း လုပ်ပါ့မယ်။",
+            "en": "Yes, I understand! I will do it right away.",
+            "audio": "AUD_REST001_L2",
+            "audio_slow": "AUD_REST001_L2_S",
+            "note": "Standard polite response to instructions in Korean workplaces"
+          },
+          {
+            "line_id": "L3",
+            "speaker": "chef",
+            "ko": "설거지 다 하고 나서 양파 손질도 해주세요.",
+            "rom": "Seolgeoji da hago naseo yangpa sonjildo hae-juseyo.",
+            "my": "ဆေးပြီးရင် ကြက်သွန်နီတွေကို ပြင်ဆင်ပေးပါ။",
+            "en": "After washing the dishes, please prep the onions as well.",
+            "audio": "AUD_REST001_L3",
+            "audio_slow": "AUD_REST001_L3_S",
+            "note": "Sequential workplace task instruction"
+          }
+        ]
+      },
+      "activities": [
+        {
+          "activity_id": "A1",
+          "type": "branch_dialogue",
+          "prompt": {
+            "my": "ရှေ့ဖ်၏ အမိန့်ကို သင့်တော်သော ယဉ်ကျေးစကားဖြင့် ရွေးချယ်ပါ။",
+            "ko": "주방장의 지시에 적절한 존댓말로 응답하세요.",
+            "en": "Select the appropriate polite response to the chef's instruction."
+          },
+          "entry_node": "N1",
+          "nodes": [
+            {
+              "node_id": "N1",
+              "speaker": "chef",
+              "ko": "여기 설거지 좀 빨리 해주세요.",
+              "rom": "Yeogi seolgeoji jom ppalli hae-juseyo.",
+              "my": "ဒီမှာ၊ ပန်းကန်တွေကို မြန်မြန် ဆေးပေးပါ။",
+              "en": "Please wash these dishes quickly here.",
+              "choices": [
+                {
+                  "id": "C1_N1",
+                  "ko": "네, 알겠습니다! 바로 하겠습니다.",
+                  "my": "ဟုတ်ကဲ့၊ နားလည်ပါပြီ! ချက်ချင်း လုပ်ပါ့မယ်။",
+                  "en": "Yes, I understand! I will do it right away.",
+                  "next": "N2"
+                },
+                {
+                  "id": "C2_N1",
+                  "ko": "응, 잠깐만.",
+                  "my": "အေး၊ ခဏစောင့်။",
+                  "en": "Yeah, wait a moment.",
+                  "next": "N3"
+                }
+              ]
+            },
+            {
+              "node_id": "N2",
+              "speaker": "chef",
+              "ko": "좋아요! 일 처리 손이 빠르네요. 다음으로 양파 좀 다듬어 주세요.",
+              "rom": "Joh-ayo! Il cheori son-i ppareuneyo. Daeum-euro yangpa jom dadumeo juseyo.",
+              "my": "ကောင်းပြီ! အလုပ်လုပ်တာ မြန်တာပဲ။ နောက်တစ်ခု ကြက်သွန်နီ လှီးပေးပါ။",
+              "en": "Great! You work fast. Next, please prep the onions.",
+              "choices": [
+                {
+                  "id": "C1_N2",
+                  "ko": "네, 주방장님! 어떻게 다듬을까요?",
+                  "my": "ဟုတ်ကဲ့၊ ရှေ့ဖ်! ဘယ်လို လှီးရမလဲ ပြပေးပါဦး။",
+                  "en": "Yes, Chef! How should I prep them?",
+                  "next": "END"
+                }
+              ]
+            },
+            {
+              "node_id": "N3",
+              "speaker": "chef",
+              "ko": "직장에서 그렇게 반말하면 안 돼요! 존댓말로 다시 말하세요.",
+              "rom": "Jikjang-eseo geureohke banmalhameon an dwaeyo! Jondaetmallo dasi malhaseyo.",
+              "my": "အလုပ်ခွင်မှာ ရိုင်းရိုင်းစိုင်းစိုင်း မပြောရဘူး! ယဉ်ယဉ်ကျေးကျေး ပြန်ပြောပါ။",
+              "en": "Don't speak informally in the workplace! Speak politely.",
+              "choices": [
+                {
+                  "id": "C1_N3",
+                  "ko": "죄송합니다. 네, 알겠습니다!",
+                  "my": "တောင်းပန်ပါတယ်။ ဟုတ်ကဲ့၊ နားလည်ပါပြီ!",
+                  "en": "I am sorry. Yes, I understand!",
+                  "next": "END"
+                }
+              ]
+            }
+          ],
+          "audio_ref": "AUD_REST001_N1",
+          "explanation_ref": "FB_REST001_A1"
+        },
+        {
+          "activity_id": "A2",
+          "type": "speak",
+          "prompt": {
+            "my": "အောက်ပါ စကားစုကို အသံကျယ်ကျယ်နှင့် သဘာဝကျကျ အသံထွက်၍ ပြောပါ။",
+            "ko": "다음 문장을 크고 자연스럽게 말해보세요.",
+            "en": "Speak the following sentence clearly and naturally."
+          },
+          "target_ko": "네, 알겠습니다! 바로 하겠습니다.",
+          "min_score": 60,
+          "audio_ref": "AUD_REST001_L2",
+          "explanation_ref": "FB_REST001_A2"
+        }
+      ],
+      "feedback": {
+        "FB_REST001_A1": {
+          "why_wrong": {
+            "my": "အလုပ်ခွင်တွင် အထက်လူကြီးကို ရိုင်းစိုင်းသော စကား (반말) မသုံးရပါ။ ယဉ်ကျေးသော စကား (존댓말로) သုံးရပါမည်။",
+            "ko": "직장에서 상사에게 반말을 사용하면 안 됩니다. 정중한 존댓말을 사용해야 합니다.",
+            "en": "In the workplace, do not use informal language with supervisors. Always use formal polite language."
+          },
+          "grammar": {
+            "point": "-겠습니다 / -ㅂ니다",
+            "explain_my": "အလုပ်ခွင်တွင် မိမိ၏ ဆန္ဒ သို့မဟုတ် တာဝန်ယူမှုကို ဖော်ပြရာတွင် သုံးသော လွန်စွာယဉ်ကျေးသည့် အဆုံးသတ်စကား ဖြစ်ပါသည်။"
+          },
+          "culture": "ကိုရီးယား မီးဖိုချောင်တွင် အမိန့်ပေးခံရပါက ကျယ်လောင်စွာနှင့် ချက်ချင်း '네, 알겠습니다!' ဟု ပြန်လည်တုံ့ပြန်ရပါမည်။",
+          "retry_phrase": "네, 알겠습니다! 바로 하겠습니다."
+        },
+        "FB_REST001_A2": {
+          "why_wrong": {
+            "my": "အသံထွက်ကို ပိုမို ရှင်းလင်းစွာနှင့် ယုံကြည်မှုရှိရှိ ပြောဆိုပေးပါ။",
+            "ko": "발음을 더 명확하고 확실하게 해주세요.",
+            "en": "Please pronounce the phrase more clearly and confidently."
+          },
+          "retry_phrase": "네, 알겠습니다! 바로 하겠습니다."
+        }
+      },
+      "cultural_note": {
+        "title": {
+          "my": "ကိုရီးယား မီးဖိုချောင် ယဉ်ကျေးမှုနှင့် မြန်ဆန်စွာ အလုပ်လုပ်ခြင်း",
+          "ko": "한국 주방 문화와 '빨리빨리' 문화",
+          "en": "Korean Kitchen Culture and the Fast-Paced Work Ethic"
+        },
+        "body": {
+          "my": "ကိုရီးယား စားသောက်ဆိုင် မီးဖိုချောင်တွင် မြန်ဆန်မှုနှင့် သန့်ရှင်းမှုသည် အလွန်အရေးကြီးပါသည်။ အမိန့်ပေးသည်ကို ကြားပါက '네, 알겠습니다!' (ဟုတ်ကဲ့၊ နားလည်ပါပြီ!) ဟု ကျယ်လောင်စွာ တုံ့ပြန်ရပါမည်။",
+          "ko": "한국 식당 주방에서는 신속함과 위생이 매우 중요합니다. 지시를 받으면 '네, 알겠습니다!'라고 크고 명확하게 대답해야 합니다.",
+          "en": "In Korean restaurant kitchens, speed and hygiene are essential. When you receive instructions, respond clearly and loudly with 'Ne, algetseumnida!'"
+        },
+        "sensitive": false
+      },
+      "audio": {
+        "base_path": "audio/WORK-RESTAURANT-001/",
+        "files": [
+          {
+            "id": "AUD_REST001_L1",
+            "normal": "L1-normal.mp3",
+            "slow": "L1-slow.mp3",
+            "duration": 3.5
+          },
+          {
+            "id": "AUD_REST001_L2",
+            "normal": "L2-normal.mp3",
+            "slow": "L2-slow.mp3",
+            "duration": 2.8
+          },
+          {
+            "id": "AUD_REST001_L3",
+            "normal": "L3-normal.mp3",
+            "slow": "L3-slow.mp3",
+            "duration": 3.8
+          },
+          {
+            "id": "AUD_REST001_N1",
+            "normal": "N1-normal.mp3",
+            "slow": "N1-slow.mp3",
+            "duration": 3.0
+          }
+        ],
+        "spec": {
+          "sample_rate": 44100,
+          "channels": 1,
+          "format": "mp3",
+          "bitrate": 128
+        }
+      },
+      "srs": {
+        "enabled": true,
+        "cards": [
+          {
+            "card_id": "C1",
+            "front": {
+              "my": "ပန်းကန်ဆေးခြင်း",
+              "ko": "설거지",
+              "en": "Dishwashing"
+            },
+            "back": {
+              "my": "ပန်းကန်ဆေးခြင်း",
+              "ko": "설거지",
+              "en": "Dishwashing"
+            },
+            "audio_ref": "AUD_REST001_L1",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C2",
+            "front": {
+              "my": "ကြက်သွန်နီ ပြင်ဆင်ခြင်း/လှီးခြင်း",
+              "ko": "양파 손질",
+              "en": "Onion preparation"
+            },
+            "back": {
+              "my": "ကြက်သွန်နီ ပြင်ဆင်ခြင်း/လှီးခြင်း",
+              "ko": "양파 손질",
+              "en": "Onion preparation"
+            },
+            "audio_ref": "AUD_REST001_L3",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C3",
+            "front": {
+              "my": "ဟုတ်ကဲ့၊ နားလည်ပါပြီ!",
+              "ko": "네, 알겠습니다!",
+              "en": "Yes, I understand!"
+            },
+            "back": {
+              "my": "ဟုတ်ကဲ့၊ နားလည်ပါပြီ!",
+              "ko": "네, 알겠습니다!",
+              "en": "Yes, I understand!"
+            },
+            "audio_ref": "AUD_REST001_L2",
+            "ease": 2.5,
+            "interval": 0
+          }
+        ]
+      },
+      "assessment": {
+        "type": "mission",
+        "pass_threshold": 70,
+        "weights": {
+          "accuracy": 40,
+          "completion": 30,
+          "speaking": 30
+        },
+        "exam_mapping": {
+          "topik": null,
+          "eps_topik": "EPS_TOPIK_INDUSTRY_RESTAURANT"
+        }
+      }
+    }
+  ]
+}
+

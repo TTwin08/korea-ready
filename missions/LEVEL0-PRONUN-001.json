@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "LEVEL0-PRONUN-001",
+  "goal": "common",
+  "level": 0,
+  "category": "daily",
+  "industry": null,
+  "tags": ["level-0", "pronunciation", "consonants", "foundation", "beginner"],
+  "title": {"my":"ကိုရီးယား အသံထွက် — ဗျည်းအသံ ကွာခြားချက်","ko":"한글 발음 — 자음 소리 구별","en":"Basic Pronunciation — Consonant Contrasts"},
+  "objective": {"my":"ကိုရီးယား ဗျည်း ၃ မျိုး — ပျော့ (ㅂ ㅈ)၊ လေပြင်း (ㅍ ㅊ)၊ တင်းမာ (ㅃ ㅉ) — ရဲ့ အသံကွာခြားချက်ကို Romanization (b/p, p, pp) ကို အဓိက အကိုးအကားအဖြစ်ထားပြီး ခွဲခြားနိုင်မယ်။ Burmese မြန်မာ အသံ ခန့်မှန်းချက်များကို အကိုးအကား အဖြစ်သာ ထားပါ။","ko":"한국어 자음 3가지(예사소리 ㅂ ㅈ, 거센소리 ㅍ ㅊ, 된소리 ㅃ ㅉ)를 로마자 표기를 기준으로 구별할 수 있다.","en":"Distinguish the three types of Korean consonants (plain, aspirated, tense) using Romanization as the primary reference."},
+  "prerequisites": [],
+  "skills": ["listening","speaking","pronunciation"],
+  "estimated_minutes": 7,
+  "difficulty": "intro",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "dialogue": {
+    "setting": {"my":"ကိုရီးယားဘာသာ စာသင်ခန်း","ko":"한국어 교실","en":"Korean language classroom"},
+    "speakers": [
+      {"id":"teacher","role":"teacher","gender":"female","voice_id":"ko_f_01"},
+      {"id":"learner","role":"learner","gender":"any","voice_id":null}
+    ],
+    "lines": [
+      {"line_id":"L1","speaker":"teacher","ko":"오늘은 비슷하게 들리는 자음 3가지를 배워 봅시다.","rom":"oneureun biseuthage deullineun jaeum se gajireul baewo bopsida.","my":"ဒီနေ့တော့ အသံချင်း ဆင်တူတဲ့ ဗျည်း ၃ မျိုး လေ့လာကြရအောင်။","en":"Today, let's learn three consonants that sound similar.","audio":"","note":""},
+      {"line_id":"L2","speaker":"learner","ko":"네, 선생님.","rom":"ne, seonsaengnim.","my":"ဟုတ်ကဲ့ ဆရာမ။","en":"Yes, teacher.","audio":"","note":""},
+      {"line_id":"L3","speaker":"teacher","ko":"'ㅂ'은 'b/p', 'ㅍ'은 'p' (강한 바람), 'ㅃ'은 'pp' (긴장) 소리예요.","rom":"bieubeun b/p, pieubeun p (ganghan baram), ssangbieubeun pp (ginjang) soriyeyo.","my":"'ㅂ' က Roman 'b/p'၊ 'ㅍ' က Roman 'p' (လေပြင်းထွက်)၊ 'ㅃ' က Roman 'pp' (တင်းမာ)။ Romanization ကို အဓိက အကိုးအကား ထားပါ။ Burmese ခန့်မှန်းချက်များကို တိုက်ရိုက် အစားထိုး မသုံးပါနဲ့။","en":"'ㅂ' is Roman 'b/p', 'ㅍ' is Roman 'p' (aspirated), 'ㅃ' is Roman 'pp' (tense). Use Romanization as the primary reference.","audio":"","note":""},
+      {"line_id":"L4","speaker":"learner","ko":"아, 세 가지가 다르군요!","rom":"a, se gajiga dareugunyo!","my":"အာ၊ ၃ မျိုး ကွာခြားတာပဲ!","en":"Ah, the three are all different!","audio":"","note":""}
+    ]
+  },
+  "activities": [
+    {
+      "activity_id": "A1",
+      "type": "listen_choose",
+      "prompt": {"my":"Roman 'b/p' (ပျော့သံ) က ဘယ်ဗျည်းလဲ?","ko":"로마자 'b/p' (예사소리)는 어느 자음인가요?","en":"Which consonant is Roman 'b/p' (plain sound)?"},
+      "audio_ref": "",
+      "options": [
+        {"id":"O1","ko":"ㅂ","my":"ㅂ — Roman: b/p (မြန်မာ ခန့်မှန်း: ဗ/ပ)","correct": true},
+        {"id":"O2","ko":"ㅍ","my":"ㅍ — Roman: p (မြန်မာ ခန့်မှန်း: ဖ)","correct": false},
+        {"id":"O3","ko":"ㅃ","my":"ㅃ — Roman: pp (မြန်မာ ခန့်မှန်း: ဗ တင်းမာ)","correct": false},
+        {"id":"O4","ko":"ㅁ","my":"ㅁ — Roman: m (မြန်မာ ခန့်မှန်း: မ)","correct": false}
+      ],
+      "explanation_ref": "F1"
+    },
+    {
+      "activity_id": "A2",
+      "type": "listen_choose",
+      "prompt": {"my":"Roman 'p' (လေပြင်းထွက်) က ဘယ်ဗျည်းလဲ?","ko":"로마자 'p' (거센소리)는 어느 자음인가요?","en":"Which consonant is Roman 'p' (aspirated)?"},
+      "audio_ref": "",
+      "options": [
+        {"id":"O1","ko":"ㅍ","my":"ㅍ — Roman: p (မြန်မာ ခန့်မှန်း: ဖ လေပြင်း)","correct": true},
+        {"id":"O2","ko":"ㅂ","my":"ㅂ — Roman: b/p","correct": false},
+        {"id":"O3","ko":"ㅃ","my":"ㅃ — Roman: pp","correct": false},
+        {"id":"O4","ko":"ㅁ","my":"ㅁ — Roman: m","correct": false}
+      ],
+      "explanation_ref": "F2"
+    },
+    {
+      "activity_id": "A3",
+      "type": "type_answer",
+      "prompt": {"my":"Roman 'j' (ပျော့သံ) က ဘယ်ဗျည်းလဲ? ရိုက်ထည့်ပါ။","ko":"로마자 'j' (예사소리)는 어느 자음인가요? 입력하세요.","en":"Which consonant is Roman 'j' (plain)? Type it."},
+      "answer": "ㅈ",
+      "accept_alt": ["j", "J", "ㅈ ", "지읒"],
+      "explanation_ref": "F3"
+    },
+    {
+      "activity_id": "A4",
+      "type": "speak",
+      "prompt": {"my":"'ㅂ' ဗျည်းနဲ့ 'ㅏ' သရ ပေါင်းထားတဲ့ '바' ကို ပြောပါ။ (Roman: ba)","ko":"'ㅂ'과 'ㅏ'를 합친 '바'를 말하세요. (로마자: ba)","en":"Say '바' (ㅂ + ㅏ). (Roman: ba)"},
+      "target_ko": "바",
+      "min_score": 60,
+      "audio_ref": "AUD_L0P001_A4",
+      "explanation_ref": "F4"
+    }
+  ],
+  "feedback": {
+    "F1": {
+      "why_wrong": {"my":"'ㅂ' က Roman 'b/p' (ပျော့သံ)။ 'ㅍ' က 'p' (လေပြင်း)၊ 'ㅃ' က 'pp' (တင်းမာ)။ Romanization ကို အဓိက အကိုးအကား ထားပါ။","ko":"'ㅂ'은 Roman 'b/p' (예사소리)입니다. 'ㅍ'은 'p' (거센소리), 'ㅃ'은 'pp' (된소리)입니다.","en":"'ㅂ' is Roman 'b/p' (plain). 'ㅍ' is 'p' (aspirated), 'ㅃ' is 'pp' (tense)."},
+      "grammar": {"point":"예사소리 ㅂ","explain_my":"'ㅂ' က ပျော့သံ — Roman 'b/p'။"},
+      "culture": "한국어 자음은 예사소리, 거센소리, 된소리 세 가지로 나뉩니다.",
+      "retry_phrase": "ㅂ"
+    },
+    "F2": {
+      "why_wrong": {"my":"'ㅍ' က Roman 'p' (လေပြင်းထွက်)။ 'ㅂ' က 'b/p'၊ 'ㅃ' က 'pp'။","ko":"'ㅍ'은 Roman 'p' (거센소리)입니다. 'ㅂ'은 b/p, 'ㅃ'은 pp입니다.","en":"'ㅍ' is Roman 'p' (aspirated). 'ㅂ' is b/p, 'ㅃ' is pp."},
+      "grammar": {"point":"거센소리 ㅍ","explain_my":"'ㅍ' က လေပြင်းထွက် 'p' (Roman)။"},
+      "culture": "거센소리는 발음할 때 강한 바람이 나옵니다. 손바닥을 입 앞에 대고 확인해 보세요.",
+      "retry_phrase": "ㅍ"
+    },
+    "F3": {
+      "why_wrong": {"my":"Roman 'j' က 'ㅈ' — '지읒'။ 'ㅊ' က 'ch'၊ 'ㅉ' က 'jj'။","ko":"Roman 'j'는 'ㅈ' (지읒)입니다. 'ㅊ'은 ch, 'ㅉ'은 jj입니다.","en":"Roman 'j' is 'ㅈ' (jieut). 'ㅊ' is ch, 'ㅉ' is jj."},
+      "retry_phrase": "ㅈ"
+    },
+    "F4": {
+      "why_wrong": {"my":"'ㅂ' + 'ㅏ' = '바' (Roman: ba)။ ကျယ်ကျယ်ပြောပါ။","ko":"'ㅂ' + 'ㅏ' = '바' (로마자: ba). 크게 발음하세요.","en":"'ㅂ' + 'ㅏ' = '바' (Roman: ba). Say it clearly."},
+      "retry_phrase": "바"
+    }
+  },
+  "cultural_note": {
+    "title": {"my":"ကိုရီးယား ဗျည်း ၃ မျိုး","ko":"한국어 자음의 3가지 분류","en":"Three Types of Korean Consonants"},
+    "body": {"my":"ကိုရီးယား ဗျည်းတွေကို အသံအရ ၃ မျိုး ခွဲတယ် — ပျော့သံ (ㅂ ㅈ ㄷ ㄱ)၊ လေပြင်းသံ (ㅍ ㅊ ㅌ ㅋ)၊ တင်းမာသံ (ㅃ ㅉ ㄸ ㄲ)။ Romanization မှာ — b/p, p, pp / j, ch, jj လို့ ခွဲပြတယ်။","ko":"한국어 자음은 소리 방식에 따라 세 가지로 나뉩니다 — 예사소리(ㅂ ㅈ ㄷ ㄱ), 거센소리(ㅍ ㅊ ㅌ ㅋ), 된소리(ㅃ ㅉ ㄸ ㄲ). 로마자 표기에서도 b/p, p, pp / j, ch, jj로 구분됩니다.","en":"Korean consonants fall into three types — plain (ㅂ ㅈ ㄷ ㄱ), aspirated (ㅍ ㅊ ㅌ ㅋ), and tense (ㅃ ㅉ ㄸ ㄲ). Romanization reflects this: b/p, p, pp / j, ch, jj."},
+    "sensitive": false
+  },
+  "audio": {
+    "base_path": "audio/LEVEL0-PRONUN-001/",
+    "files": [{"id":"AUD_L0P001_A4","normal":"a4-normal.mp3","slow":"a4-slow.mp3","duration":1.5}],
+    "spec": {"sample_rate":44100,"channels":1,"format":"mp3","bitrate":128}
+  },
+  "srs": {
+    "enabled": true,
+    "cards": [
+      {"card_id":"C1","front":{"my":"Roman: b/p (ပျော့သံ)","ko":"Roman: b/p (예사소리)","en":"Roman: b/p (plain)"},"back":{"my":"ㅂ","ko":"ㅂ","en":"ㅂ"},"audio_ref":"AUD_L0P001_A4","ease":2.5,"interval":0},
+      {"card_id":"C2","front":{"my":"Roman: p (လေပြင်းသံ)","ko":"Roman: p (거센소리)","en":"Roman: p (aspirated)"},"back":{"my":"ㅍ","ko":"ㅍ","en":"ㅍ"},"audio_ref":"","ease":2.5,"interval":0},
+      {"card_id":"C3","front":{"my":"Roman: pp (တင်းမာသံ)","ko":"Roman: pp (된소리)","en":"Roman: pp (tense)"},"back":{"my":"ㅃ","ko":"ㅃ","en":"ㅃ"},"audio_ref":"","ease":2.5,"interval":0},
+      {"card_id":"C4","front":{"my":"Roman: j","ko":"Roman: j","en":"Roman: j"},"back":{"my":"ㅈ","ko":"ㅈ","en":"ㅈ"},"audio_ref":"","ease":2.5,"interval":0}
+    ]
+  },
+  "assessment": {
+    "type": "mission",
+    "pass_threshold": 70,
+    "weights": {"accuracy":40,"completion":30,"speaking":30},
+    "exam_mapping": {"topik":null,"eps_topik":null}
+  }
+}

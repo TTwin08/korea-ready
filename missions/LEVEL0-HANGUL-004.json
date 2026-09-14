@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "LEVEL0-HANGUL-004",
+  "goal": "common",
+  "level": 0,
+  "category": "daily",
+  "industry": null,
+  "tags": ["level-0", "hangul", "batchim", "foundation", "beginner"],
+  "title": {"my":"ကိုရီးယား အက္ခရာ — အဆုံးဗျည်း (받침)","ko":"받침 배우기","en":"Final Consonants (받침)"},
+  "objective": {"my":"အသံတစ်ခုရဲ့ အောက်မှာ လာတဲ့ အဆုံးဗျည်း (받침) ဆိုတာ ဘာလဲ နားလည်ပြီး ရိုးရိုး ဥပမာများ ဖတ်နိုင်မယ်။","ko":"받침의 개념과 기본적인 받침 발음을 이해한다.","en":"Understand the concept of 받침 (final consonant) and read basic examples."},
+  "prerequisites": [],
+  "skills": ["listening","speaking","reading"],
+  "estimated_minutes": 7,
+  "difficulty": "intro",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "dialogue": {
+    "setting": {"my":"ကိုရီးယားဘာသာ စာသင်ခန်း","ko":"한국어 교실","en":"Korean language classroom"},
+    "speakers": [
+      {"id":"teacher","role":"teacher","gender":"female","voice_id":"ko_f_01"},
+      {"id":"learner","role":"learner","gender":"any","voice_id":null}
+    ],
+    "lines": [
+      {"line_id":"L1","speaker":"teacher","ko":"이번에는 받침을 배워 봅시다.","rom":"ibeoneneun batchimeul baewo bopsida.","my":"ဒီတစ်ခါတော့ အဆုံးဗျည်း (받침) ကို လေ့လာကြရအောင်။","en":"This time, let's learn 받침 (final consonants).","audio":"","note":""},
+      {"line_id":"L2","speaker":"learner","ko":"받침이 뭐예요?","rom":"batchimi mwoyeyo?","my":"받침 ဆိုတာ ဘာလဲ?","en":"What is 받침?","audio":"","note":""},
+      {"line_id":"L3","speaker":"teacher","ko":"글자 아래에 오는 자음이에요. '한'에는 'ㄴ'이 받침이에요.","rom":"geulja araee oneun jaeumieyo. haneneun nieuni batchimieyo.","my":"စာလုံးရဲ့ အောက်မှာ လာတဲ့ ဗျည်း။ '한' မှာ 'ㄴ' က 받침။","en":"It's the consonant at the bottom. In '한', 'ㄴ' is the 받침.","audio":"","note":""},
+      {"line_id":"L4","speaker":"learner","ko":"아, 그렇군요!","rom":"a, geureokgunyo!","my":"အာ၊ ဒါကြောင့်ကိုး!","en":"Ah, I see!","audio":"","note":""}
+    ]
+  },
+  "activities": [
+    {
+      "activity_id": "A1",
+      "type": "listen_choose",
+      "prompt": {"my":"အောက်ပါတို့ထဲက — 받침 ပါတဲ့ စာလုံးက ဘယ်ဟာလဲ?","ko":"받침이 있는 글자는?","en":"Which one has a 받침?"},
+      "audio_ref": "",
+      "options": [
+        {"id":"O1","ko":"한","my":"ဟန် (han) — 받침 ㄴ ပါ","correct": true},
+        {"id":"O2","ko":"하","my":"ဟာ (ha) — 받침 မပါ","correct": false},
+        {"id":"O3","ko":"나","my":"နာ (na) — 받침 မပါ","correct": false},
+        {"id":"O4","ko":"가","my":"ဂါ (ga) — 받침 မပါ","correct": false}
+      ],
+      "explanation_ref": "F1"
+    },
+    {
+      "activity_id": "A2",
+      "type": "type_answer",
+      "prompt": {"my":"'ထမင်း' လို့ အသံထွက်တဲ့ စာလုံးကို ရိုက်ထည့်ပါ။","ko":"'밥'(쌀밥)을 입력하세요.","en":"Type the syllable '밥' (rice)."},
+      "answer": "밥",
+      "accept_alt": ["밥 ", "bap", "BAP"],
+      "explanation_ref": "F2"
+    },
+    {
+      "activity_id": "A3",
+      "type": "speak",
+      "prompt": {"my":"'밥' ကို ကျယ်ကျယ်ပြောပါ။","ko":"'밥'을 크게 말하세요.","en":"Say '밥' out loud."},
+      "target_ko": "밥",
+      "min_score": 60,
+      "audio_ref": "AUD_L0H004_A3",
+      "explanation_ref": "F3"
+    }
+  ],
+  "feedback": {
+    "F1": {
+      "why_wrong": {"my":"'한' မှာ 'ㄴ' က 받침။ '하'၊ '나'၊ '가' တို့မှာ 받침 မရှိ။","ko":"'한'에는 'ㄴ'이 받침입니다. '하', '나', '가'에는 받침이 없습니다.","en":"'한' has 'ㄴ' as 받침. '하', '나', '가' have no 받침."},
+      "grammar": {"point":"받침 (Final Consonant)","explain_my":"အသံတစ်ခုရဲ့ အောက်မှာ လာတဲ့ ဗျည်းကို 받침 လို့ ခေါ်တယ်။"},
+      "culture": "한국어에는 7개의 대표 받침 소리가 있습니다: ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅇ.",
+      "retry_phrase": "한"
+    },
+    "F2": {
+      "why_wrong": {"my":"'ပပ်' က '밥' — 'ㅂ' + 'ㅏ' + 'ㅂ'။","ko":"'밥'은 ㅂ + ㅏ + ㅂ입니다.","en":"'밥' is ㅂ + ㅏ + ㅂ."},
+      "retry_phrase": "밥"
+    },
+    "F3": {
+      "why_wrong": {"my":"'밥' 을 크게 발음하세요.","ko":"'밥'을 크게 발음하세요.","en":"Say '밥' clearly."},
+      "retry_phrase": "밥"
+    }
+  },
+  "cultural_note": {
+    "title": {"my":"အဆုံးဗျည်း (받침)","ko":"받침의 이해","en":"Understanding 받침"},
+    "body": {"my":"ကိုရီးယား စာလုံးတွေမှာ — ဗျည်း တစ်လုံး ဒါမှမဟုတ် နှစ်လုံး အဆုံးမှာ လာနိုင်တယ်။ ဥပမာ — '한'၊ '밥'၊ '물'။ ဒါကို 받침 (ဗတ်ချိမ်) လို့ ခေါ်တယ်။","ko":"한국어 음절은 받침이 있을 수도 있고 없을 수도 있습니다. 예: 한, 밥, 물. 이를 받침이라고 합니다.","en":"Korean syllables may or may not have a final consonant. Examples: 한, 밥, 물. This is called 받침."},
+    "sensitive": false
+  },
+  "audio": {
+    "base_path": "audio/LEVEL0-HANGUL-004/",
+    "files": [{"id":"AUD_L0H004_A3","normal":"a3-normal.mp3","slow":"a3-slow.mp3","duration":1.5}],
+    "spec": {"sample_rate":44100,"channels":1,"format":"mp3","bitrate":128}
+  },
+  "srs": {
+    "enabled": true,
+    "cards": [
+      {"card_id":"C1","front":{"my":"받침 ဆိုတာ","ko":"받침이란","en":"What is 받침"},"back":{"my":"စာလုံးရဲ့ အောက်မှာ လာတဲ့ ဗျည်း","ko":"음절 아래에 오는 자음","en":"Consonant at the bottom of a syllable"},"audio_ref":"AUD_L0H004_A3","ease":2.5,"interval":0},
+      {"card_id":"C2","front":{"my":"'ထမင်း' (rice)","ko":"'밥'","en":"'rice'"},"back":{"my":"밥","ko":"밥","en":"밥 (bap)"},"audio_ref":"","ease":2.5,"interval":0}
+    ]
+  },
+  "assessment": {
+    "type": "mission",
+    "pass_threshold": 70,
+    "weights": {"accuracy":40,"completion":30,"speaking":30},
+    "exam_mapping": {"topik":null,"eps_topik":null}
+  }
+}

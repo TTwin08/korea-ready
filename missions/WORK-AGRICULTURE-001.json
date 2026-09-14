@@ -1,0 +1,350 @@
+{
+  "__meta": {
+    "generator": "Korea Ready Mission Generator v1.0",
+    "generated_at": "2026-09-12T13:17:35Z",
+    "batch_id": "BATCH-20260912-015",
+    "request": "Generate WORK-AGRICULTURE-001: goal: work, level: 2, category: industry, industry: agriculture, theme: First day on a Korean farm — receiving safety instructions (한국 농장 첫날 안전 지시), skills: listening, speaking, politeness, estimated_minutes: 10, difficulty: intermediate"
+  },
+  "__self_check": {
+    "rules_passed": [
+      "R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9", "R10",
+      "R11", "R12", "R13", "R14", "R15", "R16", "R17", "R18", "R19",
+      "R20", "R21", "R22", "R23", "R24", "R25", "R26"
+    ],
+    "warnings": [],
+    "uncertainties": [],
+    "external_prereqs": []
+  },
+  "missions": [
+    {
+      "schema_version": "1.0",
+      "mission_id": "WORK-AGRICULTURE-001",
+      "goal": "work",
+      "level": 2,
+      "category": "industry",
+      "industry": "agriculture",
+      "tags": [
+        "farm-safety",
+        "first-day",
+        "agriculture",
+        "workplace",
+        "work"
+      ],
+      "title": {
+        "ko": "한국 농장 첫날 안전 지시",
+        "my": "ကိုရီးယား စိုက်ပျိုးရေးခြံ ပထမဆုံးနေ့ ဘေးကင်းရေး ညွှန်ကြားချက်များ",
+        "en": "Safety Instructions on the First Day at a Korean Farm"
+      },
+      "objective": {
+        "ko": "농장 첫날 농장주님의 안전 지시를 잘 듣고, 작업 시 주의사항에 대해 정중하게 질문할 수 있다.",
+        "my": "စိုက်ပျိုးရေးခြံ ပထမဆုံးနေ့တွင် ခြံပိုင်ရှင်၏ ဘေးကင်းရေး ညွှန်ကြားချက်များကို သေချာနားထောင်ပြီး အလုပ်လုပ်ရာတွင် သတိပြုရမည့်အချက်များကို ယဉ်ကျေးစွာ မေးမြန်းနိုင်မည်။",
+        "en": "Listen carefully to the farm owner's safety instructions on the first day and politely ask questions about work precautions."
+      },
+      "cultural_note": {
+        "title": {
+          "ko": "한국 농장의 작업 복장과 안전 수칙",
+          "my": "ကိုရီးယား စိုက်ပျိုးရေးခြံ၏ အလုပ်ဝတ်စုံနှင့် ဘေးကင်းရေး စည်းမျဉ်းများ",
+          "en": "Work Clothes and Safety Rules on Korean Farms"
+        },
+        "body": {
+          "ko": "한국 농장에서는 햇빛과 풀, 곤충으로부터 몸을 보호하기 위해 모자, 토시, 장화를 착용합니다. 농기계나 농약을 다룰 때는 반드시 안전 지침을 준수해야 합니다.",
+          "my": "ကိုရီးယား စိုက်ပျိုးရေးခြံများတွင် နေရောင်ခြည်၊ မြက်နှင့် အင်းဆက်ပိုးမွှားများဘေးမှ ကာကွယ်ရန် ဦးထုပ်၊ လက်စွပ်နှင့် ရာဘာဖိနပ်ရှည်များကို ဝတ်ဆင်ရပါမည်။ စိုက်ပျိုးရေးစက်ကိရိယာ သို့မဟုတ် စိုက်ပျိုးရေးဆေးများကို ကိုင်တွယ်သည့်အခါ ဘေးကင်းရေး ညွှန်ကြားချက်များကို မဖြစ်မနေ လိုက်နာရပါမည်။",
+          "en": "On Korean farms, wide-brimmed hats, arm covers, and rubber boots are worn to protect against sunlight, grass, and insects. When handling machinery or agricultural chemicals, safety instructions must strictly be followed."
+        }
+      },
+      "skills": [
+        "listening",
+        "speaking",
+        "politeness"
+      ],
+      "estimated_minutes": 10,
+      "difficulty": "intermediate",
+      "status": "draft",
+      "version": 1,
+      "regulated": false,
+      "prerequisites": [],
+      "dialogue": {
+        "setting": {
+          "ko": "농장 첫날 농장주님에게 농기구 사용 시 안전 주의사항을 안내받는 상황",
+          "my": "စိုက်ပျိုးရေးခြံ ပထမဆုံးနေ့တွင် ခြံပိုင်ရှင်ထံမှ စိုက်ပျိုးရေးကိရိယာ သုံးစွဲမှုဆိုင်ရာ ဘေးကင်းရေး သတိပေးချက်များကို လမ်းညွှန်ချက် ခံယူနေသည့် အခြေအနေ",
+          "en": "Receiving safety precautions on tool usage from the farm owner on the first day."
+        },
+        "speakers": [
+          {
+            "id": "farmer",
+            "role": "other",
+            "gender": "male",
+            "voice_id": "ko_m_01"
+          },
+          {
+            "id": "learner",
+            "role": "learner",
+            "gender": "any",
+            "voice_id": null
+          }
+        ],
+        "lines": [
+          {
+            "line_id": "L1",
+            "speaker": "farmer",
+            "ko": "오늘부터 우리 농장에서 일하게 되었네요. 비닐하우스 안은 뜨거우니까 수분 보충을 자주 하세요.",
+            "rom": "oneulbuteo uri nongjang-eseo ilhage doeoenneyo. binilhauste an-eun tteogeoeunikka subun bochung-eul jaju haseyo.",
+            "my": "ဒီနေ့ကစပြီး တို့ခြံမှာ အလုပ်လုပ်ရတော့မှာပါပဲ။ ပလတ်စတစ်မိုးစက်ရုံ ထဲမှာ ပူတာမို့ ရေခဏခဏ သောက်ပေးပါ။",
+            "en": "You are starting work at our farm today. It gets hot inside the greenhouse, so drink water frequently.",
+            "audio": "AUD_WORKAGRI001_L1",
+            "audio_slow": "AUD_WORKAGRI001_L1_S",
+            "note": "Welcoming new worker and advising on hydration"
+          },
+          {
+            "line_id": "L2",
+            "speaker": "learner",
+            "ko": "네, 사장님! 주의하겠습니다. 작업 도구는 어디에 있나요?",
+            "rom": "ne, sajangnim! ju-eihagesseumnida. jak-eop doguneun eodie innayo?",
+            "my": "ဟုတ်ကဲ့၊ အလုပ်ရှင်။ သတိထားပါ့မယ်။ အလုပ်လုပ်တဲ့ ကိရိယာတွေက ဘယ်မှာ ရှိပါသလဲ။",
+            "en": "Yes, boss! I will be careful. Where are the work tools?",
+            "audio": "AUD_WORKAGRI001_L2",
+            "audio_slow": "AUD_WORKAGRI001_L2_S",
+            "note": "Acknowledging advice and asking for tools"
+          },
+          {
+            "line_id": "L3",
+            "speaker": "farmer",
+            "ko": "창고에 있어요. 낫이나 칼을 쓸 때는 항상 장갑을 끼고 조심히 다루세요.",
+            "rom": "changgo-e isseoyo. nas-ina kal-eul sseul ttaeneun hangsang janggap-eul kkigo josimhi daruseyo.",
+            "my": "စတိုခန်းထဲမှာ ရှိပါတယ်။ တံစဉ် သို့မဟုတ် ဓားကို သုံးတဲ့အခါ အမြဲတမ်း လက်အိတ် စွပ်ပြီး ဂရုစိုက် ကိုင်တွယ်ပါ။",
+            "en": "They are in the storage room. When using sickles or knives, always wear gloves and handle them carefully.",
+            "audio": "AUD_WORKAGRI001_L3",
+            "audio_slow": "AUD_WORKAGRI001_L3_S",
+            "note": "Explaining safety measures for sharp tools"
+          },
+          {
+            "line_id": "L4",
+            "speaker": "learner",
+            "ko": "네, 알겠습니다. 안전하게 작업하겠습니다!",
+            "rom": "ne, algesseumnida. anjeonhage jak-eophagesseumnida!",
+            "my": "ဟုတ်ကဲ့၊ နားလည်ပါပြီ။ ဘေးကင်းစွာ အလုပ်လုပ်ပါ့မယ်။",
+            "en": "Yes, I understand. I will work safely!",
+            "audio": "AUD_WORKAGRI001_L4",
+            "audio_slow": "AUD_WORKAGRI001_L4_S",
+            "note": "Confirming understanding politely"
+          }
+        ]
+      },
+      "activities": [
+        {
+          "activity_id": "A1",
+          "type": "branch_dialogue",
+          "prompt": {
+            "ko": "농장주님과 대화하여 농장 안전 수칙을 확인해 보세요.",
+            "my": "ခြံပိုင်ရှင်နှင့် စကားပြောပြီး ခြံ၏ ဘေးကင်းရေး စည်းမျဉ်းများကို စစ်ဆေးကြည့်ပါ။",
+            "en": "Talk to the farm owner and verify the farm safety rules."
+          },
+          "entry_node": "N1",
+          "nodes": [
+            {
+              "node_id": "N1",
+              "speaker": "farmer",
+              "ko": "오늘부터 농장 일을 시작하는데, 우선 기본 안전 수칙부터 안내할게요.",
+              "rom": "oneulbuteo nongjang il-eul sijakhaneunde, useon gibon anjeon suchikbuteo annaehalke-yo.",
+              "my": "ဒီနေ့ကစပြီး ခြံအလုပ်ကို စတင်တာမို့ ပထမဦးစွာ အခြေခံ ဘေးကင်းရေး စည်းမျဉ်းများကို ရှင်းပြပေးပါမယ်။",
+              "en": "You start working on the farm today, so I will first guide you through the basic safety rules.",
+              "choices": [
+                {
+                  "id": "C1_N1",
+                  "ko": "네, 사장님! 잘 부탁드립니다.",
+                  "my": "ဟုတ်ကဲ့၊ ခြံပိုင်ရှင်။ ကူညီစောင့်ရှောက်ပေးပါ။",
+                  "en": "Yes, boss! Please look after me.",
+                  "next": "N2"
+                },
+                {
+                  "id": "C2_N1",
+                  "ko": "네, 열심히 배우겠습니다!",
+                  "my": "ဟုတ်ကဲ့၊ ကြိုးစားပြီး သင်ယူပါ့မယ်။",
+                  "en": "Yes, I will learn diligently!",
+                  "next": "N2"
+                }
+              ]
+            },
+            {
+              "node_id": "N2",
+              "speaker": "farmer",
+              "ko": "여름철 비닐하우스 작업은 온도가 높으니 무리하지 말고 쉬어가면서 하세요.",
+              "rom": "yeoreumcheol binilhauste jak-eob-eun ondeoga nopeuni murihaji malgo swieogamyeonseo haseyo.",
+              "my": "နွေရာသီ ပလတ်စတစ်မိုးစက်ရုံ အလုပ်က အပူချိန်မြင့်မားတာမို့ အလွန်အမင်း မလုပ်ဘဲ အနားယူရင်း လုပ်ပါ။",
+              "en": "Working in the greenhouse during summer has high temperatures, so do not overexert yourself and take breaks.",
+              "choices": [
+                {
+                  "id": "C1_N2",
+                  "ko": "네, 알겠습니다. 물도 자주 마시겠습니다.",
+                  "my": "ဟုတ်ကဲ့၊ နားလည်ပါပြီ။ ရေလည်း ခဏခဏ သောက်ပါ့မယ်။",
+                  "en": "Yes, I understand. I will drink water frequently as well.",
+                  "next": "N3"
+                },
+                {
+                  "id": "C2_N2",
+                  "ko": "쉬는 시간은 어디서 보내면 되나요?",
+                  "my": "နားချိန်ကို ဘယ်မှာ အနားယူရင် ရမလဲ။",
+                  "en": "Where should I spend my break time?",
+                  "next": "N3"
+                }
+              ]
+            },
+            {
+              "node_id": "N3",
+              "speaker": "farmer",
+              "ko": "휴게실이 저쪽에 있으니 이용하세요. 농기구를 사용할 때는 꼭 장갑을 착용해야 합니다.",
+              "rom": "hyugesil-i jeojjoge isseuni iyonghaseyo. nonggigureul sayonghal ttaeneun kkok janggapeul chakyonghaeya hamnida.",
+              "my": "နားနေခန်းက ဟိုဘက်မှာ ရှိတာမို့ အသုံးပြုပါ။ စိုက်ပျိုးရေးကိရိယာတွေကို သုံးတဲ့အခါ မဖြစ်မနေ လက်အိတ် စွပ်ရပါမယ်။",
+              "en": "The break room is over there, so feel free to use it. You must wear gloves when using farm tools.",
+              "choices": [
+                {
+                  "id": "C1_N3",
+                  "ko": "네, 확인했습니다. 안전하게 작업하겠습니다!",
+                  "my": "ဟုတ်ကဲ့၊ စစ်ဆေးပြီးပါပြီ။ ဘေးကင်းစွာ အလုပ်လုပ်ပါ့မယ်။",
+                  "en": "Yes, I got it. I will work safely!",
+                  "next": "END"
+                },
+                {
+                  "id": "C2_N3",
+                  "ko": "네, 사장님! 주의해서 사용하겠습니다. 감사합니다!",
+                  "my": "ဟုတ်ကဲ့၊ ခြံပိုင်ရှင်။ သတိထားပြီး သုံးပါ့မယ်။ ကျေးဇူးတင်ပါတယ်။",
+                  "en": "Yes, boss! I will use them carefully. Thank you!",
+                  "next": "END"
+                }
+              ]
+            }
+          ],
+          "audio_ref": "AUD_WORKAGRI001_N1",
+          "explanation_ref": "FB_WORKAGRI001_A1"
+        },
+        {
+          "activity_id": "A2",
+          "type": "speak",
+          "prompt": {
+            "ko": "농장주님의 안전 당부에 알겠다고 정중하게 대답해 보세요.",
+            "my": "ခြံပိုင်ရှင်၏ ဘေးကင်းရေး မှာကြားချက်ကို နားလည်ကြောင်း ယဉ်ကျေးစွာ ပြန်လည် ဖြေကြားကြည့်ပါ။",
+            "en": "Politely respond to the farm owner's safety reminder that you understand."
+          },
+          "target_ko": "네, 알겠습니다. 안전하게 작업하겠습니다!",
+          "min_score": 60,
+          "audio_ref": "AUD_WORKAGRI001_L4",
+          "explanation_ref": "FB_WORKAGRI001_A2"
+        }
+      ],
+      "audio": {
+        "spec": {
+          "sample_rate": 44100,
+          "channels": 1,
+          "format": "mp3",
+          "bitrate": 128
+        },
+        "files": [
+          {
+            "id": "AUD_WORKAGRI001_L1",
+            "normal": "work_agriculture_001_l1_norm.mp3",
+            "slow": "work_agriculture_001_l1_slow.mp3",
+            "duration": 4.5
+          },
+          {
+            "id": "AUD_WORKAGRI001_L2",
+            "normal": "work_agriculture_001_l2_norm.mp3",
+            "slow": "work_agriculture_001_l2_slow.mp3",
+            "duration": 3.6
+          },
+          {
+            "id": "AUD_WORKAGRI001_L3",
+            "normal": "work_agriculture_001_l3_norm.mp3",
+            "slow": "work_agriculture_001_l3_slow.mp3",
+            "duration": 4.2
+          },
+          {
+            "id": "AUD_WORKAGRI001_L4",
+            "normal": "work_agriculture_001_l4_norm.mp3",
+            "slow": "work_agriculture_001_l4_slow.mp3",
+            "duration": 3.8
+          },
+          {
+            "id": "AUD_WORKAGRI001_N1",
+            "normal": "work_agriculture_001_n1_norm.mp3",
+            "slow": "work_agriculture_001_n1_slow.mp3",
+            "duration": 4.0
+          }
+        ]
+      },
+      "feedback": {
+        "FB_WORKAGRI001_A1": {
+          "why_wrong": {
+            "ko": "농장주님의 안내를 잘 듣고 안전에 맞는 정중한 답변을 선택하세요.",
+            "my": "ခြံပိုင်ရှင်၏ လမ်းညွှန်ချက်ကို သေချာနားထောင်ပြီး ဘေးကင်းရေးနှင့် ကိုက်ညီသော ယဉ်ကျေးသည့် အဖြေကို ရွေးချယ်ပါ။",
+            "en": "Listen carefully to the farm owner's guidance and select polite responses suitable for safety."
+          },
+          "grammar": {
+            "point": "-게 작업하겠습니다 / -기 때문에",
+            "explain_my": "အလုပ်ခွင်တွင် ကတိပြုပြောဆိုသည့်အခါ '안전하게 작업하겠습니다' (ဘေးကင်းစွာ အလုပ်လုပ်ပါ့မည်) ဟူသော အသုံးအနှုန်းကို အသုံးပြုပါသည်။"
+          },
+          "culture": "한국 농장에서는 농장주나 연배가 높은 어르신에게 '사장님' 또는 '어르신'이라는 호칭을 사용하여 예의를 표합니다.",
+          "retry_phrase": "다시 선택해 보세요."
+        },
+        "FB_WORKAGRI001_A2": {
+          "why_wrong": {
+            "ko": "'네, 알겠습니다. 안전하게 작업하겠습니다!' 문장을 예의 바르고 정확하게 발음해 보세요.",
+            "my": "'네, 알겠습니다. 안전하게 작업하겠습니다!' စာကြောင်းကို ယဉ်ကျေးတိကျစွာ အသံထွက် ပြောဆိုကြည့်ပါ။",
+            "en": "Pronounce 'Yes, I understand. I will work safely!' politely and clearly."
+          },
+          "retry_phrase": "네, 알겠습니다. 안전하게 작업하겠습니다!"
+        }
+      },
+      "srs": {
+        "enabled": true,
+        "cards": [
+          {
+            "card_id": "C1",
+            "front": {
+              "ko": "비닐하우스",
+              "my": "ပလတ်စတစ်မိုးစက်ရုံ",
+              "en": "Greenhouse"
+            },
+            "back": {
+              "ko": "비닐하우스 안은 뜨거우니까 조심하세요.",
+              "my": "ပလတ်စတစ်မိုးစက်ရုံ ထဲမှာ ပူတာမို့ သတိထားပါ။",
+              "en": "It gets hot inside the greenhouse, so be careful."
+            },
+            "audio_ref": "AUD_WORKAGRI001_L1",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C2",
+            "front": {
+              "ko": "농기구",
+              "my": "စိုက်ပျိုးရေးကိရိယာ",
+              "en": "Farm tools"
+            },
+            "back": {
+              "ko": "농기구를 사용할 때는 항상 장갑을 끼세요.",
+              "my": "စိုက်ပျိုးရေးကိရိယာတွေကို သုံးတဲ့အခါ အမြဲတမ်း လက်အိတ် စွပ်ပါ။",
+              "en": "Always wear gloves when using farm tools."
+            },
+            "audio_ref": "AUD_WORKAGRI001_L3",
+            "ease": 2.5,
+            "interval": 0
+          }
+        ]
+      },
+      "assessment": {
+        "type": "mission",
+        "pass_threshold": 70,
+        "weights": {
+          "accuracy": 40,
+          "completion": 30,
+          "speaking": 30
+        },
+        "exam_mapping": {
+          "topik": null,
+          "eps_topik": "EPS_TOPIK_INDUSTRY_AGRICULTURE"
+        }
+      }
+    }
+  ]
+}
+

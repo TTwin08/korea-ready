@@ -99,7 +99,9 @@ function renderDashboard() {
       if (completedEl) completedEl.textContent = completed + '/' + total;
       if (scoreEl) scoreEl.textContent = score + '%';
     })
-    .catch(function() {});
+    .catch(function(err) {
+  console.error('Dashboard error:', err);
+});
 }
 
 document.addEventListener('DOMContentLoaded', function() {

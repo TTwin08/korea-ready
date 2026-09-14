@@ -1,0 +1,398 @@
+{
+  "__meta": {
+    "generator": "Korea Ready Mission Generator v1.0",
+    "generated_at": "2026-09-13T13:29:21Z",
+    "batch_id": "BATCH-20260913-009",
+    "request": "Generate COMMON-PHONE-001"
+  },
+  "__self_check": {
+    "rules_passed": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7",
+      "R8",
+      "R9",
+      "R10",
+      "R11",
+      "R12",
+      "R13",
+      "R14",
+      "R15",
+      "R16",
+      "R17",
+      "R18",
+      "R19",
+      "R20",
+      "R21",
+      "R22",
+      "R23",
+      "R24",
+      "R25",
+      "R26"
+    ],
+    "warnings": [],
+    "uncertainties": [],
+    "external_prereqs": [
+      "COMMON-SURV-001"
+    ]
+  },
+  "missions": [
+    {
+      "schema_version": "1.0",
+      "mission_id": "COMMON-PHONE-001",
+      "goal": "common",
+      "level": 2,
+      "category": "daily",
+      "industry": null,
+      "tags": [
+        "prepaid-sim",
+        "mobile-shop",
+        "daily-life",
+        "phone-plan"
+      ],
+      "title": {
+        "my": "ဖုန်းဆိုင်တွင် ကြိုတင်ငွေဖြည့် SIM ကတ် ဝယ်ယူခြင်း",
+        "ko": "휴대폰 매장에서 선불 유심 구매",
+        "en": "Buying a Prepaid SIM Card at a Mobile Shop"
+      },
+      "objective": {
+        "my": "ကိုရီးယားနိုင်ငံ ဖုန်းဆိုင်တွင် နိုင်ငံခြားသား မှတ်ပုံတင် သို့မဟုတ် နိုင်ငံကူးလက်မှတ်ဖြင့် ကြိုတင်ငွေဖြည့် SIM ကတ် ဝယ်ယူခြင်း၊ ဒေတာ ပက်ကေ့ချ် မေးမြန်းခြင်းနှင့် ငွေဖြည့်သွင်းခြင်းဆိုင်ရာ စကားပြောများကို ယဉ်ကျေးစွာ လေ့ကျင့်မည်။",
+        "ko": "한국 휴대폰 매장에서 외국인등록증이나 여권으로 선불 유심을 구매하고 데이터 요금제 및 충전 방법을 정중하게 문의하는 연습을 합니다.",
+        "en": "Practice politely asking to buy a prepaid SIM card using an ARC or passport, inquiring about data plans, and learning how to recharge at a Korean mobile shop."
+      },
+      "prerequisites": [
+        "COMMON-SURV-001"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "politeness"
+      ],
+      "estimated_minutes": 10,
+      "difficulty": "intermediate",
+      "regulated": false,
+      "status": "draft",
+      "version": 1,
+      "dialogue": {
+        "setting": {
+          "my": "ကြိုတင်ငွေဖြည့် SIM ကတ် ဝယ်ယူရန် မိုဘိုင်းလ် ဖုန်းဆိုင်သို့ သွားရောက် စကားပြောဆိုခြင်း",
+          "ko": "선불 유심 구매를 위해 휴대폰 매장을 방문하여 대화함",
+          "en": "Visiting a mobile phone shop to buy a prepaid SIM card"
+        },
+        "speakers": [
+          {
+            "id": "clerk",
+            "role": "clerk",
+            "gender": "female",
+            "voice_id": "ko_f_01"
+          },
+          {
+            "id": "learner",
+            "role": "learner",
+            "gender": "any",
+            "voice_id": null
+          }
+        ],
+        "lines": [
+          {
+            "line_id": "L1",
+            "speaker": "clerk",
+            "ko": "어서 오세요. 유심을 찾으시나요?",
+            "rom": "Eoseo oseyo. Yusimeul chajusinayo?",
+            "my": "မင်္ဂလာပါ၊ SIM ကတ် ရှာနေတာပါလား။",
+            "en": "Welcome. Are you looking for a SIM card?",
+            "audio": "AUD_PHN001_L1",
+            "audio_slow": "AUD_PHN001_L1_S",
+            "note": "Standard clerk greeting at mobile shop"
+          },
+          {
+            "line_id": "L2",
+            "speaker": "learner",
+            "ko": "네, 선불 유심을 사고 싶어요. 외국인등록증으로 신청할 수 있나요?",
+            "rom": "Ne, seonbul yusimeul sago sipeoyo. Oegugindeongnokjeungeuro sincheonghal su innayo?",
+            "my": "ဟုတ်ကဲ့၊ ကြိုတင်ငွေဖြည့် SIM ကတ် ဝယ်ချင်လို့ပါ။ နိုင်ငံခြားသား မှတ်ပုံတင်နဲ့ လျှောက်ထားလို့ ရပါသလား။",
+            "en": "Yes, I want to buy a prepaid SIM card. Can I apply with my ARC?",
+            "audio": "AUD_PHN001_L2",
+            "audio_slow": "AUD_PHN001_L2_S",
+            "note": "Asking for prepaid SIM with ARC using -으로 and -(으)ㄹ 수 있다"
+          },
+          {
+            "line_id": "L3",
+            "speaker": "clerk",
+            "ko": "네, 가능합니다. 여권이나 외국인등록증을 주시면 신청을 도와드릴게요.",
+            "rom": "Ne, ganeunghamnida. Yeogwonina oegugindeongnokjeungeul jusimyeon sincheongeul dowadeureilgeyo.",
+            "my": "ဟုတ်ကဲ့၊ ရပါတယ်။ နိုင်ငံကူးလက်မှတ် သို့မဟုတ် နိုင်ငံခြားသား မှတ်ပုံတင် ပေးရင် လျှောက်ထားပေးပါ့မယ်။",
+            "en": "Yes, it is possible. If you give me your passport or ARC, I will help you apply.",
+            "audio": "AUD_PHN001_L3",
+            "audio_slow": "AUD_PHN001_L3_S",
+            "note": "Clerk confirming acceptable IDs"
+          }
+        ]
+      },
+      "activities": [
+        {
+          "activity_id": "A1",
+          "type": "branch_dialogue",
+          "prompt": {
+            "my": "ဖုန်းဆိုင် ဝန်ထမ်း၏ မေးခွန်းကို နားထောင်ပြီး သင့်တော်သော ဖြေဆိုမှုကို ရွေးချယ်ပါ။",
+            "ko": "휴대폰 매장 직원의 질문을 듣고 적절한 대답을 선택하세요.",
+            "en": "Listen to the mobile shop clerk and select an appropriate response."
+          },
+          "entry_node": "N1",
+          "nodes": [
+            {
+              "node_id": "N1",
+              "speaker": "clerk",
+              "ko": "어떤 요금제를 원하세요? 데이터가 많이 필요하신가요?",
+              "rom": "Eotteon yogumjereul wonhaseyo? Daeteoga mani piryohasingayo?",
+              "my": "ဘယ်လို ကတ်အစီအစဉ် (Plan) မျိုး လိုချင်ပါသလဲ။ ဒေတာ အများကြီး လိုအပ်ပါသလား။",
+              "en": "Which plan would you like? Do you need a lot of data?",
+              "choices": [
+                {
+                  "id": "C1_N1",
+                  "ko": "네, 데이터가 많은 선불 요금제로 하고 싶어요.",
+                  "my": "ဟုတ်ကဲ့၊ ဒေတာ အများကြီးပါတဲ့ ကြိုတင်ငွေဖြည့် ကတ်အစီအစဉ်နဲ့ လုပ်ချင်ပါတယ်။",
+                  "en": "Yes, I want a prepaid plan with a lot of data.",
+                  "next": "N2"
+                },
+                {
+                  "id": "C2_N1",
+                  "ko": "후불 요금제로 신청하고 싶습니다.",
+                  "my": "လစဉ်ပေး (Postpaid) ကတ်အစီအစဉ်နဲ့ လျှောက်ချင်ပါတယ်။",
+                  "en": "I want to apply for a postpaid plan.",
+                  "next": "N3"
+                }
+              ]
+            },
+            {
+              "node_id": "N2",
+              "speaker": "clerk",
+              "ko": "1달 10GB 요금제가 인기 있어요. 충전은 어떻게 하시겠어요?",
+              "rom": "Handal 10GB yogumjega inki isseoyo. Chungjeoneun eotteokhe hasigesseoyo?",
+              "my": "၁ လ ၁၀ ဂီဂါဗိုက်ပါတဲ့ အစီအစဉ်က လူကြိုက်များပါတယ်။ ငွေဖြည့်တာကို ဘယ်လို လုပ်မလဲ။",
+              "en": "The 10GB per month plan is popular. How would you like to top up?",
+              "choices": [
+                {
+                  "id": "C1_N2",
+                  "ko": "앱이나 편의점에서 충전할 수 있나요?",
+                  "my": "ဆော့ဖ်ဝဲလ် အက်ပ် သို့မဟုတ် 24 နာရီ စတိုးဆိုင်တွေမှာ ငွေဖြည့်လို့ ရပါသလား။",
+                  "en": "Can I top up via app or at a convenience store?",
+                  "next": "N4"
+                },
+                {
+                  "id": "C2_N2",
+                  "ko": "생각해 보고 다음에 다시 올게요.",
+                  "my": "စဉ်းစားကြည့်ပြီး နောက်မှ ပြန်လာပါမယ်။",
+                  "en": "I will think about it and come back next time.",
+                  "next": "END"
+                }
+              ]
+            },
+            {
+              "node_id": "N3",
+              "speaker": "clerk",
+              "ko": "후불 요금제는 신용카드나 한국 은행 통장이 필요합니다. 선불로 하시겠어요?",
+              "rom": "Hubul yogumjeneun sinyongkadeuna hanguk eonhaeng tongjang-i piryohamnida. Seonbulro hasigesseoyo?",
+              "my": "လစဉ်ပေး အစီအစဉ်က ခရက်ဒစ်ကတ် သို့မဟုတ် ကိုရီးယား ဘဏ်စာအုပ် လိုအပ်ပါတယ်။ ကြိုတင်ငွေဖြည့်နဲ့ပဲ လုပ်မလား။",
+              "en": "Postpaid plans require a credit card or Korean bank account. Would you like prepaid instead?",
+              "choices": [
+                {
+                  "id": "C1_N3",
+                  "ko": "네, 그러면 선불 유심으로 할게요.",
+                  "my": "ဟုတ်ကဲ့၊ ဒါဆို ကြိုတင်ငွေဖြည့် SIM ကတ်နဲ့ပဲ လုပ်ပါမယ်။",
+                  "en": "Yes, then I will go with a prepaid SIM.",
+                  "next": "N4"
+                }
+              ]
+            },
+            {
+              "node_id": "N4",
+              "speaker": "clerk",
+              "ko": "네, 신분증을 확인하고 유심 카드를 개통해 드리겠습니다.",
+              "rom": "Ne, sinbunjjeungeul hwaginhago yusim kadeureul gaetonghae deurigessumnida.",
+              "my": "ဟုတ်ကဲ့၊ မှတ်ပုံတင် စစ်ဆေးပြီး SIM ကတ်ကို လိုင်းဖွင့်ပေးပါမယ်။",
+              "en": "Okay, I will check your ID and activate the SIM card for you.",
+              "choices": [
+                {
+                  "id": "C1_N4",
+                  "ko": "감사합니다. 데이터 충전 방법도 알려주세요.",
+                  "my": "ကျေးဇူးတင်ပါတယ်။ ဒေတာ ငွေဖြည့်နည်းကိုလည်း ပြောပြပေးပါ။",
+                  "en": "Thank you. Please also tell me how to top up data.",
+                  "next": "END"
+                }
+              ]
+            }
+          ],
+          "audio_ref": "AUD_PHN001_A1",
+          "explanation_ref": "FB_PHN001_A1"
+        },
+        {
+          "activity_id": "A2",
+          "type": "speak",
+          "prompt": {
+            "my": "ဖုန်းဆိုင် ဝန်ထမ်းအား နိုင်ငံခြားသား မှတ်ပုံတင်ဖြင့် ကြိုတင်ငွေဖြည့် SIM ကတ် ဝယ်ချင်ကြောင်း ယဉ်ကျေးစွာ ပြောဆိုပါ။",
+            "ko": "휴대폰 매장 직원에게 외국인등록증으로 선불 유심을 사고 싶다고 정중하게 말해 보세요.",
+            "en": "Politely tell the mobile shop clerk that you want to buy a prepaid SIM card using your ARC."
+          },
+          "target_ko": "외국인등록증으로 선불 유심을 사고 싶어요.",
+          "min_score": 70,
+          "audio_ref": "AUD_PHN001_A2",
+          "explanation_ref": "FB_PHN001_A2"
+        }
+      ],
+      "feedback": {
+        "FB_PHN001_A1": {
+          "why_wrong": {
+            "my": "ဖုန်းဆိုင် ဝန်ထမ်း၏ မေးခွန်း (ကြိုတင်ငွေဖြည့်/လစဉ်ပေး၊ ဒေတာ ပမာဏ) ကို နားထောင်ပြီး မိမိ လိုအပ်သော ကတ်အစီအစဉ်ကို မှန်ကန်စွာ ရွေးချယ်ရပါမည်။",
+            "ko": "매장 직원의 요금제 관련 질문에 맞게 선불 유심 및 데이터 조건에 맞는 대답을 선택해야 합니다.",
+            "en": "Listen carefully to the clerk's questions about plans and select the response matching prepaid SIM and data needs."
+          },
+          "grammar": {
+            "point": "-으로 / -(으)ㄹ 수 있다",
+            "explain_my": "-으로 (ကိရိယာ/နည်းလမ်းပြ ဝိဘတ်) နှင့် -(으)ㄹ 수 있다 (ပြုလုပ်နိုင်သည်) ကို သုံး၍ လျှောက်ထားနိုင်ပုံကို မေးမြန်းနိုင်သည်။"
+          },
+          "culture": "ကိုရီးယားတွင် နိုင်ငံခြားသားများ အစောပိုင်း ကာလ၌ နိုင်ငံကူးလက်မှတ် သို့မဟုတ် ARC ဖြင့် ကြိုတင်ငွေဖြည့် SIM (선불 유심) ကို ပိုမို လွယ်ကူစွာ ဝယ်ယူနိုင်ပါသည်။",
+          "retry_phrase": "네, 데이터가 많은 선불 요금제로 하고 싶어요."
+        },
+        "FB_PHN001_A2": {
+          "why_wrong": {
+            "my": "'선불 유심' (ကြိုတင်ငွေဖြည့် SIM) နှင့် '사고 싶어요' (ဝယ်ချင်ပါတယ်) ကို တိကျစွာ အသံထွက်၍ ပြောဆိုရပါမည်။",
+            "ko": "'선불 유심'과 '사고 싶어요'의 정확한 발음을 연습하세요.",
+            "en": "Practice accurate pronunciation of '선불 유심' (prepaid SIM) and '사고 싶어요' (want to buy)."
+          },
+          "grammar": {
+            "point": "-고 싶다",
+            "explain_my": "မိမိပြုလုပ်ချင်သော ဆန္ဒကို ယဉ်ကျေးစွာ ဖော်ပြသည့် သဒ္ဒါပုံစံ ဖြစ်ပါသည်။ (사다 -> 사고 싶어요)"
+          },
+          "culture": "ကြိုတင်ငွေဖြည့် SIM ကတ်များကို ဖုန်းဆိုင်များအပြင် 24 နာရီ စတိုးဆိုင်များ (Convenience Stores) သို့မဟုတ် မိုဘိုင်းလ် အက်ပ်များမှတစ်ဆင့်လည်း လွယ်ကူစွာ ငွေဖြည့်သွင်း (충전) နိုင်ပါသည်။",
+          "retry_phrase": "외국인등록증으로 선불 유심을 사고 싶어요."
+        }
+      },
+      "cultural_note": {
+        "title": {
+          "my": "ကိုရီးယားနိုင်ငံ၏ ကြိုတင်ငွေဖြည့် SIM (선불 유심) စနစ်",
+          "ko": "한국의 선불 유심 이용 안내",
+          "en": "Prepaid SIM Card System in Korea"
+        },
+        "body": {
+          "my": "ကိုရီးယားနိုင်ငံတွင် နိုင်ငံခြားသားများအနေဖြင့် တရားဝင် နိုင်ငံခြားသား မှတ်ပုံတင် (ARC) သို့မဟုတ် နိုင်ငံကူးလက်မှတ် (Passport) ဖြင့် KT, SKT, LG U+ သို့မဟုတ် အာလ်သဲဖုန်း (알뜰폰 - MVNO) ဆိုင်များတွင် 선불 유심 (ကြိုတင်ငွေဖြည့် SIM) ကို ဝယ်ယူနိုင်ပါသည်။ လစဉ် ပုံသေ အစီအစဉ်များထက် စာချုပ်မလိုဘဲ ငွေဖြည့်၍ သုံးစွဲနိုင်သဖြင့် စတင်ရောက်ရှိချိန်တွင် အလွန် အဆင်ပြေပါသည်။",
+          "ko": "한국에서 외국인은 외국인등록증이나 여권으로 Major 통신사(KT, SKT, LG U+) 또는 알뜰폰 매장에서 선불 유심을 쉽게 구매할 수 있습니다. 약정 없이 충전하여 사용할 수 있어 초기 정착 시 편리합니다.",
+          "en": "Foreigners in Korea can easily purchase prepaid SIM cards at major telecom carriers (KT, SKT, LG U+) or budget phone (MVNO) stores using an ARC or passport. It is convenient for initial settlement as it requires no contract."
+        },
+        "sensitive": false
+      },
+      "audio": {
+        "base_path": "audio/COMMON-PHONE-001/",
+        "files": [
+          {
+            "id": "AUD_PHN001_L1",
+            "normal": "L1-normal.mp3",
+            "slow": "L1-slow.mp3",
+            "duration": 2.8
+          },
+          {
+            "id": "AUD_PHN001_L2",
+            "normal": "L2-normal.mp3",
+            "slow": "L2-slow.mp3",
+            "duration": 4.1
+          },
+          {
+            "id": "AUD_PHN001_L3",
+            "normal": "L3-normal.mp3",
+            "slow": "L3-slow.mp3",
+            "duration": 4.5
+          },
+          {
+            "id": "AUD_PHN001_A1",
+            "normal": "A1-normal.mp3",
+            "slow": "A1-slow.mp3",
+            "duration": 3.8
+          },
+          {
+            "id": "AUD_PHN001_A2",
+            "normal": "A2-normal.mp3",
+            "slow": "A2-slow.mp3",
+            "duration": 3.5
+          }
+        ],
+        "spec": {
+          "sample_rate": 44100,
+          "channels": 1,
+          "format": "mp3",
+          "bitrate": 128
+        }
+      },
+      "srs": {
+        "enabled": true,
+        "cards": [
+          {
+            "card_id": "C1",
+            "front": {
+              "my": "ကြိုတင်ငွေဖြည့် SIM ကတ်",
+              "ko": "선불 유심",
+              "en": "Prepaid SIM card"
+            },
+            "back": {
+              "my": "ကြိုတင်ငွေဖြည့် SIM ကတ်",
+              "ko": "선불 유심",
+              "en": "Prepaid SIM card"
+            },
+            "audio_ref": "AUD_PHN001_L2",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C2",
+            "front": {
+              "my": "ကတ်အစီအစဉ် (Plan)",
+              "ko": "요금제",
+              "en": "Phone plan"
+            },
+            "back": {
+              "my": "ကတ်အစီအစဉ် (Plan)",
+              "ko": "요금제",
+              "en": "Phone plan"
+            },
+            "audio_ref": "AUD_PHN001_A1",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C3",
+            "front": {
+              "my": "ငွေဖြည့်သွင်းခြင်း",
+              "ko": "충전",
+              "en": "Recharge / Top-up"
+            },
+            "back": {
+              "my": "ငွေဖြည့်သွင်းခြင်း",
+              "ko": "충전",
+              "en": "Recharge / Top-up"
+            },
+            "audio_ref": "AUD_PHN001_A1",
+            "ease": 2.5,
+            "interval": 0
+          }
+        ]
+      },
+      "assessment": {
+        "type": "mission",
+        "pass_threshold": 70,
+        "weights": {
+          "accuracy": 40,
+          "completion": 30,
+          "speaking": 30
+        },
+        "exam_mapping": {
+          "topik": null,
+          "eps_topik": null
+        }
+      }
+    }
+  ]
+}
+

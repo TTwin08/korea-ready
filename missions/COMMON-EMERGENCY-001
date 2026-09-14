@@ -1,0 +1,424 @@
+{
+  "__meta": {
+    "generator": "Korea Ready Mission Generator v1.0",
+    "generated_at": "2026-09-13T13:42:00Z",
+    "batch_id": "BATCH-20260913-002",
+    "request": "Regenerate COMMON-EMERGENCY-001"
+  },
+  "__self_check": {
+    "rules_passed": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7",
+      "R8",
+      "R9",
+      "R10",
+      "R11",
+      "R12",
+      "R13",
+      "R14",
+      "R15",
+      "R16",
+      "R17",
+      "R18",
+      "R19",
+      "R20",
+      "R21",
+      "R22",
+      "R23",
+      "R24",
+      "R25",
+      "R26"
+    ],
+    "warnings": [],
+    "uncertainties": [],
+    "external_prereqs": []
+  },
+  "missions": [
+    {
+      "schema_version": "1.0",
+      "mission_id": "COMMON-EMERGENCY-001",
+      "goal": "common",
+      "level": 2,
+      "category": "safety",
+      "industry": null,
+      "tags": [
+        "emergency",
+        "calling-119",
+        "medical-help",
+        "safety"
+      ],
+      "title": {
+        "my": "၁၁၉ အရေးပေါ် ဆေးဝါးဌာနသို့ ဖုန်းခေါ်ဆိုခြင်း",
+        "ko": "119 응급 신고하기",
+        "en": "Calling 119 for a Medical Emergency"
+      },
+      "objective": {
+        "my": "အရေးပေါ်အခြေအနေတွင် ၁၁၉ သို့ ဖုန်းခေါ်ဆိုပြီး တည်နေရာနှင့် လူနာ၏ အခြေအနေကို တိကျစွာ ရှင်းပြနိုင်သည်။",
+        "ko": "위급 상황 발생 시 119에 전화하여 위치와 환자의 상태를 정확하게 설명할 수 있다.",
+        "en": "Call 119 in an emergency and accurately describe your location and the patient's condition."
+      },
+      "prerequisites": [],
+      "skills": [
+        "listening",
+        "speaking",
+        "politeness"
+      ],
+      "estimated_minutes": 10,
+      "difficulty": "intermediate",
+      "regulated": false,
+      "status": "draft",
+      "version": 1,
+      "dialogue": {
+        "setting": {
+          "my": "လမ်းပေါ်တွင် လူတစ်ယောက် ရုတ်တရက် လဲကျသွားသည့် အခြေအနေဖြစ်ပြီး ၁၁၉ အရေးပေါ် ဌာနသို့ ဖုန်းခေါ်ဆိုနေသည်။",
+          "ko": "길거리에서 사람이 갑자기 쓰러진 상황, 119 상황실에 응급 신고 전화를 건다.",
+          "en": "A person has suddenly collapsed on the street, and a call is being placed to the 119 control center."
+        },
+        "speakers": [
+          {
+            "id": "operator",
+            "role": "other",
+            "gender": "female",
+            "voice_id": "ko_f_01"
+          },
+          {
+            "id": "learner",
+            "role": "learner",
+            "gender": "any",
+            "voice_id": null
+          }
+        ],
+        "lines": [
+          {
+            "line_id": "L1",
+            "speaker": "operator",
+            "ko": "네, 119입니다. 무슨 일이 있으십니까?",
+            "rom": "Ne, il-il-gu-im-ni-da. Mu-seun ir-i i-sseu-mim-ni-ka?",
+            "my": "ဟုတ်ကဲ့၊ ၁၁၉ မှ ဖြစ်ပါတယ်။ ဘာကိစ္စ အရေးပေါ်ဖြစ်ပါသလဲခင်ဗျာ။",
+            "en": "Yes, this is 119. What is your emergency?",
+            "audio": "AUD_EMG001_L1",
+            "audio_slow": "AUD_EMG001_L1_S",
+            "note": ""
+          },
+          {
+            "line_id": "L2",
+            "speaker": "learner",
+            "ko": "여기 사람이 갑자기 쓰러졌어요! 의식이 없어요.",
+            "rom": "Yeo-gi sa-ram-i gap-ja-gi sseu-reo-jyeos-seo-yo! Ui-sig-i eop-seo-yo.",
+            "my": "ဒီမှာ လူတစ်ယောက် ရုတ်တရက် လဲကျသွားလို့ပါ! သတိလစ်နေပါတယ်။",
+            "en": "Someone collapsed here suddenly! They are unconscious.",
+            "audio": "AUD_EMG001_L2",
+            "audio_slow": "AUD_EMG001_L2_S",
+            "note": ""
+          },
+          {
+            "line_id": "L3",
+            "speaker": "operator",
+            "ko": "위치가 어디입니까? 주소나 근처 큰 건물을 말씀해 주세요.",
+            "rom": "Wi-chi-ga eo-di-im-ni-ka? Ju-so-na geun-cheo keun geon-mul-eul mal-sseum-hae ju-se-yo.",
+            "my": "တည်နေရာက ဘယ်မှာပါလဲ။ လိပ်စာ သို့မဟုတ် အနီးအနားက အဆောက်အအုံကြီးကို ပြောပြပေးပါ။",
+            "en": "Where is your location? Please tell me the address or a nearby landmark.",
+            "audio": "AUD_EMG001_L3",
+            "audio_slow": "AUD_EMG001_L3_S",
+            "note": ""
+          },
+          {
+            "line_id": "L4",
+            "speaker": "learner",
+            "ko": "마포역 2번 출구 앞이에요. 구급차 좀 빨리 보내 주세요.",
+            "rom": "Ma-po-yeok i-beon chul-gu ap-i-e-yo. Gu-geup-cha jom ppal-li bo-nae ju-se-yo.",
+            "my": "မါဖိုဘူတာ (Mapo Station) ထွက်ပေါက် ၂ အရှေ့မှာပါ။ လူနာတင်ယာဉ် မြန်မြန်လွှတ်ပေးပါ။",
+            "en": "In front of Mapo Station Exit 2. Please send an ambulance quickly.",
+            "audio": "AUD_EMG001_L4",
+            "audio_slow": "AUD_EMG001_L4_S",
+            "note": ""
+          },
+          {
+            "line_id": "L5",
+            "speaker": "operator",
+            "ko": "네, 구급차가 즉시 출동합니다. 전화 끊지 마시고 환자 옆에 계세요.",
+            "rom": "Ne, gu-geup-cha-ga jeuk-si chul-dong-ham-ni-da. Jeon-hwa kkeunt-ji ma-si-go hwan-ja yeop-e gye-se-yo.",
+            "my": "ဟုတ်ကဲ့၊ လူနာတင်ယာဉ် ချက်ချင်း ထွက်ခွာနေပါပြီ။ ဖုန်းမချပါနဲ့ဦး၊ လူနာဘေးမှာ စောင့်ပေးပါ။",
+            "en": "Yes, an ambulance is dispatched immediately. Please stay on the line and stay next to the patient.",
+            "audio": "AUD_EMG001_L5",
+            "audio_slow": "AUD_EMG001_L5_S",
+            "note": ""
+          }
+        ]
+      },
+      "activities": [
+        {
+          "activity_id": "A1",
+          "type": "branch_dialogue",
+          "prompt": {
+            "my": "၁၁၉ ဖုန်းလက်ခံသူ၏ မေးခွန်းများကို သင့်တော်စွာ တုံ့ပြန်ပါ။",
+            "ko": "119 상담원의 질문에 적절하게 응답하세요.",
+            "en": "Respond appropriately to the 119 operator's questions."
+          },
+          "entry_node": "N1",
+          "nodes": [
+            {
+              "node_id": "N1",
+              "speaker": "operator",
+              "ko": "네, 119입니다. 무슨 일이 있으십니까?",
+              "rom": "Ne, il-il-gu-im-ni-da. Mu-seun ir-i i-sseu-mim-ni-ka?",
+              "my": "ဟုတ်ကဲ့၊ ၁၁၉ မှ ဖြစ်ပါတယ်။ ဘာကိစ္စ အရေးပေါ်ဖြစ်ပါသလဲခင်ဗျာ။",
+              "en": "Yes, this is 119. What is your emergency?",
+              "choices": [
+                {
+                  "id": "C1_N1",
+                  "ko": "사람이 갑자기 쓰러졌어요! 의식이 없어요.",
+                  "my": "လူတစ်ယောက် ရုတ်တရက် လဲကျသွားလို့ပါ! သတိလစ်နေပါတယ်။",
+                  "en": "Someone collapsed suddenly! They are unconscious.",
+                  "next": "N2"
+                },
+                {
+                  "id": "C2_N1",
+                  "ko": "길을 잃어버렸어요. 도와주세요.",
+                  "my": "လမ်းပျောက်သွားလို့ပါ။ ကူညီပေးပါ။",
+                  "en": "I am lost. Please help me.",
+                  "next": "N3"
+                }
+              ]
+            },
+            {
+              "node_id": "N2",
+              "speaker": "operator",
+              "ko": "네, 알겠습니다. 정확한 위치가 어디입니까?",
+              "rom": "Ne, al-ges-seum-ni-da. Jeong-hwag-han wi-chi-ga eo-di-im-ni-ka?",
+              "my": "ဟုတ်ကဲ့ ပါပြီ။ တိကျတဲ့ တည်နေရာက ဘယ်မှာပါလဲ။",
+              "en": "Understood. Where is your exact location?",
+              "choices": [
+                {
+                  "id": "C1_N2",
+                  "ko": "마포역 2번 출구 앞이에요.",
+                  "my": "မါဖိုဘူတာ ထွက်ပေါက် ၂ အရှေ့မှာပါ။",
+                  "en": "In front of Mapo Station Exit 2.",
+                  "next": "N4"
+                },
+                {
+                  "id": "C2_N2",
+                  "ko": "한국 서울에 있어요.",
+                  "my": "ကိုရီးယား ဆိုးလ်မှာ ရှိပါတယ်။",
+                  "en": "I am in Seoul, Korea.",
+                  "next": "N3"
+                }
+              ]
+            },
+            {
+              "node_id": "N3",
+              "speaker": "operator",
+              "ko": "구체적인 위치나 응급 상황 내용이 필요합니다. 다시 말씀해 주세요.",
+              "rom": "Gu-che-jeog-in wi-chi-na eung-geup sang-hwang nae-yong-i ppeil-yo-ham-ni-da. Da-si mal-sseum-hae ju-se-yo.",
+              "my": "တိကျတဲ့ တည်နေရာ သို့မဟုတ် အရေးပေါ်အခြေအနေ အချက်အလက် လိုအပ်ပါတယ်။ ပြန်လည် ပြောပြပေးပါ။",
+              "en": "We need a specific location or details of the medical emergency. Please clarify.",
+              "choices": [
+                {
+                  "id": "C1_N3",
+                  "ko": "마포역 2번 출구 앞이고 사람이 쓰러졌어요.",
+                  "my": "မါဖိုဘူတာ ထွက်ပေါက် ၂ အရှေ့မှာပါ၊ လူတစ်ယောက် လဲကျနေလို့ပါ။",
+                  "en": "In front of Mapo Station Exit 2, and someone collapsed.",
+                  "next": "N4"
+                }
+              ]
+            },
+            {
+              "node_id": "N4",
+              "speaker": "operator",
+              "ko": "확인되었습니다. 구급차가 바로 출동합니다. 전화 끊지 말고 기다리세요.",
+              "rom": "Hwag-in-doe-eos-seum-ni-da. Gu-geup-cha-ga ba-ro chul-dong-ham-ni-da. Jeon-hwa kkeunt-ji mal-go gi-da-ri-se-yo.",
+              "my": "အတည်ပြုပြီးပါပြီ။ လူနာတင်ယာဉ် ချက်ချင်း ထွက်ခွာပါမည်။ ဖုန်းမချဘဲ စောင့်ဆိုင်းပေးပါ။",
+              "en": "Confirmed. We are dispatching an ambulance right away. Stay on the line.",
+              "choices": [
+                {
+                  "id": "C1_N4",
+                  "ko": "네, 알겠습니다. 감사합니다.",
+                  "my": "ဟုတ်ကဲ့ ပါပြီ။ ကျေးဇူးတင်ပါတယ်။",
+                  "en": "Yes, I understand. Thank you.",
+                  "next": "END"
+                }
+              ]
+            }
+          ],
+          "audio_ref": "AUD_EMG001_A1",
+          "explanation_ref": "FB_EMG001_A1"
+        },
+        {
+          "activity_id": "A2",
+          "type": "speak",
+          "prompt": {
+            "my": "၁၁၉ သို့ သတင်းပို့ရာတွင် တည်နေရာနှင့် လူနာအခြေအနေကို တိကျစွာ ပြောဆိုကြည့်ပါ။",
+            "ko": "119에 신고할 때 위치와 환자 상태를 정확하게 말해 보세요.",
+            "en": "Practice stating your location and patient condition clearly when calling 119."
+          },
+          "target_ko": "마포역 2번 출구 앞이에요. 사람이 쓰러졌어요.",
+          "min_score": 70,
+          "audio_ref": "AUD_EMG001_A2",
+          "explanation_ref": "FB_EMG001_A2"
+        }
+      ],
+      "feedback": {
+        "FB_EMG001_A1": {
+          "why_wrong": {
+            "my": "၁၁၉ သို့ သတင်းပို့ရာတွင် လူနာ၏ အခြေအနေ (လဲကျခြင်း၊ သတိလစ်ခြင်း) နှင့် တိကျသော တည်နေရာ (မြေအောက်ရထားဘူတာ ထွက်ပေါက်နံပါတ်၊ အဆောက်အအုံကြီး) ကို ပထမဦးစွာ ပြောပြရပါမည်။",
+            "ko": "119에 신고할 때는 환자의 상태(쓰러짐, 의식 없음)와 정확한 위치(지하철역 출구 번호, 큰 건물)를 먼저 말해야 합니다.",
+            "en": "When calling 119, first describe the patient's condition (collapsed, unconscious) and provide a clear location (subway station exit number, landmark)."
+          },
+          "grammar": {
+            "point": "-(으)시- / -아/어 주세요",
+            "explain_my": "အရေးပေါ်အခြေအနေတွင် အကူအညီတောင်းခံရာ၌ '-아/어 주세요' (ပြုလုပ်ပေးပါ) နှင့် ယဉ်ကျေးသော စကားပြော ပုံစံများကို အသုံးပြုပါသည်။"
+          },
+          "culture": "ကိုရီးယားတွင် မီးလောင်မှုနှင့် အရေးပေါ် လူနာများအတွက် ၁၁၉ သို့ ခေါ်ဆိုရပြီး၊ ရဲတပ်ဖွဲ့ အကူအညီအတွက် ၁၁၂ သို့ ခေါ်ဆိုရပါမည်။",
+          "retry_phrase": "마포역 2번 출구 앞이에요. 구급차 좀 빨리 보내 주세요."
+        },
+        "FB_EMG001_A2": {
+          "why_wrong": {
+            "my": "တည်နေရာ (မါဖိုဘူတာ ထွက်ပေါက် ၂ အရှေ့) နှင့် လူနာအခြေအနေ (လူတစ်ယောက် လဲကျနေသည်) ကို ရှင်းလင်းစွာ အသံထွက်ပြောဆိုရန် အရေးကြီးပါသည်။",
+            "ko": "위치(마포역 2번 출구 앞)와 환자 상태(사람이 쓰러졌어요)를 명확하게 발음하는 것이 중요합니다.",
+            "en": "It is important to clearly pronounce the location (in front of Mapo Station Exit 2) and the condition (someone collapsed)."
+          },
+          "grammar": {
+            "point": "-(이)에요 / -았/었어요",
+            "explain_my": "တည်နေရာကို ပြောပြရာတွင် '-(이)에요' နှင့် အတိတ်ကာလ အခြေအနေကို ပြောပြရာတွင် '-았/었어요' ကို သုံးပါသည်။"
+          },
+          "culture": "၁၁၉ ဖုန်းခေါ်ဆိုစဉ် ဘာသာစကား အခက်အခဲရှိပါက နိုင်ငံခြားဘာသာ စကားပြန် ဝန်ဆောင်မှုကို တောင်းဆိုနိုင်ပါသည်။",
+          "retry_phrase": "마포역 2번 출구 앞이에요. 사람이 쓰러졌어요."
+        }
+      },
+      "cultural_note": {
+        "title": {
+          "my": "ကိုရီးယား၏ အရေးပေါ် ဖုန်းနံပါတ်များ (၁၁၉ နှင့် ၁၁၂)",
+          "ko": "한국의 긴급 전화번호 (119 vs 112)",
+          "en": "Korea's Emergency Numbers (119 vs 112)"
+        },
+        "body": {
+          "my": "ကိုရီးယားတွင် မီးလောင်မှု သို့မဟုတ် အရေးပေါ် လူနာရှိပါက ၁၁၉ သို့ ဖုန်းခေါ်ဆိုရပါမည်။ ရာဇဝတ်မှု သို့မဟုတ် ရဲတပ်ဖွဲ့၏ အကူအညီလိုအပ်ပါက ၁၁၂ သို့ ခေါ်ဆိုရပါမည်။ ၁၁၉ သို့ သတင်းပို့ရာတွင် တိကျသော လိပ်စာ သို့မဟုတ် အနီးအနားရှိ ထင်ရှားသော အဆောက်အအုံကို ပြောပြရန် အရေးကြီးပြီး နိုင်ငံခြားဘာသာ ပြန်ဆိုရေး ဝန်ဆောင်မှုကိုလည်း တောင်းဆိုနိုင်ပါသည်။",
+          "ko": "한국에서 화재나 응급 환자 발생 시에는 119로 전화해야 합니다. 범죄 신고나 경찰의 도움이 필요할 때는 112로 전화합니다. 119에 신고할 때는 정확한 주소나 주변의 큰 건물(명소)을 말하는 것이 중요하며, 외국어 통역 서비스도 요청할 수 있습니다.",
+          "en": "In Korea, call 119 for medical emergencies and fires. Call 112 for police assistance or reporting crimes. When calling 119, it is crucial to provide a clear address or nearby landmark. Interpretation services in foreign languages are also available upon request."
+        },
+        "sensitive": false
+      },
+      "audio": {
+        "base_path": "audio/COMMON-EMERGENCY-001/",
+        "files": [
+          {
+            "id": "AUD_EMG001_L1",
+            "normal": "L1-normal.mp3",
+            "slow": "L1-slow.mp3",
+            "duration": 2.8
+          },
+          {
+            "id": "AUD_EMG001_L2",
+            "normal": "L2-normal.mp3",
+            "slow": "L2-slow.mp3",
+            "duration": 3.4
+          },
+          {
+            "id": "AUD_EMG001_L3",
+            "normal": "L3-normal.mp3",
+            "slow": "L3-slow.mp3",
+            "duration": 4.1
+          },
+          {
+            "id": "AUD_EMG001_L4",
+            "normal": "L4-normal.mp3",
+            "slow": "L4-slow.mp3",
+            "duration": 3.9
+          },
+          {
+            "id": "AUD_EMG001_L5",
+            "normal": "L5-normal.mp3",
+            "slow": "L5-slow.mp3",
+            "duration": 4.5
+          },
+          {
+            "id": "AUD_EMG001_A1",
+            "normal": "A1-normal.mp3",
+            "slow": "A1-slow.mp3",
+            "duration": 4.0
+          },
+          {
+            "id": "AUD_EMG001_A2",
+            "normal": "A2-normal.mp3",
+            "slow": "A2-slow.mp3",
+            "duration": 3.5
+          },
+          {
+            "id": "AUD_EMG001_SRS1",
+            "normal": "srs1-normal.mp3",
+            "slow": "srs1-slow.mp3",
+            "duration": 2.5
+          },
+          {
+            "id": "AUD_EMG001_SRS2",
+            "normal": "srs2-normal.mp3",
+            "slow": "srs2-slow.mp3",
+            "duration": 2.5
+          }
+        ],
+        "spec": {
+          "sample_rate": 44100,
+          "channels": 1,
+          "format": "mp3",
+          "bitrate": 128
+        }
+      },
+      "srs": {
+        "enabled": true,
+        "cards": [
+          {
+            "card_id": "C1",
+            "front": {
+              "my": "အရေးပေါ် သတင်းပို့ခြင်း",
+              "ko": "응급 신고",
+              "en": "Emergency Call"
+            },
+            "back": {
+              "my": "မီးလောင်မှုနှင့် အရေးပေါ် လူနာများအတွက် ဖုန်းခေါ်ဆိုရမည့် နံပါတ် (119)",
+              "ko": "화재 및 응급 환자 발생 시 신고하는 전화번호 (119)",
+              "en": "Emergency phone number to report fires and medical emergencies (119)"
+            },
+            "audio_ref": "AUD_EMG001_SRS1",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C2",
+            "front": {
+              "my": "လဲကျသည် / သတိလစ်သည်",
+              "ko": "쓰러지다",
+              "en": "To collapse / fall down"
+            },
+            "back": {
+              "my": "ခန္ဓာကိုယ် အားနည်းပြီး ကြမ်းပြင်ပေါ်သို့ လဲကျသွားသည်",
+              "ko": "몸이 힘을 잃고 바닥에 넘어지다",
+              "en": "To lose strength and fall to the ground"
+            },
+            "audio_ref": "AUD_EMG001_SRS2",
+            "ease": 2.5,
+            "interval": 0
+          }
+        ]
+      },
+      "assessment": {
+        "type": "mission",
+        "pass_threshold": 70,
+        "weights": {
+          "accuracy": 40,
+          "completion": 30,
+          "speaking": 30
+        },
+        "exam_mapping": {
+          "topik": null,
+          "eps_topik": null
+        }
+      }
+    }
+  ]
+}
+

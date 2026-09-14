@@ -1,0 +1,398 @@
+{
+  "__meta": {
+    "generator": "Korea Ready Mission Generator v1.0",
+    "generated_at": "2026-09-13T13:14:33Z",
+    "batch_id": "BATCH-20260913-008",
+    "request": "Generate COMMON-BANK-001"
+  },
+  "__self_check": {
+    "rules_passed": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7",
+      "R8",
+      "R9",
+      "R10",
+      "R11",
+      "R12",
+      "R13",
+      "R14",
+      "R15",
+      "R16",
+      "R17",
+      "R18",
+      "R19",
+      "R20",
+      "R21",
+      "R22",
+      "R23",
+      "R24",
+      "R25",
+      "R26"
+    ],
+    "warnings": [],
+    "uncertainties": [],
+    "external_prereqs": [
+      "COMMON-SURV-001"
+    ]
+  },
+  "missions": [
+    {
+      "schema_version": "1.0",
+      "mission_id": "COMMON-BANK-001",
+      "goal": "common",
+      "level": 2,
+      "category": "daily",
+      "industry": null,
+      "tags": [
+        "bank-account",
+        "atm-usage",
+        "daily-life",
+        "banking"
+      ],
+      "title": {
+        "my": "ဘဏ်အကောင့် ဖွင့်လှစ်ခြင်းနှင့် ATM အသုံးပြုခြင်း",
+        "ko": "은행 계좌 개설 및 ATM 이용",
+        "en": "Opening a Bank Account and Using an ATM"
+      },
+      "objective": {
+        "my": "ကိုရီးယားနိုင်ငံ ဘဏ်တွင် နိုင်ငံခြားသား မှတ်ပုံတင်ဖြင့် အကောင့် ဖွင့်လှစ်ခြင်း၊ Debit Card လျှောက်ထားခြင်းနှင့် ATM အသုံးပြုခြင်းဆိုင်ရာ ပြောဆိုမှုများကို ယဉ်ကျေးစွာ လေ့ကျင့်မည်။",
+        "ko": "한국 은행에서 외국인등록증으로 계좌를 개설하고 체크카드 발급 및 ATM 이용 관련 대화를 정중하게 연습합니다.",
+        "en": "Politely practice opening a bank account with an ARC, applying for a debit card, and handling ATM operations at a Korean bank."
+      },
+      "prerequisites": [
+        "COMMON-SURV-001"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "politeness"
+      ],
+      "estimated_minutes": 10,
+      "difficulty": "intermediate",
+      "regulated": false,
+      "status": "draft",
+      "version": 1,
+      "dialogue": {
+        "setting": {
+          "my": "ဘဏ်တွင် အကောင့်ဖွင့်ရန် ဘဏ်ဝန်ထမ်းနှင့် စကားပြောဆိုခြင်း",
+          "ko": "은행 창구에서 계좌 개설을 위해 직원과 대화함",
+          "en": "Talking with a bank clerk to open an account at a bank counter"
+        },
+        "speakers": [
+          {
+            "id": "clerk",
+            "role": "clerk",
+            "gender": "female",
+            "voice_id": "ko_f_01"
+          },
+          {
+            "id": "learner",
+            "role": "learner",
+            "gender": "any",
+            "voice_id": null
+          }
+        ],
+        "lines": [
+          {
+            "line_id": "L1",
+            "speaker": "clerk",
+            "ko": "어서 오세요. 무슨 업무를 도와드릴까요?",
+            "rom": "Eoseo oseyo. Museun eonmureul dowadeureilkkayo?",
+            "my": "မင်္ဂလာပါ၊ ဘာကိစ္စ ကူညီပေးရမလဲ။",
+            "en": "Welcome. How can I help you today?",
+            "audio": "AUD_BNK001_L1",
+            "audio_slow": "AUD_BNK001_L1_S",
+            "note": "Standard bank clerk greeting"
+          },
+          {
+            "line_id": "L2",
+            "speaker": "learner",
+            "ko": "외국인등록증으로 계좌를 만들고 싶어요.",
+            "rom": "Oegugin deongnokjeungeuro gyeojwareul mandulgo sipeoyo.",
+            "my": "နိုင်ငံခြားသား မှတ်ပုံတင်နဲ့ ဘဏ်အကောင့် ဖွင့်ချင်လို့ပါ။",
+            "en": "I want to open a bank account with my Alien Registration Card.",
+            "audio": "AUD_BNK001_L2",
+            "audio_slow": "AUD_BNK001_L2_S",
+            "note": "Expressing purpose using -으로 and -고 싶어요"
+          },
+          {
+            "line_id": "L3",
+            "speaker": "clerk",
+            "ko": "네, 신분증을 주시고 이 신청서를 작성해 주세요.",
+            "rom": "Ne, sinbunjjeungeul jusigo i sincheongseoreul jakseonghae juseyo.",
+            "my": "ဟုတ်ကဲ့၊ မှတ်ပုံတင် ပေးပါ၊ ဒီလျှောက်လွှာကို ဖြည့်စွက်ပေးပါ။",
+            "en": "Yes, please give me your ID and fill out this application form.",
+            "audio": "AUD_BNK001_L3",
+            "audio_slow": "AUD_BNK001_L3_S",
+            "note": "Clerk requesting ID and document completion"
+          }
+        ]
+      },
+      "activities": [
+        {
+          "activity_id": "A1",
+          "type": "branch_dialogue",
+          "prompt": {
+            "my": "ဘဏ်ဝန်ထမ်း၏ မေးခွန်းကို နားထောင်ပြီး သင့်တော်သော ဖြေဆိုမှုကို ရွေးချယ်ပါ။",
+            "ko": "은행 직원의 질문을 듣고 적절한 대답을 선택하세요.",
+            "en": "Listen to the bank clerk and select an appropriate response."
+          },
+          "entry_node": "N1",
+          "nodes": [
+            {
+              "node_id": "N1",
+              "speaker": "clerk",
+              "ko": "계좌를 개설하시려면 외국인등록증과 여권이 필요합니다. 가져오셨나요?",
+              "rom": "Gyeojwareul gaeseolhasireomyeon oegugindeongnokjeunggwa yeogwoni piryohamnida. Gajeoosyeonnayo?",
+              "my": "အကောင့်ဖွင့်ဖို့ နိုင်ငံခြားသားမှတ်ပုံတင်နဲ့ နိုင်ငံကူးလက်မှတ် လိုပါတယ်။ ယူလာပါသလား။",
+              "en": "To open an account, you need your ARC and passport. Did you bring them?",
+              "choices": [
+                {
+                  "id": "C1_N1",
+                  "ko": "네, 여기 외국인등록증과 여권이 있습니다.",
+                  "my": "ဟုတ်ကဲ့၊ ဒီမှာ နိုင်ငံခြားသားမှတ်ပုံတင်နဲ့ နိုင်ငံကူးလက်မှတ် ရှိပါတယ်။",
+                  "en": "Yes, here are my ARC and passport.",
+                  "next": "N2"
+                },
+                {
+                  "id": "C2_N1",
+                  "ko": "아니요, ATM에서 돈을 뽑고 싶어요.",
+                  "my": "ဟင့်အင်း၊ ATM မှာ ပိုက်ဆံ ထုတ်ချင်ပါတယ်။",
+                  "en": "No, I want to withdraw money from the ATM.",
+                  "next": "N3"
+                }
+              ]
+            },
+            {
+              "node_id": "N2",
+              "speaker": "clerk",
+              "ko": "네, 확인했습니다. 체크카드와 인터넷 뱅킹도 함께 신청하시겠습니까?",
+              "rom": "Ne, hwaginhaessumnida. Chekeukadeuwa intaeneot baengkingdo hamkke sincheonghasigessumnikka?",
+              "my": "ဟုတ်ကဲ့၊ စစ်ဆေးပြီးပါပြီ။ Check card နဲ့ Internet Banking ပါ တစ်ခါတည်း လျှောက်ထားမလား။",
+              "en": "Yes, verified. Would you like to apply for a debit card and internet banking as well?",
+              "choices": [
+                {
+                  "id": "C1_N2",
+                  "ko": "네, 체크카드도 만들고 싶어요. 비밀번호는 어디에 입력해요?",
+                  "my": "ဟုတ်ကဲ့၊ Check card ပါ လုပ်ချင်ပါတယ်။ လျှို့ဝှက်နံပါတ်ကို ဘယ်မှာ ရိုက်ထည့်ရမလဲ။",
+                  "en": "Yes, I want a debit card too. Where do I enter the password?",
+                  "next": "N4"
+                },
+                {
+                  "id": "C2_N2",
+                  "ko": "아니요, 다음에 다시 올게요.",
+                  "my": "ဟင့်အင်း၊ နောက်မှ ပြန်လာပါမယ်။",
+                  "en": "No, I will come back next time.",
+                  "next": "END"
+                }
+              ]
+            },
+            {
+              "node_id": "N3",
+              "speaker": "clerk",
+              "ko": "계좌가 없으시면 카드를 먼저 만드셔야 합니다. 신분증을 보여주시겠어요?",
+              "rom": "Gyeojwaga eopseusimyeon tradeureul meonjeo mandeusyeoya hamnida. Sinbunjjeungeul boyeojusigesseoyo?",
+              "my": "အကောင့်မရှိရင် ကတ်အရင် လုပ်ရပါမယ်။ မှတ်ပုံတင် ပြပေးနိုင်မလား။",
+              "en": "If you do not have an account, you need to make a card first. Could you show your ID?",
+              "choices": [
+                {
+                  "id": "C1_N3",
+                  "ko": "네, 여기 외국인등록증이 있습니다.",
+                  "my": "ဟုတ်ကဲ့၊ ဒီမှာ နိုင်ငံခြားသားမှတ်ပုံတင် ရှိပါတယ်။",
+                  "en": "Yes, here is my ARC.",
+                  "next": "N4"
+                }
+              ]
+            },
+            {
+              "node_id": "N4",
+              "speaker": "clerk",
+              "ko": "여기 키패드에 4자리 비밀번호를 입력해 주세요.",
+              "rom": "Yeogi kipaedeue nejari bimilbeonhoreul imryeokhae juseyo.",
+              "my": "ဒီကီးပက်မှာ နံပါတ် ၄ လုံး လျှို့ဝှက်နံပါတ်ကို ရိုက်ထည့်ပေးပါ။",
+              "en": "Please enter your 4-digit password on this keypad.",
+              "choices": [
+                {
+                  "id": "C1_N4",
+                  "ko": "네, 입력했습니다. 해외 송금도 가능한가요?",
+                  "my": "ဟုတ်ကဲ့၊ ရိုက်ထည့်လိုက်ပါပြီ။ နိုင်ငံခြား ငွေလွှဲလည်း ရပါသလား။",
+                  "en": "Yes, I entered it. Is overseas remittance also possible?",
+                  "next": "END"
+                }
+              ]
+            }
+          ],
+          "audio_ref": "AUD_BNK001_A1",
+          "explanation_ref": "FB_BNK001_A1"
+        },
+        {
+          "activity_id": "A2",
+          "type": "speak",
+          "prompt": {
+            "my": "ဘဏ်ဝန်ထမ်းအား နိုင်ငံခြားသား မှတ်ပုံတင်ဖြင့် ဘဏ်အကောင့် ဖွင့်ချင်ကြောင်း ယဉ်ကျေးစွာ ပြောဆိုပါ။",
+            "ko": "은행 직원에게 외국인등록증으로 계좌를 만들고 싶다고 정중하게 말해 보세요.",
+            "en": "Politely tell the bank clerk that you want to open a bank account using your ARC."
+          },
+          "target_ko": "외국인등록증으로 계좌를 만들고 싶어요.",
+          "min_score": 70,
+          "audio_ref": "AUD_BNK001_A2",
+          "explanation_ref": "FB_BNK001_A2"
+        }
+      ],
+      "feedback": {
+        "FB_BNK001_A1": {
+          "why_wrong": {
+            "my": "ဘဏ်အကောင့် ဖွင့်ရန် လိုအပ်သော စာရွက်စာတမ်းများ (နိုင်ငံခြားသား မှတ်ပုံတင်၊ နိုင်ငံကူးလက်မှတ်) တောင်းဆိုသည့်အခါ သင့်တော်စွာ ဖြေဆိုရပါမည်။",
+            "ko": "계좌 개설에 필요한 서류(외국인등록증, 여권) 제출 질문에 맞게 응답해야 합니다.",
+            "en": "Respond appropriately to requests for required documents (ARC, passport) for account opening."
+          },
+          "grammar": {
+            "point": "-(으)시겠습니까 / -고 싶다",
+            "explain_my": "-(으)시겠습니까 ကို ဘဏ်ဝန်ထမ်းက ယဉ်ကျေးစွာ မေးမြန်းရာတွင် သုံးပြီး -고 싶다 ကို မိမိ၏ ဆန္ဒ ဖော်ပြရာတွင် သုံးပါသည်။"
+          },
+          "culture": "ကိုရီးယားတွင် ဘဏ်အကောင့် ဖွင့်ရန် နိုင်ငံခြားသား မှတ်ပုံတင် (ARC) သို့မဟုတ် နိုင်ငံကူးလက်မှတ် (Passport) မဖြစ်မနေ လိုအပ်ပါသည်။",
+          "retry_phrase": "네, 여기 외국인등록증과 여권이 있습니다."
+        },
+        "FB_BNK001_A2": {
+          "why_wrong": {
+            "my": "'외국인등록증으로' (နိုင်ငံခြားသားမှတ်ပုံတင်ဖြင့်) နှင့် '만들고 싶어요' (ဖွင့်ချင်ပါတယ်) ကို တိကျစွာ အသံထွက်၍ ပြောဆိုပါ၊",
+            "ko": "'외국인등록증으로'와 '만들고 싶어요'의 정확한 발음을 연습하세요.",
+            "en": "Practice accurate pronunciation of '외국인등록증으로' and '만들고 싶어요'."
+          },
+          "grammar": {
+            "point": "-으로 / -고 싶다",
+            "explain_my": "-으로 (နည်းလမ်း/ကိရိယာပြ ဝိဘတ်) နှင့် -고 싶다 (ဆန္ဒပြ သဒ္ဒါ) ကို ပေါင်းစပ်အသုံးပြုထားပါသည်။"
+          },
+          "culture": "ကိုရီးယား ဘဏ်များတွင် ATM ဖြင့် နိုင်ငံခြားသို့ ငွေလွှဲခြင်း သို့မဟုတ် မိုဘိုင်းလ် ဘဏ်စနစ် (Mobile Banking) ကို အများစု တွဲဖက် လျှောက်ထားကြပါသည်။",
+          "retry_phrase": "외국인등록증으로 계좌를 만들고 싶어요."
+        }
+      },
+      "cultural_note": {
+        "title": {
+          "my": "ကိုရီးယားနိုင်ငံ ဘဏ်အကောင့် ဖွင့်လှစ်ခြင်းနှင့် ATM အသုံးပြုခြင်း",
+          "ko": "한국의 은행 계좌 개설 및 ATM 이용 안내",
+          "en": "Opening a Bank Account and Using ATMs in Korea"
+        },
+        "body": {
+          "my": "ကိုရီးယားနိုင်ငံတွင် ဘဏ်အကောင့် ဖွင့်ရန် နိုင်ငံခြားသား မှတ်ပုံတင် (ARC)၊ နိုင်ငံကူးလက်မှတ် (Passport) နှင့် အလုပ်အကိုင်/ကျောင်းတက်ရောက်ကြောင်း အထောက်အထားများ လိုအပ်နိုင်ပါသည်။ ATM စက်များမှတစ်ဆင့် ငွေသွင်း/ငွေထုတ်/ငွေလွှဲခြင်းနှင့် နိုင်ငံခြားငွေလွှဲ (Overseas Remittance) ဝန်ဆောင်မှုများကို အဆင်ပြေစွာ အသုံးပြုနိုင်ပါသည်။",
+          "ko": "한국에서 은행 계좌를 개설하려면 외국인등록증, 여권, 재직증명서 또는 재학증명서 등이 필요할 수 있습니다. ATM을 통해 입출금, 계좌이체, 해외 송금 서비스 등을 편리하게 이용할 수 있습니다.",
+          "en": "To open a bank account in Korea, you may need an ARC, passport, and proof of employment or enrollment. ATMs offer convenient services for deposits, withdrawals, transfers, and overseas remittances."
+        },
+        "sensitive": false
+      },
+      "audio": {
+        "base_path": "audio/COMMON-BANK-001/",
+        "files": [
+          {
+            "id": "AUD_BNK001_L1",
+            "normal": "L1-normal.mp3",
+            "slow": "L1-slow.mp3",
+            "duration": 3.0
+          },
+          {
+            "id": "AUD_BNK001_L2",
+            "normal": "L2-normal.mp3",
+            "slow": "L2-slow.mp3",
+            "duration": 3.2
+          },
+          {
+            "id": "AUD_BNK001_L3",
+            "normal": "L3-normal.mp3",
+            "slow": "L3-slow.mp3",
+            "duration": 3.5
+          },
+          {
+            "id": "AUD_BNK001_A1",
+            "normal": "A1-normal.mp3",
+            "slow": "A1-slow.mp3",
+            "duration": 4.2
+          },
+          {
+            "id": "AUD_BNK001_A2",
+            "normal": "A2-normal.mp3",
+            "slow": "A2-slow.mp3",
+            "duration": 3.1
+          }
+        ],
+        "spec": {
+          "sample_rate": 44100,
+          "channels": 1,
+          "format": "mp3",
+          "bitrate": 128
+        }
+      },
+      "srs": {
+        "enabled": true,
+        "cards": [
+          {
+            "card_id": "C1",
+            "front": {
+              "my": "ဘဏ်အကောင့်",
+              "ko": "계좌",
+              "en": "Bank account"
+            },
+            "back": {
+              "my": "ဘဏ်အကောင့်",
+              "ko": "계좌",
+              "en": "Bank account"
+            },
+            "audio_ref": "AUD_BNK001_L2",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C2",
+            "front": {
+              "my": "နိုင်ငံခြားသား မှတ်ပုံတင်",
+              "ko": "외국인등록증",
+              "en": "Alien Registration Card (ARC)"
+            },
+            "back": {
+              "my": "နိုင်ငံခြားသား မှတ်ပုံတင်",
+              "ko": "외국인등록증",
+              "en": "Alien Registration Card (ARC)"
+            },
+            "audio_ref": "AUD_BNK001_L2",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C3",
+            "front": {
+              "my": "လျှို့ဝှက်နံပါတ်",
+              "ko": "비밀번호",
+              "en": "Password / PIN"
+            },
+            "back": {
+              "my": "လျှို့ဝှက်နံပါတ်",
+              "ko": "비밀번호",
+              "en": "Password / PIN"
+            },
+            "audio_ref": "AUD_BNK001_A1",
+            "ease": 2.5,
+            "interval": 0
+          }
+        ]
+      },
+      "assessment": {
+        "type": "mission",
+        "pass_threshold": 70,
+        "weights": {
+          "accuracy": 40,
+          "completion": 30,
+          "speaking": 30
+        },
+        "exam_mapping": {
+          "topik": null,
+          "eps_topik": null
+        }
+      }
+    }
+  ]
+}
+

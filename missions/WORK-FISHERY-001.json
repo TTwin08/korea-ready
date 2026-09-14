@@ -1,0 +1,363 @@
+{
+  "__meta": {
+    "generator": "Korea Ready Mission Generator v1.0",
+    "generated_at": "2026-09-12T13:38:00Z",
+    "batch_id": "BATCH-20260912-003",
+    "request": "Generate WORK-FISHERY-001"
+  },
+  "__self_check": {
+    "rules_passed": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7",
+      "R8",
+      "R9",
+      "R10",
+      "R11",
+      "R12",
+      "R13",
+      "R14",
+      "R15",
+      "R16",
+      "R17",
+      "R18",
+      "R19",
+      "R20",
+      "R21",
+      "R22",
+      "R23",
+      "R24",
+      "R25",
+      "R26"
+    ],
+    "warnings": [],
+    "uncertainties": [],
+    "external_prereqs": [
+      "COMMON-SURV-001"
+    ]
+  },
+  "missions": [
+    {
+      "schema_version": "1.0",
+      "mission_id": "WORK-FISHERY-001",
+      "goal": "work",
+      "level": 2,
+      "category": "industry",
+      "industry": "fishery",
+      "tags": [
+        "fishery-boat",
+        "safety-briefing",
+        "first-day",
+        "workplace-korean"
+      ],
+      "title": {
+        "my": "ငါးဖမ်းလှေပေါ်မှ ပထမဆုံးနေ့ ဘေးအန္တရာယ်ကင်းရှင်းရေး ရှင်းလင်းပွဲ",
+        "ko": "어선 첫날 안전 교육",
+        "en": "First Day on a Fishing Boat - Safety Briefing"
+      },
+      "objective": {
+        "my": "ငါးဖမ်းလှေပေါ်တွင် ဘေးအန္တရာယ်ကင်းရှင်းရေး ညွှန်ကြားချက်များကို စနစ်တကျ နားထောင်ပြီး ယဉ်ကျေးစွာ တုံ့ပြန်ရန် သင်ယူမည်။",
+        "ko": "어선에서 안전 지시사항을 정확히 듣고 정중하게 응답하는 방법을 배웁니다.",
+        "en": "Learn how to accurately listen to safety instructions and respond politely on a fishing boat."
+      },
+      "prerequisites": [
+        "COMMON-SURV-001"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "politeness"
+      ],
+      "estimated_minutes": 10,
+      "difficulty": "intermediate",
+      "regulated": false,
+      "status": "draft",
+      "version": 1,
+      "dialogue": {
+        "setting": {
+          "my": "ဆို့ချိုမြို့ရှိ ငါးဖမ်းလှေပေါ်တွင်",
+          "ko": "속초의 한 어선 위",
+          "en": "Onboard a fishing boat in Sokcho"
+        },
+        "speakers": [
+          {
+            "id": "captain",
+            "role": "manager",
+            "gender": "male",
+            "voice_id": "ko_m_01"
+          },
+          {
+            "id": "learner",
+            "role": "learner",
+            "gender": "any",
+            "voice_id": null
+          }
+        ],
+        "lines": [
+          {
+            "line_id": "L1",
+            "speaker": "captain",
+            "ko": "배에 타면 먼저 구명조끼부터 착용하세요.",
+            "rom": "Bae-e tameon meonjeo gumyeongjokki-buteo chagyeonghaseyo.",
+            "my": "လှေပေါ်တက်ရင် အရင်ဆုံး အသက်ကယ်အကျီကို ဝတ်ပါ။",
+            "en": "When you get on the boat, put on a life jacket first.",
+            "audio": "AUD_FISH001_L1",
+            "audio_slow": "AUD_FISH001_L1_S",
+            "note": "Workplace safety instruction using polite imperative form (-세요)"
+          },
+          {
+            "line_id": "L2",
+            "speaker": "learner",
+            "ko": "네, 알겠습니다! 바로 착용하겠습니다.",
+            "rom": "Ne, algetseumnida! Baro chagyeonghagesseumnida.",
+            "my": "ဟုတ်ကဲ့၊ နားလည်ပါပြီ! ချက်ချင်း ဝတ်ဆင်ပါ့မယ်။",
+            "en": "Yes, I understand! I will put it on right away.",
+            "audio": "AUD_FISH001_L2",
+            "audio_slow": "AUD_FISH001_L2_S",
+            "note": "Polite workplace confirmation using formal polite ending (-겠습니다)"
+          },
+          {
+            "line_id": "L3",
+            "speaker": "captain",
+            "ko": "갑판이 미끄러우니까 조심하고 밧줄 작업할 때 주의하세요.",
+            "rom": "Gapban-i mikkeureounikka josimhago batjul jageobhal ttae juyihaseyo.",
+            "my": "ကုန်းပတ်က ချောတာမို့လို့ သတိထားပြီး ကြိုးအလုပ်လုပ်တဲ့အခါ ဂရုစိုက်ပါ။",
+            "en": "The deck is slippery so be careful, and pay attention when working with ropes.",
+            "audio": "AUD_FISH001_L3",
+            "audio_slow": "AUD_FISH001_L3_S",
+            "note": "Safety caution during boat operations"
+          }
+        ]
+      },
+      "activities": [
+        {
+          "activity_id": "A1",
+          "type": "branch_dialogue",
+          "prompt": {
+            "my": "လှေသူကြီး၏ ဘေးအန္တရာယ်ကင်းရှင်းရေး ညွှန်ကြားချက်ကို သင့်တော်သော ယဉ်ကျေးစကားဖြင့် ရွေးချယ်ပါ။",
+            "ko": "선장의 안전 지시사항에 적절한 존댓말로 응답하세요.",
+            "en": "Select the appropriate polite response to the captain's safety instruction."
+          },
+          "entry_node": "N1",
+          "nodes": [
+            {
+              "node_id": "N1",
+              "speaker": "captain",
+              "ko": "작업 시작하기 전에 구명조끼 입었어요?",
+              "rom": "Jageob sijakhagi jeone gumyeongjokki ib-eosseoyo?",
+              "my": "အလုပ်မစတင်ခင် အသက်ကယ်အကျီ ဝတ်ပြီးပြီလား။",
+              "en": "Did you put on your life jacket before starting work?",
+              "choices": [
+                {
+                  "id": "C1_N1",
+                  "ko": "네, 착용했습니다! 확인해 주세요.",
+                  "my": "ဟုတ်ကဲ့၊ ဝတ်ပြီးပါပြီ! စစ်ဆေးပေးပါ။",
+                  "en": "Yes, I put it on! Please check.",
+                  "next": "N2"
+                },
+                {
+                  "id": "C2_N1",
+                  "ko": "아니, 아직 안 입었어.",
+                  "my": "ဟင့်အင်း၊ မဝတ်ရသေးဘူး။",
+                  "en": "No, I haven't worn it yet.",
+                  "next": "N3"
+                }
+              ]
+            },
+            {
+              "node_id": "N2",
+              "speaker": "captain",
+              "ko": "잘했어요! 그리고 바닥이 미끄러우니까 항상 장화를 신으세요.",
+              "rom": "Jalhaesseoyo! Geurigo badak-i mikkeureounikka hangsang janghwa-reul sineuseyo.",
+              "my": "တော်တယ်။ ပြီးတော့ ကြမ်းပြင်က ချောတာမို့လို့ အမြဲတမ်း ဘူခ်ဖိနပ် (ဝါယာရှူး) ဝတ်ထားပါ။",
+              "en": "Good job! And since the floor is slippery, always wear boots.",
+              "choices": [
+                {
+                  "id": "C1_N2",
+                  "ko": "네, 항상 조심하겠습니다!",
+                  "my": "ဟုတ်ကဲ့၊ အမြဲတမ်း သတိထားပါ့မယ်။",
+                  "en": "Yes, I will always be careful!",
+                  "next": "END"
+                }
+              ]
+            },
+            {
+              "node_id": "N3",
+              "speaker": "captain",
+              "ko": "선상에서는 안전이 최우선이에요! 그리고 반말 쓰지 마세요.",
+              "rom": "Seonsang-eseoneun anjeon-i choe-useon-ieyo! Geurigo banmal sseuji maseyo.",
+              "my": "လှေပေါ်မှာ ဘေးအန္တရာယ်ကင်းရှင်းရေးက ထိပ်ဆုံးပဲ! ပြီးတော့ ရိုင်းရိုင်းစိုင်းစိုင်း စကားမပြောပါနဲ့။",
+              "en": "Safety is top priority on board! And don't use informal language.",
+              "choices": [
+                {
+                  "id": "C1_N3",
+                  "ko": "죄송합니다. 바로 착용하겠습니다!",
+                  "my": "တောင်းပန်ပါတယ်။ ချက်ချင်း ဝတ်ဆင်ပါ့မယ်။",
+                  "en": "I am sorry. I will put it on right away!",
+                  "next": "END"
+                }
+              ]
+            }
+          ],
+          "audio_ref": "AUD_FISH001_N1",
+          "explanation_ref": "FB_FISH001_A1"
+        },
+        {
+          "activity_id": "A2",
+          "type": "speak",
+          "prompt": {
+            "my": "အောက်ပါ စကားစုကို အသံကျယ်ကျယ်နှင့် သဘာဝကျကျ အသံထွက်၍ ပြောပါ။",
+            "ko": "다음 문장을 크고 자연스럽게 말해보세요.",
+            "en": "Speak the following sentence clearly and naturally."
+          },
+          "target_ko": "네, 알겠습니다! 바로 착용하겠습니다.",
+          "min_score": 60,
+          "audio_ref": "AUD_FISH001_L2",
+          "explanation_ref": "FB_FISH001_A2"
+        }
+      ],
+      "feedback": {
+        "FB_FISH001_A1": {
+          "why_wrong": {
+            "my": "လှေပေါ်တွင် အထက်လူကြီး/လှေသူကြီးကို စကားပြောရာတွင် ယဉ်ကျေးသော စကား (존댓말) ကို အသုံးပြုရပါမည်။ ဘေးအန္တရာယ်ကင်းရှင်းရေး တာဝန်များကို ချက်ချင်း တုံ့ပြန်ရပါမည်။",
+            "ko": "선상에서 선장이나 상사에게 대화할 때는 반드시 존댓말을 사용해야 합니다. 또한 안전 지시는 즉시 이행해야 합니다.",
+            "en": "When speaking to the captain or supervisor on board, you must use formal polite language. Always follow safety instructions immediately."
+          },
+          "grammar": {
+            "point": "-겠습니다",
+            "explain_my": "မိမိပြုလုပ်မည့် အနာဂတ်အပြုအမူ သို့မဟုတ် ဆန္ဒကို လွန်စွာ ယဉ်ကျေးပြတ်သားစွာ ဖော်ပြရာတွင် သုံးပါသည်။"
+          },
+          "culture": "ငါးဖမ်းလှေပေါ်တွင် အသက်ကယ်အကျီ (구명조끼) ဝတ်ဆင်ခြင်းသည် မဖြစ်မနေ လိုက်နာရမည့် ဘေးအန္တရာယ်ကင်းရှင်းရေး စည်းကမ်းဖြစ်ပါသည်။",
+          "retry_phrase": "네, 알겠습니다! 바로 착용하겠습니다."
+        },
+        "FB_FISH001_A2": {
+          "why_wrong": {
+            "my": "အသံထွက်ကို ပိုမို ရှင်းလင်းစွာနှင့် ယုံကြည်မှုရှိရှိ ပြောဆိုပေးပါ။",
+            "ko": "발음을 더 명확하고 확실하게 해주세요.",
+            "en": "Please pronounce the phrase more clearly and confidently."
+          },
+          "retry_phrase": "네, 알겠습니다! 바로 착용하겠습니다."
+        }
+      },
+      "cultural_note": {
+        "title": {
+          "my": "ငါးဖမ်းလှေပေါ်မှ ဘေးအန္တရာယ်ကင်းရှင်းရေးနှင့် သတိပြုရန်များ",
+          "ko": "어선 안전 수칙과 구명조끼 착용",
+          "en": "Boat Safety Rules and Life Jacket Compliance"
+        },
+        "body": {
+          "my": "ငါးဖမ်းလှေပေါ်တွင် အလုပ်လုပ်စဉ် အသက်ကယ်အကျီ (구명조끼) နှင့် ဘူတာ/ဘူခ်ဖိနပ် (장화) ကို အမြဲတမ်း ဝတ်ဆင်ထားရပါမည်။ လှေပေါ်တွင် ချောမောသော ကုန်းပတ်နှင့် ကြိုးစက်များကြောင့် ထိခိုက်ဒဏ်ရာရလွယ်သဖြင့် လှေသူကြီး၏ ညွှန်ကြားချက်ကို ချက်ချင်း လိုက်နာရန် အရေးကြီးပါသည်။",
+          "ko": "어선 작업 시 구명조끼와 안전 장화 착용은 필수입니다. 미끄러운 갑판과 밧줄 작업 시 사고 위험이 크므로 선장의 안전 지시를 즉시 따르고 크고 명확하게 대답해야 합니다.",
+          "en": "Wearing a life jacket and safety boots is mandatory when working on a fishing boat. Due to slippery decks and rope machinery, accident risks are high, making immediate compliance and loud responses to the captain's orders essential."
+        },
+        "sensitive": false
+      },
+      "audio": {
+        "base_path": "audio/WORK-FISHERY-001/",
+        "files": [
+          {
+            "id": "AUD_FISH001_L1",
+            "normal": "L1-normal.mp3",
+            "slow": "L1-slow.mp3",
+            "duration": 3.5
+          },
+          {
+            "id": "AUD_FISH001_L2",
+            "normal": "L2-normal.mp3",
+            "slow": "L2-slow.mp3",
+            "duration": 2.8
+          },
+          {
+            "id": "AUD_FISH001_L3",
+            "normal": "L3-normal.mp3",
+            "slow": "L3-slow.mp3",
+            "duration": 4.0
+          },
+          {
+            "id": "AUD_FISH001_N1",
+            "normal": "N1-normal.mp3",
+            "slow": "N1-slow.mp3",
+            "duration": 3.2
+          }
+        ],
+        "spec": {
+          "sample_rate": 44100,
+          "channels": 1,
+          "format": "mp3",
+          "bitrate": 128
+        }
+      },
+      "srs": {
+        "enabled": true,
+        "cards": [
+          {
+            "card_id": "C1",
+            "front": {
+              "my": "အသက်ကယ်အကျီ",
+              "ko": "구명조끼",
+              "en": "Life jacket"
+            },
+            "back": {
+              "my": "အသက်ကယ်အကျီ",
+              "ko": "구명조끼",
+              "en": "Life jacket"
+            },
+            "audio_ref": "AUD_FISH001_L1",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C2",
+            "front": {
+              "my": "ကုန်းပတ်",
+              "ko": "갑판",
+              "en": "Deck"
+            },
+            "back": {
+              "my": "ကုန်းပတ်",
+              "ko": "갑판",
+              "en": "Deck"
+            },
+            "audio_ref": "AUD_FISH001_L3",
+            "ease": 2.5,
+            "interval": 0
+          },
+          {
+            "card_id": "C3",
+            "front": {
+              "my": "ကြိုး/လွန်ကြိုး",
+              "ko": "밧줄",
+              "en": "Rope"
+            },
+            "back": {
+              "my": "ကြိုး/လွန်ကြိုး",
+              "ko": "밧줄",
+              "en": "Rope"
+            },
+            "audio_ref": "AUD_FISH001_L3",
+            "ease": 2.5,
+            "interval": 0
+          }
+        ]
+      },
+      "assessment": {
+        "type": "mission",
+        "pass_threshold": 70,
+        "weights": {
+          "accuracy": 40,
+          "completion": 30,
+          "speaking": 30
+        },
+        "exam_mapping": {
+          "topik": null,
+          "eps_topik": "EPS_TOPIK_INDUSTRY_FISHERY"
+        }
+      }
+    }
+  ]
+}
+

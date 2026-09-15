@@ -18,7 +18,7 @@ Focus areas:
 - Romanization-first pronunciation guidance
 - Burmese-language explanations
 
-The platform is **content-driven**: every mission is a JSON file, and the application renders missions dynamically from an `index.json` manifest.
+The platform is **content-driven**: every mission is a JSON file, and the application renders missions dynamically from a manifest (`missions/index.json`).
 
 ---
 
@@ -88,16 +88,23 @@ The platform currently contains **38 missions** across **4 tracks**:
 
 ```
 korea-ready/
-├── index.html              ← entry point
-├── index.json              ← mission manifest (38 entries)
-└── missions/               ← mission JSON files
+├── index.html                    ← entry point
+├── app.js                        ← main app logic
+├── loader.js                     ← loads manifest + mission files
+├── validator.js                  ← schema validation
+├── engine.js                     ← mission execution engine
+├── renderer.js                   ← UI rendering per activity type
+├── audio.js                      ← TTS integration
+├── progress.js                   ← localStorage progress tracking
+├── style.css                     ← global styles
+├── README.md
+└── missions/                     ← mission JSON files + manifest
+    ├── index.json                ← mission manifest (38 entries)
     ├── LEVEL0-HANGUL-001.json
     ├── LEVEL0-HANGUL-002.json
     ├── ...
     └── EXAM-PREP-001.json
 ```
-
-> ⚠️ The full engine file list is not documented here. Refer to the repository root for the current JavaScript file set. Development notes referenced: `app.js`, `loader.js`, `validator.js`, `engine.js`, `renderer.js`, `audio.js`, `progress.js` — but confirm against the actual repository before relying on this list.
 
 ---
 
@@ -157,7 +164,7 @@ Every mission JSON follows **Mission Schema v1.0.1**. Key fields:
    missions/YOUR-MISSION-ID.json
    ```
 
-2. **Add an entry to `index.json`** (single-line format):
+2. **Add an entry to `missions/index.json`** (single-line format):
    ```json
    {"mission_id":"YOUR-MISSION-ID","goal":"common","level":2,"title":{"my":"...","ko":"...","en":"..."},"estimated_minutes":10}
    ```
@@ -186,6 +193,12 @@ Every mission JSON follows **Mission Schema v1.0.1**. Key fields:
 | **v0.1** | Initial proof-of-concept | 🔒 FROZEN |
 | **v0.2** | Level 0 complete (12 missions) | 🔒 FROZEN |
 | **v0.3** | Content expansion — 38 missions across 4 tracks | 🔒 FROZEN |
+
+**Frozen artifacts:**
+- Mission Schema v1.0.1
+- Architecture Lock v1.1
+- Level 0 Scope Lock v1.1
+- Engine files (no modifications)
 
 ---
 
@@ -220,7 +233,8 @@ The following are treated as **frozen** by project convention and should not be 
 - **Architecture Lock v1.1** — engine files should not be modified for content work
 - **Level 0 Scope Lock v1.1** — Level 0 missions must not appear in Common list
 
-> ⚠️ The specific engine file list is not asserted here. Confirm which JavaScript files are actually present in the repository root before assuming the full documented set exists.
+**Engine files (frozen):**
+`app.js`, `loader.js`, `validator.js`, `engine.js`, `renderer.js`, `audio.js`, `progress.js`
 
 ---
 

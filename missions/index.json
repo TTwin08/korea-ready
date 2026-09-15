@@ -35,6 +35,8 @@
     {"mission_id":"WORK-SAFETY-001","goal":"work","level":2,"title":{"my":"စက်ရုံ ဘေးအန္တရာယ် — သတိပေးချက်များ","ko":"공장 안전 — 주의 사항","en":"Factory Safety — Warning Signs"},"estimated_minutes":10},
     {"mission_id":"WORK-SALARY-001","goal":"work","level":2,"title":{"my":"လစာ ထုတ်ခြင်း — ဘဏ်မှာ ပိုက်ဆံထုတ်ခြင်း","ko":"급여 찾기 — 은행에서 돈 출금","en":"Withdrawing Salary — At the Bank"},"estimated_minutes":10},
     {"mission_id":"BRIDGE-PARTTIME-001","goal":"common","level":2,"title":{"my":"အချိန်ပိုင်း အလုပ်စတင်ရှာခြင်း","ko":"아르바이트 시작 — 구직 문의","en":"Starting a Part-Time Job — Job Inquiry"},"estimated_minutes":10},
-    {"mission_id":"BRIDGE-MOVE-001","goal":"common","level":2,"title":{"my":"အခန်းအသစ်သို့ ပြောင်းရွှေ့ခြင်း","ko":"새 집으로 이사 — 이사 문의","en":"Moving to a New Place — Moving Inquiry"},"estimated_minutes":10}
+    {"mission_id":"BRIDGE-MOVE-001","goal":"common","level":2,"title":{"my":"အခန်းအသစ်သို့ ပြောင်းရွှေ့ခြင်း","ko":"새 집으로 이사 — 이사 문의","en":"Moving to a New Place — Moving Inquiry"},"estimated_minutes":10},
+    {"mission_id":"EXAM-TOPIK-001","goal":"study","level":2,"title":{"my":"TOPIK I ဖတ်ရှုခြင်းနှင့် သဒ္ဒါ — နေ့စဉ်ဘဝ","ko":"TOPIK I 읽기·문법 — 일상생활","en":"TOPIK I Reading & Grammar — Daily Life"},"estimated_minutes":12},
+    {"mission_id":"EXAM-PREP-001","goal":"work","level":2,"title":{"my":"EPS-TOPIK နားထောင်မှု လေ့ကျင့်ခန်း — အလုပ်ခွင် ညွှန်ကြားချက်များ","ko":"EPS-TOPIK 듣기 연습 — 작업장 지시","en":"EPS-TOPIK Listening Practice — Workplace Instructions"},"estimated_minutes":10}
   ]
 }

@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "LEVEL0-PHRASE-003",
+  "goal": "common",
+  "level": 0,
+  "category": "daily",
+  "industry": null,
+  "tags": ["level-0", "self-introduction", "phrases", "foundation", "beginner"],
+  "title": {"my":"ကိုရီးယား အခြေခံ — မိမိကိုယ်ကို မိတ်ဆက်ခြင်း","ko":"자기소개 (Self-Introduction)","en":"Self-Introduction"},
+  "objective": {"my":"ကိုရီးယားလို မိမိကိုယ်ကို မိတ်ဆက်တဲ့ အခြေခံ စကားစု ၂ ခု — 저는 ___ 입니다 (ကျွန်တော်/ကျွန်မ ___ ပါ) နဲ့ 만나서 반가워요 (တွေ့ရတာ ဝမ်းသာပါတယ်) — ကို Romanization (jeoneun ___ imnida, mannaseo bangawoyo) ကို အဓိက အကိုးအကားအဖြစ်ထားပြီး ပြောနိုင်မယ်။ Burmese မြန်မာ အသံ ခန့်မှန်းချက်များကို အကိုးအကား အဖြစ်သာ ထားပါ။","ko":"한국어로 자기소개 기본 표현 2개(저는 ___ 입니다, 만나서 반가워요)를 로마자 표기를 기준으로 익히고 말할 수 있다.","en":"Learn and say 2 basic Korean self-introduction phrases (jeoneun ___ imnida, mannaseo bangawoyo) using Romanization as the primary guide."},
+  "prerequisites": [],
+  "skills": ["listening","speaking","politeness"],
+  "estimated_minutes": 7,
+  "difficulty": "intro",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "dialogue": {
+    "setting": {"my":"ကိုရီးယားဘာသာ စာသင်ခန်း — ပထမဆုံးနေ့","ko":"한국어 교실 — 첫날","en":"Korean classroom — first day"},
+    "speakers": [
+      {"id":"teacher","role":"teacher","gender":"female","voice_id":"ko_f_01"},
+      {"id":"learner","role":"learner","gender":"any","voice_id":null}
+    ],
+    "lines": [
+      {"line_id":"L1","speaker":"teacher","ko":"안녕하세요. 이름이 뭐예요?","rom":"annyeonghaseyo. ireumi mwoyeyo?","my":"မင်္ဂလာပါ။ နာမည် ဘယ်လိုခေါ်လဲ?","en":"Hello. What is your name?","audio":"AUD_L0P003_L1","note":""},
+      {"line_id":"L2","speaker":"learner","ko":"저는 민수입니다.","rom":"jeoneun minsu-imnida.","my":"ကျွန်တော် မင်းဆူ ပါ။","en":"I am Minsu.","audio":"AUD_L0P003_L2","note":""},
+      {"line_id":"L3","speaker":"teacher","ko":"만나서 반가워요.","rom":"mannaseo bangawoyo.","my":"တွေ့ရတာ ဝမ်းသာပါတယ်။","en":"Nice to meet you.","audio":"AUD_L0P003_L3","note":""},
+      {"line_id":"L4","speaker":"learner","ko":"저도 반가워요.","rom":"jeodo bangawoyo.","my":"ကျွန်တော်လည်း ဝမ်းသာပါတယ်။","en":"Nice to meet you too.","audio":"AUD_L0P003_L4","note":""}
+    ]
+  },
+  "activities": [
+    {
+      "activity_id": "A1",
+      "type": "listen_choose",
+      "prompt": {"my":"Roman 'jeoneun minsu-imnida' က ဘာအဓိပ္ပာယ်လဲ?","ko":"로마자 'jeoneun minsu-imnida'는 무슨 뜻인가요?","en":"What does Roman 'jeoneun minsu-imnida' mean?"},
+      "audio_ref": "",
+      "options": [
+        {"id":"O1","ko":"저는 민수입니다","my":"저는 민수입니다 — Roman: jeoneun minsu-imnida (ကျွန်တော် မင်းဆူ ပါ)","correct": true},
+        {"id":"O2","ko":"이름이 뭐예요?","my":"이름이 뭐예요? — Roman: ireumi mwoyeyo? (နာမည်ဘယ်လိုခေါ်လဲ)","correct": false},
+        {"id":"O3","ko":"만나서 반가워요","my":"만나서 반가워요 — Roman: mannaseo bangawoyo (တွေ့ရတာဝမ်းသာ)","correct": false},
+        {"id":"O4","ko":"감사합니다","my":"감사합니다 — Roman: gamsahamnida (ကျေးဇူးတင်ပါတယ်)","correct": false}
+      ],
+      "explanation_ref": "F1"
+    },
+    {
+      "activity_id": "A2",
+      "type": "listen_choose",
+      "prompt": {"my":"Roman 'mannaseo bangawoyo' က ဘာအဓိပ္ပာယ်လဲ?","ko":"로마자 'mannaseo bangawoyo'는 무슨 뜻인가요?","en":"What does Roman 'mannaseo bangawoyo' mean?"},
+      "audio_ref": "",
+      "options": [
+        {"id":"O1","ko":"만나서 반가워요","my":"만나서 반가워요 — Roman: mannaseo bangawoyo (တွေ့ရတာဝမ်းသာ)","correct": true},
+        {"id":"O2","ko":"저는 민수입니다","my":"저는 민수입니다 — Roman: jeoneun minsu-imnida (ကျွန်တော် မင်းဆူပါ)","correct": false},
+        {"id":"O3","ko":"안녕히 가세요","my":"안녕히 가세요 — Roman: annyeonghi gaseyo (ကောင်းကောင်းသွားပါ)","correct": false},
+        {"id":"O4","ko":"네","my":"네 — Roman: ne (ဟုတ်ကဲ့)","correct": false}
+      ],
+      "explanation_ref": "F2"
+    },
+    {
+      "activity_id": "A3",
+      "type": "type_answer",
+      "prompt": {"my":"Roman 'mannaseo bangawoyo' ကို ကိုရီးယားလို ရိုက်ထည့်ပါ။","ko":"로마자 'mannaseo bangawoyo'를 한글로 입력하세요.","en":"Type the Korean for Roman 'mannaseo bangawoyo'."},
+      "answer": "만나서 반가워요",
+      "accept_alt": ["만나서 반가워요 ", "만나서반가워요"],
+      "explanation_ref": "F3"
+    },
+    {
+      "activity_id": "A4",
+      "type": "speak",
+      "prompt": {"my":"'저는 민수입니다' ကို ကျယ်ကျယ် ပြောပါ။ (Roman: jeoneun minsu-imnida)","ko":"'저는 민수입니다'를 크게 말하세요. (로마자: jeoneun minsu-imnida)","en":"Say '저는 민수입니다' out loud. (Roman: jeoneun minsu-imnida)"},
+      "target_ko": "저는 민수입니다",
+      "audio_ref": "AUD_L0P003_A4",
+      "explanation_ref": "F4"
+    }
+  ],
+  "feedback": {
+    "F1": {
+      "why_wrong": {"my":"Roman 'jeoneun minsu-imnida' က '저는 민수입니다' (ကျွန်တော် မင်းဆူ ပါ)။","ko":"Roman 'jeoneun minsu-imnida'는 '저는 민수입니다'(저는 민수입니다)입니다.","en":"Roman 'jeoneun minsu-imnida' is '저는 민수입니다' (I am Minsu)."},
+      "grammar": {"point":"저는 ___ 입니다","explain_my":"'저는' = ကျွန်တော်/ကျွန်မ (ယဉ်ကျေးတဲ့ အသုံး)။ '입니다' = ဖြစ်ပါတယ် (ယဉ်ကျေးတဲ့ အဆုံးသတ်)။ '___' နေရာမှာ မိမိနာမည် ထည့်ပါ။"},
+      "culture": "'저는 ___입니다'는 처음 만났을 때 자신을 정중하게 소개하는 기본 표현입니다. '___' 자리에 자신의 이름을 넣어 사용합니다.",
+      "retry_phrase": "저는 민수입니다"
+    },
+    "F2": {
+      "why_wrong": {"my":"Roman 'mannaseo bangawoyo' က '만나서 반가워요' (တွေ့ရတာ ဝမ်းသာပါတယ်)။","ko":"Roman 'mannaseo bangawoyo'는 '만나서 반가워요'(만나서 반가워요)입니다.","en":"Roman 'mannaseo bangawoyo' is '만나서 반가워요' (nice to meet you)."},
+      "retry_phrase": "만나서 반가워요"
+    },
+    "F3": {
+      "why_wrong": {"my":"Roman 'mannaseo bangawoyo' က '만나서 반가워요'။","ko":"Roman 'mannaseo bangawoyo'는 '만나서 반가워요'입니다.","en":"Roman 'mannaseo bangawoyo' is '만나서 반가워요'."},
+      "retry_phrase": "만나서 반가워요"
+    },
+    "F4": {
+      "why_wrong": {"my":"'저는 민수입니다' — Roman: jeoneun minsu-imnida။ ကျယ်ကျယ် ပြောပါ။","ko":"'저는 민수입니다' — 로마자: jeoneun minsu-imnida. 크게 말하세요.","en":"'저는 민수입니다' — Roman: jeoneun minsu-imnida. Say it clearly."},
+      "retry_phrase": "저는 민수입니다"
+    }
+  },
+  "cultural_note": {
+    "title": {"my":"ကိုရီးယား မိတ်ဆက်ယဉ်ကျေးမှု","ko":"한국식 자기소개","en":"Korean Self-Introduction Style"},
+    "body": {"my":"ကိုရီးယားမှာ ပထမဆုံး တွေ့တဲ့အခါ — မိမိကိုယ်ကို '저는 ___입니다' (ကျွန်တော်/ကျွန်မ ___ ပါ) လို့ ယဉ်ကျေးစွာ မိတ်ဆက်တာ အသုံးများတယ်။ '___' နေရာမှာ မိမိနာမည် ထည့်ပါ။ ပြီးရင် '만나서 반가워요' (တွေ့ရတာ ဝမ်းသာပါတယ်) လို့ နှုတ်ဆက်တာ ယဉ်ကျေးတယ်။ ဒီအသုံးအနှုန်းတွေက ပထမဆုံး တွေ့ဆုံမှုနဲ့ ယဉ်ကျေးတဲ့ အခြေအနေတွေမှာ အသုံးဝင်ပါတယ်။","ko":"한국에서는 처음 만났을 때 '저는 ___입니다'(저는 ___입니다)로 자신을 정중하게 소개합니다. '___' 자리에 자신의 이름을 넣어 사용합니다. 이어서 '만나서 반가워요'로 인사하는 것이 자연스럽습니다. 이 표현들은 첫 만남이나 정중한 상황에서 유용합니다.","en":"In Korea, when meeting for the first time, a common polite way to introduce yourself is '저는 ___입니다' (I am ___ / My name is ___). Replace '___' with your own name. Then follow with '만나서 반가워요' (nice to meet you). These expressions are useful in first meetings and polite situations."},
+    "sensitive": false
+  },
+  "audio": {
+    "base_path": "audio/LEVEL0-PHRASE-003/",
+    "files": [
+      {"id":"AUD_L0P003_L1","normal":"l1-normal.mp3","slow":"l1-slow.mp3","duration":2.5},
+      {"id":"AUD_L0P003_L2","normal":"l2-normal.mp3","slow":"l2-slow.mp3","duration":2.0},
+      {"id":"AUD_L0P003_L3","normal":"l3-normal.mp3","slow":"l3-slow.mp3","duration":2.0},
+      {"id":"AUD_L0P003_L4","normal":"l4-normal.mp3","slow":"l4-slow.mp3","duration":2.0},
+      {"id":"AUD_L0P003_A4","normal":"a4-normal.mp3","slow":"a4-slow.mp3","duration":2.5}
+    ],
+    "spec": {"sample_rate":44100,"channels":1,"format":"mp3","bitrate":128}
+  },
+  "srs": {
+    "enabled": true,
+    "cards": [
+      {"card_id":"C1","front":{"my":"Roman: jeoneun ___ imnida","ko":"Roman: jeoneun ___ imnida","en":"Roman: jeoneun ___ imnida"},"back":{"my":"저는 ___ 입니다","ko":"저는 ___ 입니다","en":"저는 ___ 입니다 (I am ___)"},"audio_ref":"AUD_L0P003_L2","ease":2.5,"interval":0},
+      {"card_id":"C2","front":{"my":"Roman: mannaseo bangawoyo","ko":"Roman: mannaseo bangawoyo","en":"Roman: mannaseo bangawoyo"},"back":{"my":"만나서 반가워요","ko":"만나서 반가워요","en":"만나서 반가워요 (nice to meet you)"},"audio_ref":"AUD_L0P003_L3","ease":2.5,"interval":0},
+      {"card_id":"C3","front":{"my":"Roman: ireumi mwoyeyo?","ko":"Roman: ireumi mwoyeyo?","en":"Roman: ireumi mwoyeyo?"},"back":{"my":"이름이 뭐예요?","ko":"이름이 뭐예요?","en":"이름이 뭐예요? (what is your name?)"},"audio_ref":"AUD_L0P003_L1","ease":2.5,"interval":0}
+    ]
+  },
+  "assessment": {
+    "type": "mission",
+    "pass_threshold": 70,
+    "weights": {"accuracy":60,"completion":40},
+    "exam_mapping": {"topik":null,"eps_topik":null}
+  }
+}

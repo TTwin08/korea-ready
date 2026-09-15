@@ -10,8 +10,8 @@
     {"mission_id":"LEVEL0-PHRASE-001","goal":"common","level":0,"title":{"my":"ကိုရီးယား အခြေခံ နှုတ်ဆက်စကား","ko":"기본 인사말","en":"Basic Greetings"},"estimated_minutes":6},
     {"mission_id":"LEVEL0-PHRASE-002","goal":"common","level":0,"title":{"my":"ကိုရီးယား အခြေခံ — ဟုတ်/မဟုတ်","ko":"네 / 아니요","en":"Yes / No"},"estimated_minutes":6},
     {"mission_id":"LEVEL0-PHRASE-003","goal":"common","level":0,"title":{"my":"ကိုရီးယား အခြေခံ — မိမိကိုယ်ကို မိတ်ဆက်ခြင်း","ko":"자기소개","en":"Self-Introduction"},"estimated_minutes":7},
-    {"mission_id":"LEVEL0-GRAMMAR-001","goal":"common","level":0,"title":{"my":"အခြေခံသဒ္ဒါ -이다 (ဖြစ်ခြင်း)","ko":"기초 문법 -이다","en":"Basic Grammar -이다"},"estimated_minutes":7},
-    {"mission_id":"LEVEL0-POLITE-001","goal":"common","level":0,"title":{"my":"ယဉ်ကျေးစကား vs ရင်းနှီးစကား","ko":"존댓말 vs 반말","en":"Polite vs Casual Speech"},"estimated_minutes":7},
+    {"mission_id":"LEVEL0-GRAMMAR-001","goal":"common","level":0,"title":{"my":"ကိုရီးယား အခြေခံသဒ္ဒါ — -이다 (ဖြစ်ခြင်း)","ko":"기초 문법 -이다 (Copula)","en":"Basic Grammar -이다"},"estimated_minutes":7},
+    {"mission_id":"LEVEL0-POLITE-001","goal":"common","level":0,"title":{"my":"ကိုရီးယား အခြေခံ — ယဉ်ကျေးစကား vs ရင်းနှီးစကား","ko":"존댓말 vs 반말 (Polite vs Casual)","en":"Polite vs Casual Speech"},"estimated_minutes":7},
     {"mission_id":"COMMON-SURV-007","goal":"common","level":1,"title":{"my":"စားသောက်ဆိုင်တွင် အစားအစာ မှာယူခြင်း","ko":"식당에서 음식 주문하기","en":"Ordering Food at a Restaurant"},"estimated_minutes":8},
     {"mission_id":"COMMON-SAFETY-001","goal":"common","level":2,"title":{"my":"စက်ရုံ ဘေးအန္တရာယ်","ko":"공장 안전","en":"Factory Safety"},"estimated_minutes":8},
     {"mission_id":"COMMON-HEALTH-001","goal":"common","level":2,"title":{"my":"ဆေးခန်းသွားပြခြင်း","ko":"병원 방문","en":"Visiting a Clinic"},"estimated_minutes":10},
@@ -27,6 +27,9 @@
     {"mission_id":"WORK-RESTAURANT-001","goal":"work","level":2,"title":{"my":"စားသောက်ဆိုင် မီးဖိုချောင်","ko":"식당 주방 첫날","en":"First Day at Restaurant"},"estimated_minutes":10},
     {"mission_id":"WORK-FISHERY-001","goal":"work","level":2,"title":{"my":"ငါးဖမ်းလှေ ပထမဆုံးနေ့","ko":"어선 첫날","en":"First Day on Fishing Boat"},"estimated_minutes":10},
     {"mission_id":"WORK-CLEANING-001","goal":"work","level":2,"title":{"my":"သန့်ရှင်းရေး ပထမဆုံးနေ့","ko":"청소 첫날","en":"First Day as Cleaning Staff"},"estimated_minutes":10},
-    {"mission_id":"EXAM-INTERVIEW-001","goal":"work","level":2,"title":{"my":"EPS-TOPIK အင်တာဗျူး","ko":"EPS-TOPIK 면접","en":"EPS-TOPIK Interview"},"estimated_minutes":12}
+    {"mission_id":"EXAM-INTERVIEW-001","goal":"work","level":2,"title":{"my":"EPS-TOPIK အင်တာဗျူး","ko":"EPS-TOPIK 면접","en":"EPS-TOPIK Interview"},"estimated_minutes":12},
+    {"mission_id":"STUDY-UNIVERSITY-001","goal":"study","level":2,"title":{"my":"တက္ကသိုလ် ပထမဆုံးနေ့ — ရုံးခန်းရှာခြင်း","ko":"대학교 첫날 — 행정실 찾기","en":"First Day at University — Finding the Admin Office"},"estimated_minutes":10},
+    {"mission_id":"STUDY-CLASSROOM-001","goal":"study","level":2,"title":{"my":"စာသင်ခန်းထဲမှာ — နားလည်မှုစစ်ဆေးခြင်း","ko":"교실에서 — 이해 확인하기","en":"In the Classroom — Checking Comprehension"},"estimated_minutes":10},
+    {"mission_id":"STUDY-FRIEND-001","goal":"study","level":2,"title":{"my":"ကျောင်းဝင်းထဲမှာ သူငယ်ချင်းဖွဲ့ခြင်း","ko":"캠퍼스에서 친구 사귀기","en":"Making Friends on Campus"},"estimated_minutes":10}
   ]
 }

@@ -1,1 +1,97 @@
-
+{
+  "schema_version": "1.0",
+  "mission_id": "BRIDGE-PARTTIME-001",
+  "goal": "bridge",
+  "level": 2,
+  "category": "daily",
+  "industry": null,
+  "tags": ["bridge", "part-time", "job-hunting", "beginner"],
+  "title": {"my":"အချိန်ပိုင်း အလုပ်စတင်ရှာခြင်း","ko":"아르바이트 시작 — 구직 문의","en":"Starting a Part-Time Job — Job Inquiry"},
+  "objective": {"my":"ကိုရီးယားမှာ အချိန်ပိုင်း (알바) အလုပ်စတင်ရှာတဲ့အခါ ဆိုင်ရှင်ကို မေးမြန်းတဲ့ အခြေခံ ကိုရီးယားစကားစုတွေကို သင်ယူပါမယ်။ Romanization ကို အဓိက အကိုးအကားအဖြစ်ထားပါ။","ko":"한국에서 아르바이트를 구할 때 사장님께 문의하는 기본 표현을 로마자 표기 기준으로 익힌다.","en":"Learn basic Korean phrases for inquiring about a part-time job in Korea."},
+  "prerequisites": [],
+  "skills": ["listening","speaking","job-hunting"],
+  "estimated_minutes": 10,
+  "difficulty": "intro",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "dialogue": {
+    "setting": {"my":"ဖုန်း ဒါမှမဟုတ် ဆိုင်ရှေ့ — အလုပ်မေးမြန်းနေတဲ့ အခြေအနေ","ko":"전화 또는 가게 앞 — 구직 문의 상황","en":"Phone or in front of a store — job inquiry"},
+    "speakers": [
+      {"id":"clerk","role":"manager","gender":"male","voice_id":"ko_m_01"},
+      {"id":"learner","role":"learner","gender":"any","voice_id":null}
+    ],
+    "lines": [
+      {"line_id":"L1","speaker":"learner","ko":"안녕하세요, 아르바이트 자리가 있나요?","rom":"annyeonghaseyo, areubaiteu jari-ga innayo?","my":"မင်္ဂလာပါ၊ အချိန်ပိုင်း အလုပ်နေရာ ရှိလား?","en":"Hello, is there a part-time job available?","audio":"AUD_BP001_L1","note":"'아르바이트' = အချိန်ပိုင်းအလုပ် / part-time"},
+      {"line_id":"L2","speaker":"clerk","ko":"네, 아직 한 자리 있어요. 언제부터 일할 수 있어요?","rom":"ne, ajik han jari isseoyo. eonje-buteo ilhal su isseoyo?","my":"ဟုတ်တယ်၊ နေရာတစ်ခု ကျန်သေးတယ်။ ဘယ်တော့ကနေ စလုပ်နိုင်လဲ?","en":"Yes, one spot is still open. When can you start working?","audio":"AUD_BP001_L2","note":"'언제부터' = ဘယ်တော့ကနေ / from when"},
+      {"line_id":"L3","speaker":"learner","ko":"내일부터 가능합니다. 시간당 얼마예요?","rom":"naeil-buteo ganeunghamnida. sigan-dang eolmayeyo?","my":"မနက်ဖြန်ကနေ စနိုင်ပါတယ်။ တစ်နာရီ ဘယ်လောက်လဲ?","en":"I can start tomorrow. What's the hourly pay?","audio":"AUD_BP001_L3","note":"'시간당' = တစ်နာရီ / per hour"},
+      {"line_id":"L4","speaker":"clerk","ko":"시간당 10,000원이에요. 내일 9시에 오세요.","rom":"sigan-dang man-won-ieyo. naeil ahop-si-e oseyo.","my":"တစ်နာရီ ၁၀,၀၀၀ ဝမ်ပါ။ မနက်ဖြန် ၉ နာရီမှာ လာပါ။","en":"10,000 won per hour. Come at 9 tomorrow.","audio":"AUD_BP001_L4","note":""}
+    ]
+  },
+  "activities": [
+    {
+      "activity_id": "A1",
+      "type": "listen_choose",
+      "prompt": {"my":"Roman 'areubaiteu jari-ga innayo?' က ဘာအဓိပ္ပာယ်လဲ?","ko":"로마자 'areubaiteu jari-ga innayo?'는 무슨 뜻인가요?","en":"What does Roman 'areubaiteu jari-ga innayo?' mean?"},
+      "audio_ref": "AUD_BP001_L1",
+      "options": [
+        {"id":"O1","ko":"아르바이트 자리가 있나요?","my":"아르바이트 자리가 있나요? — Roman: areubaiteu jari-ga innayo? (အချိန်ပိုင်းအလုပ် နေရာရှိလား?)","correct": true},
+        {"id":"O2","ko":"시간당 얼마예요?","my":"시간당 얼마예요? — Roman: sigan-dang eolmayeyo? (တစ်နာရီ ဘယ်လောက်လဲ?)","correct": false},
+        {"id":"O3","ko":"언제부터 일할 수 있어요?","my":"언제부터 일할 수 있어요? — Roman: eonje-buteo ilhal su isseoyo? (ဘယ်တော့ကနေ စလုပ်နိုင်လဲ?)","correct": false},
+        {"id":"O4","ko":"감사합니다","my":"감사합니다 — Roman: gamsahamnida (ကျေးဇူးတင်ပါတယ်)","correct": false}
+      ],
+      "explanation_ref": "F1"
+    },
+    {
+      "activity_id": "A2",
+      "type": "type_answer",
+      "prompt": {"my":"Roman 'areubaiteu' ကို ကိုရီးယားလို ရိုက်ထည့်ပါ။ (အဓိပ္ပာယ်: အချိန်ပိုင်းအလုပ်)","ko":"로마자 'areubaiteu'를 한글로 입력하세요.","en":"Type the Korean for Roman 'areubaiteu'."},
+      "answer": "아르바이트",
+      "accept_alt": ["아르바이트 ", "알바"],
+      "explanation_ref": "F2"
+    },
+    {
+      "activity_id": "A3",
+      "type": "speak",
+      "prompt": {"my":"'아르바이트 자리가 있나요?' ကို ကျယ်ကျယ် ပြောပါ။ (Roman: areubaiteu jari-ga innayo?)","ko":"'아르바이트 자리가 있나요?'를 크게 말하세요. (로마자: areubaiteu jari-ga innayo?)","en":"Say '아르바이트 자리가 있나요?' out loud."},
+      "target_ko": "아르바이트 자리가 있나요?",
+      "target_romanization": "Areubaiteu jari-ga innayo?",
+      "audio_ref": "AUD_BP001_L1",
+      "explanation_ref": "F3"
+    }
+  ],
+  "feedback": {
+    "F1": {
+      "why_wrong": {"my":"Roman 'areubaiteu jari-ga innayo?' က '아르바이트 자리가 있나요?' (အချိန်ပိုင်းအလုပ် နေရာရှိလား?)။","ko":"Roman 'areubaiteu jari-ga innayo?'는 '아르바이트 자리가 있나요?'입니다.","en":"Roman 'areubaiteu jari-ga innayo?' is '아르바이트 자리가 있나요?' (Is there a part-time job?)."},
+      "grammar": {"point":"___이/가 있나요?","explain_my":"'___이/가 있나요?' = ___ရှိလား? (ယဉ်ကျေးတဲ့ မေးခွန်းပုံစံ)။"},
+      "culture": "한국에서는 아르바이트를 '알바'라고 줄여 부르기도 합니다. 구직 시 사장님께 정중하게 문의하는 것이 좋습니다.",
+      "retry_phrase": "아르바이트 자리가 있나요?"
+    },
+    "F2": {
+      "why_wrong": {"my":"Roman 'areubaiteu' က '아르바이트' (အချိန်ပိုင်းအလုပ်)။ '알바' လို့လည်း ခေါ်တယ်။","ko":"Roman 'areubaiteu'는 '아르바이트'입니다. 줄여서 '알바'라고도 합니다.","en":"Roman 'areubaiteu' is '아르바이트' (part-time job). Also shortened to '알바'."},
+      "retry_phrase": "아르바이트"
+    },
+    "F3": {
+      "why_wrong": {"my":"'아르바이트 자리가 있나요?' — Roman: areubaiteu jari-ga innayo?။ ကျယ်ကျယ် ပြောပါ။","ko":"'아르바이트 자리가 있나요?' — 로마자: areubaiteu jari-ga innayo? 크게 말하세요.","en":"'아르바이트 자리가 있나요?' — Roman: areubaiteu jari-ga innayo? Say it clearly."},
+      "retry_phrase": "아르바이트 자리가 있나요?"
+    }
+  },
+  "cultural_note": {
+    "title": {"my":"ကိုရီးယား အချိန်ပိုင်းအလုပ် ယဉ်ကျေးမှု","ko":"한국 아르바이트 문화","en":"Korean Part-Time Job Culture"},
+    "body": {
+      "my": "ကိုရီးယားမှာ အချိန်ပိုင်းအလုပ် (아르바이트/알바) ကို ကျောင်းသားတွေ၊ နိုင်ငံခြားသားတွေ အများကြီး လုပ်လေ့ ရှိပါတယ်။ ကော်ဖီဆိုင်၊ စားသောက်ဆိုင်၊ စတိုးဆိုင် စတာတွေမှာ အလုပ်ရှာလေ့ ရှိပါတယ်။ လုပ်ခလစာက တစ်နာရီ အနည်းဆုံး သတ်မှတ်ချက် (최저임금) ထက် မနည်းရပါ။ နိုင်ငံခြားသားတွေအနေနဲ့ ဗီဇာအမျိုးအစားအပေါ်မူတည်ပြီး အလုပ်လုပ်ခွင့် ကန့်သတ်ချက်တွေ ရှိနိုင်ပါတယ်။",
+      "ko": "한국에서는 아르바이트(알바)를 학생들이나 외국인들이 많이 합니다. 카페, 식당, 편의점 등에서 구직하는 경우가 많습니다. 시급은 최저임금 이상이어야 합니다. 외국인의 경우 비자 종류에 따라 취업 가능 여부가 다를 수 있습니다.",
+      "en": "In Korea, part-time jobs (아르바이트/알바) are common among students and foreigners. Cafes, restaurants, and convenience stores are popular. Hourly wages must be at or above the minimum wage. For foreigners, visa type may affect work eligibility."
+    },
+    "sensitive": false
+  },
+  "audio": {"tts_lang": "ko-KR", "files": []},
+  "srs": {
+    "enabled": true,
+    "cards": [
+      {"card_id":"C1","front":{"my":"Roman: areubaiteu","ko":"Roman: areubaiteu","en":"Roman: areubaiteu"},"back":{"my":"아르바이트 (အချိန်ပိုင်းအလုပ်)","ko":"아르바이트 (아르바이트)","en":"아르바이트 (part-time job)"},"audio_ref":"AUD_BP001_L1","ease":2.5,"interval":0},
+      {"card_id":"C2","front":{"my":"Roman: sigan-dang","ko":"Roman: sigan-dang","en":"Roman: sigan-dang"},"back":{"my":"시간당 (တစ်နာရီ)","ko":"시간당 (시간당)","en":"시간당 (per hour)"},"audio_ref":"AUD_BP001_L3","ease":2.5,"interval":0}
+    ]
+  },
+  "assessment": {"type":"mission","pass_threshold":70,"weights":{"accuracy":60,"completion":40},"exam_mapping":{"topik":null,"eps_topik":null}}
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "EXAM-TOPIK-001",
+  "goal": "study",
+  "level": 2,
+  "category": "exam",
+  "industry": null,
+  "tags": ["exam", "topik-i", "reading", "grammar", "beginner"],
+  "title": {"my":"TOPIK I ဖတ်ရှုခြင်းနှင့် သဒ္ဒါ — နေ့စဉ်ဘဝ","ko":"TOPIK I 읽기·문법 — 일상생활","en":"TOPIK I Reading & Grammar — Daily Life"},
+  "objective": {"my":"TOPIK I အဆင့် ၂ စာမေးပွဲအတွက် နေ့စဉ်ဘဝ အသုံးအနှုန်းများနှင့် သဒ္ဒါ (-(으)ㄹ 수 있다, -아/어야 하다) ကို ဖတ်ရှုလေ့လာပြီး မေးခွန်းများကို မှန်ကန်စွာ ဖြေဆိုနိုင်ရန် လေ့ကျင့်မည်။ Romanization ကို အဓိက အကိုးအကားအဖြစ်ထားပါ။","ko":"TOPIK I 2급 시험 대비 일상생활 문맥에서의 읽기 및 주요 문법(-(으)ㄹ 수 있다, -아/어야 하다 등)을 연습합니다.","en":"Practice reading comprehension and key grammar points for the TOPIK I Level 2 exam."},
+  "prerequisites": [],
+  "skills": ["reading", "grammar"],
+  "estimated_minutes": 12,
+  "difficulty": "intermediate",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "dialogue": {
+    "setting": {"my":"TOPIK I စာမေးပွဲ ပြင်ဆင်ရေး — ဖတ်ရှုခြင်းနှင့် သဒ္ဒါ လေ့လာမှု","ko":"TOPIK I 시험 대비 읽기 및 문법 학습","en":"TOPIK I Exam Preparation — Reading and Grammar"},
+    "speakers": [
+      {"id":"teacher","role":"teacher","gender":"female","voice_id":"ko_f_01"},
+      {"id":"student","role":"student","gender":"male","voice_id":"ko_m_01"}
+    ],
+    "lines": [
+      {"line_id":"L1","speaker":"teacher","ko":"주말에 친구하고 같이 한국어 책을 읽으려고 합니다.","rom":"jumare chingu-hago gachi hangugeo chaek-eul ilgeuryeogo hamnida.","my":"စနေ၊ တနင်္ဂနွေမှာ သူငယ်ချင်းနဲ့အတူ ကိုရီးယားစာအုပ် ဖတ်ဖို့ ရည်ရွယ်ထားပါတယ်။","en":"I intend to read a Korean book with my friend on the weekend.","audio":"AUD_TOP001_L1","note":"-(으)려고 하다 = ရည်ရွယ်ချက်"},
+      {"line_id":"L2","speaker":"student","ko":"도서관이 일요일에도 문을 열어요? 가기 전에 확인해야 해요.","rom":"doseogwan-i iryoil-edo mun-eul yeoreoyo? gagi jeone hwaginhaeya haeyo.","my":"စာကြည့်တိုက်က တနင်္ဂနွေနေ့မှာလည်း ဖွင့်လား? မသွားမီ အတည်ပြုရပါမယ်။","en":"Is the library open on Sundays too? We must check before going.","audio":"AUD_TOP001_L2","note":"-아/어야 하다 = လုပ်ရမည်"},
+      {"line_id":"L3","speaker":"teacher","ko":"네, 인터넷으로 개관 시간을 검색할 수 있어요.","rom":"ne, inteones-euro gaegwan sigan-eul geomsaekhal su isseoyo.","my":"ဟုတ်ကဲ့၊ အင်တာနက်ကနေ ဖွင့်ချိန်ကို ရှာဖွေနိုင်ပါတယ်။","en":"Yes, you can search the opening hours online.","audio":"AUD_TOP001_L3","note":"-(으)ㄹ 수 있다 = လုပ်နိုင်သည်"}
+    ]
+  },
+  "activities": [
+    {
+      "activity_id": "A1",
+      "type": "type_answer",
+      "prompt": {"my":"ကွက်လပ်တွင် ဝင်ရမည့် မှန်ကန်သော သဒ္ဒါပုံစံကို ရေးပါ: '도서관에 가기 전에 개관 시간을 (확인하다 → _______).'","ko":"빈칸에 알맞은 표현을 쓰세요: '도서관에 가기 전에 개관 시간을 (확인하다 → _______).'","en":"Fill in the blank: '도서관에 가기 전에 개관 시간을 (확인하다 → _______).'"},
+      "answer": "확인해야 해요",
+      "accept_alt": ["확인해야 합니다", "확인해야해요", "확인하여야 합니다"],
+      "explanation_ref": "F1"
+    },
+    {
+      "activity_id": "A2",
+      "type": "listen_choose",
+      "prompt": {"my":"အသံကို နားထောင်ပြီး မေးခွန်းအတွက် မှန်ကန်သော အဖြေကို ရွေးပါ။","ko":"다음 대화를 듣고 알맞은 답을 골라보세요.","en":"Listen and choose the correct answer."},
+      "audio_ref": "AUD_TOP001_L3",
+      "options": [
+        {"id":"O1","ko":"인터넷으로 시간을 검색할 수 있습니다.","my":"인터넷으로 시간을 검색할 수 있습니다 — Roman: inteones-euro sigan-eul geomsaekhal su itseumnida (အင်တာနက်ဖြင့် အချိန်ရှာနိုင်တယ်)","correct": true},
+        {"id":"O2","ko":"일요일에는 도서관이 문을 닫습니다.","my":"일요일에는 도서관이 문을 닫습니다 — Roman: iryoil-eneun doseogwan-i mun-eul dadseumnida (တနင်္ဂနွေမှာ စာကြည့်တိုက် ပိတ်တယ်)","correct": false},
+        {"id":"O3","ko":"친구를 만나지 않을 것입니다.","my":"친구를 만나지 않을 것입니다 — Roman: chingu-reul mannaji aneul geosimnida (သူငယ်ချင်းနဲ့ မတွေ့ဘူး)","correct": false},
+        {"id":"O4","ko":"책을 사러 서점에 갑니다.","my":"책을 사러 서점에 갑니다 — Roman: chaek-eul sareo seojeom-e gamnida (စာအုပ်ဝယ်ရန် စာအုပ်ဆိုင်သွားတယ်)","correct": false}
+      ],
+      "explanation_ref": "F2"
+    },
+    {
+      "activity_id": "A3",
+      "type": "type_answer",
+      "prompt": {"my":"ကွက်လပ်တွင် ဝင်ရမည့် ကြိယာပုံစံ (-(으)ㄹ 수 있다) ကို ဖြည့်ပါ: '저는 한국 노래를 듣는 것을 좋아합니다. 그래서 가사를 보면서 노래를 (부르다 → _______).'","ko":"빈칸에 알맞은 가능 표현(-(으)ㄹ 수 있다)을 쓰세요: '저는 한국 노래를 듣는 것을 좋아합니다. 그래서 가사를 보면서 노래를 (부르다 → _______).'","en":"Complete the blank with the ability form: '저는 한국 노래를 듣는 것을 좋아합니다. 그래서 가사를 보면서 노래를 (부르다 → _______).'"},
+      "answer": "부를 수 있어요",
+      "accept_alt": ["부를 수 있습니다", "부를수 있어요", "부를수 있습니다"],
+      "explanation_ref": "F3"
+    }
+  ],
+  "feedback": {
+    "F1": {
+      "why_wrong": {"my":"တာဝန်ဝတ္တရားကို ဖော်ပြရန် '-아/어야 하다' ကို သုံးရပါသည်။ '확인하다' → '확인해야 해요'။","ko":"의무나 필요를 나타낼 때 '-아/어야 하다'를 사용합니다. '확인하다'는 '확인해야 해요'가 됩니다.","en":"Use '-아/어야 하다' to express obligation. '확인하다' becomes '확인해야 해요'."},
+      "grammar": {"point":"-아/어야 하다","explain_my":"'ပြုလုပ်ရမည်' ဟု တာဝန် သို့မဟုတ် မဖြစ်မနေ ပြုလုပ်ရမည့် ကိစ္စများကို ဖော်ပြရာတွင် သုံးပါသည်။"},
+      "culture": "한국에서는 도서관 등 공공시설 방문 전 개관 시간을 미리 확인하는 것이 일반적입니다.",
+      "retry_phrase": "가기 전에 확인해야 해요."
+    },
+    "F2": {
+      "why_wrong": {"my":"အသံတွင် '인터넷으로 개관 시간을 검색할 수 있어요' ဟု ပြောခဲ့သဖြင့် အင်တာနက်ဖြင့် ရှာဖွေနိုင်ခြင်းသည် မှန်ကန်သော အဖြေဖြစ်ပါသည်။","ko":"'인터넷으로 개관 시간을 검색할 수 있어요'라고 했으므로 인터넷으로 검색할 수 있다는 것이 정답입니다.","en":"The speaker said you can search opening hours online, making that option correct."},
+      "grammar": {"point":"-(으)ㄹ 수 있다","explain_my":"တစ်စုံတစ်ခုကို ပြုလုပ်နိုင်သော စွမ်းရည် သို့မဟုတ် ဖြစ်နိုင်ခြေကို ဖော်ပြသည့် သဒ္ဒါပုံစံ။"},
+      "culture": "TOPIK I 시험에서는 대화의 주요 내용과 세부 정보를 정확히 파악하는 능력을 평가합니다.",
+      "retry_phrase": "인터넷으로 검색할 수 있어요."
+    },
+    "F3": {
+      "why_wrong": {"my":"'부르다' (သီချင်းဆိုသည်) ကို '-(으)ㄹ 수 있다' (ပြုလုပ်နိုင်သည်) ဖြင့် ပေါင်းစပ်သောအခါ '부를 수 있어요' ဖြစ်လာပါသည်။","ko":"'부르다'에 '-ㄹ 수 있다'가 결합하면 '부를 수 있어요'가 됩니다.","en":"Combining '부르다' with '-ㄹ 수 있다' results in '부를 수 있어요'."},
+      "grammar": {"point":"-(으)ㄹ 수 있다","explain_my":"ကြိယာအနက်အလိုက် -ㄹ 수 있다 / -을 수 있다 ကို တွဲစပ်အသုံးပြုပါသည်။"},
+      "culture": "K-pop 가사를 보며 한국어를 연습하는 것은 TOPIK 학습자들에게 인기 있는 방법입니다.",
+      "retry_phrase": "노래를 부를 수 있어요."
+    }
+  },
+  "cultural_note": {
+    "title": {"my":"TOPIK I မေးခွန်းပုံစံများ","ko":"TOPIK I 기출문제 유형","en":"TOPIK I Question Patterns"},
+    "body": {
+      "my": "TOPIK I စာမေးပွဲတွင် နေ့စဉ်ဘဝ အကြောင်းအရာများ (ဝါသနာ၊ ရာသီဥတု၊ ဝယ်ယူခြင်း၊ ချိန်းဆိုခြင်း) ဆိုင်ရာ စာပိုဒ်များနှင့် မဖြစ်မနေ သိရှိရမည့် သဒ္ဒါများ (-아/어야 하다, -(으)ㄹ 수 있다, -고 있다) ကို အဓိကထား စစ်ဆေးပါသည်။ သဒ္ဒါပြောင်းလဲပုံများကို ပုံမှန် လေ့ကျင့်ပေးရန် လိုအပ်ပါသည်။",
+      "ko": "TOPIK I 시험에서는 일상생활 주제(취미, 날씨, 쇼핑, 약속 등)와 필수 문법(-아/어야 하다, -(으)ㄹ 수 있다 등)이 주로 출제됩니다. 문법 활용형을 꾸준히 연습하는 것이 좋습니다.",
+      "en": "TOPIK I mainly tests daily life topics (hobbies, weather, shopping, appointments) and essential grammar. Practicing conjugation consistently is recommended."
+    },
+    "sensitive": false
+  },
+  "audio": {"tts_lang": "ko-KR", "files": []},
+  "srs": {
+    "enabled": true,
+    "cards": [
+      {"card_id":"C1","front":{"my":"Roman: hwaginhaeya hada","ko":"Roman: hwaginhaeya hada","en":"Roman: hwaginhaeya hada"},"back":{"my":"확인해야 하다 (အတည်ပြုရမည်)","ko":"확인해야 하다 (확인해야 하다)","en":"확인해야 하다 (must confirm)"},"audio_ref":"AUD_TOP001_L2","ease":2.5,"interval":0},
+      {"card_id":"C2","front":{"my":"Roman: geomsaekhal su itda","ko":"Roman: geomsaekhal su itda","en":"Roman: geomsaekhal su itda"},"back":{"my":"검색할 수 있다 (ရှာဖွေနိုင်သည်)","ko":"검색할 수 있다 (검색할 수 있다)","en":"검색할 수 있다 (can search)"},"audio_ref":"AUD_TOP001_L3","ease":2.5,"interval":0},
+      {"card_id":"C3","front":{"my":"Roman: bureul su itda","ko":"Roman: bureul su itda","en":"Roman: bureul su itda"},"back":{"my":"부를 수 있다 (သီချင်းဆိုနိုင်သည်)","ko":"부를 수 있다 (부를 수 있다)","en":"부를 수 있다 (can sing)"},"audio_ref":"AUD_TOP001_L3","ease":2.5,"interval":0}
+    ]
+  },
+  "assessment": {"type":"mission","pass_threshold":70,"weights":{"accuracy":60,"completion":40},"exam_mapping":{"topik":"TOPIK_I_2","eps_topik":null}}
+}

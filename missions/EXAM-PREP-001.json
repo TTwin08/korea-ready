@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "EXAM-PREP-001",
+  "goal": "work",
+  "level": 2,
+  "category": "exam",
+  "industry": null,
+  "tags": ["exam", "eps-topik", "listening", "workplace", "beginner"],
+  "title": {"my":"EPS-TOPIK နားထောင်မှု လေ့ကျင့်ခန်း — အလုပ်ခွင် ညွှန်ကြားချက်များ","ko":"EPS-TOPIK 듣기 연습 — 작업장 지시","en":"EPS-TOPIK Listening Practice — Workplace Instructions"},
+  "objective": {"my":"EPS-TOPIK နားထောင်မှု စာမေးပွဲတွင် ပါဝင်လေ့ရှိသော အလုပ်ခွင် ညွှန်ကြားချက်များနှင့် အန္တရာယ် သတိပေးချက်များကို နားထောင်ပြီး မှန်ကန်သောအဖြေ ရွေးချယ်နိုင်ရန် လေ့ကျင့်မည်။ Romanization ကို အဓိက အကိုးအကားအဖြစ်ထားပါ။","ko":"EPS-TOPIK 듣기 시험에 자주 출제되는 작업장 지시 및 안전 경고를 듣고 정답을 찾는 연습을 합니다.","en":"Practice listening to workplace instructions and safety warnings in the EPS-TOPIK listening test."},
+  "prerequisites": [],
+  "skills": ["listening", "workplace"],
+  "estimated_minutes": 10,
+  "difficulty": "intermediate",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "dialogue": {
+    "setting": {"my":"EPS-TOPIK နားထောင်မှု စာမေးပွဲ — အလုပ်ခွင် ညွှန်ကြားချက် လေ့ကျင့်ခန်း","ko":"EPS-TOPIK 듣기 시험 — 작업장 지시 연습","en":"EPS-TOPIK listening practice — workplace instructions"},
+    "speakers": [
+      {"id":"manager","role":"manager","gender":"male","voice_id":"ko_m_01"},
+      {"id":"coworker","role":"coworker","gender":"female","voice_id":"ko_f_01"}
+    ],
+    "lines": [
+      {"line_id":"L1","speaker":"manager","ko":"작업을 시작하기 전에 반드시 안전모를 쓰세요.","rom":"jageob-eul sijakhagi jeone bandeusi anjeonmo-reul sseuseyo.","my":"အလုပ်မစမီ အသက်ကယ်ဦးထုပ်ကို မဖြစ်မနေ ဆောင်းပါ။","en":"Before starting work, make sure to wear a safety helmet.","audio":"AUD_EXAM001_L1","note":"'반드시' = မဖြစ်မနေ"},
+      {"line_id":"L2","speaker":"coworker","ko":"네, 알겠습니다. 안전모를 착용하겠습니다.","rom":"ne, algesseumnida. anjeonmo-reul chagyonghagetseumnida.","my":"ဟုတ်ကဲ့၊ နားလည်ပါပြီ။ ဦးထုပ်ကို ဝတ်ဆင်ပါမယ်။","en":"Yes, I understand. I will wear the safety helmet.","audio":"AUD_EXAM001_L2","note":""},
+      {"line_id":"L3","speaker":"manager","ko":"오늘 야간 근무는 저녁 8시부터 시작합니다.","rom":"oneul yagan geunmu-neun jeonyeok yeodeol-si-buteo sijakhamnida.","my":"ဒီနေ့ ညဆင်းအလုပ်က ည ၈ နာရီမှာ စတင်ပါမည်။","en":"Today's night shift starts at 8 PM.","audio":"AUD_EXAM001_L3","note":"'야간 근무' = ညဆင်းအလုပ်"}
+    ]
+  },
+  "activities": [
+    {
+      "activity_id": "A1",
+      "type": "listen_choose",
+      "prompt": {"my":"အသံကို နားထောင်ပြီး မှန်ကန်သော အဖြေကို ရွေးပါ။ (အလုပ်ခွင် ညွှန်ကြားချက်)","ko":"다음 지시를 듣고 알맞은 답을 골라보세요.","en":"Listen to the instruction and choose the correct answer."},
+      "audio_ref": "AUD_EXAM001_L1",
+      "options": [
+        {"id":"O1","ko":"안전모를 반드시 착용합니다.","my":"안전모를 반드시 착용합니다 — Roman: anjeonmo-reul bandeusi chagyonghamnida (ဦးထုပ် မဖြစ်မနေ ဝတ်ဆင်တယ်)","correct": true},
+        {"id":"O2","ko":"안전모를 벗고 작업합니다.","my":"안전모를 벗고 작업합니다 — Roman: anjeonmo-reul beotgo jageobhamnida (ဦးထုပ် ချွတ်ပြီး အလုပ်လုပ်တယ်)","correct": false},
+        {"id":"O3","ko":"밖으로 나갑니다.","my":"밖으로 나갑니다 — Roman: bakkeuro nagamnida (အပြင်ထွက်သွားတယ်)","correct": false},
+        {"id":"O4","ko":"집에 갑니다.","my":"집에 갑니다 — Roman: jib-e gamnida (အိမ်ပြန်တယ်)","correct": false}
+      ],
+      "explanation_ref": "F1"
+    },
+    {
+      "activity_id": "A2",
+      "type": "listen_choose",
+      "prompt": {"my":"အသံကို နားထောင်ပြီး အလုပ်ချိန်နှင့် ပတ်သက်သည့် မှန်ကန်သော အဖြေကို ရွေးပါ။","ko":"근무 시간 안내를 듣고 알맞은 답을 골라보세요.","en":"Listen to the schedule and choose the correct answer."},
+      "audio_ref": "AUD_EXAM001_L3",
+      "options": [
+        {"id":"O1","ko":"오늘 야간 근무는 저녁 8시부터 시작합니다.","my":"오늘 야간 근무는 저녁 8시부터 시작합니다 — Roman: oneul yagan geunmu-neun jeonyeok yeodeol-si-buteo sijakhamnida (ဒီနေ့ ညဆင်းအလုပ် ည ၈ နာရီမှာ စတင်တယ်)","correct": true},
+        {"id":"O2","ko":"내일은 쉬는 날입니다.","my":"내일은 쉬는 날입니다 — Roman: naeil-eun swineun nal-imnida (မနက်ဖြန် အနားယူရက်ဖြစ်တယ်)","correct": false},
+        {"id":"O3","ko":"오전 8시까지 출근합니다.","my":"오전 8시까지 출근합니다 — Roman: ojeon yeodeol-si-kkaji chulgeunhamnida (မနက် ၈ နာရီအထိ အလုပ်ဆင်းတယ်)","correct": false},
+        {"id":"O4","ko":"오늘은 쉬는 날입니다.","my":"오늘은 쉬는 날입니다 — Roman: oneul-eun swineun nal-imnida (ဒီနေ့ အနားယူရက်ဖြစ်တယ်)","correct": false}
+      ],
+      "explanation_ref": "F2"
+    },
+    {
+      "activity_id": "A3",
+      "type": "speak",
+      "prompt": {"my":"'안전모를 반드시 착용하겠습니다' ကို ကျယ်ကျယ် ပြောပါ။ (Roman: anjeonmo-reul bandeusi chagyonghagetseumnida)","ko":"'안전모를 반드시 착용하겠습니다'를 크게 말하세요. (로마자: anjeonmo-reul bandeusi chagyonghagetseumnida)","en":"Say '안전모를 반드시 착용하겠습니다' out loud."},
+      "target_ko": "안전모를 반드시 착용하겠습니다",
+      "target_romanization": "Anjeonmo-reul bandeusi chagyonghagetseumnida.",
+      "audio_ref": "AUD_EXAM001_L2",
+      "explanation_ref": "F3"
+    }
+  ],
+  "feedback": {
+    "F1": {
+      "why_wrong": {"my":"အသံတွင် '작업을 시작하기 전에 반드시 안전모를 쓰세요' ဟု ပြောခဲ့သဖြင့် ဦးထုပ် မဖြစ်မနေ ဝတ်ဆင်ရမည်သည် မှန်ကန်သော အဖြေဖြစ်ပါသည်။","ko":"'반드시 안전모를 쓰세요'라고 했으므로 안전모 착용이 정답입니다.","en":"The audio said 'must wear a safety helmet', so wearing the helmet is correct."},
+      "grammar": {"point":"-(으)세요","explain_my":"အမိန့်ပေးခြင်း သို့မဟုတ် တောင်းဆိုခြင်းကို ယဉ်ကျေးစွာ ဖော်ပြသည့် အသုံးအနှုန်း။"},
+      "culture": "EPS-TOPIK 듣기 시험에서는 작업 지시, 근무 시간, 안전 경고 어휘가 자주 등장합니다.",
+      "retry_phrase": "안전모를 반드시 착용합니다."
+    },
+    "F2": {
+      "why_wrong": {"my":"အသံတွင် '오늘 야간 근무는 저녁 8시부터 시작합니다' ဟု ပြောခဲ့သဖြင့် ည ၈ နာရီမှာ စတင်ခြင်းသည် မှန်ကန်သော အဖြေဖြစ်ပါသည်။","ko":"'저녁 8시부터 시작합니다'라고 했으므로 저녁 8시 시작이 정답입니다.","en":"The audio said the night shift starts at 8 PM, making that option correct."},
+      "grammar": {"point":"-부터","explain_my":"'-부터' = ...ကနေ (အစကို ဖော်ပြသည်)။"},
+      "culture": "한국에서는 야간 근무 시 추가 수당이 지급되는 경우가 많습니다.",
+      "retry_phrase": "저녁 8시부터 시작합니다."
+    },
+    "F3": {
+      "why_wrong": {"my":"'안전모를 반드시 착용하겠습니다' — Roman: anjeonmo-reul bandeusi chagyonghagetseumnida။ ကျယ်ကျယ် ပြောပါ။","ko":"'안전모를 반드시 착용하겠습니다' — 로마자: anjeonmo-reul bandeusi chagyonghagetseumnida. 크게 말하세요.","en":"'안전모를 반드시 착용하겠습니다' — Roman: anjeonmo-reul bandeusi chagyonghagetseumnida. Say it clearly."},
+      "retry_phrase": "안전모를 반드시 착용하겠습니다"
+    }
+  },
+  "cultural_note": {
+    "title": {"my":"EPS-TOPIK နားထောင်မှု ဖြေဆိုနည်း","ko":"EPS-TOPIK 듣기 시험 전략","en":"EPS-TOPIK Listening Strategy"},
+    "body": {
+      "my": "EPS-TOPIK နားထောင်မှု စာမေးပွဲတွင် အလုပ်ခွင် ညွှန်ကြားချက်များ၊ အလုပ်ချိန်များနှင့် ဘေးအန္တရာယ် သတိပေးချက်များကို အဓိကထား မေးမြန်းလေ့ ရှိပါသည်။ မေးခွန်းမလာမီ အဖြေရွေးချယ်စရာများကို ကြိုတင် ဖတ်ရှုထားခြင်းက အဖြေမှန် ရွေးချယ်နိုင်ရေးအတွက် များစွာ အထောက်အကူပြုပါသည်။",
+      "ko": "EPS-TOPIK 듣기 시험에서는 작업 지시, 근무 시간, 안전 경고 어휘가 자주 등장합니다. 음성이 나오기 전에 선택지를 미리 읽어보는 것이 합격의 중요한 전략입니다.",
+      "en": "EPS-TOPIK listening tests frequently feature workplace instructions, work hours, and safety warnings. Reading the options before the audio plays is an important strategy."
+    },
+    "sensitive": false
+  },
+  "audio": {"tts_lang": "ko-KR", "files": []},
+  "srs": {
+    "enabled": true,
+    "cards": [
+      {"card_id":"C1","front":{"my":"Roman: anjeonmo","ko":"Roman: anjeonmo","en":"Roman: anjeonmo"},"back":{"my":"안전모 (ဘေးကင်းရေးဦးထုပ်)","ko":"안전모 (안전모)","en":"안전모 (safety helmet)"},"audio_ref":"AUD_EXAM001_L1","ease":2.5,"interval":0},
+      {"card_id":"C2","front":{"my":"Roman: yagan geunmu","ko":"Roman: yagan geunmu","en":"Roman: yagan geunmu"},"back":{"my":"야간 근무 (ညဆင်းအလုပ်)","ko":"야간 근무 (야간 근무)","en":"야간 근무 (night shift)"},"audio_ref":"AUD_EXAM001_L3","ease":2.5,"interval":0}
+    ]
+  },
+  "assessment": {"type":"mission","pass_threshold":70,"weights":{"accuracy":60,"completion":40},"exam_mapping":{"topik":null,"eps_topik":"EPS_TOPIK_LISTENING"}}
+}

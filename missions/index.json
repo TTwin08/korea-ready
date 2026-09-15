@@ -33,6 +33,8 @@
     {"mission_id":"STUDY-FRIEND-001","goal":"study","level":2,"title":{"my":"ကျောင်းဝင်းထဲမှာ သူငယ်ချင်းဖွဲ့ခြင်း","ko":"캠퍼스에서 친구 사귀기","en":"Making Friends on Campus"},"estimated_minutes":10},
     {"mission_id":"WORK-CONTRACT-001","goal":"work","level":2,"title":{"my":"အလုပ်စာချုပ် — လစာနဲ့ လုပ်ချိန် မေးမြန်းခြင်း","ko":"근로계약서 — 급여와 근무 시간 확인","en":"Employment Contract — Salary and Work Hours"},"estimated_minutes":10},
     {"mission_id":"WORK-SAFETY-001","goal":"work","level":2,"title":{"my":"စက်ရုံ ဘေးအန္တရာယ် — သတိပေးချက်များ","ko":"공장 안전 — 주의 사항","en":"Factory Safety — Warning Signs"},"estimated_minutes":10},
-    {"mission_id":"WORK-SALARY-001","goal":"work","level":2,"title":{"my":"လစာ ထုတ်ခြင်း — ဘဏ်မှာ ပိုက်ဆံထုတ်ခြင်း","ko":"급여 찾기 — 은행에서 돈 출금","en":"Withdrawing Salary — At the Bank"},"estimated_minutes":10}
+    {"mission_id":"WORK-SALARY-001","goal":"work","level":2,"title":{"my":"လစာ ထုတ်ခြင်း — ဘဏ်မှာ ပိုက်ဆံထုတ်ခြင်း","ko":"급여 찾기 — 은행에서 돈 출금","en":"Withdrawing Salary — At the Bank"},"estimated_minutes":10},
+    {"mission_id":"BRIDGE-PARTTIME-001","goal":"bridge","level":2,"title":{"my":"အချိန်ပိုင်း အလုပ်စတင်ရှာခြင်း","ko":"아르바이트 시작 — 구직 문의","en":"Starting a Part-Time Job — Job Inquiry"},"estimated_minutes":10},
+    {"mission_id":"BRIDGE-MOVE-001","goal":"bridge","level":2,"title":{"my":"အခန်းအသစ်သို့ ပြောင်းရွှေ့ခြင်း","ko":"새 집으로 이사 — 이사 문의","en":"Moving to a New Place — Moving Inquiry"},"estimated_minutes":10}
   ]
 }

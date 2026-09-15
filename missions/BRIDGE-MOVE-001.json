@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "BRIDGE-MOVE-001",
+  "goal": "bridge",
+  "level": 2,
+  "category": "daily",
+  "industry": null,
+  "tags": ["bridge", "moving", "housing", "beginner"],
+  "title": {"my":"အခန်းအသစ်သို့ ပြောင်းရွှေ့ခြင်း","ko":"새 집으로 이사 — 이사 문의","en":"Moving to a New Place — Moving Inquiry"},
+  "objective": {"my":"ကိုရီးယားမှာ အခန်းအသစ်ကို ပြောင်းရွှေ့တဲ့အခါ လိုအပ်တဲ့ အခြေခံ ကိုရီးယားစကားစုတွေကို သင်ယူပါမယ်။ Romanization ကို အဓိက အကိုးအကားအဖြစ်ထားပါ။","ko":"한국에서 이사할 때 필요한 기본 표현을 로마자 표기 기준으로 익힌다.","en":"Learn basic Korean phrases for moving to a new place in Korea."},
+  "prerequisites": [],
+  "skills": ["listening","speaking","housing"],
+  "estimated_minutes": 10,
+  "difficulty": "intro",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "dialogue": {
+    "setting": {"my":"အခန်းအသစ် — ပိုင်ရှင်နဲ့ စကားပြောနေတဲ့ အခြေအနေ","ko":"새 집 — 집주인과 대화 상황","en":"New apartment — conversation with the landlord"},
+    "speakers": [
+      {"id":"clerk","role":"manager","gender":"female","voice_id":"ko_f_01"},
+      {"id":"learner","role":"learner","gender":"any","voice_id":null}
+    ],
+    "lines": [
+      {"line_id":"L1","speaker":"learner","ko":"안녕하세요, 이사 관련해서 문의하고 싶어요.","rom":"annyeonghaseyo, isa gwalllyeonhaeseo munuihago sipeoyo.","my":"မင်္ဂလာပါ၊ ပြောင်းရွှေ့မှုနဲ့ ပတ်သက်ပြီး မေးချင်ပါတယ်။","en":"Hello, I'd like to inquire about moving.","audio":"AUD_BM001_L1","note":"'이사' = ပြောင်းရွှေ့ခြင်း / moving"},
+      {"line_id":"L2","speaker":"clerk","ko":"네, 언제 이사하실 거예요?","rom":"ne, eonje isahasil geoyeyo?","my":"ဟုတ်ကဲ့၊ ဘယ်တော့ ပြောင်းရွှေ့မှာလဲ?","en":"Yes, when are you moving?","audio":"AUD_BM001_L2","note":""},
+      {"line_id":"L3","speaker":"learner","ko":"다음 주 토요일에 이사할 거예요. 이삿짐센터 추천해 주실 수 있어요?","rom":"daeum ju toyoil-e isahal geoyeyo. isatjim-senteo chucheonhae jusil su isseoyo?","my":"နောက်အပတ် စနေနေ့ ပြောင်းမှာပါ။ ပြောင်းရွှေ့ပစ္စည်း သယ်ပို့ဝန်ဆောင်မှု (이삿짐센터) ကို အကြံပြုပေးနိုင်လား?","en":"I'm moving next Saturday. Can you recommend a moving service?","audio":"AUD_BM001_L3","note":"'이삿짐센터' = ပြောင်းရွှေ့ပစ္စည်း သယ်ပို့ဝန်ဆောင်မှု"},
+      {"line_id":"L4","speaker":"clerk","ko":"네, 좋은 이삿짐센터를 알려드릴게요.","rom":"ne, joeun isatjim-senteo-reul allyeodeurilgeyo.","my":"ဟုတ်ကဲ့၊ ကောင်းတဲ့ ပြောင်းရွှေ့ဝန်ဆောင်မှုကို ပြောပြပါမယ်။","en":"Yes, I'll let you know a good moving service.","audio":"AUD_BM001_L4","note":""}
+    ]
+  },
+  "activities": [
+    {
+      "activity_id": "A1",
+      "type": "listen_choose",
+      "prompt": {"my":"Roman 'isa' က ဘာအဓိပ္ပာယ်လဲ?","ko":"로마자 'isa'는 무슨 뜻인가요?","en":"What does Roman 'isa' mean?"},
+      "audio_ref": "AUD_BM001_L1",
+      "options": [
+        {"id":"O1","ko":"이사","my":"이사 — Roman: isa (ပြောင်းရွှေ့ခြင်း)","correct": true},
+        {"id":"O2","ko":"이삿짐센터","my":"이삿짐센터 — Roman: isatjim-senteo (ပြောင်းရွှေ့ပစ္စည်းသယ်ပို့ဝန်ဆောင်မှု)","correct": false},
+        {"id":"O3","ko":"집주인","my":"집주인 — Roman: jipjuin (အိမ်ပိုင်ရှင်)","correct": false},
+        {"id":"O4","ko":"계약","my":"계약 — Roman: gyeyak (စာချုပ်)","correct": false}
+      ],
+      "explanation_ref": "F1"
+    },
+    {
+      "activity_id": "A2",
+      "type": "type_answer",
+      "prompt": {"my":"Roman 'isatjim-senteo' ကို ကိုရီးယားလို ရိုက်ထည့်ပါ။ (အဓိပ္ပာယ်: ပြောင်းရွှေ့ပစ္စည်း သယ်ပို့ဝန်ဆောင်မှု)","ko":"로마자 'isatjim-senteo'를 한글로 입력하세요.","en":"Type the Korean for Roman 'isatjim-senteo'."},
+      "answer": "이삿짐센터",
+      "accept_alt": ["이삿짐센터 ", "이사짐센터"],
+      "explanation_ref": "F2"
+    },
+    {
+      "activity_id": "A3",
+      "type": "speak",
+      "prompt": {"my":"'다음 주에 이사할 거예요' ကို ကျယ်ကျယ် ပြောပါ။ (Roman: daeum ju-e isahal geoyeyo)","ko":"'다음 주에 이사할 거예요'를 크게 말하세요. (로마자: daeum ju-e isahal geoyeyo)","en":"Say '다음 주에 이사할 거예요' out loud."},
+      "target_ko": "다음 주에 이사할 거예요",
+      "target_romanization": "Daeum ju-e isahal geoyeyo.",
+      "audio_ref": "AUD_BM001_L3",
+      "explanation_ref": "F3"
+    }
+  ],
+  "feedback": {
+    "F1": {
+      "why_wrong": {"my":"Roman 'isa' က '이사' (ပြောင်းရွှေ့ခြင်း)။","ko":"Roman 'isa'는 '이사'입니다.","en":"Roman 'isa' is '이사' (moving)."},
+      "grammar": {"point":"이사하다","explain_my":"'이사하다' = ပြောင်းရွှေ့သည်။ '이사' = ပြောင်းရွှေ့ခြင်း (နာမ်)။"},
+      "culture": "한국에서 이사할 때는 '이삿짐센터'를 이용하는 것이 일반적입니다. 미리 예약하는 것이 좋습니다.",
+      "retry_phrase": "이사"
+    },
+    "F2": {
+      "why_wrong": {"my":"Roman 'isatjim-senteo' က '이삿짐센터' (ပြောင်းရွှေ့ပစ္စည်း သယ်ပို့ဝန်ဆောင်မှု)။","ko":"Roman 'isatjim-senteo'는 '이삿짐센터'입니다.","en":"Roman 'isatjim-senteo' is '이삿짐센터' (moving service center)."},
+      "retry_phrase": "이삿짐센터"
+    },
+    "F3": {
+      "why_wrong": {"my":"'다음 주에 이사할 거예요' — Roman: daeum ju-e isahal geoyeyo။ ကျယ်ကျယ် ပြောပါ။","ko":"'다음 주에 이사할 거예요' — 로마자: daeum ju-e isahal geoyeyo. 크게 말하세요.","en":"'다음 주에 이사할 거예요' — Roman: daeum ju-e isahal geoyeyo. Say it clearly."},
+      "retry_phrase": "다음 주에 이사할 거예요"
+    }
+  },
+  "cultural_note": {
+    "title": {"my":"ကိုရီးယား ပြောင်းရွှေ့ခြင်း ယဉ်ကျေးမှု","ko":"한국 이사 문화","en":"Korean Moving Culture"},
+    "body": {
+      "my": "ကိုရီးယားမှာ ပြောင်းရွှေ့တဲ့အခါ 이삿짐센터 (ပြောင်းရွှေ့ပစ္စည်း သယ်ပို့ဝန်ဆောင်မှု) ကို အသုံးပြုလေ့ ရှိပါတယ်။ 이삿짐센터 က ပစ္စည်းတွေကို ထုပ်ပိုးခြင်း၊ သယ်ယူခြင်း၊ ပြန်ဖြည်ခြင်း အားလုံး လုပ်ပေးပါတယ်။ မတိုင်မီ ၁-၂ ပတ်လောက် ကြိုတင် စာရင်းသွင်းလေ့ ရှိပါတယ်။ အထူးသဖြင့် လဆန်းနဲ့ လကုန်ရက်တွေမှာ စျေးကြီးပြီး အလုပ်များလေ့ ရှိပါတယ်။",
+      "ko": "한국에서는 이사할 때 이삿짐센터를 이용하는 것이 일반적입니다. 이삿짐센터는 포장, 운반, 정리를 모두 도와줍니다. 보통 1~2주 전에 미리 예약하며, 월초와 월말은 가격이 비싸고 예약이 어려울 수 있습니다.",
+      "en": "In Korea, using a moving service (이삿짐센터) is common when moving. They help with packing, transporting, and unpacking. People usually book 1-2 weeks in advance; early and end of month are busier and pricier."
+    },
+    "sensitive": false
+  },
+  "audio": {"tts_lang": "ko-KR", "files": []},
+  "srs": {
+    "enabled": true,
+    "cards": [
+      {"card_id":"C1","front":{"my":"Roman: isa","ko":"Roman: isa","en":"Roman: isa"},"back":{"my":"이사 (ပြောင်းရွှေ့ခြင်း)","ko":"이사 (이사)","en":"이사 (moving)"},"audio_ref":"AUD_BM001_L1","ease":2.5,"interval":0},
+      {"card_id":"C2","front":{"my":"Roman: isatjim-senteo","ko":"Roman: isatjim-senteo","en":"Roman: isatjim-senteo"},"back":{"my":"이삿짐센터 (ပြောင်းရွှေ့ဝန်ဆောင်မှု)","ko":"이삿짐센터 (이삿짐센터)","en":"이삿짐센터 (moving service center)"},"audio_ref":"AUD_BM001_L3","ease":2.5,"interval":0}
+    ]
+  },
+  "assessment": {"type":"mission","pass_threshold":70,"weights":{"accuracy":60,"completion":40},"exam_mapping":{"topik":null,"eps_topik":null}}
+}

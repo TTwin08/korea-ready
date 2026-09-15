@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "STUDY-CLASSROOM-001",
+  "goal": "study",
+  "level": 2,
+  "category": "daily",
+  "industry": null,
+  "tags": ["study", "classroom", "lecture", "comprehension", "beginner"],
+  "title": {"my":"စာသင်ခန်းထဲမှာ — နားလည်မှုစစ်ဆေးခြင်း","ko":"교실에서 — 이해 확인하기","en":"In the Classroom — Checking Comprehension"},
+  "objective": {"my":"စာသင်ခန်းထဲမှာ ဆရာ/ဆရာမ ပြောတာကို နားမလည်တဲ့အခါ ပြန်ရှင်းပြဖို့ တောင်းဆိုတဲ့ အခြေခံ ကိုရီးယားစကားစုတွေကို သင်ယူပါမယ်။ Romanization ကို အဓိက အကိုးအကားအဖြစ်ထားပါ။","ko":"수업 중 이해가 안 될 때 다시 설명을 요청하는 기본 표현을 로마자 표기 기준으로 익힌다.","en":"Learn basic Korean phrases for asking the teacher to explain again in class."},
+  "prerequisites": [],
+  "skills": ["listening","speaking","comprehension"],
+  "estimated_minutes": 10,
+  "difficulty": "intro",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "dialogue": {
+    "setting": {"my":"တက္ကသိုလ် စာသင်ခန်း — ကိုရီးယားဘာသာ အတန်း","ko":"대학교 교실 — 한국어 수업","en":"University classroom — Korean class"},
+    "speakers": [
+      {"id":"teacher","role":"teacher","gender":"female","voice_id":"ko_f_01"},
+      {"id":"learner","role":"learner","gender":"any","voice_id":null}
+    ],
+    "lines": [
+      {"line_id":"L1","speaker":"teacher","ko":"다들 이해했어요?","rom":"dadeul ihaehaesseoyo?","my":"အားလုံး နားလည်ကြပြီလား?","en":"Did everyone understand?","audio":"AUD_STC001_L1","note":""},
+      {"line_id":"L2","speaker":"learner","ko":"죄송하지만, 다시 설명해 주세요.","rom":"joesonghajiman, dasi seolmyeonghae juseyo.","my":"တောင်းပန်ပါတယ်၊ ပြန်ရှင်းပြပေးပါ။","en":"Sorry, please explain again.","audio":"AUD_STC001_L2","note":"'다시' = ပြန်လည် / again"},
+      {"line_id":"L3","speaker":"teacher","ko":"네, 다시 설명할게요.","rom":"ne, dasi seolmyeonghalgeyo.","my":"ဟုတ်ကဲ့၊ ပြန်ရှင်းပြပါမယ်။","en":"Okay, I'll explain again.","audio":"AUD_STC001_L3","note":""},
+      {"line_id":"L4","speaker":"learner","ko":"이제 이해했어요. 감사합니다.","rom":"ije ihaehaesseoyo. gamsahamnida.","my":"အခု နားလည်သွားပါပြီ။ ကျေးဇူးတင်ပါတယ်။","en":"Now I understand. Thank you.","audio":"AUD_STC001_L4","note":"'이해했어요' = နားလည်ပါပြီ / I understand"}
+    ]
+  },
+  "activities": [
+    {
+      "activity_id": "A1",
+      "type": "listen_choose",
+      "prompt": {"my":"Roman 'ihaehaesseoyo?' က ဘာအဓိပ္ပာယ်လဲ?","ko":"로마자 'ihaehaesseoyo?'는 무슨 뜻인가요?","en":"What does Roman 'ihaehaesseoyo?' mean?"},
+      "audio_ref": "AUD_STC001_L1",
+      "options": [
+        {"id":"O1","ko":"이해했어요?","my":"이해했어요? — Roman: ihaehaesseoyo? (နားလည်ပြီလား?)","correct": true},
+        {"id":"O2","ko":"다시 설명해 주세요","my":"다시 설명해 주세요 — Roman: dasi seolmyeonghae juseyo (ပြန်ရှင်းပြပေးပါ)","correct": false},
+        {"id":"O3","ko":"감사합니다","my":"감사합니다 — Roman: gamsahamnida (ကျေးဇူးတင်ပါတယ်)","correct": false},
+        {"id":"O4","ko":"안녕하세요","my":"안녕하세요 — Roman: annyeonghaseyo (မင်္ဂလာပါ)","correct": false}
+      ],
+      "explanation_ref": "F1"
+    },
+    {
+      "activity_id": "A2",
+      "type": "type_answer",
+      "prompt": {"my":"Roman 'dasi seolmyeonghae juseyo' ကို ကိုရီးယားလို ရိုက်ထည့်ပါ။","ko":"로마자 'dasi seolmyeonghae juseyo'를 한글로 입력하세요.","en":"Type the Korean for Roman 'dasi seolmyeonghae juseyo'."},
+      "answer": "다시 설명해 주세요",
+      "accept_alt": ["다시 설명해주세요", "다시설명해주세요", "다시 설명해 주세요 "],
+      "explanation_ref": "F2"
+    },
+    {
+      "activity_id": "A3",
+      "type": "speak",
+      "prompt": {"my":"'이해했어요' ကို ကျယ်ကျယ် ပြောပါ။ (Roman: ihaehaesseoyo)","ko":"'이해했어요'를 크게 말하세요. (로마자: ihaehaesseoyo)","en":"Say '이해했어요' out loud. (Roman: ihaehaesseoyo)"},
+      "target_ko": "이해했어요",
+      "target_romanization": "Ihaehaesseoyo.",
+      "audio_ref": "AUD_STC001_L4",
+      "explanation_ref": "F3"
+    }
+  ],
+  "feedback": {
+    "F1": {
+      "why_wrong": {"my":"Roman 'ihaehaesseoyo?' က '이해했어요?' (နားလည်ပြီလား?)။","ko":"Roman 'ihaehaesseoyo?'는 '이해했어요?'입니다.","en":"Roman 'ihaehaesseoyo?' is '이해했어요?' (Did you understand?)."},
+      "grammar": {"point":"이해했어요?","explain_my":"'이해하다' = နားလည်သည်။ အတိတ်ကာလ '했어요' နဲ့ မေးခွန်း '?' ပါ။"},
+      "culture": "한국 수업에서는 이해가 안 될 때 손을 들고 조용히 질문하는 것이 자연스럽습니다.",
+      "retry_phrase": "이해했어요?"
+    },
+    "F2": {
+      "why_wrong": {"my":"Roman 'dasi seolmyeonghae juseyo' က '다시 설명해 주세요' (ပြန်ရှင်းပြပေးပါ)။","ko":"Roman 'dasi seolmyeonghae juseyo'는 '다시 설명해 주세요'입니다.","en":"Roman 'dasi seolmyeonghae juseyo' is '다시 설명해 주세요' (Please explain again)."},
+      "retry_phrase": "다시 설명해 주세요"
+    },
+    "F3": {
+      "why_wrong": {"my":"'이해했어요' — Roman: ihaehaesseoyo။ ကျယ်ကျယ် ပြောပါ။","ko":"'이해했어요' — 로마자: ihaehaesseoyo. 크게 말하세요.","en":"'이해했어요' — Roman: ihaehaesseoyo. Say it clearly."},
+      "retry_phrase": "이해했어요"
+    }
+  },
+  "cultural_note": {
+    "title": {"my":"ကိုရီးယား စာသင်ခန်း ယဉ်ကျေးမှု","ko":"한국 교실 문화","en":"Korean Classroom Culture"},
+    "body": {"my":"ကိုရီးယား စာသင်ခန်းတွေမှာ ဆရာ/ဆရာမကို '선생님' လို့ ခေါ်ပြီး ယဉ်ကျေးစွာ ပြောဆိုပါတယ်။ နားမလည်ရင် '죄송하지만, 다시 설명해 주세요' လို့ ယဉ်ကျေးစွာ မေးနိုင်ပါတယ်။ မေးတာက ရှက်စရာ မဟုတ်ဘူးလို့ ယူဆပါတယ်။","ko":"한국 교실에서는 선생님을 '선생님'이라고 부르며 정중하게 대화합니다. 이해가 안 되면 '죄송하지만, 다시 설명해 주세요'라고 정중히 질문할 수 있습니다. 질문하는 것은 부끄러운 일이 아닙니다.","en":"In Korean classrooms, teachers are addressed as '선생님' politely. If you don't understand, you can ask '죄송하지만, 다시 설명해 주세요'. Asking questions is not embarrassing."},
+    "sensitive": false
+  },
+  "audio": {"tts_lang": "ko-KR", "files": []},
+  "srs": {
+    "enabled": true,
+    "cards": [
+      {"card_id":"C1","front":{"my":"Roman: ihaehaesseoyo?","ko":"Roman: ihaehaesseoyo?","en":"Roman: ihaehaesseoyo?"},"back":{"my":"이해했어요?","ko":"이해했어요?","en":"이해했어요? (Did you understand?)"},"audio_ref":"AUD_STC001_L1","ease":2.5,"interval":0},
+      {"card_id":"C2","front":{"my":"Roman: dasi seolmyeonghae juseyo","ko":"Roman: dasi seolmyeonghae juseyo","en":"Roman: dasi seolmyeonghae juseyo"},"back":{"my":"다시 설명해 주세요","ko":"다시 설명해 주세요","en":"다시 설명해 주세요 (Please explain again)"},"audio_ref":"AUD_STC001_L2","ease":2.5,"interval":0}
+    ]
+  },
+  "assessment": {"type":"mission","pass_threshold":70,"weights":{"accuracy":60,"completion":40},"exam_mapping":{"topik":null,"eps_topik":null}}
+}

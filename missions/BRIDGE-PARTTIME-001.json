@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "mission_id": "BRIDGE-PARTTIME-001",
-  "goal": "bridge",
+  "goal": "common",
   "level": 2,
   "category": "daily",
   "industry": null,

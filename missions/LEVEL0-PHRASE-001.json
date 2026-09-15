@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "LEVEL0-PHRASE-001",
+  "goal": "common",
+  "level": 0,
+  "category": "daily",
+  "industry": null,
+  "tags": ["level-0", "greetings", "phrases", "foundation", "beginner"],
+  "title": {"my":"ကိုရီးယား အခြေခံ နှုတ်ဆက်စကား","ko":"기본 인사말","en":"Basic Greetings"},
+  "objective": {"my":"ကိုရီးယား အခြေခံ နှုတ်ဆက်စကား ၃ ခု — 안녕하세요 (မင်္ဂလာပါ)၊ 감사합니다 (ကျေးဇူးတင်ပါတယ်)၊ 안녕히 가세요 (ကောင်းကောင်းသွားပါ) — ကို Romanization (annyeonghaseyo, gamsahamnida, annyeonghi gaseyo) ကို အဓိက အကိုးအကားအဖြစ်ထားပြီး အသုံးပြုနိုင်မယ်။ Burmese မြန်မာ အသံ ခန့်မှန်းချက်များကို အကိုးအကား အဖြစ်သာ ထားပါ။","ko":"한국어 기본 인사말 3개(안녕하세요, 감사합니다, 안녕히 가세요)를 로마자 표기를 기준으로 익히고 사용할 수 있다.","en":"Learn and use 3 basic Korean greetings (annyeonghaseyo, gamsahamnida, annyeonghi gaseyo) using Romanization as the primary guide."},
+  "prerequisites": [],
+  "skills": ["listening","speaking","politeness"],
+  "estimated_minutes": 6,
+  "difficulty": "intro",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "dialogue": {
+    "setting": {"my":"ဆိုင်တစ်ခုမှာ ဝင်တွေ့ဆုံသည့်အခါ","ko":"가게에 들어가서 만났을 때","en":"Meeting someone while entering a shop"},
+    "speakers": [
+      {"id":"clerk","role":"clerk","gender":"female","voice_id":"ko_f_01"},
+      {"id":"learner","role":"learner","gender":"any","voice_id":null}
+    ],
+    "lines": [
+      {"line_id":"L1","speaker":"clerk","ko":"안녕하세요!","rom":"annyeonghaseyo!","my":"မင်္ဂလာပါ!","en":"Hello!","audio":"AUD_L0P001_L1","note":""},
+      {"line_id":"L2","speaker":"learner","ko":"안녕하세요!","rom":"annyeonghaseyo!","my":"မင်္ဂလာပါ!","en":"Hello!","audio":"AUD_L0P001_L2","note":""},
+      {"line_id":"L3","speaker":"clerk","ko":"감사합니다. 안녕히 가세요.","rom":"gamsahamnida. annyeonghi gaseyo.","my":"ကျေးဇူးတင်ပါတယ်။ ကောင်းကောင်းသွားပါ။","en":"Thank you. Goodbye.","audio":"AUD_L0P001_L3","note":""}
+    ]
+  },
+  "activities": [
+    {
+      "activity_id": "A1",
+      "type": "listen_choose",
+      "prompt": {"my":"Roman 'annyeonghaseyo' က ဘယ်စကားလဲ?","ko":"로마자 'annyeonghaseyo'는 무슨 말인가요?","en":"What does Roman 'annyeonghaseyo' mean?"},
+      "audio_ref": "",
+      "options": [
+        {"id":"O1","ko":"안녕하세요","my":"안녕하세요 — Roman: annyeonghaseyo (မင်္ဂလာပါ)","correct": true},
+        {"id":"O2","ko":"감사합니다","my":"감사합니다 — Roman: gamsahamnida (ကျေးဇူးတင်ပါတယ်)","correct": false},
+        {"id":"O3","ko":"안녕히 가세요","my":"안녕히 가세요 — Roman: annyeonghi gaseyo (ကောင်းကောင်းသွားပါ)","correct": false},
+        {"id":"O4","ko":"죄송합니다","my":"죄송합니다 — Roman: joesonghamnida (တောင်းပန်ပါတယ်)","correct": false}
+      ],
+      "explanation_ref": "F1"
+    },
+    {
+      "activity_id": "A2",
+      "type": "listen_choose",
+      "prompt": {"my":"Roman 'gamsahamnida' က ဘယ်စကားလဲ?","ko":"로마자 'gamsahamnida'는 무슨 말인가요?","en":"What does Roman 'gamsahamnida' mean?"},
+      "audio_ref": "",
+      "options": [
+        {"id":"O1","ko":"감사합니다","my":"감사합니다 — Roman: gamsahamnida (ကျေးဇူးတင်ပါတယ်)","correct": true},
+        {"id":"O2","ko":"안녕하세요","my":"안녕하세요 — Roman: annyeonghaseyo (မင်္ဂလာပါ)","correct": false},
+        {"id":"O3","ko":"안녕히 계세요","my":"안녕히 계세요 — Roman: annyeonghi gyeseyo (ကောင်းကောင်းနေပါ)","correct": false},
+        {"id":"O4","ko":"반갑습니다","my":"반갑습니다 — Roman: bangapseumnida (တွေ့ရတာဝမ်းသာပါတယ်)","correct": false}
+      ],
+      "explanation_ref": "F2"
+    },
+    {
+      "activity_id": "A3",
+      "type": "type_answer",
+      "prompt": {"my":"Roman 'annyeonghi gaseyo' ကို ကိုရီးယားလို ရိုက်ထည့်ပါ။","ko":"로마자 'annyeonghi gaseyo'를 한글로 입력하세요.","en":"Type the Korean for Roman 'annyeonghi gaseyo'."},
+      "answer": "안녕히 가세요",
+      "accept_alt": ["안녕히 가세요 ", "안녕히가세요"],
+      "explanation_ref": "F3"
+    },
+    {
+      "activity_id": "A4",
+      "type": "speak",
+      "prompt": {"my":"'안녕하세요' ကို ကျယ်ကျယ် ပြောပါ။ (Roman: annyeonghaseyo)","ko":"'안녕하세요'를 크게 말하세요. (로마자: annyeonghaseyo)","en":"Say '안녕하세요' out loud. (Roman: annyeonghaseyo)"},
+      "target_ko": "안녕하세요",
+      "audio_ref": "AUD_L0P001_A4",
+      "explanation_ref": "F4"
+    }
+  ],
+  "feedback": {
+    "F1": {
+      "why_wrong": {"my":"Roman 'annyeonghaseyo' က '안녕하세요' (မင်္ဂလာပါ)။","ko":"Roman 'annyeonghaseyo'는 '안녕하세요'(안녕하세요)입니다.","en":"Roman 'annyeonghaseyo' is '안녕하세요' (hello)."},
+      "grammar": {"point":"기본 인사","explain_my":"'안녕하세요' က နေ့ခင်းဘက် ယဉ်ကျေးတဲ့ နှုတ်ဆက်စကား။ မည်သည့်အချိန်မဆို သုံးနိုင်တယ်။"},
+      "culture": "한국에서는 인사할 때 가볍게 고개를 숙입니다.",
+      "retry_phrase": "안녕하세요"
+    },
+    "F2": {
+      "why_wrong": {"my":"Roman 'gamsahamnida' က '감사합니다' (ကျေးဇူးတင်ပါတယ်)။","ko":"Roman 'gamsahamnida'는 '감사합니다'(감사합니다)입니다.","en":"Roman 'gamsahamnida' is '감사합니다' (thank you)."},
+      "retry_phrase": "감사합니다"
+    },
+    "F3": {
+      "why_wrong": {"my":"Roman 'annyeonghi gaseyo' က '안녕히 가세요' (ကောင်းကောင်းသွားပါ)။","ko":"Roman 'annyeonghi gaseyo'는 '안녕히 가세요'(안녕히 가세요)입니다.","en":"Roman 'annyeonghi gaseyo' is '안녕히 가세요' (goodbye to someone leaving)."},
+      "retry_phrase": "안녕히 가세요"
+    },
+    "F4": {
+      "why_wrong": {"my":"'안녕하세요' — Roman: annyeonghaseyo။ ကျယ်ကျယ် ပြောပါ။","ko":"'안녕하세요' — 로마자: annyeonghaseyo. 크게 말하세요.","en":"'안녕하세요' — Roman: annyeonghaseyo. Say it clearly."},
+      "retry_phrase": "안녕하세요"
+    }
+  },
+  "cultural_note": {
+    "title": {"my":"ကိုရီးယား နှုတ်ဆက်ယဉ်ကျေးမှု","ko":"한국 인사 예절","en":"Korean Greeting Etiquette"},
+    "body": {"my":"ကိုရီးယားမှာ နှုတ်ဆက်တဲ့အခါ ခေါင်းကို နည်းနည်း ညွတ်ပြီး ပြောတာ ယဉ်ကျေးတယ်။ '안녕하세요' က နေ့ခင်းဘက် အသုံးများ၊ '감사합니다' က ကျေးဇူးတင်တဲ့အခါ၊ '안녕히 가세요' က သွားမယ့်သူကို နှုတ်ဆက်တဲ့အခါ။","ko":"한국에서는 인사할 때 고개를 살짝 숙입니다. '안녕하세요'는 언제나 사용 가능하고, '감사합니다'는 감사할 때, '안녕히 가세요'는 떠나는 사람에게 합니다.","en":"In Korea, bow slightly when greeting. '안녕하세요' is used any time, '감사합니다' when thanking, '안녕히 가세요' to someone leaving."},
+    "sensitive": false
+  },
+  "audio": {
+    "base_path": "audio/LEVEL0-PHRASE-001/",
+    "files": [
+      {"id":"AUD_L0P001_L1","normal":"l1-normal.mp3","slow":"l1-slow.mp3","duration":1.5},
+      {"id":"AUD_L0P001_L2","normal":"l2-normal.mp3","slow":"l2-slow.mp3","duration":1.5},
+      {"id":"AUD_L0P001_L3","normal":"l3-normal.mp3","slow":"l3-slow.mp3","duration":2.5},
+      {"id":"AUD_L0P001_A4","normal":"a4-normal.mp3","slow":"a4-slow.mp3","duration":1.5}
+    ],
+    "spec": {"sample_rate":44100,"channels":1,"format":"mp3","bitrate":128}
+  },
+  "srs": {
+    "enabled": true,
+    "cards": [
+      {"card_id":"C1","front":{"my":"Roman: annyeonghaseyo","ko":"Roman: annyeonghaseyo","en":"Roman: annyeonghaseyo"},"back":{"my":"안녕하세요","ko":"안녕하세요","en":"안녕하세요 (hello)"},"audio_ref":"AUD_L0P001_L1","ease":2.5,"interval":0},
+      {"card_id":"C2","front":{"my":"Roman: gamsahamnida","ko":"Roman: gamsahamnida","en":"Roman: gamsahamnida"},"back":{"my":"감사합니다","ko":"감사합니다","en":"감사합니다 (thank you)"},"audio_ref":"AUD_L0P001_L3","ease":2.5,"interval":0},
+      {"card_id":"C3","front":{"my":"Roman: annyeonghi gaseyo","ko":"Roman: annyeonghi gaseyo","en":"Roman: annyeonghi gaseyo"},"back":{"my":"안녕히 가세요","ko":"안녕히 가세요","en":"안녕히 가세요 (goodbye)"},"audio_ref":"AUD_L0P001_L3","ease":2.5,"interval":0}
+    ]
+  },
+  "assessment": {
+    "type": "mission",
+    "pass_threshold": 70,
+    "weights": {"accuracy":60,"completion":40},
+    "exam_mapping": {"topik":null,"eps_topik":null}
+  }
+}

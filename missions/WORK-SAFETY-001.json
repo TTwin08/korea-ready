@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "WORK-SAFETY-001",
+  "goal": "work",
+  "level": 2,
+  "category": "work",
+  "industry": null,
+  "tags": ["work", "safety", "factory", "warning", "beginner"],
+  "title": {"my":"စက်ရုံ ဘေးအန္တရာယ် — သတိပေးချက်များ","ko":"공장 안전 — 주의 사항","en":"Factory Safety — Warning Signs"},
+  "objective": {"my":"ကိုရီးယား စက်ရုံ/ဆောက်လုပ်ရေးခွင် စတဲ့နေရာတွေမှာ ဘေးအန္တရာယ် ကာကွယ်ဖို့ သုံးတဲ့ အခြေခံ ကိုရီးယားစကားစုတွေကို သင်ယူပါမယ်။ Romanization ကို အဓိက အကိုးအကားအဖြစ်ထားပါ။","ko":"한국 산업 현장에서 안전과 관련된 기본 표현을 로마자 표기 기준으로 익힌다.","en":"Learn basic Korean for workplace safety in Korean industrial settings."},
+  "prerequisites": [],
+  "skills": ["listening","speaking","safety"],
+  "estimated_minutes": 10,
+  "difficulty": "intro",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "dialogue": {
+    "setting": {"my":"စက်ရုံ ဘေးအန္တရာယ် သင်တန်းခန်း","ko":"공장 안전 교육실","en":"Factory safety briefing room"},
+    "speakers": [
+      {"id":"manager","role":"manager","gender":"male","voice_id":"ko_m_01"},
+      {"id":"learner","role":"learner","gender":"any","voice_id":null}
+    ],
+    "lines": [
+      {"line_id":"L1","speaker":"manager","ko":"작업장에서는 안전모를 꼭 쓰세요.","rom":"jageopjang-eseoneun anjeonmo-reul kkok sseuseyo.","my":"အလုပ်ခွင်မှာ ဦးထုပ် (safety helmet) မဖြစ်မနေ ဆောင်းပါ။","en":"Always wear a safety helmet in the workplace.","audio":"AUD_WS001_L1","note":"'안전모' = ဘေးကင်းရေး ဦးထုပ်"},
+      {"line_id":"L2","speaker":"learner","ko":"네, 알겠습니다.","rom":"ne, algesseumnida.","my":"ဟုတ်ကဲ့၊ နားလည်ပါပြီ။","en":"Yes, I understand.","audio":"AUD_WS001_L2","note":""},
+      {"line_id":"L3","speaker":"manager","ko":"기계 근처에서는 조심하세요. 위험해요.","rom":"gigye geuncheo-eseoneun josimhaseyo. wiheomhaeyo.","my":"စက်နားမှာ သတိထားပါ။ အန္တရာယ်ရှိတယ်။","en":"Be careful near the machines. It's dangerous.","audio":"AUD_WS001_L3","note":"'위험해요' = အန္တရာယ်ရှိတယ်"},
+      {"line_id":"L4","speaker":"learner","ko":"조심하겠습니다.","rom":"josimhagetseumnida.","my":"သတိထားပါမယ်။","en":"I'll be careful.","audio":"AUD_WS001_L4","note":""}
+    ]
+  },
+  "activities": [
+    {
+      "activity_id": "A1",
+      "type": "listen_choose",
+      "prompt": {"my":"Roman 'wiheomhaeyo' က ဘာအဓိပ္ပာယ်လဲ?","ko":"로마자 'wiheomhaeyo'는 무슨 뜻인가요?","en":"What does Roman 'wiheomhaeyo' mean?"},
+      "audio_ref": "AUD_WS001_L3",
+      "options": [
+        {"id":"O1","ko":"위험해요","my":"위험해요 — Roman: wiheomhaeyo (အန္တရာယ်ရှိတယ်)","correct": true},
+        {"id":"O2","ko":"조심하세요","my":"조심하세요 — Roman: josimhaseyo (သတိထားပါ)","correct": false},
+        {"id":"O3","ko":"안전모를 쓰세요","my":"안전모를 쓰세요 — Roman: anjeonmo-reul sseuseyo (ဦးထုပ် ဆောင်းပါ)","correct": false},
+        {"id":"O4","ko":"감사합니다","my":"감사합니다 — Roman: gamsahamnida (ကျေးဇူးတင်ပါတယ်)","correct": false}
+      ],
+      "explanation_ref": "F1"
+    },
+    {
+      "activity_id": "A2",
+      "type": "type_answer",
+      "prompt": {"my":"Roman 'anjeonmo' ကို ကိုရီးယားလို ရိုက်ထည့်ပါ။ (အဓိပ္ပာယ်: ဘေးကင်းရေးဦးထုပ်)","ko":"로마자 'anjeonmo'를 한글로 입력하세요.","en":"Type the Korean for Roman 'anjeonmo'."},
+      "answer": "안전모",
+      "accept_alt": ["안전모 "],
+      "explanation_ref": "F2"
+    },
+    {
+      "activity_id": "A3",
+      "type": "speak",
+      "prompt": {"my":"'조심하겠습니다' ကို ကျယ်ကျယ် ပြောပါ။ (Roman: josimhagetseumnida)","ko":"'조심하겠습니다'를 크게 말하세요. (로마자: josimhagetseumnida)","en":"Say '조심하겠습니다' out loud."},
+      "target_ko": "조심하겠습니다",
+      "target_romanization": "Josimhagetseumnida.",
+      "audio_ref": "AUD_WS001_L4",
+      "explanation_ref": "F3"
+    }
+  ],
+  "feedback": {
+    "F1": {
+      "why_wrong": {"my":"Roman 'wiheomhaeyo' က '위험해요' (အန္တရာယ်ရှိတယ်)။","ko":"Roman 'wiheomhaeyo'는 '위험해요'입니다.","en":"Roman 'wiheomhaeyo' is '위험해요' (It's dangerous)."},
+      "grammar": {"point":"___해요","explain_my":"'위험하다' = အန္တရာယ်ရှိသည်။ '위험해요' = အန္တရာယ်ရှိတယ် (ယဉ်ကျေးတဲ့ အဆုံးသတ်)။"},
+      "culture": "한국 산업 현장에서는 안전 교육이 요구되는 경우가 많으며, 안전모, 안전화 등 보호 장비 착용이 일반적입니다.",
+      "retry_phrase": "위험해요"
+    },
+    "F2": {
+      "why_wrong": {"my":"Roman 'anjeonmo' က '안전모' (ဘေးကင်းရေးဦးထုပ်)။","ko":"Roman 'anjeonmo'는 '안전모'입니다.","en":"Roman 'anjeonmo' is '안전모' (safety helmet)."},
+      "retry_phrase": "안전모"
+    },
+    "F3": {
+      "why_wrong": {"my":"'조심하겠습니다' — Roman: josimhagetseumnida။ ကျယ်ကျယ် ပြောပါ။","ko":"'조심하겠습니다' — 로마자: josimhagetseumnida. 크게 말하세요.","en":"'조심하겠습니다' — Roman: josimhagetseumnida. Say it clearly."},
+      "retry_phrase": "조심하겠습니다"
+    }
+  },
+  "cultural_note": {
+    "title": {"my":"ကိုရီးယား စက်ရုံ ဘေးအန္တရာယ် ယဉ်ကျေးမှု","ko":"한국 산업 안전 문화","en":"Korean Workplace Safety Culture"},
+    "body": {
+      "my": "ကိုရီးယား စက်ရုံ/ဆောက်လုပ်ရေးခွင် စတဲ့နေရာတွေမှာ ဘေးအန္တရာယ် ကာကွယ်ရေး သင်တန်း လိုအပ်လေ့ရှိပြီး၊ 안전모 (ဦးထုပ်)၊ 안전화 (ဖိနပ်)၊ 안전장갑 (လက်အိတ်) စတဲ့ အကာအကွယ် ပစ္စည်းတွေ ဝတ်ဆင်လေ့ ရှိပါတယ်။ ဘေးအန္တရာယ် ကာကွယ်ရေး စည်းမျဉ်းတွေကို မလိုက်နာရင် အလုပ်လုပ်ခွင့် ကန့်သတ်ခံရနိုင်သလို စည်းကမ်းဆိုင်ရာ အရေးယူမှုတွေ ရှိနိုင်တာကြောင့် ဂရုစိုက်ဖို့ လိုပါတယ်။",
+      "ko": "한국 산업 현장에서는 안전 교육이 요구되는 경우가 많으며, 안전모, 안전화, 안전장갑 등 보호 장비를 착용하는 것이 일반적입니다. 안전 규정을 지키지 않으면 작업이 제한되거나 징계로 이어질 수 있으므로 주의해야 합니다.",
+      "en": "In Korean industrial settings, safety training is often required, and protective gear such as helmets, safety shoes, and safety gloves is typically worn. Non-compliance with safety rules may lead to restricted work or disciplinary action, so caution is advised."
+    },
+    "sensitive": false
+  },
+  "audio": {"tts_lang": "ko-KR", "files": []},
+  "srs": {
+    "enabled": true,
+    "cards": [
+      {"card_id":"C1","front":{"my":"Roman: anjeonmo","ko":"Roman: anjeonmo","en":"Roman: anjeonmo"},"back":{"my":"안전모 (ဘေးကင်းရေးဦးထုပ်)","ko":"안전모 (안전모)","en":"안전모 (safety helmet)"},"audio_ref":"AUD_WS001_L1","ease":2.5,"interval":0},
+      {"card_id":"C2","front":{"my":"Roman: wiheomhaeyo","ko":"Roman: wiheomhaeyo","en":"Roman: wiheomhaeyo"},"back":{"my":"위험해요 (အန္တရာယ်ရှိတယ်)","ko":"위험해요 (위험해요)","en":"위험해요 (dangerous)"},"audio_ref":"AUD_WS001_L3","ease":2.5,"interval":0}
+    ]
+  },
+  "assessment": {"type":"mission","pass_threshold":70,"weights":{"accuracy":60,"completion":40},"exam_mapping":{"topik":null,"eps_topik":null}}
+}

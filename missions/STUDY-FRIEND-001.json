@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "STUDY-FRIEND-001",
+  "goal": "study",
+  "level": 2,
+  "category": "daily",
+  "industry": null,
+  "tags": ["study", "friendship", "campus", "social", "beginner"],
+  "title": {"my":"ကျောင်းဝင်းထဲမှာ သူငယ်ချင်းဖွဲ့ခြင်း","ko":"캠퍼스에서 친구 사귀기","en":"Making Friends on Campus"},
+  "objective": {"my":"တက္ကသိုလ် ကျောင်းဝင်းထဲမှာ ကျောင်းသားချင်း မိတ်ဆက်ပြီး သူငယ်ချင်းဖွဲ့တဲ့အခါ သုံးတဲ့ အခြေခံ ကိုရီးယားစကားစုတွေကို သင်ယူပါမယ်။ Romanization ကို အဓိက အကိုးအကားအဖြစ်ထားပါ။","ko":"캠퍼스에서 친구를 사귈 때 사용하는 기본 표현을 로마자 표기 기준으로 익힌다.","en":"Learn basic Korean phrases for making friends on campus."},
+  "prerequisites": [],
+  "skills": ["listening","speaking","social"],
+  "estimated_minutes": 10,
+  "difficulty": "intro",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "dialogue": {
+    "setting": {"my":"တက္ကသိုလ် ကျောင်းဝင်း — စာအုပ်စင်ရှေ့","ko":"캠퍼스 — 도서관 앞","en":"Campus — in front of the library"},
+    "speakers": [
+      {"id":"learner","role":"learner","gender":"any","voice_id":null},
+      {"id":"friend","role":"other","gender":"male","voice_id":"ko_m_01"}
+    ],
+    "lines": [
+      {"line_id":"L1","speaker":"friend","ko":"안녕! 이름이 뭐예요?","rom":"annyeong! ireumi mwoyeyo?","my":"ဟိုင်း! နာမည် ဘယ်လိုခေါ်လဲ?","en":"Hi! What's your name?","audio":"AUD_STF001_L1","note":""},
+      {"line_id":"L2","speaker":"learner","ko":"저는 민수예요. 만나서 반가워요.","rom":"jeoneun minsu-yeyo. mannaseo bangawoyo.","my":"ကျွန်တော် မင်းဆူပါ။ တွေ့ရတာ ဝမ်းသာပါတယ်။","en":"I'm Minsu. Nice to meet you.","audio":"AUD_STF001_L2","note":"'예요' = သရအဆုံးသတ်နာမ်နောက်မှာ"},
+      {"line_id":"L3","speaker":"friend","ko":"저도 반가워요. 우리 친구해요!","rom":"jeodo bangawoyo. uri chinguhaeyo!","my":"ကျွန်တော်လည်း ဝမ်းသာပါတယ်။ ငါတို့ သူငယ်ချင်းဖွဲ့ရအောင်!","en":"Nice to meet you too. Let's be friends!","audio":"AUD_STF001_L3","note":"'우리' = ငါတို့ / we, us"},
+      {"line_id":"L4","speaker":"learner","ko":"좋아요!","rom":"joayo!","my":"ကောင်းတယ်!","en":"Sounds good!","audio":"AUD_STF001_L4","note":""}
+    ]
+  },
+  "activities": [
+    {
+      "activity_id": "A1",
+      "type": "listen_choose",
+      "prompt": {"my":"Roman 'uri chinguhaeyo' က ဘာအဓိပ္ပာယ်လဲ?","ko":"로마자 'uri chinguhaeyo'는 무슨 뜻인가요?","en":"What does Roman 'uri chinguhaeyo' mean?"},
+      "audio_ref": "AUD_STF001_L3",
+      "options": [
+        {"id":"O1","ko":"우리 친구해요","my":"우리 친구해요 — Roman: uri chinguhaeyo (ငါတို့ သူငယ်ချင်းဖွဲ့ရအောင်)","correct": true},
+        {"id":"O2","ko":"만나서 반가워요","my":"만나서 반가워요 — Roman: mannaseo bangawoyo (တွေ့ရတာဝမ်းသာ)","correct": false},
+        {"id":"O3","ko":"이름이 뭐예요?","my":"이름이 뭐예요? — Roman: ireumi mwoyeyo? (နာမည်ဘယ်လိုခေါ်လဲ?)","correct": false},
+        {"id":"O4","ko":"감사합니다","my":"감사합니다 — Roman: gamsahamnida (ကျေးဇူးတင်ပါတယ်)","correct": false}
+      ],
+      "explanation_ref": "F1"
+    },
+    {
+      "activity_id": "A2",
+      "type": "type_answer",
+      "prompt": {"my":"Roman 'mannaseo bangawoyo' ကို ကိုရီးယားလို ရိုက်ထည့်ပါ။","ko":"로마자 'mannaseo bangawoyo'를 한글로 입력하세요.","en":"Type the Korean for Roman 'mannaseo bangawoyo'."},
+      "answer": "만나서 반가워요",
+      "accept_alt": ["만나서반가워요", "만나서 반가워요 "],
+      "explanation_ref": "F2"
+    },
+    {
+      "activity_id": "A3",
+      "type": "speak",
+      "prompt": {"my":"'우리 친구해요' ကို ကျယ်ကျယ် ပြောပါ။ (Roman: uri chinguhaeyo)","ko":"'우리 친구해요'를 크게 말하세요. (로마자: uri chinguhaeyo)","en":"Say '우리 친구해요' out loud. (Roman: uri chinguhaeyo)"},
+      "target_ko": "우리 친구해요",
+      "target_romanization": "Uri chinguhaeyo.",
+      "audio_ref": "AUD_STF001_L3",
+      "explanation_ref": "F3"
+    }
+  ],
+  "feedback": {
+    "F1": {
+      "why_wrong": {"my":"Roman 'uri chinguhaeyo' က '우리 친구해요' (ငါတို့ သူငယ်ချင်းဖွဲ့ရအောင်)။","ko":"Roman 'uri chinguhaeyo'는 '우리 친구해요'입니다.","en":"Roman 'uri chinguhaeyo' is '우리 친구해요' (Let's be friends)."},
+      "grammar": {"point":"우리 ___해요","explain_my":"'우리' = ငါတို့။ '___해요' = ___လုပ်ရအောင် (ယဉ်ကျေးတဲ့ အဆုံးသတ်)။"},
+      "culture": "한국 캠퍼스에서는 같은 과나 동아리에서 먼저 인사하고 친구가 되는 것이 자연스럽습니다.",
+      "retry_phrase": "우리 친구해요"
+    },
+    "F2": {
+      "why_wrong": {"my":"Roman 'mannaseo bangawoyo' က '만나서 반가워요' (တွေ့ရတာဝမ်းသာ)။","ko":"Roman 'mannaseo bangawoyo'는 '만나서 반가워요'입니다.","en":"Roman 'mannaseo bangawoyo' is '만나서 반가워요' (nice to meet you)."},
+      "retry_phrase": "만나서 반가워요"
+    },
+    "F3": {
+      "why_wrong": {"my":"'우리 친구해요' — Roman: uri chinguhaeyo။ ကျယ်ကျယ် ပြောပါ။","ko":"'우리 친구해요' — 로마자: uri chinguhaeyo. 크게 말하세요.","en":"'우리 친구해요' — Roman: uri chinguhaeyo. Say it clearly."},
+      "retry_phrase": "우리 친구해요"
+    }
+  },
+  "cultural_note": {
+    "title": {"my":"ကိုရီးယား ကျောင်းဝင်း သူငယ်ချင်းယဉ်ကျေးမှု","ko":"한국 캠퍼스 친구 문화","en":"Korean Campus Friendship Culture"},
+    "body": {"my":"ကိုရီးယားမှာ အသက်နဲ့ ဆက်ဆံရေးပေါ်မူတည်ပြီး ခေါ်ဝေါ်ပုံနဲ့ စကားပြောပုံ ပြောင်းလဲနိုင်ပါတယ်။ ရင်းနှီးမလာခင် အသက် ဒါမှမဟုတ် အတန်းနှစ်ကို မေးတတ်တဲ့ အခြေအနေတွေလည်း ရှိပါတယ်။ ရင်းနှီးလာရင် 반말 ပြောင်းသုံးနိုင်ပါတယ်။","ko":"한국에서는 나이와 관계에 따라 호칭과 말투가 달라질 수 있습니다. 친해지기 전에 나이나 학년을 물어보는 경우도 있습니다. 친해지면 반말로 전환할 수 있습니다.","en":"In Korea, forms of address and speech style can vary depending on age and relationship. In some situations, people may ask about age or school year before becoming close. Once you get close, you can switch to casual speech."},
+    "sensitive": false
+  },
+  "audio": {"tts_lang": "ko-KR", "files": []},
+  "srs": {
+    "enabled": true,
+    "cards": [
+      {"card_id":"C1","front":{"my":"Roman: uri chinguhaeyo","ko":"Roman: uri chinguhaeyo","en":"Roman: uri chinguhaeyo"},"back":{"my":"우리 친구해요","ko":"우리 친구해요","en":"우리 친구해요 (Let's be friends)"},"audio_ref":"AUD_STF001_L3","ease":2.5,"interval":0},
+      {"card_id":"C2","front":{"my":"Roman: mannaseo bangawoyo","ko":"Roman: mannaseo bangawoyo","en":"Roman: mannaseo bangawoyo"},"back":{"my":"만나서 반가워요","ko":"만나서 반가워요","en":"만나서 반가워요 (nice to meet you)"},"audio_ref":"AUD_STF001_L2","ease":2.5,"interval":0}
+    ]
+  },
+  "assessment": {"type":"mission","pass_threshold":70,"weights":{"accuracy":60,"completion":40},"exam_mapping":{"topik":null,"eps_topik":null}}
+}

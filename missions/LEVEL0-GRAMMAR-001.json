@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "LEVEL0-GRAMMAR-001",
+  "goal": "common",
+  "level": 0,
+  "category": "daily",
+  "industry": null,
+  "tags": [],
+  "prerequisites": [],
+  "skills": [],
+  "estimated_minutes": 7,
+  "difficulty": "intro",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "title": {
+    "my": "အခြေခံသဒ္ဒါ -이다 (ဖြစ်ခြင်း)",
+    "ko": "기초 문법 -이다",
+    "en": "Basic Grammar -이다"
+  },
+  "dialogue": {},
+  "activities": [
+    {
+      "type": "branch_dialogue",
+      "title": "Introducing Yourself",
+      "entry_node": "start",
+      "nodes": {
+        "start": {
+          "speaker": "teacher",
+          "ko": "안녕하세요. 저는 민수입니다.",
+          "romanization": "Annyeonghaseyo. Jeoneun Minsu-imnida.",
+          "my": "မင်္ဂလာပါ။ ကျွန်တော် မင်ဆူ ပါ။",
+          "en": "Hello. I am Minsu.",
+          "note": "",
+          "choices": [
+            {
+              "ko": "안녕하세요. 저는 수진이에요.",
+              "romanization": "Annyeonghaseyo. Jeoneun Sujin-ieyo.",
+              "my": "မင်္ဂလာပါ။ ကျွန်မ ဆူဂျင်း ပါ။",
+              "en": "Hello. I am Sujin.",
+              "correct": true,
+              "next": "n2"
+            }
+          ]
+        },
+        "n2": {
+          "speaker": "teacher",
+          "ko": "수진 씨는 학생이에요?",
+          "romanization": "Sujin ssineun haksaeng-ieyo?",
+          "my": "ဆူဂျင်း က ကျောင်းသားလား?",
+          "en": "Are you a student, Sujin?",
+          "note": "",
+          "choices": [
+            {
+              "ko": "네, 저는 학생이에요.",
+              "romanization": "Ne, jeoneun haksaeng-ieyo.",
+              "my": "ဟုတ်ကဲ့၊ ကျွန်မ ကျောင်းသားပါ။",
+              "en": "Yes, I am a student.",
+              "correct": true,
+              "next": "n3"
+            },
+            {
+              "ko": "아니요, 저는 선생님이에요.",
+              "romanization": "Aniyo, jeoneun seonsaengnim-ieyo.",
+              "my": "မဟုတ်ဘူး၊ ကျွန်မ ဆရာမပါ။",
+              "en": "No, I am a teacher.",
+              "correct": false,
+              "next": "n4"
+            }
+          ]
+        },
+        "n3": {
+          "speaker": "teacher",
+          "ko": "네, 맞아요. 수진 씨는 학생이에요.",
+          "romanization": "Ne, majayo. Sujin ssineun haksaeng-ieyo.",
+          "my": "ဟုတ်တယ်၊ မှန်ပါတယ်။ ဆူဂျင်းက ကျောင်းသားပါ။",
+          "en": "Yes, that's right. Sujin is a student.",
+          "note": "",
+          "choices": [
+            {
+              "ko": "감사합니다.",
+              "romanization": "Gamsahamnida.",
+              "my": "ကျေးဇူးတင်ပါတယ်။",
+              "en": "Thank you.",
+              "correct": true,
+              "next": "END"
+            }
+          ]
+        },
+        "n4": {
+          "speaker": "teacher",
+          "ko": "아, 그렇군요. 선생님이시군요.",
+          "romanization": "A, geureokunyo. Seonsaengnim-isigunyo.",
+          "my": "အင်း၊ ဟုတ်လား။ ဆရာမ ဖြစ်တာကိုး။",
+          "en": "Ah, I see. You are a teacher.",
+          "note": "",
+          "choices": [
+            {
+              "ko": "네, 맞아요.",
+              "romanization": "Ne, majayo.",
+              "my": "ဟုတ်ကဲ့၊ မှန်ပါတယ်။",
+              "en": "Yes, that's right.",
+              "correct": true,
+              "next": "END"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "listen_choose",
+      "title": "Choose the correct ending",
+      "prompt": {
+        "ko": "맞는 문장을 고르세요.",
+        "my": "မှန်ကန်တဲ့ စာကြောင်းကို ရွေးပါ။",
+        "en": "Choose the correct sentence."
+      },
+      "audio_text": "저는 회사원이에요.",
+      "audio_romanization": "Jeoneun hoesawon-ieyo.",
+      "options": [
+        {
+          "ko": "저는 회사원이에요.",
+          "romanization": "Jeoneun hoesawon-ieyo.",
+          "my": "ကျွန်တော် ရုံးဝန်ထမ်းပါ။",
+          "en": "I am an office worker.",
+          "correct": true
+        },
+        {
+          "ko": "저는 회사원입니까?",
+          "romanization": "Jeoneun hoesawon-imnikka?",
+          "my": "ကျွန်တော် ရုံးဝန်ထမ်းလား?",
+          "en": "Am I an office worker?",
+          "correct": false
+        },
+        {
+          "ko": "저는 회사원이야.",
+          "romanization": "Jeoneun hoesawon-iya.",
+          "my": "ကျွန်တော် ရုံးဝန်ထမ်း။",
+          "en": "I am an office worker. (Casual)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "speak",
+      "title": "Practice Speaking",
+      "prompt": {
+        "ko": "저는 학생이에요. 를 따라 말해보세요.",
+        "my": "ကျွန်တော်/ကျွန်မ ကျောင်းသားပါ။ ကို လိုက်ပြောကြည့်ပါ။",
+        "en": "Say 'I am a student' in polite Korean."
+      },
+      "target_ko": "저는 학생이에요.",
+      "target_romanization": "Jeoneun haksaeng-ieyo.",
+      "target_my": "ကျွန်တော်/ကျွန်မ ကျောင်းသားပါ။",
+      "target_en": "I am a student."
+    },
+    {
+      "type": "type_answer",
+      "title": "Fill in the blank",
+      "prompt": {
+        "ko": "저는 학생______. (빈칸을 채우세요)",
+        "my": "ကျွန်တော်/ကျွန်မ ကျောင်းသား______. (ကွက်လပ်ဖြည့်ပါ)",
+        "en": "Complete the sentence: 저는 학생______."
+      },
+      "answer": "이에요",
+      "accept_alt": [
+        "예요"
+      ],
+      "explanation_ref": "f4"
+    }
+  ],
+  "feedback": {
+    "f2": {
+      "why_wrong": {
+        "ko": "입니까?는 질문 형태입니다.",
+        "my": "입니까? က မေးခွန်းပုံစံဖြစ်ပါတယ်။"
+      },
+      "retry_phrase": "저는 회사원이에요."
+    },
+    "f3": {
+      "why_wrong": {
+        "ko": "이야.는 반말입니다.",
+        "my": "이야. က ရင်းနှီးသောစကားဖြစ်ပါတယ်။"
+      },
+      "retry_phrase": "저는 회사원이에요."
+    },
+    "f4": {
+      "why_wrong": {
+        "ko": "학생은 자음으로 끝나기 때문에 '이에요'를 사용합니다.",
+        "my": "학생 က ဗျည်းအဆုံးသတ်ဖြစ်တာကြောင့် '이에요' ကို သုံးပါတယ်။"
+      },
+      "retry_phrase": "저는 학생이에요."
+    }
+  },
+  "cultural_note": {
+    "ko": "한국어에서는 상대방과의 관계에 따라 말투가 달라집니다.",
+    "my": "ကိုရီးယားဘာသာစကားမှာ ဆက်ဆံရေးအပေါ်မူတည်ပြီး စကားပြောပုံစံ ပြောင်းလဲပါတယ်။",
+    "en": "In Korean, the speech style changes depending on the relationship with the listener."
+  },
+  "audio": {
+    "tts_lang": "ko-KR"
+  },
+  "srs": {},
+  "assessment": {}
+}

@@ -98,6 +98,7 @@ korea-ready/
 ├── progress.js                   ← localStorage progress tracking
 ├── style.css                     ← global styles
 ├── README.md
+├── LICENSE
 └── missions/                     ← mission JSON files + manifest
     ├── index.json                ← mission manifest (38 entries)
     ├── LEVEL0-HANGUL-001.json
@@ -273,7 +274,9 @@ Content contributions are welcome. Before submitting:
 
 ## 📄 License
 
-> ⚠️ License not specified in v0.3. Add a `LICENSE` file before public distribution.
+This project is licensed under the **MIT License**.
+
+See [LICENSE](LICENSE) for the full text.
 
 ---
 

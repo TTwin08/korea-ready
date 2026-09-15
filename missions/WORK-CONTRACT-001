@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "WORK-CONTRACT-001",
+  "goal": "work",
+  "level": 2,
+  "category": "work",
+  "industry": null,
+  "tags": ["work", "contract", "hr", "salary", "beginner"],
+  "title": {"my":"အလုပ်စာချုပ် — လစာနဲ့ လုပ်ချိန် မေးမြန်းခြင်း","ko":"근로계약서 — 급여와 근무 시간 확인","en":"Employment Contract — Salary and Work Hours"},
+  "objective": {"my":"ကိုရီးယားမှာ အလုပ်စဝင်တဲ့အခါ လက်မှတ်ထိုးရတဲ့ အလုပ်စာချုပ်ထဲက လစာနဲ့ လုပ်ချိန်အကြောင်း မေးမြန်းတဲ့ အခြေခံ ကိုရီးယားစကားစုတွေကို သင်ယူပါမယ်။ Romanization ကို အဓိက အကိုးအကားအဖြစ်ထားပါ။","ko":"한국에서 취업 시 작성하는 근로계약서의 급여와 근무 시간에 대해 묻고 답하는 기본 표현을 로마자 표기 기준으로 익힌다.","en":"Learn basic Korean for asking about salary and work hours in an employment contract in Korea."},
+  "prerequisites": [],
+  "skills": ["listening","speaking","workplace"],
+  "estimated_minutes": 10,
+  "difficulty": "intro",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "dialogue": {
+    "setting": {"my":"ကုမ္ပဏီ လူ့စွမ်းအားရင်းမြစ်ခန်း (HR Office)","ko":"회사 인사팀 사무실","en":"Company HR office"},
+    "speakers": [
+      {"id":"clerk","role":"clerk","gender":"female","voice_id":"ko_f_01"},
+      {"id":"learner","role":"learner","gender":"any","voice_id":null}
+    ],
+    "lines": [
+      {"line_id":"L1","speaker":"clerk","ko":"이것은 근로계약서입니다. 읽어 보세요.","rom":"igeoseun geullo-gyeyakseo-imnida. ilgeo boseyo.","my":"ဒါက အလုပ်စာချုပ်ပါ။ ဖတ်ကြည့်ပါ။","en":"This is the employment contract. Please read it.","audio":"AUD_WC001_L1","note":""},
+      {"line_id":"L2","speaker":"learner","ko":"급여가 얼마예요?","rom":"geubyeo-ga eolmayeyo?","my":"လစာ ဘယ်လောက်လဲ?","en":"What is the salary?","audio":"AUD_WC001_L2","note":"'급여' = လစာ / salary"},
+      {"line_id":"L3","speaker":"clerk","ko":"월급은 200만 원이고, 근무 시간은 9시부터 6시까지예요.","rom":"wolgeubeun 200-man won-igo, geunmu siganeun ahop-si-buteo yeoseot-si-kkajiyeyo.","my":"လစဉ်လစာက ၂၀၀ မန်းဝမ် ဖြစ်ပြီး၊ လုပ်ချိန်က ၉ နာရီကနေ ၆ နာရီအထိပါ။","en":"The monthly salary is 2 million won, and work hours are from 9 to 6.","audio":"AUD_WC001_L3","note":"'월급' = လစဉ်လစာ"},
+      {"line_id":"L4","speaker":"learner","ko":"알겠습니다. 서명할게요.","rom":"algesseumnida. seomyeonghalgeyo.","my":"နားလည်ပါပြီ။ လက်မှတ်ထိုးပါမယ်။","en":"I understand. I'll sign.","audio":"AUD_WC001_L4","note":"'서명하다' = လက်မှတ်ထိုးသည်"}
+    ]
+  },
+  "activities": [
+    {
+      "activity_id": "A1",
+      "type": "listen_choose",
+      "prompt": {"my":"Roman 'geubyeo-ga eolmayeyo?' က ဘာအဓိပ္ပာယ်လဲ?","ko":"로마자 'geubyeo-ga eolmayeyo?'는 무슨 뜻인가요?","en":"What does Roman 'geubyeo-ga eolmayeyo?' mean?"},
+      "audio_ref": "AUD_WC001_L2",
+      "options": [
+        {"id":"O1","ko":"급여가 얼마예요?","my":"급여가 얼마예요? — Roman: geubyeo-ga eolmayeyo? (လစာ ဘယ်လောက်လဲ?)","correct": true},
+        {"id":"O2","ko":"근무 시간이 언제예요?","my":"근무 시간이 언제예요? — Roman: geunmu sigani eonjeyeyo? (လုပ်ချိန် ဘယ်တုန်းလဲ?)","correct": false},
+        {"id":"O3","ko":"이것은 근로계약서입니다","my":"이것은 근로계약서입니다 — Roman: igeoseun geullo-gyeyakseo-imnida (ဒါက အလုပ်စာချုပ်ပါ)","correct": false},
+        {"id":"O4","ko":"서명할게요","my":"서명할게요 — Roman: seomyeonghalgeyo (လက်မှတ်ထိုးပါမယ်)","correct": false}
+      ],
+      "explanation_ref": "F1"
+    },
+    {
+      "activity_id": "A2",
+      "type": "type_answer",
+      "prompt": {"my":"Roman 'wolgeup' ကို ကိုရီးယားလို ရိုက်ထည့်ပါ။ (အဓိပ္ပာယ်: လစဉ်လစာ)","ko":"로마자 'wolgeup'을 한글로 입력하세요.","en":"Type the Korean for Roman 'wolgeup'."},
+      "answer": "월급",
+      "accept_alt": ["월급 "],
+      "explanation_ref": "F2"
+    },
+    {
+      "activity_id": "A3",
+      "type": "speak",
+      "prompt": {"my":"'서명할게요' ကို ကျယ်ကျယ် ပြောပါ။ (Roman: seomyeonghalgeyo)","ko":"'서명할게요'를 크게 말하세요. (로마자: seomyeonghalgeyo)","en":"Say '서명할게요' out loud."},
+      "target_ko": "서명할게요",
+      "target_romanization": "Seomyeonghalgeyo.",
+      "audio_ref": "AUD_WC001_L4",
+      "explanation_ref": "F3"
+    }
+  ],
+  "feedback": {
+    "F1": {
+      "why_wrong": {"my":"Roman 'geubyeo-ga eolmayeyo?' က '급여가 얼마예요?' (လစာ ဘယ်လောက်လဲ?)။","ko":"Roman 'geubyeo-ga eolmayeyo?'는 '급여가 얼마예요?'입니다.","en":"Roman 'geubyeo-ga eolmayeyo?' is '급여가 얼마예요?' (What is the salary?)."},
+      "grammar": {"point":"___이/가 얼마예요?","explain_my":"'얼마예요?' = ဘယ်လောက်လဲ? (ဈေးနှုန်း/လစာ မေးတဲ့အခါ)။"},
+      "culture": "한국 근로계약서에는 급여, 근무 시간, 휴게 시간 등 주요 근로조건이 명시되는 경우가 많습니다. 서명 전 꼭 확인하세요.",
+      "retry_phrase": "급여가 얼마예요?"
+    },
+    "F2": {
+      "why_wrong": {"my":"Roman 'wolgeup' က '월급' (လစဉ်လစာ)။","ko":"Roman 'wolgeup'은 '월급'입니다.","en":"Roman 'wolgeup' is '월급' (monthly salary)."},
+      "retry_phrase": "월급"
+    },
+    "F3": {
+      "why_wrong": {"my":"'서명할게요' — Roman: seomyeonghalgeyo။ ကျယ်ကျယ် ပြောပါ။","ko":"'서명할게요' — 로마자: seomyeonghalgeyo. 크게 말하세요.","en":"'서명할게요' — Roman: seomyeonghalgeyo. Say it clearly."},
+      "retry_phrase": "서명할게요"
+    }
+  },
+  "cultural_note": {
+    "title": {"my":"ကိုရီးယား အလုပ်စာချုပ် ယဉ်ကျေးမှု","ko":"한국 근로계약서 문화","en":"Korean Employment Contract Culture"},
+    "body": {
+      "my": "ကိုရီးယားမှာ အလုပ်စဝင်တဲ့အခါ လုပ်ငန်းခွင်စာချုပ် (근로계약서) ကို ရေးဆွဲလေ့ရှိပြီး၊ အလုပ်သမားဥပဒေအရ အလုပ်ခန့်ထားမှုဆိုင်ရာ အခြေအနေတွေကို စာဖြင့် ဖော်ပြရန် လိုအပ်ပါတယ်။ လစာ၊ လုပ်ချိန်၊ အနားယူချိန် စတဲ့ အဓိကအချက်တွေ ဖော်ပြထားလေ့ ရှိပါတယ်။ လက်မှတ်မထိုးခင် ကိုယ်တိုင် သေချာဖတ်ပါ။ နားမလည်ရင် HR ကို မေးပါ။",
+      "ko": "한국에서는 취업 시 근로계약서를 작성하는 것이 일반적이며, 근로기준법에 따라 근로조건을 서면으로 명시해야 합니다. 급여, 근무 시간, 휴게 시간 등 주요 근로조건이 명시되는 경우가 많습니다. 서명 전 반드시 직접 읽고 확인하세요. 이해가 안 되면 인사팀에 문의하세요.",
+      "en": "In Korea, it is common to sign a written employment contract, and under the Labor Standards Act, working conditions must be specified in writing. Salary, work hours, and break times are often stated. Always read it carefully before signing. If unclear, ask HR."
+    },
+    "sensitive": false
+  },
+  "audio": {"tts_lang": "ko-KR", "files": []},
+  "srs": {
+    "enabled": true,
+    "cards": [
+      {"card_id":"C1","front":{"my":"Roman: geubyeo","ko":"Roman: geubyeo","en":"Roman: geubyeo"},"back":{"my":"급여 (လစာ)","ko":"급여 (급여)","en":"급여 (salary)"},"audio_ref":"AUD_WC001_L2","ease":2.5,"interval":0},
+      {"card_id":"C2","front":{"my":"Roman: wolgeup","ko":"Roman: wolgeup","en":"Roman: wolgeup"},"back":{"my":"월급 (လစဉ်လစာ)","ko":"월급 (월급)","en":"월급 (monthly salary)"},"audio_ref":"AUD_WC001_L3","ease":2.5,"interval":0}
+    ]
+  },
+  "assessment": {"type":"mission","pass_threshold":70,"weights":{"accuracy":60,"completion":40},"exam_mapping":{"topik":null,"eps_topik":null}}
+}

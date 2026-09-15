@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "WORK-SALARY-001",
+  "goal": "work",
+  "level": 2,
+  "category": "work",
+  "industry": null,
+  "tags": ["work", "salary", "bank", "money", "beginner"],
+  "title": {"my":"လစာ ထုတ်ခြင်း — ဘဏ်မှာ ပိုက်ဆံထုတ်ခြင်း","ko":"급여 찾기 — 은행에서 돈 출금","en":"Withdrawing Salary — At the Bank"},
+  "objective": {"my":"ကိုရီးယားမှာ လစာ ရပြီးတဲ့အခါ ဘဏ်မှာ ပိုက်ဆံထုတ်တဲ့အခါ သုံးတဲ့ အခြေခံ ကိုရီးယားစကားစုတွေကို သင်ယူပါမယ်။ Romanization ကို အဓိက အကိုးအကားအဖြစ်ထားပါ။","ko":"한국에서 급여를 받은 후 은행에서 돈을 찾을 때 사용하는 기본 표현을 로마자 표기 기준으로 익힌다.","en":"Learn basic Korean for withdrawing salary at a bank in Korea."},
+  "prerequisites": [],
+  "skills": ["listening","speaking","banking"],
+  "estimated_minutes": 10,
+  "difficulty": "intro",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "dialogue": {
+    "setting": {"my":"ဘဏ် — ငွေကောင်တာ","ko":"은행 창구","en":"Bank counter"},
+    "speakers": [
+      {"id":"clerk","role":"clerk","gender":"female","voice_id":"ko_f_01"},
+      {"id":"learner","role":"learner","gender":"any","voice_id":null}
+    ],
+    "lines": [
+      {"line_id":"L1","speaker":"clerk","ko":"어서 오세요. 뭘 도와드릴까요?","rom":"eoseo oseyo. mwol dowadeurilkkayo?","my":"ကြိုဆိုပါတယ်။ ဘာကူညီပေးရမလဲ?","en":"Welcome. How can I help you?","audio":"AUD_WSal001_L1","note":""},
+      {"line_id":"L2","speaker":"learner","ko":"월급을 찾고 싶어요.","rom":"wolgeubeul chatgo sipeoyo.","my":"လစဉ်လစာ ထုတ်ချင်ပါတယ်။","en":"I want to withdraw my salary.","audio":"AUD_WSal001_L2","note":"'찾다' = ပိုက်ဆံထုတ်သည်"},
+      {"line_id":"L3","speaker":"clerk","ko":"통장과 신분증을 주세요.","rom":"tongjang-gwa sinbunjeung-eul juseyo.","my":"ဘဏ်စာအုပ်နဲ့ မှတ်ပုံတင် ပေးပါ။","en":"Please give me your bankbook and ID.","audio":"AUD_WSal001_L3","note":"'통장' = ဘဏ်စာအုပ်"},
+      {"line_id":"L4","speaker":"learner","ko":"여기 있습니다.","rom":"yeogi itseumnida.","my":"ဒီမှာ ရှိပါတယ်။","en":"Here it is.","audio":"AUD_WSal001_L4","note":""}
+    ]
+  },
+  "activities": [
+    {
+      "activity_id": "A1",
+      "type": "listen_choose",
+      "prompt": {"my":"Roman 'wolgeubeul chatgo sipeoyo' က ဘာအဓိပ္ပာယ်လဲ?","ko":"로마자 'wolgeubeul chatgo sipeoyo'는 무슨 뜻인가요?","en":"What does Roman 'wolgeubeul chatgo sipeoyo' mean?"},
+      "audio_ref": "AUD_WSal001_L2",
+      "options": [
+        {"id":"O1","ko":"월급을 찾고 싶어요","my":"월급을 찾고 싶어요 — Roman: wolgeubeul chatgo sipeoyo (လစဉ်လစာ ထုတ်ချင်တယ်)","correct": true},
+        {"id":"O2","ko":"통장을 만들고 싶어요","my":"통장을 만들고 싶어요 — Roman: tongjang-eul mandeulgo sipeoyo (ဘဏ်စာအုပ် လုပ်ချင်တယ်)","correct": false},
+        {"id":"O3","ko":"돈을 보내고 싶어요","my":"돈을 보내고 싶어요 — Roman: don-eul bonaego sipeoyo (ပိုက်ဆံ ပို့ချင်တယ်)","correct": false},
+        {"id":"O4","ko":"잔액을 확인하고 싶어요","my":"잔액을 확인하고 싶어요 — Roman: janaek-eul hwagin-hago sipeoyo (လက်ကျန်ငွေ စစ်ချင်တယ်)","correct": false}
+      ],
+      "explanation_ref": "F1"
+    },
+    {
+      "activity_id": "A2",
+      "type": "type_answer",
+      "prompt": {"my":"Roman 'tongjang' ကို ကိုရီးယားလို ရိုက်ထည့်ပါ။ (အဓိပ္ပာယ်: ဘဏ်စာအုပ်)","ko":"로마자 'tongjang'을 한글로 입력하세요.","en":"Type the Korean for Roman 'tongjang'."},
+      "answer": "통장",
+      "accept_alt": ["통장 "],
+      "explanation_ref": "F2"
+    },
+    {
+      "activity_id": "A3",
+      "type": "speak",
+      "prompt": {"my":"'월급을 찾고 싶어요' ကို ကျယ်ကျယ် ပြောပါ။ (Roman: wolgeubeul chatgo sipeoyo)","ko":"'월급을 찾고 싶어요'를 크게 말하세요. (로마자: wolgeubeul chatgo sipeoyo)","en":"Say '월급을 찾고 싶어요' out loud."},
+      "target_ko": "월급을 찾고 싶어요",
+      "target_romanization": "Wolgeubeul chatgo sipeoyo.",
+      "audio_ref": "AUD_WSal001_L2",
+      "explanation_ref": "F3"
+    }
+  ],
+  "feedback": {
+    "F1": {
+      "why_wrong": {"my":"Roman 'wolgeubeul chatgo sipeoyo' က '월급을 찾고 싶어요' (လစဉ်လစာ ထုတ်ချင်တယ်)။","ko":"Roman 'wolgeubeul chatgo sipeoyo'는 '월급을 찾고 싶어요'입니다.","en":"Roman 'wolgeubeul chatgo sipeoyo' is '월급을 찾고 싶어요' (I want to withdraw my salary)."},
+      "grammar": {"point":"___고 싶어요","explain_my":"'___고 싶어요' = ___ချင်တယ်။ ကြိယာအရင်းနောက်မှာ ထည့်ပါ။"},
+      "culture": "한국에서는 급여가 보통 은행 계좌로 이체됩니다. 은행에서 돈을 찾을 때는 통장과 신분증을 지참하는 것이 일반적입니다.",
+      "retry_phrase": "월급을 찾고 싶어요"
+    },
+    "F2": {
+      "why_wrong": {"my":"Roman 'tongjang' က '통장' (ဘဏ်စာအုပ်)။","ko":"Roman 'tongjang'은 '통장'입니다.","en":"Roman 'tongjang' is '통장' (bankbook)."},
+      "retry_phrase": "통장"
+    },
+    "F3": {
+      "why_wrong": {"my":"'월급을 찾고 싶어요' — Roman: wolgeubeul chatgo sipeoyo။ ကျယ်ကျယ် ပြောပါ။","ko":"'월급을 찾고 싶어요' — 로마자: wolgeubeul chatgo sipeoyo. 크게 말하세요.","en":"'월급을 찾고 싶어요' — Roman: wolgeubeul chatgo sipeoyo. Say it clearly."},
+      "retry_phrase": "월급을 찾고 싶어요"
+    }
+  },
+  "cultural_note": {
+    "title": {"my":"ကိုရီးယား ဘဏ်နဲ့ လစာ ယဉ်ကျေးမှု","ko":"한국 은행과 급여 문화","en":"Korean Banking and Salary Culture"},
+    "body": {
+      "my": "ကိုရီးယားမှာ လစာကို ဘဏ်အကောင့်ထဲ တိုက်ရိုက် လွှဲပေးလေ့ ရှိပါတယ်။ လစာပေးတဲ့ရက်က ကုမ္ပဏီအလိုက် ကွာခြားနိုင်ပေမဲ့၊ လစဉ် ၁၀ ရက် ဒါမှမဟုတ် ၂၅ ရက်နေ့တွေမှာ ပေးလေ့ ရှိပါတယ်။ ဘဏ်မှာ ပိုက်ဆံထုတ်ဖို့ 통장 (ဘဏ်စာအုပ်) နဲ့ 신분증 (မှတ်ပုံတင်) ယူသွားပါ။ ATM မှာလည်း ထုတ်နိုင်ပါတယ်။",
+      "ko": "한국에서는 급여가 보통 은행 계좌로 이체됩니다. 지급일은 회사마다 다르지만, 매월 10일이나 25일에 지급하는 경우가 많습니다. 은행에서 돈을 찾을 때는 통장과 신분증을 지참하세요. ATM에서도 출금할 수 있습니다.",
+      "en": "In Korea, salaries are usually transferred to a bank account. Pay dates vary by company, but the 10th or 25th of the month is common. Bring your bankbook and ID when withdrawing at the bank. ATMs are also available."
+    },
+    "sensitive": false
+  },
+  "audio": {"tts_lang": "ko-KR", "files": []},
+  "srs": {
+    "enabled": true,
+    "cards": [
+      {"card_id":"C1","front":{"my":"Roman: wolgeup","ko":"Roman: wolgeup","en":"Roman: wolgeup"},"back":{"my":"월급 (လစဉ်လစာ)","ko":"월급 (월급)","en":"월급 (monthly salary)"},"audio_ref":"AUD_WSal001_L2","ease":2.5,"interval":0},
+      {"card_id":"C2","front":{"my":"Roman: tongjang","ko":"Roman: tongjang","en":"Roman: tongjang"},"back":{"my":"통장 (ဘဏ်စာအုပ်)","ko":"통장 (통장)","en":"통장 (bankbook)"},"audio_ref":"AUD_WSal001_L3","ease":2.5,"interval":0}
+    ]
+  },
+  "assessment": {"type":"mission","pass_threshold":70,"weights":{"accuracy":60,"completion":40},"exam_mapping":{"topik":null,"eps_topik":null}}
+}

@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "LEVEL0-POLITE-001",
+  "goal": "common",
+  "level": 0,
+  "category": "daily",
+  "industry": null,
+  "tags": [],
+  "prerequisites": [],
+  "skills": [],
+  "estimated_minutes": 7,
+  "difficulty": "intro",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "title": {
+    "my": "ယဉ်ကျေးစကား vs ရင်းနှီးစကား (존댓말 vs 반말)",
+    "ko": "존댓말 vs 반말",
+    "en": "Polite vs Casual Speech"
+  },
+  "dialogue": {},
+  "activities": [
+    {
+      "type": "branch_dialogue",
+      "title": "At Work vs With a Friend",
+      "entry_node": "start",
+      "nodes": {
+        "start": {
+          "speaker": "manager",
+          "ko": "안녕하세요, 오늘도 수고하셨습니다.",
+          "romanization": "Annyeonghaseyo, oneuldo sugohasyeotseumnida.",
+          "my": "မင်္ဂလာပါ၊ ဒီနေ့လည်း ပင်ပန်းခဲ့ပါတယ်။ (အလုပ်သမားအချင်းချင်း)",
+          "en": "Hello, you worked hard today too. (Polite)",
+          "note": "Used with superiors, elders, or in formal situations.",
+          "choices": [
+            {
+              "ko": "네, 감사합니다. 내일 뵙겠습니다.",
+              "romanization": "Ne, gamsahamnida. Naeil boepgetseumnida.",
+              "my": "ဟုတ်ကဲ့၊ ကျေးဇူးတင်ပါတယ်။ မနက်ဖြန် တွေ့ပါမယ်။",
+              "en": "Yes, thank you. See you tomorrow. (Polite)",
+              "correct": true,
+              "next": "n2"
+            }
+          ]
+        },
+        "n2": {
+          "speaker": "friend",
+          "ko": "야, 민수야! 밥 먹었어?",
+          "romanization": "Ya, Minsu-ya! Bap meogeosseo?",
+          "my": "ဟေ့ မင်ဆူ! ထမင်းစားပြီးလား?",
+          "en": "Hey, Minsu! Did you eat? (Casual)",
+          "note": "Used with close friends, younger people, or family.",
+          "choices": [
+            {
+              "ko": "응, 먹었어. 너는?",
+              "romanization": "Eung, meogeosseo. Neoneun?",
+              "my": "အင်း၊ စားပြီးပြီ။ မင်းရော?",
+              "en": "Yeah, I ate. You? (Casual)",
+              "correct": true,
+              "next": "n3"
+            },
+            {
+              "ko": "네, 먹었습니다.",
+              "romanization": "Ne, meogeotseumnida.",
+              "my": "ဟုတ်ကဲ့၊ စားပြီးပါပြီ။",
+              "en": "Yes, I ate. (Polite)",
+              "correct": false,
+              "next": "n4"
+            }
+          ]
+        },
+        "n3": {
+          "speaker": "friend",
+          "ko": "나도 먹었어.",
+          "romanization": "Nado meogeosseo.",
+          "my": "ငါလည်း စားပြီးပြီ။",
+          "en": "I ate too. (Casual)",
+          "note": "",
+          "choices": [
+            {
+              "ko": "그래? 배부르겠다.",
+              "romanization": "Geurae? Baebureugetda.",
+              "my": "ဟုတ်လား? ဗိုက်ပြည့်သွားမှာပဲ။",
+              "en": "Really? You must be full.",
+              "correct": true,
+              "next": "END"
+            }
+          ]
+        },
+        "n4": {
+          "speaker": "friend",
+          "ko": "어? 왜 갑자기 존댓말이야?",
+          "romanization": "Eo? Wae gapjagi jondaenmariya?",
+          "my": "အ? ဘာလို့ ရုတ်တရက် ယဉ်ကျေးစကားပြောတာလဲ?",
+          "en": "Huh? Why suddenly polite? (Casual)",
+          "note": "",
+          "choices": [
+            {
+              "ko": "아, 미안. 편하게 말할게.",
+              "romanization": "A, mian. Pyeonhage malhalge.",
+              "my": "အင်း၊ တောင်းပန်ပါတယ်။ ရင်းရင်းနှီးနှီး ပြောမယ်။",
+              "en": "Ah, sorry. I'll speak casually.",
+              "correct": true,
+              "next": "END"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "listen_choose",
+      "title": "Which is polite?",
+      "prompt": {
+        "ko": "존댓말을 고르세요.",
+        "my": "ယဉ်ကျေးတဲ့စကားကို ရွေးပါ။",
+        "en": "Choose the polite version."
+      },
+      "audio_text": "감사합니다.",
+      "audio_romanization": "Gamsahamnida.",
+      "explanation_ref": "f1",
+      "options": [
+        {
+          "ko": "고마워.",
+          "romanization": "Gomawo.",
+          "my": "ကျေးဇူးတင်တယ်။",
+          "en": "Thanks. (Casual)",
+          "correct": false
+        },
+        {
+          "ko": "감사합니다.",
+          "romanization": "Gamsahamnida.",
+          "my": "ကျေးဇူးတင်ပါတယ်။",
+          "en": "Thank you. (Polite)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "speak",
+      "title": "Practice Polite Greeting",
+      "prompt": {
+        "ko": "안녕하세요. 를 따라 말해보세요.",
+        "my": "မင်္ဂလာပါ။ ကို လိုက်ပြောကြည့်ပါ။",
+        "en": "Say 'Hello' politely."
+      },
+      "target_ko": "안녕하세요.",
+      "target_romanization": "Annyeonghaseyo.",
+      "target_my": "မင်္ဂလာပါ။",
+      "target_en": "Hello. (Polite)"
+    },
+    {
+      "type": "type_answer",
+      "title": "Identify the style",
+      "prompt": {
+        "ko": "존댓말로 '네'를 입력하세요.",
+        "my": "ယဉ်ကျေးတဲ့စကားနဲ့ 'ဟုတ်ကဲ့' ကို ရိုက်ထည့်ပါ။",
+        "en": "Type 'Yes' in polite Korean."
+      },
+      "answer": "네",
+      "accept_alt": [],
+      "explanation_ref": "f3"
+    }
+  ],
+  "feedback": {
+    "f1": {
+      "why_wrong": {
+        "ko": "고마워는 반말입니다.",
+        "my": "고마워 က ရင်းနှီးသောစကားဖြစ်ပါတယ်။"
+      },
+      "retry_phrase": "감사합니다."
+    },
+    "f3": {
+      "why_wrong": {
+        "ko": "존댓말은 '네', 반말은 '응'입니다.",
+        "my": "ယဉ်ကျေးစကား '네'၊ ရင်းနှီးစကား '응' ဖြစ်ပါတယ်။"
+      },
+      "retry_phrase": "네."
+    }
+  },
+  "cultural_note": {
+    "ko": "한국에서는 처음 만나는 사람이나 나이가 많은 사람에게 존댓말을 사용합니다.",
+    "my": "ကိုရီးယားမှာ ပထမဆုံးတွေ့တဲ့သူ သို့မဟုတ် အသက်ကြီးသူတွေကို ယဉ်ကျေးတဲ့စကားနဲ့ ပြောဆိုပါတယ်။",
+    "en": "In Korea, polite speech is used with strangers and people older than you."
+  },
+  "audio": {
+    "tts_lang": "ko-KR"
+  },
+  "srs": {},
+  "assessment": {}
+}

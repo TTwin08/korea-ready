@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "STUDY-UNIVERSITY-001",
+  "goal": "study",
+  "level": 2,
+  "category": "daily",
+  "industry": null,
+  "tags": ["study", "university", "campus", "administration", "beginner"],
+  "title": {"my":"တက္ကသိုလ် ပထမဆုံးနေ့ — ရုံးခန်းရှာခြင်း","ko":"대학교 첫날 — 행정실 찾기","en":"First Day at University — Finding the Admin Office"},
+  "objective": {"my":"တက္ကသိုလ် ပထမဆုံးနေ့မှာ ရုံးခန်းရှာဖွေတဲ့အခါ သုံးတဲ့ အခြေခံ ကိုရီးယားစကားစုတွေကို သင်ယူပါမယ်။ Romanization ကို အဓိက အကိုးအကားအဖြစ်ထားပါ။","ko":"대학교 첫날 행정실 위치를 묻고 답하는 기본 표현을 로마자 표기 기준으로 익힌다.","en":"Learn basic Korean phrases for finding the admin office on the first day at university."},
+  "prerequisites": [],
+  "skills": ["listening","speaking","asking-directions"],
+  "estimated_minutes": 10,
+  "difficulty": "intro",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "dialogue": {
+    "setting": {"my":"တက္ကသိုလ် ပထမထပ် — ဧည့်ကြိုခန်း","ko":"대학교 1층 — 안내 데스크","en":"University 1st floor — Information desk"},
+    "speakers": [
+      {"id":"clerk","role":"clerk","gender":"female","voice_id":"ko_f_01"},
+      {"id":"learner","role":"learner","gender":"any","voice_id":null}
+    ],
+    "lines": [
+      {"line_id":"L1","speaker":"clerk","ko":"안녕하세요. 뭘 도와드릴까요?","rom":"annyeonghaseyo. mwol dowadeurilkkayo?","my":"မင်္ဂလာပါ။ ဘာကူညီပေးရမလဲ?","en":"Hello. How can I help you?","audio":"AUD_STU001_L1","note":""},
+      {"line_id":"L2","speaker":"learner","ko":"안녕하세요. 저는 새 학생이에요. 행정실이 어디예요?","rom":"annyeonghaseyo. jeoneun sae haksaeng-ieyo. haengjeongsil-i eodiyeyo?","my":"မင်္ဂလာပါ။ ကျွန်တော် ကျောင်းသားအသစ်ပါ။ ရုံးခန်းက ဘယ်မှာလဲ?","en":"Hello. I'm a new student. Where is the admin office?","audio":"AUD_STU001_L2","note":"'행정실' = ရုံးခန်း / admin office"},
+      {"line_id":"L3","speaker":"clerk","ko":"행정실은 2층에 있어요.","rom":"haengjeongsil-eun i-cheung-e isseoyo.","my":"ရုံးခန်းက ၂ ထပ်မှာ ရှိပါတယ်။","en":"The admin office is on the 2nd floor.","audio":"AUD_STU001_L3","note":"'층' = အထပ် / floor"},
+      {"line_id":"L4","speaker":"learner","ko":"감사합니다.","rom":"gamsahamnida.","my":"ကျေးဇူးတင်ပါတယ်။","en":"Thank you.","audio":"AUD_STU001_L4","note":""}
+    ]
+  },
+  "activities": [
+    {
+      "activity_id": "A1",
+      "type": "listen_choose",
+      "prompt": {"my":"Roman 'haengjeongsil-i eodiyeyo?' က ဘာအဓိပ္ပာယ်လဲ?","ko":"로마자 'haengjeongsil-i eodiyeyo?'는 무슨 뜻인가요?","en":"What does Roman 'haengjeongsil-i eodiyeyo?' mean?"},
+      "audio_ref": "AUD_STU001_L2",
+      "options": [
+        {"id":"O1","ko":"행정실이 어디예요?","my":"행정실이 어디예요? — Roman: haengjeongsil-i eodiyeyo? (ရုံးခန်းက ဘယ်မှာလဲ?)","correct": true},
+        {"id":"O2","ko":"행정실이 2층에 있어요","my":"행정실이 2층에 있어요 — Roman: haengjeongsil-i i-cheung-e isseoyo (ရုံးခန်းက ၂ ထပ်မှာ ရှိတယ်)","correct": false},
+        {"id":"O3","ko":"저는 새 학생이에요","my":"저는 새 학생이에요 — Roman: jeoneun sae haksaeng-ieyo (ကျွန်တော် ကျောင်းသားအသစ်ပါ)","correct": false},
+        {"id":"O4","ko":"감사합니다","my":"감사합니다 — Roman: gamsahamnida (ကျေးဇူးတင်ပါတယ်)","correct": false}
+      ],
+      "explanation_ref": "F1"
+    },
+    {
+      "activity_id": "A2",
+      "type": "type_answer",
+      "prompt": {"my":"Roman 'gamsahamnida' ကို ကိုရီးယားလို ရိုက်ထည့်ပါ။","ko":"로마자 'gamsahamnida'를 한글로 입력하세요.","en":"Type the Korean for Roman 'gamsahamnida'."},
+      "answer": "감사합니다",
+      "accept_alt": ["감사합니다 ", "감사 합니다"],
+      "explanation_ref": "F2"
+    },
+    {
+      "activity_id": "A3",
+      "type": "speak",
+      "prompt": {"my":"'안녕하세요, 저는 새 학생이에요' ကို ကျယ်ကျယ် ပြောပါ။ (Roman: annyeonghaseyo, jeoneun sae haksaeng-ieyo)","ko":"'안녕하세요, 저는 새 학생이에요'를 크게 말하세요. (로마자: annyeonghaseyo, jeoneun sae haksaeng-ieyo)","en":"Say '안녕하세요, 저는 새 학생이에요' out loud."},
+      "target_ko": "안녕하세요, 저는 새 학생이에요",
+      "target_romanization": "Annyeonghaseyo, jeoneun sae haksaeng-ieyo.",
+      "audio_ref": "AUD_STU001_L2",
+      "explanation_ref": "F3"
+    }
+  ],
+  "feedback": {
+    "F1": {
+      "why_wrong": {"my":"Roman 'haengjeongsil-i eodiyeyo?' က '행정실이 어디예요?' (ရုံးခန်းက ဘယ်မှာလဲ?)။","ko":"Roman 'haengjeongsil-i eodiyeyo?'는 '행정실이 어디예요?'입니다.","en":"Roman 'haengjeongsil-i eodiyeyo?' is '행정실이 어디예요?' (Where is the admin office?)."},
+      "grammar": {"point":"___이/가 어디예요?","explain_my":"'___' နေရာမှာ ရှာချင်တဲ့ နေရာကို ထည့်ပါ။ ဗျည်းအဆုံးသတ်နောက်မှာ '이', သရအဆုံးသတ်နောက်မှာ '가'။"},
+      "culture": "한국 대학교에서는 처음 방문 시 행정실이나 안내 데스크를 먼저 찾는 것이 일반적입니다.",
+      "retry_phrase": "행정실이 어디예요?"
+    },
+    "F2": {
+      "why_wrong": {"my":"Roman 'gamsahamnida' က '감사합니다' (ကျေးဇူးတင်ပါတယ်)။","ko":"Roman 'gamsahamnida'는 '감사합니다'입니다.","en":"Roman 'gamsahamnida' is '감사합니다' (thank you)."},
+      "retry_phrase": "감사합니다"
+    },
+    "F3": {
+      "why_wrong": {"my":"'안녕하세요, 저는 새 학생이에요' — Roman: annyeonghaseyo, jeoneun sae haksaeng-ieyo။ ကျယ်ကျယ် ပြောပါ။","ko":"'안녕하세요, 저는 새 학생이에요' — 로마자: annyeonghaseyo, jeoneun sae haksaeng-ieyo. 크게 말하세요.","en":"'안녕하세요, 저는 새 학생이에요' — Roman: annyeonghaseyo, jeoneun sae haksaeng-ieyo. Say it clearly."},
+      "retry_phrase": "안녕하세요, 저는 새 학생이에요"
+    }
+  },
+  "cultural_note": {
+    "title": {"my":"ကိုရီးယား တက္ကသိုလ် ယဉ်ကျေးမှု","ko":"한국 대학교 문화","en":"Korean University Culture"},
+    "body": {
+      "my": "တက္ကသိုလ်တစ်ခုနဲ့တစ်ခု လုပ်ထုံးလုပ်နည်းတွေ ကွာနိုင်ပါတယ်။ ပထမဆုံးရောက်တဲ့ နိုင်ငံခြားသားကျောင်းသားတွေအနေနဲ့ ကျောင်းရဲ့ 안내 데스크 ဒါမှမဟုတ် 행정실 ကို သွားပြီး လိုအပ်တဲ့ လမ်းညွှန်ချက်တွေ မေးမြန်းနိုင်ပါတယ်။ ကျောင်းဝင်းထဲမှာ နေရာရှာဖွေတဲ့အခါ '어디예요?' ကို အသုံးပြုနိုင်ပါတယ်။",
+      "ko": "대학교마다 절차가 다를 수 있습니다. 처음 온 외국인 학생은 학교 안내 데스크나 행정실에서 필요한 안내를 받을 수 있습니다. 캠퍼스에서 위치를 물을 때 '어디예요?'를 사용할 수 있습니다.",
+      "en": "Procedures can vary by university. New international students can ask the information desk or administrative office for guidance. On campus, '어디예요?' can be used to ask where a place is."
+    },
+    "sensitive": false
+  },
+  "audio": {"tts_lang": "ko-KR", "files": []},
+  "srs": {
+    "enabled": true,
+    "cards": [
+      {"card_id":"C1","front":{"my":"Roman: haengjeongsil-i eodiyeyo?","ko":"Roman: haengjeongsil-i eodiyeyo?","en":"Roman: haengjeongsil-i eodiyeyo?"},"back":{"my":"행정실이 어디예요?","ko":"행정실이 어디예요?","en":"행정실이 어디예요? (Where is the admin office?)"},"audio_ref":"AUD_STU001_L2","ease":2.5,"interval":0},
+      {"card_id":"C2","front":{"my":"Roman: gamsahamnida","ko":"Roman: gamsahamnida","en":"Roman: gamsahamnida"},"back":{"my":"감사합니다","ko":"감사합니다","en":"감사합니다 (thank you)"},"audio_ref":"AUD_STU001_L4","ease":2.5,"interval":0}
+    ]
+  },
+  "assessment": {"type":"mission","pass_threshold":70,"weights":{"accuracy":60,"completion":40},"exam_mapping":{"topik":null,"eps_topik":null}}
+}

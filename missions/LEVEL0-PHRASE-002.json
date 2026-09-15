@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "LEVEL0-PHRASE-002",
+  "goal": "common",
+  "level": 0,
+  "category": "daily",
+  "industry": null,
+  "tags": ["level-0", "yes-no", "phrases", "foundation", "beginner"],
+  "title": {"my":"ကိုရီးယား အခြေခံ — ဟုတ်/မဟုတ်","ko":"네 / 아니요 (Yes / No)","en":"Yes / No"},
+  "objective": {"my":"ကိုရီးယား အခြေခံ ဖြေကြားစကား ၂ ခု — 네 (ဟုတ်ကဲ့)၊ 아니요 (မဟုတ်ဘူး) — ကို Romanization (ne, aniyo) ကို အဓိက အကိုးအကားအဖြစ်ထားပြီး ရိုးရိုး မေးခွန်းများကို ဖြေကြားနိုင်မယ်။ Burmese မြန်မာ အသံ ခန့်မှန်းချက်များကို အကိုးအကား အဖြစ်သာ ထားပါ။","ko":"한국어 기본 대답 2개(네, 아니요)를 로마자 표기를 기준으로 익히고 간단한 질문에 대답할 수 있다.","en":"Learn and use basic Korean responses 네 (yes) and 아니요 (no) using Romanization as the primary guide."},
+  "prerequisites": [],
+  "skills": ["listening","speaking","politeness"],
+  "estimated_minutes": 6,
+  "difficulty": "intro",
+  "regulated": false,
+  "status": "draft",
+  "version": 1,
+  "dialogue": {
+    "setting": {"my":"ကိုရီးယားဘာသာ စာသင်ခန်း","ko":"한국어 교실","en":"Korean language classroom"},
+    "speakers": [
+      {"id":"teacher","role":"teacher","gender":"female","voice_id":"ko_f_01"},
+      {"id":"learner","role":"learner","gender":"any","voice_id":null}
+    ],
+    "lines": [
+      {"line_id":"L1","speaker":"teacher","ko":"학생이에요?","rom":"haksaeng-ieyo?","my":"ကျောင်းသားလား?","en":"Are you a student?","audio":"AUD_L0P002_L1","note":""},
+      {"line_id":"L2","speaker":"learner","ko":"네, 학생이에요.","rom":"ne, haksaeng-ieyo.","my":"ဟုတ်ကဲ့၊ ကျောင်းသားပါ။","en":"Yes, I am a student.","audio":"AUD_L0P002_L2","note":""},
+      {"line_id":"L3","speaker":"teacher","ko":"선생님이에요?","rom":"seonsaengnim-ieyo?","my":"ဆရာ/ဆရာမလား?","en":"Are you a teacher?","audio":"AUD_L0P002_L3","note":""},
+      {"line_id":"L4","speaker":"learner","ko":"아니요, 학생이에요.","rom":"aniyo, haksaeng-ieyo.","my":"မဟုတ်ဘူး၊ ကျောင်းသားပါ။","en":"No, I am a student.","audio":"AUD_L0P002_L4","note":""}
+    ]
+  },
+  "activities": [
+    {
+      "activity_id": "A1",
+      "type": "listen_choose",
+      "prompt": {"my":"Roman 'ne' က ဘာအဓိပ္ပာယ်လဲ?","ko":"로마자 'ne'는 무슨 뜻인가요?","en":"What does Roman 'ne' mean?"},
+      "audio_ref": "",
+      "options": [
+        {"id":"O1","ko":"네","my":"네 — Roman: ne (ဟုတ်ကဲ့)","correct": true},
+        {"id":"O2","ko":"아니요","my":"아니요 — Roman: aniyo (မဟုတ်ဘူး)","correct": false},
+        {"id":"O3","ko":"안녕하세요","my":"안녕하세요 — Roman: annyeonghaseyo (မင်္ဂလာပါ)","correct": false},
+        {"id":"O4","ko":"감사합니다","my":"감사합니다 — Roman: gamsahamnida (ကျေးဇူးတင်ပါတယ်)","correct": false}
+      ],
+      "explanation_ref": "F1"
+    },
+    {
+      "activity_id": "A2",
+      "type": "listen_choose",
+      "prompt": {"my":"Roman 'aniyo' က ဘာအဓိပ္ပာယ်လဲ?","ko":"로마자 'aniyo'는 무슨 뜻인가요?","en":"What does Roman 'aniyo' mean?"},
+      "audio_ref": "",
+      "options": [
+        {"id":"O1","ko":"아니요","my":"아니요 — Roman: aniyo (မဟုတ်ဘူး)","correct": true},
+        {"id":"O2","ko":"네","my":"네 — Roman: ne (ဟုတ်ကဲ့)","correct": false},
+        {"id":"O3","ko":"맞아요","my":"맞아요 — Roman: majayo (မှန်တယ်)","correct": false},
+        {"id":"O4","ko":"몰라요","my":"몰라요 — Roman: mollayo (မသိဘူး)","correct": false}
+      ],
+      "explanation_ref": "F2"
+    },
+    {
+      "activity_id": "A3",
+      "type": "type_answer",
+      "prompt": {"my":"Roman 'ne' ကို ကိုရီးယားလို ရိုက်ထည့်ပါ။ (ဟုတ်ကဲ့)","ko":"로마자 'ne'를 한글로 입력하세요. (예)","en":"Type the Korean for Roman 'ne' (yes)."},
+      "answer": "네",
+      "accept_alt": ["네 "],
+      "explanation_ref": "F3"
+    },
+    {
+      "activity_id": "A4",
+      "type": "speak",
+      "prompt": {"my":"'네, 학생이에요' ကို ကျယ်ကျယ် ပြောပါ။ (Roman: ne, haksaeng-ieyo)","ko":"'네, 학생이에요'를 크게 말하세요. (로마자: ne, haksaeng-ieyo)","en":"Say '네, 학생이에요' out loud. (Roman: ne, haksaeng-ieyo)"},
+      "target_ko": "네, 학생이에요",
+      "audio_ref": "AUD_L0P002_A4",
+      "explanation_ref": "F4"
+    }
+  ],
+  "feedback": {
+    "F1": {
+      "why_wrong": {"my":"Roman 'ne' က '네' (ဟုတ်ကဲ့)။ 'aniyo' က 'မဟုတ်ဘူး'။","ko":"Roman 'ne'는 '네'(예)입니다. 'aniyo'는 '아니요'(아니오)입니다.","en":"Roman 'ne' is '네' (yes). 'aniyo' is '아니요' (no)."},
+      "grammar": {"point":"네","explain_my":"'네' က ဟုတ်ကဲ့ — ယဉ်ကျေးတဲ့ အဖြေ။ '예' လို့လည်း ပြောနိုင်တယ်။"},
+      "culture": "한국에서는 윗사람의 말에 '네'라고 대답하는 것이 예의입니다.",
+      "retry_phrase": "네"
+    },
+    "F2": {
+      "why_wrong": {"my":"Roman 'aniyo' က '아니요' (မဟုတ်ဘူး)။ 'ne' က 'ဟုတ်ကဲ့'။","ko":"Roman 'aniyo'는 '아니요'(아니오)입니다. 'ne'는 '네'(예)입니다.","en":"Roman 'aniyo' is '아니요' (no). 'ne' is '네' (yes)."},
+      "retry_phrase": "아니요"
+    },
+    "F3": {
+      "why_wrong": {"my":"Roman 'ne' က '네' (ဟုတ်ကဲ့)။","ko":"Roman 'ne'는 '네'(예)입니다.","en":"Roman 'ne' is '네' (yes)."},
+      "retry_phrase": "네"
+    },
+    "F4": {
+      "why_wrong": {"my":"'네, 학생이에요' — Roman: ne, haksaeng-ieyo။ ကျယ်ကျယ် ပြောပါ။","ko":"'네, 학생이에요' — 로마자: ne, haksaeng-ieyo. 크게 말하세요.","en":"'네, 학생이에요' — Roman: ne, haksaeng-ieyo. Say it clearly."},
+      "retry_phrase": "네, 학생이에요"
+    }
+  },
+  "cultural_note": {
+    "title": {"my":"'네' ရဲ့ ယဉ်ကျေးမှု အခန်းကဏ္ဍ","ko":"'네'의 문화적 역할","en":"Cultural Role of '네'"},
+    "body": {"my":"ကိုရီးယားမှာ '네' က 'ဟုတ်ကဲ့' လို့ အဓိပ္ပာယ်ရုံမက — အထက်လူကြီး ခေါ်တဲ့အခါ၊ ပြောတာကို နားထောင်နေတဲ့အခါ၊ သဘောတူတဲ့အခါ — အားလုံးမှာ '네' လို့ ဖြေတာ ယဉ်ကျေးတယ်။","ko":"한국에서는 '네'가 단순히 '예'라는 뜻 외에도, 윗사람이 부를 때, 듣고 있을 때, 동의할 때 모두 사용하는 정중한 표현입니다.","en":"In Korea, '네' is not just 'yes' — it also means 'I'm listening' or 'I agree.' It's a polite response in many contexts."},
+    "sensitive": false
+  },
+  "audio": {
+    "base_path": "audio/LEVEL0-PHRASE-002/",
+    "files": [
+      {"id":"AUD_L0P002_L1","normal":"l1-normal.mp3","slow":"l1-slow.mp3","duration":1.5},
+      {"id":"AUD_L0P002_L2","normal":"l2-normal.mp3","slow":"l2-slow.mp3","duration":2.0},
+      {"id":"AUD_L0P002_L3","normal":"l3-normal.mp3","slow":"l3-slow.mp3","duration":1.5},
+      {"id":"AUD_L0P002_L4","normal":"l4-normal.mp3","slow":"l4-slow.mp3","duration":2.0},
+      {"id":"AUD_L0P002_A4","normal":"a4-normal.mp3","slow":"a4-slow.mp3","duration":2.5}
+    ],
+    "spec": {"sample_rate":44100,"channels":1,"format":"mp3","bitrate":128}
+  },
+  "srs": {
+    "enabled": true,
+    "cards": [
+      {"card_id":"C1","front":{"my":"Roman: ne","ko":"Roman: ne","en":"Roman: ne"},"back":{"my":"네","ko":"네","en":"네 (yes)"},"audio_ref":"AUD_L0P002_L2","ease":2.5,"interval":0},
+      {"card_id":"C2","front":{"my":"Roman: aniyo","ko":"Roman: aniyo","en":"Roman: aniyo"},"back":{"my":"아니요","ko":"아니요","en":"아니요 (no)"},"audio_ref":"AUD_L0P002_L4","ease":2.5,"interval":0}
+    ]
+  },
+  "assessment": {
+    "type": "mission",
+    "pass_threshold": 70,
+    "weights": {"accuracy":60,"completion":40},
+    "exam_mapping": {"topik":null,"eps_topik":null}
+  }
+}
